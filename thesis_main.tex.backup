@@ -32,7 +32,7 @@
         Kenneth Hess, Thesis Director \\
         Professor, MD Anderson Cancer Center\and
         Yu Shen\\
-        Professor, MD Anderson Cancer Center \and
+        Conversation with a Living Legend Professor, MD Anderson Cancer Center \and
         Marina Vannucci\\
         Professor and Chair of Statistics
 }
@@ -52,6 +52,7 @@
    \listoffigures
    \listoftables
    %\include{ded}
+  
   \end{frontmatter}
 \pagenumbering{arabic}
 
@@ -62,16 +63,16 @@
 \appendix
 
 \include{append-a}
-%\appendix
-%\addcontentsline{toc} {chapter}{\numberline {}Appendix}
+\appendix
+\addcontentsline{toc} {chapter}{\numberline {}Appendix A}
 
 %\include{append-b}
 %\addcontentsline{toc} {chapter}{\numberline {}Bibliography}{}
 
-\include{biblio}
-\include{Phd_bibliography}
+%\include{biblio}
+%\include{Phd_bibliography}
 
-\bibliographystyle{plain}
-\bibliography{C:/Users/Nathan/Desktop/Proposal/Phd_bibliography}
+%\bibliographystyle{plain}
+%\bibliography{Phd_bibliography}
 
 \end{document}

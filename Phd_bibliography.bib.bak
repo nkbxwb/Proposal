@@ -1,0 +1,11 @@
+% This file was created with JabRef 2.10.
+% Encoding: Cp1252
+
+
+@Book{van2012flexible,
+  Title                    = {Flexible imputation of missing data},
+  Author                   = {Van Buuren, Stef},
+  Publisher                = {CRC press},
+  Year                     = {2012}
+}
+
