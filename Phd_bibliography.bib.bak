@@ -2,6 +2,16 @@
 % Encoding: Cp1252
 
 
+@Book{rubin1987,
+  Title                    = {Multiple Imputation for Nonresponse in Surveys},
+  Author                   = {Rubin, D. B.},
+  Publisher                = {Wiley},
+  Year                     = {1987},
+
+  Keywords                 = {Bayesian Missing Sample approach data; survey;},
+  Pages                    = {258}
+}
+
 @Book{van2012flexible,
   Title                    = {Flexible imputation of missing data},
   Author                   = {Van Buuren, Stef},
