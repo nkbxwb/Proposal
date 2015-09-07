@@ -9,4 +9,5 @@
 \contentsline {chapter}{\numberline {2}Methods}{5}
 \contentsline {section}{\numberline {2.1}Multiple Imputation}{5}
 \contentsline {section}{\numberline {2.2}Survival analysis}{8}
-\contentsline {chapter}{\numberline {A}Appendix}{10}
+\contentsline {section}{\numberline {2.3}Propensity Score Analysis}{9}
+\contentsline {chapter}{\numberline {A}Appendix}{11}
