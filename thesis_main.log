@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.1415926-2.5-1.40.14 (MiKTeX 2.9) (preloaded format=pdflatex 2015.8.23)  31 AUG 2015 10:53
+This is pdfTeX, Version 3.1415926-2.5-1.40.14 (MiKTeX 2.9) (preloaded format=pdflatex 2015.8.23)  7 SEP 2015 12:45
 entering extended mode
 **thesis_main.tex
 (C:\Users\Nathan\Desktop\Proposal\thesis_main.tex
@@ -200,6 +200,7 @@ Writing index file thesis_main.idx
 (C:\Users\Nathan\Desktop\Proposal\thesis_main.aux
 (C:\Users\Nathan\Desktop\Proposal\abstract.aux)
 (C:\Users\Nathan\Desktop\Proposal\chapter1.aux)
+(C:\Users\Nathan\Desktop\Proposal\methods.aux)
 (C:\Users\Nathan\Desktop\Proposal\append-a.aux))
 LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 43.
 LaTeX Font Info:    ... okay on input line 43.
@@ -274,31 +275,49 @@ Missing character: There is no ” in font cmr12!
 Missing character: There is no ’ in font cmr12!
 Missing character: There is no “ in font cmr12!
 Missing character: There is no ” in font cmr12!
-) [3] [4] (C:\Users\Nathan\Desktop\Proposal\append-a.tex
+) [3] [4] (C:\Users\Nathan\Desktop\Proposal\methods.tex
+Chapter 2.
+Missing character: There is no ’ in font cmr12!
+Missing character: There is no ’ in font cmr12!
+Missing character: There is no ’ in font cmr12!
+Missing character: There is no ’ in font cmr12!
+Missing character: There is no “ in font cmr12!
+Missing character: There is no ” in font cmr12!
+[5
+
+
+
+] [6] [7]
+Missing character: There is no ’ in font cmr12!
+Missing character: There is no ’ in font cmr12!
+Missing character: There is no “ in font cmr12!
+Missing character: There is no ” in font cmr12!
+) [8] (C:\Users\Nathan\Desktop\Proposal\append-a.tex
 Appendix A.
-) [5
+) [9
 
 
 
 ] (C:\Users\Nathan\Desktop\Proposal\thesis_main.aux
 (C:\Users\Nathan\Desktop\Proposal\abstract.aux)
 (C:\Users\Nathan\Desktop\Proposal\chapter1.aux)
+(C:\Users\Nathan\Desktop\Proposal\methods.aux)
 (C:\Users\Nathan\Desktop\Proposal\append-a.aux)) ) 
 Here is how much of TeX's memory you used:
- 1943 strings out of 493921
- 24389 string characters out of 3144873
- 78719 words of memory out of 3000000
- 5185 multiletter control sequences out of 15000+200000
+ 1953 strings out of 493921
+ 24688 string characters out of 3144873
+ 87154 words of memory out of 3000000
+ 5188 multiletter control sequences out of 15000+200000
  11115 words of font info for 43 fonts, out of 3000000 for 9000
  841 hyphenation exceptions out of 8191
- 32i,5n,26p,1153b,158s stack positions out of 5000i,500n,10000p,200000b,50000s
+ 32i,5n,26p,1582b,158s stack positions out of 5000i,500n,10000p,200000b,50000s
 <C:/Program Files (x86)/MiKTe
 X 2.9/fonts/type1/public/amsfonts/cm/cmbx12.pfb><C:/Program Files (x86)/MiKTeX 
 2.9/fonts/type1/public/amsfonts/cm/cmcsc10.pfb><C:/Program Files (x86)/MiKTeX 2
 .9/fonts/type1/public/amsfonts/cm/cmr12.pfb>
-Output written on thesis_main.pdf (10 pages, 62352 bytes).
+Output written on thesis_main.pdf (14 pages, 71581 bytes).
 PDF statistics:
- 47 PDF objects out of 1000 (max. 8388607)
+ 60 PDF objects out of 1000 (max. 8388607)
  0 named destinations out of 1000 (max. 500000)
  1 words of extra memory for PDF output out of 10000 (max. 10000000)
 
