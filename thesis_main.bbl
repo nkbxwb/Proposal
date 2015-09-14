@@ -1,13 +1,18 @@
 \begin{thebibliography}{1}
 
-\bibitem{White2011a}
-I.~White, P.~Royston, and A.~M. Wood, ``{Multiple imputation using chained
-  equations: Issues and guidance for practice},'' {\em Statistics in Medicine},
-  vol.~30, no.~4, pp.~377--399, 2011.
+\bibitem{Rubin1987}
+D.~B. Rubin, {\em {Multiple Imputation for Nonresponse in Surveys}}.
+\newblock No.~JOHN WILEY \& SONS, 1987.
 
-\bibitem{Hughes2014a}
-R.~Hughes, I.~White, S.~Seaman, J.~Carpenter, K.~Tilling, and J.~Sterne,
-  ``{Joint modelling rationale for chained equations.},'' {\em BMC medical
-  research methodology}, vol.~14, p.~28, 2014.
+\bibitem{Marshall2009}
+A.~Marshall, D.~G. Altman, R.~L. Holder, and P.~Royston, ``{Combining estimates
+  of interest in prognostic modelling studies after multiple imputation:
+  current practice and guidelines.},'' {\em BMC medical research methodology},
+  vol.~9, p.~57, 2009.
+
+\bibitem{Zhao2014}
+Y.~Zhao, A.~H. Herring, H.~Zhou, M.~W. Ali, G.~G. Koch, N.~Carolina, C.~Hill,
+  and N.~Carolina, ``{ANALYSES OF TIME-TO-EVENT DATA WITH POSSIBLY},'' vol.~24,
+  no.~2, pp.~229--253, 2014.
 
 \end{thebibliography}
