@@ -19,27 +19,26 @@
 {\theoremstyle{plain}
   \theorembodyfont{\rmfamily}  \newtheorem{Def}{Definition}[chapter]}
 
-\title{Put a cool title here}
-\ctitle{Put a cool title here}
-\author{Nathan Karmazin Berliner}
+\title{Sphere detection and LDPC decoding algorithms and architectures for wireless systems}
+\ctitle{Sphere detection and LDPC decoding algorithms and architectures for wireless systems}
+\author{Predrag Radosavljevic}
 \department{Electrical and Computer Engineering}
 \school{Rice University}
-\degree{Master of Arts Statistics}
+\degree{Doctor of Philosophy}
 
 \committee {
-        Rudy Guerra, Committee Chair \\
-        Professor of Statistics \and
-        Kenneth Hess, Thesis Director \\
-        Professor, MD Anderson Cancer Center\and
-        Yu Shen\\
-        Conversation with a Living Legend Professor, MD Anderson Cancer Center \and
-        Marina Vannucci\\
-        Professor and Chair of Statistics
+        Joseph R. Cavallaro, Chair \\
+        Professor of Electrical and Computer Engineering and Computer Science \and
+        Behnaam Aazhang \\
+        J.S. Abercrombie Professor of Electrical and Computer Engineering \and
+        Scott Rixner\\
+        Associate Professor of Electrical and Computer Engineering and Computer Science \and
+        Ashutosh Sabharwal\\
+        Assistant Professor of Electrical and Computer Engineering
 }
 
-
 \address{Houston, Texas}
-\donemonth{April} \doneyear{2015} \makeindex
+\donemonth{April} \doneyear{2008} \makeindex
 \begin{document}
 
   \begin{frontmatter}
@@ -51,8 +50,7 @@
    \tableofcontents
    \listoffigures
    \listoftables
-   %\include{ded}
-  
+%   \include{ded}
   \end{frontmatter}
 \pagenumbering{arabic}
 
@@ -62,17 +60,14 @@
 
 \appendix
 
-\include{append-a}
-\appendix
-\addcontentsline{toc} {chapter}{\numberline {}Appendix A}
-
+%\include{append-a}
+%\appendix
+%\addcontentsline{toc} {chapter}{\numberline {}Appendix A}
+%\include{append-a}
 %\include{append-b}
 %\addcontentsline{toc} {chapter}{\numberline {}Bibliography}{}
-
 %\include{biblio}
-%\include{Phd_bibliography}
-
-%\bibliographystyle{plain}
-%\bibliography{Phd_bibliography}
-
+testing testing \cite{sterne2009}, \cite{White2011a}
+\bibliographystyle{ieeetr}
+\bibliography{myref}
 \end{document}
