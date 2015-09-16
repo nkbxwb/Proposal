@@ -11,8 +11,12 @@ A.~Marshall, D.~G. Altman, R.~L. Holder, and P.~Royston, ``{Combining estimates
   vol.~9, p.~57, 2009.
 
 \bibitem{Zhao2014}
-Y.~Zhao, A.~H. Herring, H.~Zhou, M.~W. Ali, G.~G. Koch, N.~Carolina, C.~Hill,
-  and N.~Carolina, ``{ANALYSES OF TIME-TO-EVENT DATA WITH POSSIBLY},'' vol.~24,
-  no.~2, pp.~229--253, 2014.
+Y.~Zhao, A.~H. Herring, H.~Zhou, M.~W. Ali, and G.~G. Koch, ``{ANALYSES OF
+  TIME-TO-EVENT DATA WITH POSSIBLY},'' vol.~24, no.~2, pp.~229--253, 2014.
+
+\bibitem{Long2012}
+Q.~Long, C.-H. Hsu, and Y.~Li, ``{Doubly robust nonparametric multiple
+  imputation for ignorable missing data},'' {\em Statistica Sinica}, vol.~22,
+  no.~1, pp.~1--22, 2012.
 
 \end{thebibliography}
