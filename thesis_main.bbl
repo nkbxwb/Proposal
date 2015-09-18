@@ -19,4 +19,8 @@ Q.~Long, C.-H. Hsu, and Y.~Li, ``{Doubly robust nonparametric multiple
   imputation for ignorable missing data},'' {\em Statistica Sinica}, vol.~22,
   no.~1, pp.~1--22, 2012.
 
+\bibitem{VanBuuren2012}
+S.~{Van Buuren}, {\em {Flexible Imputation of Missing Data}}.
+\newblock 2012.
+
 \end{thebibliography}
