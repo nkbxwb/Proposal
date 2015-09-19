@@ -4,6 +4,10 @@
 D.~B. Rubin, {\em {Multiple Imputation for Nonresponse in Surveys}}.
 \newblock No.~JOHN WILEY \& SONS, 1987.
 
+\bibitem{VanBuuren2012}
+S.~{Van Buuren}, {\em {Flexible Imputation of Missing Data}}.
+\newblock 2012.
+
 \bibitem{Marshall2009}
 A.~Marshall, D.~G. Altman, R.~L. Holder, and P.~Royston, ``{Combining estimates
   of interest in prognostic modelling studies after multiple imputation:
@@ -18,9 +22,5 @@ Y.~Zhao, A.~H. Herring, H.~Zhou, M.~W. Ali, and G.~G. Koch, ``{ANALYSES OF
 Q.~Long, C.-H. Hsu, and Y.~Li, ``{Doubly robust nonparametric multiple
   imputation for ignorable missing data},'' {\em Statistica Sinica}, vol.~22,
   no.~1, pp.~1--22, 2012.
-
-\bibitem{VanBuuren2012}
-S.~{Van Buuren}, {\em {Flexible Imputation of Missing Data}}.
-\newblock 2012.
 
 \end{thebibliography}

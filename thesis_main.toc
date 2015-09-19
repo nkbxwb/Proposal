@@ -9,10 +9,10 @@
 \contentsline {chapter}{\numberline {2}Methods}{5}
 \contentsline {section}{\numberline {2.1}Multiple Imputation}{5}
 \contentsline {section}{\numberline {2.2}Survival analysis}{8}
-\contentsline {section}{\numberline {2.3}Propensity Score Analysis}{9}
-\contentsline {chapter}{\numberline {3}Application}{11}
-\contentsline {section}{\numberline {3.1}Data Explanation}{11}
-\contentsline {chapter}{\numberline {4}Discussion}{15}
-\contentsline {chapter}{\numberline {5}Conclusion}{18}
-\contentsline {chapter}{\numberline {A}Appendix}{19}
-\contentsline {chapter}{\numberline {\hfil }Bibliography}{20}
+\contentsline {section}{\numberline {2.3}Propensity Score Analysis}{10}
+\contentsline {chapter}{\numberline {3}Application}{12}
+\contentsline {section}{\numberline {3.1}Data Explanation}{12}
+\contentsline {chapter}{\numberline {4}Discussion}{16}
+\contentsline {chapter}{\numberline {5}Conclusion}{19}
+\contentsline {chapter}{\numberline {A}Appendix}{20}
+\contentsline {chapter}{\numberline {\hfil }Bibliography}{21}
