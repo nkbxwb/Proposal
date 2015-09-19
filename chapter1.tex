@@ -1,26 +1,28 @@
 \chapter{Introduction}
 \section{Motivation}
 \label{sec:Motivation}
-I want to develop methodology that can be used both by applied researchers and clinicians. 
-I want it to be easy enough to describe to someone with a limited statistical background, 
+The motivation of this thesis is to develop methodology that can be used both by applied researchers and clinicians to draw meaningful survival inference from data with a high amount of missingness. 
+I want the methods  to be easy enough to describe to someone with a limited statistical background, 
 but meaningful and valid so that the results obtained can be used in publication. 
-The desire to have it this way stems from working on a project with both statisticians and clinicians.
+The desire to have it this way stems from working on a related project with both statisticians and clinicians.
 
 \label{ch:Intro}
 Missing data is a major problem in both applied and theoretical statistics, however, 
-it has not received attention proportional to its need. Survival analysis is a well studied field, 
+it has not received attention proportional to its need. Survival analysis is well studied, 
 but is relatively complete, so not much new research comes out of this field. 
 Propensity score analysis will help us determine causal relationships when we don’t have a completely
 randomized experiment. As one could imagine, all three of these fields are important to the applied statistician,
-as they will come across at least one at some point in their career.  
+as they will come across at least one at some point in their career.  The goal of this thesis is to demonstrate how to use all three in trio, a topic that has only received little interest in the literature.
 I will explain each of these three disciplines in detail before we dive into combining them.
 
 \section{Imputation}
 \label{sec:Imputation}
-Imputation (specifically multiple imputation) is a way to “fill in missing data”, and it forms the base of our plan, all of the other analyses follow from it. Thus, we need a good understanding of it before we may proceed. Multiple imputation itself though is a recent development, so we need to understand why it is used.
+Imputation (specifically multiple imputation) is a way to “fill in missing data” with plausible values, and it forms the base of this paper. All of the other analyses that will be used will follow from it, thus we need a good understanding of it before we may proceed. Imputation itself has been around for some time, but multiple imputation is a recent development, proposed formally in 1987 by Donald Rubin \cite{Rubin1987}.
 At first, statisticians payed no attention to missing data, and happily discarded records for their analysis that were incomplete. This was known as complete case analysis. There are many problems with this paradigm. To begin with, you will lose a lot of statistical power when doing this, because you are literally throwing away records and thus decreasing your sample size.  In addition, this can be costly to the researcher. If it costs a set amount to collect a single record, and you don’t use this record, you are literally wasting money. As well, in some rare cases, incomplete data might be the only type we can get. Lastly, and most importantly, we will be biasing our estimates if we discard them. For example, if we have a random sample of people and are testing a drug, and want to run a regression on some collected covariates. Men are known to not want to give all of their information, so they leave them blank. In the analysis, we will need to discard the male samples because they are incomplete, leaving us only with women. Thus, we don’t have a random sample anymore, and will get biased results.
 The next wave of statisticians wanted to improve upon this, so they developed what we now call today (single) imputation. In single method (such as regression, trees) is used one time to impute the missing value. While this is a little better than complete case analysis, it still has many drawbacks. Asserting that a single value is the true value is just foolish. There is always some amount of error involved, and we can in no way be 100\% confident that our imputed value is correct. Furthermore, if I impute one value and you impute another, we may get totally different results from analysis on the data. This is obviously not desirable.  In addition, imputing one time and calling it your data will artificially increase your sample size. You are in effect treating the imputed values as if they were real. If this was valid, we wouldn’t ever need to collect samples, and we could just be armchair statisticians. While single imputation certainly has its drawbacks, the idea of actually trying to fill in the data is an important one, and multiple imputation fills in the theoretical gaps.
-In 1987, Donald Rubin proposed multiple imputation as a solution \cite{Rubin1987}. The central idea is to make many datasets for the missing data, drawing the estimates for the missing data from the parameters posterior distribution. Once we have a sufficient number of datasets, we can run whatever analyses we would like on them, and then pool the results. We can get the standard errors by noting the within and between imputation variance. This is obviously much better than the first two methods because it allows is to not throw away data, as well as allowing us to quantify our uncertainty about imputing the missing values. The only real drawback of multiple imputation is that we still don’t have true data, but we can be confident enough in our estimations to compensate for that. Multiple imputation use has been steadily increasing over the past 30 years, and it is now the standard for missing data.
+In 1987, Donald Rubin proposed multiple imputation as a solution \cite{Rubin1987}. 
+%start here
+The central idea is to make many datasets for the missing data, drawing the estimates for the missing data from the parameters posterior distribution. Once we have a sufficient number of datasets, we can run whatever analyses we would like on them, and then pool the results. We can get the standard errors by noting the within and between imputation variance. This is obviously much better than the first two methods because it allows is to not throw away data, as well as allowing us to quantify our uncertainty about imputing the missing values. The only real drawback of multiple imputation is that we still don’t have true data, but we can be confident enough in our estimations to compensate for that. Multiple imputation use has been steadily increasing over the past 30 years, and it is now the standard for missing data.
 
 
 \section{Survival}
