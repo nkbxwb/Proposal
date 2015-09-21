@@ -38,8 +38,13 @@ $$\hat{S}(t)=\prod_{t_i<t}\frac{n_i-d_i}{n_i}$$
 Where $n_i$ is the number of “survivors” minus the number of censored cases just prior to time $t_i$, and $d_i$ is the number of deaths or events that you observe at time $t_i$. The Kaplan-Meier estimator is very commonly used as a measure to see how different treatments affect survival time
 Proportional hazards regression, often called Cox regression is a modelling tool that allows us to analyze the hazard ratio of a covariate, assuming that each covariate acts to multiply the hazard ratio. The hazard is a survival tool that tells us the rate of events at time t, conditional on survivorship until time t. Mathematically, it is given by
 $$h(x)=\lim_{\Delta x\rightarrow0}\frac{P[x\leq X<x+\Delta x|X\geq x]}{\Delta x}$$
-  Using cox regression, we can make statements such as   “increasing the drug by one mg will increase its hazard by 30\%”. The hazard is a function that gives us information about survival after time t, given that the person has survived until time t. We need much more work here
+  Cox regression is a maximum likelihood method estimator, given by 
+$$h(t|Z)=h_{0}(t)\exp(\sum_{k=1}^{p}\beta_{k}Z_{k})$$
+The $h_0(t)$ is what’s known as the baseline hazard, and can be any function that we would like. We aim to maximize the betas with respect to the partial likelihood. Our inference of interest is 
+$\frac{h(t|Z)}{h(t|Z^{*})}=\exp(\sum_{k=1}^{p}\beta_{k}(Z_{k}-Z_{k}^{*}))$
+Where Z* is another set of covariates. The relative risk (or hazard ratio) describes the relative risk of two subjects with two different covariates. This ratio will be a constant, hence the name proportional hazards, and does not depend on the baseline hazard.
 
+Using cox regression, we can make statements such as   “increasing the drug by one mg will increase its hazard by 30\%”. 
 \section{Propensity Score Analysis}
 \label{sec:PSA}
 <<THIS NEEDS A LOT MORE WORK>>
