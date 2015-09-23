@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.1415926-2.5-1.40.14 (MiKTeX 2.9) (preloaded format=pdflatex 2015.8.23)  21 SEP 2015 18:14
+This is pdfTeX, Version 3.1415926-2.5-1.40.14 (MiKTeX 2.9) (preloaded format=pdflatex 2015.8.23)  23 SEP 2015 11:07
 entering extended mode
 **thesis_main.tex
 (C:\Users\Nathan\Desktop\Proposal\thesis_main.tex
@@ -283,9 +283,12 @@ Missing character: There is no ” in font cmr12!
 Missing character: There is no “ in font cmr12!
 Missing character: There is no ” in font cmr12!
 Missing character: There is no ’ in font cmr12!
+Missing character: There is no ’ in font cmr12!
+Missing character: There is no ’ in font cmr12!
+ [5]
 Missing character: There is no “ in font cmr12!
 Missing character: There is no ” in font cmr12!
-) [5] [6] (C:\Users\Nathan\Desktop\Proposal\methods.tex
+) [6] [7] (C:\Users\Nathan\Desktop\Proposal\methods.tex
 Chapter 2.
 Missing character: There is no ’ in font cmr12!
 Missing character: There is no ’ in font cmr12!
@@ -295,11 +298,11 @@ Missing character: There is no “ in font cmr12!
 Missing character: There is no ” in font cmr12!
 Missing character: There is no ’ in font cmr12!
 Missing character: There is no ’ in font cmr12!
-[7
+[8
 
 
 
-] [8] [9]
+] [9] [10]
 Missing character: There is no ’ in font cmr12!
 Missing character: There is no ’ in font cmr12!
 Missing character: There is no ’ in font cmr12!
@@ -307,9 +310,9 @@ Missing character: There is no “ in font cmr12!
 Missing character: There is no ” in font cmr12!
 Missing character: There is no “ in font cmr12!
 Missing character: There is no ” in font cmr12!
- [10]
+ [11]
 Missing character: There is no ’ in font cmr12!
-) [11] [12] [13]
+) [12] [13] [14]
 (C:\Users\Nathan\Desktop\Proposal\application.tex
 Chapter 3.
 Missing character: There is no ’ in font cmr12!
@@ -317,11 +320,11 @@ Missing character: There is no ’ in font cmr12!
 Missing character: There is no ’ in font cmr12!
 Missing character: There is no ’ in font cmr12!
 Missing character: There is no — in font cmr12!
-) [14
+) [15
 
 
 
-] [15] [16] [17] (C:\Users\Nathan\Desktop\Proposal\discussion.tex
+] [16] [17] [18] (C:\Users\Nathan\Desktop\Proposal\discussion.tex
 Chapter 4.
 Missing character: There is no ’ in font cmr12!
 Missing character: There is no ’ in font cmr12!
@@ -329,23 +332,23 @@ Missing character: There is no “ in font cmr12!
 Missing character: There is no ” in font cmr12!
 Missing character: There is no ’ in font cmr12!
 Missing character: There is no “ in font cmr12!
-) [18
+) [19
 
 
 
-] [19] [20] (C:\Users\Nathan\Desktop\Proposal\conclusion.tex
+] [20] [21] (C:\Users\Nathan\Desktop\Proposal\conclusion.tex
 Chapter 5.
-) [21
+) [22
 
 
 
 ] (C:\Users\Nathan\Desktop\Proposal\append-a.tex
 Appendix A.
-) [22
+) [23
 
 
 
-] (C:\Users\Nathan\Desktop\Proposal\thesis_main.bbl) [23
+] (C:\Users\Nathan\Desktop\Proposal\thesis_main.bbl) [24
 
 
 ]
@@ -358,10 +361,10 @@ Appendix A.
 (C:\Users\Nathan\Desktop\Proposal\conclusion.aux)
 (C:\Users\Nathan\Desktop\Proposal\append-a.aux)) ) 
 Here is how much of TeX's memory you used:
- 1988 strings out of 493921
- 25807 string characters out of 3144873
- 85502 words of memory out of 3000000
- 5199 multiletter control sequences out of 15000+200000
+ 1989 strings out of 493921
+ 25820 string characters out of 3144873
+ 85505 words of memory out of 3000000
+ 5200 multiletter control sequences out of 15000+200000
  11115 words of font info for 43 fonts, out of 3000000 for 9000
  841 hyphenation exceptions out of 8191
  32i,6n,26p,2430b,158s stack positions out of 5000i,500n,10000p,200000b,50000s
@@ -378,9 +381,9 @@ blic/amsfonts/cm/cmsy10.pfb><C:/Program Files (x86)/MiKTeX 2.9/fonts/type1/publ
 ic/amsfonts/cm/cmsy6.pfb><C:/Program Files (x86)/MiKTeX 2.9/fonts/type1/public/
 amsfonts/cm/cmsy8.pfb><C:/Program Files (x86)/MiKTeX 2.9/fonts/type1/public/ams
 fonts/cm/cmti12.pfb>
-Output written on thesis_main.pdf (28 pages, 185507 bytes).
+Output written on thesis_main.pdf (29 pages, 189230 bytes).
 PDF statistics:
- 140 PDF objects out of 1000 (max. 8388607)
+ 143 PDF objects out of 1000 (max. 8388607)
  0 named destinations out of 1000 (max. 500000)
  1 words of extra memory for PDF output out of 10000 (max. 10000000)
 

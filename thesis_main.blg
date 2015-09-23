@@ -1,10 +1,6 @@
 This is BibTeX, Version 0.99dThe top-level auxiliary file: thesis_main.aux
 A level-1 auxiliary file: abstract.aux
 A level-1 auxiliary file: chapter1.aux
-White space in argument---line 12 of file chapter1.aux
- : \citation{VanBuuren2012
- :                         }
-I'm skipping whatever remains of this command
 A level-1 auxiliary file: methods.aux
 A level-1 auxiliary file: application.aux
 A level-1 auxiliary file: discussion.aux
@@ -14,8 +10,10 @@ The style file: ieeetr.bst
 Database file #1: Research.bib
 Warning--there's a number but no series in Rubin1987
 Warning--empty publisher in Rubin1987
+Warning--empty publisher in VanBuuren2012
 Warning--can't use both volume and number fields in Klein1984
 Warning--empty publisher in Klein1984
-Warning--empty publisher in VanBuuren2012
+Warning--there's a number but no series in Angrist2008
+Warning--empty publisher in Angrist2008
 Warning--empty journal in Zhao2014
-(There was 1 error message)
+(There were 8 warnings)
