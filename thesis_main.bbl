@@ -29,6 +29,22 @@ A.~A. Novo and J.~L. Schafer, ``{Package ‘ norm ’},'' {\em CRAN}, 2015.
 \bibitem{cat2015}
 F.~Tusell, ``{Package ‘ cat ’},'' {\em CRAN}, p.~23, 2015.
 
+\bibitem{VanBuuren2006}
+S.~{Van Buuren}, J.~P. Brand, C.~G. Groothuis-Oudshoorn, and D.~Rubin, ``{Fully
+  conditional specification in multivariate imputation},'' {\em Journal of
+  Statistical Computation and Simulation}, vol.~76, no.~12, pp.~1049--1064,
+  2006.
+
+\bibitem{VanBuuren2011}
+S.~{Van Buuren} and K.~Groothuis-Oudshoorn, ``{Multivariate Imputation by
+  Chained Equations},'' {\em Journal Of Statistical Software}, vol.~45, no.~3,
+  pp.~1--67, 2011.
+
+\bibitem{Su2011}
+Y.-S. Su, A.~Gelman, J.~Hill, and M.~Yajima, ``{Multiple Imputation with
+  Diagnostics (mi) in R: Opening Windows into the Black Box},'' {\em Journal of
+  Statistical Software}, vol.~45, no.~2, pp.~1--31, 2011.
+
 \bibitem{Marshall2009}
 A.~Marshall, D.~G. Altman, R.~L. Holder, and P.~Royston, ``{Combining estimates
   of interest in prognostic modelling studies after multiple imputation:
