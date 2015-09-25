@@ -8,7 +8,7 @@
 \contentsline {section}{\numberline {1.4}Propensity Score Analysis}{5}
 \contentsline {chapter}{\numberline {2}Methods}{8}
 \contentsline {section}{\numberline {2.1}Multiple Imputation}{8}
-\contentsline {section}{\numberline {2.2}Survival analysis}{11}
+\contentsline {section}{\numberline {2.2}Survival analysis}{12}
 \contentsline {section}{\numberline {2.3}Propensity Score Analysis}{13}
 \contentsline {chapter}{\numberline {3}Application}{15}
 \contentsline {section}{\numberline {3.1}Data Explanation}{15}

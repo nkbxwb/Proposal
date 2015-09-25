@@ -1,6 +1,7 @@
 \chapter{Appendix}
+\label{app:apdx}
 There are three mechanisms of missing data. It is important to understand what type of missing data we have so that we can use methods that are suited for that type. 
-Before we begin, we will need some notation. It is not constant throughout the literature, so I caution you to look at the authors notation before reading any other literature. I will give the symbols I will be using along with words to describe them to make it easy to explain
+Before we begin, we will need some notation. It is not constant throughout the literature, so I caution you to look at the author’s notation before reading any other literature. I will give the symbols I will be using along with words to describe them to make it easy to explain
 \begin{itemize}
 \item $Y$ is our whole dataset. It will have i rows and j columns
 \item $Y_j$ is a specific column of Y. $Y_j$ is actually composed as $Y_j=(Y_{obs},Y_{mis})$, where
@@ -9,22 +10,22 @@ Before we begin, we will need some notation. It is not constant throughout the l
 	\item $Y_{mis}$ is the missing data
 \end{itemize} 
 \item R is a binary matrix the same size as $Y$ where a 1 indicates we observed the data, and 0 means it is missing
-$\phi$ is a vector of parameters for the missing data model, and the missing data model is given as $p(R|Y_{obs},Y_{mis},\phi)$
+$\psi$ is a vector of parameters for the missing data model, and the missing data model is given as $p(R|Y_{obs},Y_{mis},\psi)$
 \end{itemize}
 As well, we have a concept called ignorability, which is defined as
 $$p(Y_{mis}|Y_{obs},R)= p(Y_{mis}|Y_{obs})$$
 That is, we may ignore the R. The probability of the data being missing does not depend on how the data is missing. Equivalently, we may write this as
 $$p(Y_{mis}|Y_{obs},R=1)= p(Y_{mis}|Y_{obs},R=0)$$
-So we can model our missing data from our observed data!
+Being ignorable makes it justified to model our missing data from our observed data, without needing to worry about how it was missing.
 The opposite of ignorable data is called non-ignorable data, in this case, 
 $$p(Y_{mis}|Y_{obs},R=1)\neq p(Y_{mis}|Y_{obs},R=0)$$
 So we must take into account the missing data structure for imputation.
 We often times see ignorable missing data in practice, although one should certainly check the sensibility of ignorability, as some instances will certainly be non-ignorable (like censored data, or when we know that the missing data is systematically different than the observed. !!! Need to work on this more!!
-Now, we may discuss the three main types of missing data mechanisms. I will give the technical definition, a laymans definition, and an example.
+Now, we may discuss the three main types of missing data mechanisms. I will give the technical definition, a layman’s definition, and an example.
 \begin{itemize}
-\item MCAR: Missing completely at random:  $P(R=0|Y_{obs},Y_{mis},\phi)=P(R=0|\phi)$. The missingness in the data is not at all related to any of the data that we do or don’t have. If a lab technician drops 5 vials of blood, the missingness caused by this would be MCAR
-\item MAR: Missing at random: $p(R=0|Y_{obs},Y_{mis},\phi)= p(R=0|Y_{obs},\phi)$. The missingness we have is related to something in the data. If we collect the gender of the subject and we know that males tend to not give blood, we can attribute the missingness to the gender
-\item MNAR: Missing not at random $p(R=0|Y_{obs},Y_{mis},\phi)$. We cannot get simplification, and the missingness depends on data that we have as well as have not collected. For example if a full moon causes the blood testing machine to break more often, but we don’t have the moonphase as a variable.
+\item MCAR: Missing completely at random:  $P(R=0|Y_{obs},Y_{mis},\psi)=P(R=0|\psi)$. The missingness in the data is not at all related to any of the data that we do or don’t have. If a lab technician drops 5 vials of blood, the missingness caused by this would be MCAR
+\item MAR: Missing at random: $p(R=0|Y_{obs},Y_{mis},\psi)= p(R=0|Y_{obs},\psi)$. The missingness we have is related to something in the data. If we collect the gender of the subject and we know that males tend to not give blood, we can attribute the missingness to the gender
+\item MNAR: Missing not at random $p(R=0|Y_{obs},Y_{mis},\psi)$. We cannot get simplification, and the missingness depends on data that we have as well as have not collected. For example if a full moon causes the blood testing machine to break more often, but we don’t have the moon phase as a variable.
 \end{itemize}
 
 
