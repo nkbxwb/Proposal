@@ -23,7 +23,26 @@ The mice algorithm in pseudocode here!! Figure out how to do this!!
 Once we have the correct assumptions, we need to set up our full conditionals imputation models. This may take a while for large datasets, but the extra time spent will ensure a better model. We choose what predictors will go into imputation, and what method to use (regression, predictive mean matching, logistic regression, etc.).  We should choose predictor variables that are somewhat correlated with the missing data, as well as include the covariates that we are doing inference on, as to avoid bias. For variables that are derived from others, we impute the others and then compute that variable, in a process known as passive imputation.  Since mice is an iterative process, we must choose how many iterations we will do until convergence. The older literature suggests only 5 is enough (source), but with modern computation, we can easily exceed this, even with large data. As well, we need to decide how many datasets to impute. The early literature argued that 5 will due, but more is better, since it will cut down on simulation error (find where I wrote up the reasons why). Modern literature suggests X.
 ?? rhat test??We need to verify that our imputations are valid once we complete them. The overarching idea that we need to pay attention to is “does the data look like it could have been real data”. We can assess this in many ways, including density plots, box and whisker plots, etc. There is not much in the imputation literature about statistical tests to check for convergence, but !!!!!work on this!!
 %start here
-Once we have m imputed datasets, we may run any valid analysis (regression, computing any statistic) on each imputed dataset INDIVIDUALLY, treating each of the m datasets as if it was complete. We may then use Rubin’s rules (source) [put the steps in later], to pool our estimates. This will give us a point estimate, as well as proper variance for the quantity we have in mind. Rubin’s rules assumes normality, so if our statistic in mind is not asymptotically normal, we need to transform it towards normality before we pool.
+Once we have m imputed datasets, we may run any valid analysis (regression, computing any statistic) on each imputed dataset INDIVIDUALLY, treating each of the m datasets as if it was complete. We may then use Rubin’s rules \cite{Rubin1987} to pool our estimates. This will give us a point estimate, as well as the proper variance for the quantity we have in mind.  Rubin’s rules are essential for using multiply imputed datasets, so we need to investigate them thoroughly.
+Rubin’s rules are a set of rules that guide us in making inference from multiply imputed data. It involves three parts. The first is getting an estimate of the population estimand Q, we do so by taking the average of the MI sample estimands ($\hat{Q}_i$) to get the MI estimate $\bar{Q}$.
+$$\bar{Q}=\frac{1}{m}\sum_{i=1}^{m}\hat{Q}_i$$,
+Where $\hat{Q}$ is the estimand evaluated from the data in the $i^{th}$ dataset.
+The estimates are not set, and there is variance associated with them. The first form of variance is the “within” variance, or the variance or each estimate. We can get an MI estimate of this quantity by doing
+$$\bar{U}=\frac{1}{m}\sum_{i=1}^{m}\bar{U}_i$$
+Where $\bar{U}_i$ is the $i^{th}$ datasets variance
+The other form of the variance is the “between datasets” variance. This is the variance associated with the fact that we have missing data. It is given by
+$$B=\frac{1}{m-1}\sum_{i=1}^{m}(\hat{q}_i-\bar{Q})$$
+The total variance for our estimand is given by 
+
+$$T=\bar{U}+B +\frac{B}{M}$$
+The last term is our simulation variance, and its existence is proven by Rubin in \cite{Rubin1987}
+ The theory is rooted in the assumption that whatever we are trying to pool is asymptotically normally distributed with mean Q and variance U. We don’t have these population values, so we must use what we have from the sample, namely $\bar{Q}$ and $\bar{U}$. With this assumption, we know that
+$$\frac{Q-\bar{Q}}{\sqrt{T}}\sim t_{\nu}$$ 
+And the degrees of freedom is proven to be equal to by ?bernards and rubin?
+$$\nu=\frac{\nu_{old}\nu_{obs}}{\nu_{old}+\nu_{obs}}$$
+Where $\nu_{obs}=\frac{\nu_{com}+1}{\nu_{com}+3}\nu_{com}(1-\frac{B + B/m}{T})$
+And $\nu_{old}=\frac{m-1}{(\frac{B + B/m}{T})^2}$
+Rubin’s rules assumes normality, so if our statistic in mind is not asymptotically normal, we need to transform it towards normality before we pool. But we now have a powerful framework to get valid inference from multiply imputed data.
 
 \section{Survival analysis}
 \label{sec:Surv}
