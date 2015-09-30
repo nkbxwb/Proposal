@@ -8,11 +8,11 @@
 \contentsline {section}{\numberline {1.4}Propensity Score Analysis}{5}
 \contentsline {chapter}{\numberline {2}Methods}{8}
 \contentsline {section}{\numberline {2.1}Multiple Imputation}{8}
-\contentsline {section}{\numberline {2.2}Survival analysis}{13}
-\contentsline {section}{\numberline {2.3}Propensity Score Analysis}{17}
-\contentsline {chapter}{\numberline {3}Application}{19}
-\contentsline {section}{\numberline {3.1}Data Explanation}{19}
-\contentsline {chapter}{\numberline {4}Discussion}{23}
-\contentsline {chapter}{\numberline {5}Conclusion}{26}
-\contentsline {chapter}{\numberline {A}Appendix}{27}
-\contentsline {chapter}{\numberline {\hfil }Bibliography}{29}
+\contentsline {section}{\numberline {2.2}Survival analysis}{14}
+\contentsline {section}{\numberline {2.3}Propensity Score Analysis}{18}
+\contentsline {chapter}{\numberline {3}Application}{20}
+\contentsline {section}{\numberline {3.1}Data Explanation}{20}
+\contentsline {chapter}{\numberline {4}Discussion}{24}
+\contentsline {chapter}{\numberline {5}Conclusion}{27}
+\contentsline {chapter}{\numberline {A}Appendix}{28}
+\contentsline {chapter}{\numberline {\hfil }Bibliography}{30}
