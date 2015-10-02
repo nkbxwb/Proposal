@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.1415926-2.5-1.40.14 (MiKTeX 2.9) (preloaded format=pdflatex 2015.8.23)  30 SEP 2015 12:55
+This is pdfTeX, Version 3.1415926-2.5-1.40.14 (MiKTeX 2.9) (preloaded format=pdflatex 2015.8.23)  2 OCT 2015 11:33
 entering extended mode
 **thesis_main.tex
 (C:\Users\Nathan\Desktop\Proposal\thesis_main.tex
@@ -324,8 +324,9 @@ Missing character: There is no ’ in font cmr12!
 Missing character: There is no ’ in font cmr12!
 Missing character: There is no ’ in font cmr12!
 Missing character: There is no ’ in font cmr12!
+ [16]
 Missing character: There is no ’ in font cmr12!
- [16] [17]
+ [17]
 Missing character: There is no ’ in font cmr12!
 ) [18] [19]
 (C:\Users\Nathan\Desktop\Proposal\application.tex
@@ -401,10 +402,10 @@ Missing character: There is no ™ in font cmr12!
 (C:\Users\Nathan\Desktop\Proposal\conclusion.aux)
 (C:\Users\Nathan\Desktop\Proposal\append-a.aux)) ) 
 Here is how much of TeX's memory you used:
- 2014 strings out of 493921
- 26215 string characters out of 3144873
- 85536 words of memory out of 3000000
- 5222 multiletter control sequences out of 15000+200000
+ 2016 strings out of 493921
+ 26241 string characters out of 3144873
+ 85544 words of memory out of 3000000
+ 5224 multiletter control sequences out of 15000+200000
  11422 words of font info for 44 fonts, out of 3000000 for 9000
  841 hyphenation exceptions out of 8191
  32i,6n,26p,2430b,202s stack positions out of 5000i,500n,10000p,200000b,50000s
@@ -422,7 +423,7 @@ blic/amsfonts/cm/cmr8.pfb><C:/Program Files (x86)/MiKTeX 2.9/fonts/type1/public
 msfonts/cm/cmsy6.pfb><C:/Program Files (x86)/MiKTeX 2.9/fonts/type1/public/amsf
 onts/cm/cmsy8.pfb><C:/Program Files (x86)/MiKTeX 2.9/fonts/type1/public/amsfont
 s/cm/cmti12.pfb>
-Output written on thesis_main.pdf (36 pages, 222542 bytes).
+Output written on thesis_main.pdf (36 pages, 223309 bytes).
 PDF statistics:
  169 PDF objects out of 1000 (max. 8388607)
  0 named destinations out of 1000 (max. 500000)
