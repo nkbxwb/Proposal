@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.1415926-2.5-1.40.14 (MiKTeX 2.9) (preloaded format=pdflatex 2015.8.23)  5 OCT 2015 11:15
+This is pdfTeX, Version 3.1415926-2.5-1.40.14 (MiKTeX 2.9) (preloaded format=pdflatex 2015.8.23)  5 OCT 2015 14:00
 entering extended mode
 **thesis_main.tex
 (C:\Users\Nathan\Desktop\Proposal\thesis_main.tex
@@ -184,6 +184,12 @@ Package: theorem 1995/11/23 v2.2c Theorem extension package (FMi)
 ("C:\Program Files (x86)\MiKTeX 2.9\tex\latex\tools\thp.sty"
 File: thp.sty 1995/11/23 v2.2c Theorem extension package (FMi)
 ))
+("C:\Program Files (x86)\MiKTeX 2.9\tex\latex\tools\verbatim.sty"
+Package: verbatim 2003/08/22 v1.5q LaTeX2e package for verbatim enhancements
+\every@verbatim=\toks22
+\verbatim@line=\toks23
+\verbatim@in@stream=\read2
+)
 \c@proposition=\count105
 
 ("C:\Program Files (x86)\MiKTeX 2.9\tex\latex\tools\thb.sty"
@@ -205,18 +211,18 @@ Writing index file thesis_main.idx
 (C:\Users\Nathan\Desktop\Proposal\discussion.aux)
 (C:\Users\Nathan\Desktop\Proposal\conclusion.aux)
 (C:\Users\Nathan\Desktop\Proposal\append-a.aux))
-LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 44.
-LaTeX Font Info:    ... okay on input line 44.
-LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 44.
-LaTeX Font Info:    ... okay on input line 44.
-LaTeX Font Info:    Checking defaults for OT1/cmr/m/n on input line 44.
-LaTeX Font Info:    ... okay on input line 44.
-LaTeX Font Info:    Checking defaults for OMS/cmsy/m/n on input line 44.
-LaTeX Font Info:    ... okay on input line 44.
-LaTeX Font Info:    Checking defaults for OMX/cmex/m/n on input line 44.
-LaTeX Font Info:    ... okay on input line 44.
-LaTeX Font Info:    Checking defaults for U/cmr/m/n on input line 44.
-LaTeX Font Info:    ... okay on input line 44.
+LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 45.
+LaTeX Font Info:    ... okay on input line 45.
+LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 45.
+LaTeX Font Info:    ... okay on input line 45.
+LaTeX Font Info:    Checking defaults for OT1/cmr/m/n on input line 45.
+LaTeX Font Info:    ... okay on input line 45.
+LaTeX Font Info:    Checking defaults for OMS/cmsy/m/n on input line 45.
+LaTeX Font Info:    ... okay on input line 45.
+LaTeX Font Info:    Checking defaults for OMX/cmex/m/n on input line 45.
+LaTeX Font Info:    ... okay on input line 45.
+LaTeX Font Info:    Checking defaults for U/cmr/m/n on input line 45.
+LaTeX Font Info:    ... okay on input line 45.
  [1
 
 
@@ -337,15 +343,18 @@ Missing character: There is no ’ in font cmr12!
 (C:\Users\Nathan\Desktop\Proposal\application.tex
 Chapter 3.
 Missing character: There is no ’ in font cmr12!
+[21
+
+
+
+]
+Missing character: There is no ’ in font cmr12!
+Missing character: There is no ’ in font cmr12!
 Missing character: There is no ’ in font cmr12!
 Missing character: There is no ’ in font cmr12!
 Missing character: There is no ’ in font cmr12!
 Missing character: There is no — in font cmr12!
-) [21
-
-
-
-] [22] [23] [24] (C:\Users\Nathan\Desktop\Proposal\discussion.tex
+) [22] [23] [24] [25] (C:\Users\Nathan\Desktop\Proposal\discussion.tex
 Chapter 4.
 Missing character: There is no ’ in font cmr12!
 Missing character: There is no ’ in font cmr12!
@@ -353,13 +362,13 @@ Missing character: There is no “ in font cmr12!
 Missing character: There is no ” in font cmr12!
 Missing character: There is no ’ in font cmr12!
 Missing character: There is no “ in font cmr12!
-) [25
+) [26
 
 
 
-] [26] [27] (C:\Users\Nathan\Desktop\Proposal\conclusion.tex
+] [27] [28] (C:\Users\Nathan\Desktop\Proposal\conclusion.tex
 Chapter 5.
-) [28
+) [29
 
 
 
@@ -372,7 +381,7 @@ File: omscmr.fd 1999/05/25 v2.5h Standard LaTeX font definitions
 )
 LaTeX Font Info:    Font shape `OMS/cmr/m/n' in size <12> not available
 (Font)              Font shape `OMS/cmsy/m/n' tried instead on input line 6.
- [29
+ [30
 
 
 
@@ -380,7 +389,7 @@ LaTeX Font Info:    Font shape `OMS/cmr/m/n' in size <12> not available
 Missing character: There is no ’ in font cmr12!
 Missing character: There is no ’ in font cmr12!
 Missing character: There is no ’ in font cmr12!
-) [30]
+) [31]
 (C:\Users\Nathan\Desktop\Proposal\thesis_main.bbl
 Missing character: There is no â in font cmr12!
 Missing character: There is no € in font cmr12!
@@ -394,10 +403,10 @@ Missing character: There is no ˜ in font cmr12!
 Missing character: There is no â in font cmr12!
 Missing character: There is no € in font cmr12!
 Missing character: There is no ™ in font cmr12!
- [31
+ [32
 
 
-]) [32]
+]) [33]
 (C:\Users\Nathan\Desktop\Proposal\thesis_main.aux
 (C:\Users\Nathan\Desktop\Proposal\abstract.aux)
 (C:\Users\Nathan\Desktop\Proposal\chapter1.aux)
@@ -407,10 +416,10 @@ Missing character: There is no ™ in font cmr12!
 (C:\Users\Nathan\Desktop\Proposal\conclusion.aux)
 (C:\Users\Nathan\Desktop\Proposal\append-a.aux)) ) 
 Here is how much of TeX's memory you used:
- 2017 strings out of 493921
- 26253 string characters out of 3144873
- 85548 words of memory out of 3000000
- 5225 multiletter control sequences out of 15000+200000
+ 2044 strings out of 493921
+ 26738 string characters out of 3144873
+ 85181 words of memory out of 3000000
+ 5250 multiletter control sequences out of 15000+200000
  11422 words of font info for 44 fonts, out of 3000000 for 9000
  841 hyphenation exceptions out of 8191
  32i,6n,26p,2430b,202s stack positions out of 5000i,500n,10000p,200000b,50000s
@@ -428,9 +437,9 @@ blic/amsfonts/cm/cmr8.pfb><C:/Program Files (x86)/MiKTeX 2.9/fonts/type1/public
 msfonts/cm/cmsy6.pfb><C:/Program Files (x86)/MiKTeX 2.9/fonts/type1/public/amsf
 onts/cm/cmsy8.pfb><C:/Program Files (x86)/MiKTeX 2.9/fonts/type1/public/amsfont
 s/cm/cmti12.pfb>
-Output written on thesis_main.pdf (37 pages, 226824 bytes).
+Output written on thesis_main.pdf (38 pages, 228817 bytes).
 PDF statistics:
- 175 PDF objects out of 1000 (max. 8388607)
+ 178 PDF objects out of 1000 (max. 8388607)
  0 named destinations out of 1000 (max. 500000)
  1 words of extra memory for PDF output out of 10000 (max. 10000000)
 
