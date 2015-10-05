@@ -1,6 +1,6 @@
 \contentsline {frontmatter}{\numberline {\hfil }Abstract}{ii}
-\contentsline {frontmatter}{\numberline {\hfil }List of Illustrations}{iv}
-\contentsline {frontmatter}{\numberline {\hfil }List of Tables}{v}
+\contentsline {frontmatter}{\numberline {\hfil }List of Illustrations}{v}
+\contentsline {frontmatter}{\numberline {\hfil }List of Tables}{vi}
 \contentsline {chapter}{\numberline {1}Introduction}{1}
 \contentsline {section}{\numberline {1.1}Motivation}{1}
 \contentsline {section}{\numberline {1.2}Imputation}{2}
@@ -12,7 +12,12 @@
 \contentsline {section}{\numberline {2.3}Propensity Score Analysis}{18}
 \contentsline {chapter}{\numberline {3}Application}{21}
 \contentsline {section}{\numberline {3.1}Data Explanation}{21}
+\contentsline {section}{\numberline {3.2}Imputation}{22}
+\contentsline {section}{\numberline {3.3}Survival Analysis}{24}
+\contentsline {section}{\numberline {3.4}Causal analysis}{27}
 \contentsline {chapter}{\numberline {4}Discussion}{28}
 \contentsline {chapter}{\numberline {5}Conclusion}{31}
 \contentsline {chapter}{\numberline {A}Appendix}{32}
-\contentsline {chapter}{\numberline {\hfil }Bibliography}{34}
+\contentsline {section}{\numberline {A.1}Missing data mechanisms}{32}
+\contentsline {section}{\numberline {A.2}HER2 and Cancer Drugs}{35}
+\contentsline {chapter}{\numberline {\hfil }Bibliography}{36}

@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.1415926-2.5-1.40.14 (MiKTeX 2.9) (preloaded format=pdflatex 2015.8.23)  5 OCT 2015 18:01
+This is pdfTeX, Version 3.1415926-2.5-1.40.14 (MiKTeX 2.9) (preloaded format=pdflatex 2015.8.23)  5 OCT 2015 18:24
 entering extended mode
 **thesis_main.tex
 (C:\Users\Nathan\Desktop\Proposal\thesis_main.tex
@@ -210,7 +210,8 @@ Writing index file thesis_main.idx
 (C:\Users\Nathan\Desktop\Proposal\application.aux)
 (C:\Users\Nathan\Desktop\Proposal\discussion.aux)
 (C:\Users\Nathan\Desktop\Proposal\conclusion.aux)
-(C:\Users\Nathan\Desktop\Proposal\append-a.aux))
+(C:\Users\Nathan\Desktop\Proposal\append-a.aux)
+(C:\Users\Nathan\Desktop\Proposal\append-b.aux))
 LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 45.
 LaTeX Font Info:    ... okay on input line 45.
 LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 45.
@@ -247,20 +248,20 @@ LaTeX Font Info:    Try loading font information for U+lasy on input line 5.
 
 ("C:\Program Files (x86)\MiKTeX 2.9\tex\latex\base\ulasy.fd"
 File: ulasy.fd 1998/08/17 v2.2e LaTeX symbol font definitions
-))
+) [3
+
+
+])
 \tf@toc=\write4
- [3
-
-
-]
+ [4]
 (C:\Users\Nathan\Desktop\Proposal\thesis_main.lof)
 \tf@lof=\write5
- [4
+ [5
 
 ]
 (C:\Users\Nathan\Desktop\Proposal\thesis_main.lot)
 \tf@lot=\write6
- [5
+ [6
 
 ]
 (C:\Users\Nathan\Desktop\Proposal\chapter1.tex
@@ -362,11 +363,12 @@ Missing character: There is no “ in font cmr12!
 Missing character: There is no … in font cmr12!
 Missing character: There is no ” in font cmr12!
 Missing character: There is no ’ in font cmr12!
- [24]
+ [24] [25]
 Missing character: There is no ’ in font cmr12!
 Missing character: There is no ’ in font cmr12!
+ [26]
 Missing character: There is no — in font cmr12!
-) [25] [26] [27]
+) [27]
 (C:\Users\Nathan\Desktop\Proposal\discussion.tex
 Chapter 4.
 Missing character: There is no ’ in font cmr12!
@@ -388,12 +390,12 @@ Chapter 5.
 ] (C:\Users\Nathan\Desktop\Proposal\append-a.tex
 Appendix A.
 Missing character: There is no ’ in font cmr12!
-LaTeX Font Info:    Try loading font information for OMS+cmr on input line 6.
+LaTeX Font Info:    Try loading font information for OMS+cmr on input line 7.
 ("C:\Program Files (x86)\MiKTeX 2.9\tex\latex\base\omscmr.fd"
 File: omscmr.fd 1999/05/25 v2.5h Standard LaTeX font definitions
 )
 LaTeX Font Info:    Font shape `OMS/cmr/m/n' in size <12> not available
-(Font)              Font shape `OMS/cmsy/m/n' tried instead on input line 6.
+(Font)              Font shape `OMS/cmsy/m/n' tried instead on input line 7.
  [32
 
 
@@ -402,7 +404,11 @@ LaTeX Font Info:    Font shape `OMS/cmr/m/n' in size <12> not available
 Missing character: There is no ’ in font cmr12!
 Missing character: There is no ’ in font cmr12!
 Missing character: There is no ’ in font cmr12!
-) [33]
+ [33])
+[34] (C:\Users\Nathan\Desktop\Proposal\append-b.tex) [35
+
+
+]
 (C:\Users\Nathan\Desktop\Proposal\thesis_main.bbl
 Missing character: There is no â in font cmr12!
 Missing character: There is no € in font cmr12!
@@ -416,10 +422,10 @@ Missing character: There is no ˜ in font cmr12!
 Missing character: There is no â in font cmr12!
 Missing character: There is no € in font cmr12!
 Missing character: There is no ™ in font cmr12!
- [34
+ [36
 
 
-]) [35]
+]) [37]
 (C:\Users\Nathan\Desktop\Proposal\thesis_main.aux
 (C:\Users\Nathan\Desktop\Proposal\abstract.aux)
 (C:\Users\Nathan\Desktop\Proposal\chapter1.aux)
@@ -427,12 +433,13 @@ Missing character: There is no ™ in font cmr12!
 (C:\Users\Nathan\Desktop\Proposal\application.aux)
 (C:\Users\Nathan\Desktop\Proposal\discussion.aux)
 (C:\Users\Nathan\Desktop\Proposal\conclusion.aux)
-(C:\Users\Nathan\Desktop\Proposal\append-a.aux)) ) 
+(C:\Users\Nathan\Desktop\Proposal\append-a.aux)
+(C:\Users\Nathan\Desktop\Proposal\append-b.aux)) ) 
 Here is how much of TeX's memory you used:
- 2044 strings out of 493921
- 26738 string characters out of 3144873
- 82181 words of memory out of 3000000
- 5250 multiletter control sequences out of 15000+200000
+ 2053 strings out of 493921
+ 27038 string characters out of 3144873
+ 82609 words of memory out of 3000000
+ 5252 multiletter control sequences out of 15000+200000
  11422 words of font info for 44 fonts, out of 3000000 for 9000
  841 hyphenation exceptions out of 8191
  32i,6n,26p,2239b,202s stack positions out of 5000i,500n,10000p,200000b,50000s
@@ -450,9 +457,9 @@ blic/amsfonts/cm/cmr8.pfb><C:/Program Files (x86)/MiKTeX 2.9/fonts/type1/public
 msfonts/cm/cmsy6.pfb><C:/Program Files (x86)/MiKTeX 2.9/fonts/type1/public/amsf
 onts/cm/cmsy8.pfb><C:/Program Files (x86)/MiKTeX 2.9/fonts/type1/public/amsfont
 s/cm/cmti12.pfb>
-Output written on thesis_main.pdf (40 pages, 233195 bytes).
+Output written on thesis_main.pdf (43 pages, 235987 bytes).
 PDF statistics:
- 184 PDF objects out of 1000 (max. 8388607)
+ 194 PDF objects out of 1000 (max. 8388607)
  0 named destinations out of 1000 (max. 500000)
  1 words of extra memory for PDF output out of 10000 (max. 10000000)
 
