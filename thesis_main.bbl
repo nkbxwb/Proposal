@@ -71,6 +71,11 @@ R.~Mitra and J.~P. Reiter, ``{A comparison of two methods of estimating
   propensity scores after multiple imputation},'' {\em Statistical Methods in
   Medical Research}, pp.~1--17, 2012.
 
+\bibitem{Kropko2014}
+J.~Kropko, B.~Goodrich, A.~Gelman, and J.~Hill, ``{Multiple Imputation for
+  Continuous and Categorical Data: Comparing Joint Multivariate Normal and
+  Conditional Approaches},'' {\em Political Analysis}, pp.~497--519, 2014.
+
 \bibitem{Long2012}
 Q.~Long, C.-H. Hsu, and Y.~Li, ``{Doubly robust nonparametric multiple
   imputation for ignorable missing data},'' {\em Statistica Sinica}, vol.~22,
