@@ -38,7 +38,12 @@ Before we go on, it should be noted that often in the literature (and in this pa
 The Kaplan-Meier estimator (sometimes called the product limit estimator) is a non-parametric estimate of the true survival function (the probability that you survive after time t).  It is defined as 
 $$\hat{S}(t)=\prod_{t_i<t}\frac{n_i-d_i}{n_i}$$
 Where $n_i$ is the number of “survivors” minus the number of censored cases just prior to time $t_i$, and $d_i$ is the number of deaths or events that you observe at time $t_i$. The Kaplan-Meier estimator is very commonly used as a measure to see how different treatments affect survival time
-%start here
+The log-rank test is a popular nonparametric test that researchers often use to see if two or more survival curves come from the same distribution. This is a useful tool to have, because visualizing curves alone does not give us this information (we could have two curves that look radically different due to sampling error, yet still come from the same distribution). Knowing about if the survival curves come from the same or different distribution is useful because it allows us to make statements like “drug a is associated with longer survival time than drug b”. It is given by
+$$\frac{\sum_{j=1}^{J}(O_{1j}-E_{1j})}{\sqrt{\sum_{j=1}^{j}V_{j}}}\sim N(0,1)$$
+!!! Work on this more, put the definitions!!
+This test as it is places equal weight to all of the deaths we observe, although there are other formulations of this test that give more weight to early or late deaths. This is useful for example if we have a drug that is supposed to improve your life expecentacy, we wouldn’t care about early deaths , only about later times. Putting more weight on the later deaths would help to answer this question.
+It can be proven that the log-rank test is equivalent to the score test on a cox model of the same data with no ties \cite{Klein1984}. We will speak about the Cox model next.
+
 Proportional hazards regression, often called Cox regression is a modelling tool that allows us to analyze the hazard ratio of a covariate, assuming that each covariate acts to multiply the hazard ratio. The hazard is a survival tool that tells us the rate of events at time t, conditional on survivorship until time t. Mathematically, it is given by
 $$h(x)=\lim_{\Delta x\rightarrow0}\frac{P[x\leq X<x+\Delta x|X\geq x]}{\Delta x}$$
   Cox regression is a maximum likelihood method estimator, given by 1
