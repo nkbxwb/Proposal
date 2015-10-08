@@ -6,18 +6,18 @@
 \contentsline {section}{\numberline {1.2}Imputation}{2}
 \contentsline {section}{\numberline {1.3}Survival}{5}
 \contentsline {section}{\numberline {1.4}Propensity Score Analysis}{7}
-\contentsline {chapter}{\numberline {2}Methods}{9}
-\contentsline {section}{\numberline {2.1}Multiple Imputation}{9}
-\contentsline {section}{\numberline {2.2}Survival analysis}{15}
-\contentsline {section}{\numberline {2.3}Propensity Score Analysis}{19}
-\contentsline {chapter}{\numberline {3}Application}{22}
-\contentsline {section}{\numberline {3.1}Data Explanation}{22}
-\contentsline {section}{\numberline {3.2}Imputation}{23}
-\contentsline {section}{\numberline {3.3}Survival Analysis}{25}
-\contentsline {section}{\numberline {3.4}Causal analysis}{28}
-\contentsline {chapter}{\numberline {4}Discussion}{29}
-\contentsline {chapter}{\numberline {5}Conclusion}{32}
-\contentsline {chapter}{\numberline {A}Appendix}{33}
-\contentsline {section}{\numberline {A.1}Missing data mechanisms}{33}
-\contentsline {section}{\numberline {A.2}HER2 and Cancer Drugs}{36}
-\contentsline {chapter}{\numberline {\hfil }Bibliography}{37}
+\contentsline {chapter}{\numberline {2}Methods}{10}
+\contentsline {section}{\numberline {2.1}Multiple Imputation}{10}
+\contentsline {section}{\numberline {2.2}Survival analysis}{16}
+\contentsline {section}{\numberline {2.3}Propensity Score Analysis}{20}
+\contentsline {chapter}{\numberline {3}Application}{23}
+\contentsline {section}{\numberline {3.1}Data Explanation}{23}
+\contentsline {section}{\numberline {3.2}Imputation}{24}
+\contentsline {section}{\numberline {3.3}Survival Analysis}{26}
+\contentsline {section}{\numberline {3.4}Causal analysis}{29}
+\contentsline {chapter}{\numberline {4}Discussion}{30}
+\contentsline {chapter}{\numberline {5}Conclusion}{33}
+\contentsline {chapter}{\numberline {A}Appendix}{34}
+\contentsline {section}{\numberline {A.1}Missing data mechanisms}{34}
+\contentsline {section}{\numberline {A.2}HER2 and Cancer Drugs}{37}
+\contentsline {chapter}{\numberline {\hfil }Bibliography}{38}
