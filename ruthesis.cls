@@ -29,7 +29,7 @@
 
 \LoadClass[12pt]{report}
 \RequirePackage{ifthen}
-\RequirePackage[dvips]{graphicx}
+\RequirePackage{graphicx}
 
 \DeclareOption{draft}{\typeout{DRAFT MODE}}
 \DeclareOption{12pt}{\typeout{12pt mode selected but not implemented}}
