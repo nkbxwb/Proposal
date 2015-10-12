@@ -13,6 +13,10 @@ J.~Klein and M.~Moeschberger, {\em {Techniques for Censored and Truncated
   Data}}, vol.~19.
 \newblock 1984.
 
+\bibitem{King2015}
+G.~King and R.~Nielsen, ``{Why Propensity Scores Should Not Be Used for
+  Matching},'' {\em Working paper}, 2015.
+
 \bibitem{Angrist2008}
 J.~Angrist and J.~Pischke, {\em {Mostly harmless econometrics: An empiricist's
   companion}}.
@@ -36,9 +40,9 @@ S.~{Van Buuren}, J.~P. Brand, C.~G. Groothuis-Oudshoorn, and D.~Rubin, ``{Fully
   2006.
 
 \bibitem{VanBuuren2011}
-S.~{Van Buuren} and K.~Groothuis-Oudshoorn, ``{Multivariate Imputation by
-  Chained Equations},'' {\em Journal Of Statistical Software}, vol.~45, no.~3,
-  pp.~1--67, 2011.
+S.~{Van Buuren} and K.~Groothuis-Oudshoorn, ``{mice: Multivariate Imputation by
+  Chained Equations in R},'' {\em Journal Of Statistical Software}, vol.~45,
+  no.~3, pp.~1--67, 2011.
 
 \bibitem{Su2011}
 Y.-S. Su, A.~Gelman, J.~Hill, and M.~Yajima, ``{Multiple Imputation with
