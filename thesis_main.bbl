@@ -66,6 +66,10 @@ Y.-S. Su, A.~Gelman, J.~Hill, and M.~Yajima, ``{Multiple Imputation with
   Diagnostics (mi) in R: Opening Windows into the Black Box},'' {\em Journal of
   Statistical Software}, vol.~45, no.~2, pp.~1--31, 2011.
 
+\bibitem{Enders2010}
+C.~K. Enders, {\em {Applied Missing Data Analysis}}.
+\newblock 2010.
+
 \bibitem{Zhao2014}
 Y.~Zhao, A.~H. Herring, H.~Zhou, M.~W. Ali, and G.~G. Koch, ``{ANALYSES OF
   TIME-TO-EVENT DATA WITH POSSIBLY},'' vol.~24, no.~2, pp.~229--253, 2014.

@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.1415926-2.5-1.40.14 (MiKTeX 2.9) (preloaded format=pdflatex 2015.8.23)  14 OCT 2015 10:37
+This is pdfTeX, Version 3.1415926-2.5-1.40.14 (MiKTeX 2.9) (preloaded format=pdflatex 2015.8.23)  14 OCT 2015 11:56
 entering extended mode
 **thesis_main.tex
 (C:\Users\Nathan\Desktop\Proposal\thesis_main.tex
@@ -390,9 +390,33 @@ Missing character: There is no ’ in font cmr12!
 
 ]
 Missing character: There is no ’ in font cmr12!
- [13]
+ <jm_algo.jpg, id=72, 362.85562pt x 364.36125pt>
+File: jm_algo.jpg Graphic file (type jpg)
+ <use jm_algo.jpg>
+Package pdftex.def Info: jm_algo.jpg used on input line 14.
+(pdftex.def)             Requested size: 346.89731pt x 348.34285pt.
+Missing character: There is no ’ in font cmr10!
+Missing character: There is no “ in font cmr10!
+Missing character: There is no ” in font cmr10!
+
+
+LaTeX Warning: `!h' float specifier changed to `!ht'.
+
+[13]
+Missing character: There is no “ in font cmr12!
+Missing character: There is no ” in font cmr12!
+ [14 <C:/Users/Nathan/Desktop/Proposal/jm_algo.jpg>]
+<fcs_algo.jpg, id=80, 365.11406pt x 261.97874pt>
+File: fcs_algo.jpg Graphic file (type jpg)
+ <use fcs_algo.jpg>
+Package pdftex.def Info: fcs_algo.jpg used on input line 31.
+(pdftex.def)             Requested size: 346.89731pt x 248.91837pt.
+Missing character: There is no ’ in font cmr10!
+Missing character: There is no “ in font cmr10!
+Missing character: There is no ” in font cmr10!
+ [15 <C:/Users/Nathan/Desktop/Proposal/fcs_algo.jpg>]
 Missing character: There is no ’ in font cmr12!
- [14] [15]
+ [16] [17]
 Missing character: There is no “ in font cmr12!
 Missing character: There is no ” in font cmr12!
 Missing character: There is no ’ in font cmr12!
@@ -400,61 +424,60 @@ Missing character: There is no ’ in font cmr12!
 Missing character: There is no ’ in font cmr12!
 Missing character: There is no “ in font cmr12!
 Missing character: There is no ” in font cmr12!
- [16]
-Missing character: There is no “ in font cmr12!
-Missing character: There is no ” in font cmr12!
-Missing character: There is no ’ in font cmr12!
-Missing character: There is no ’ in font cmr12!
- [17]
-Missing character: There is no ’ in font cmr12!
 Missing character: There is no “ in font cmr12!
 Missing character: There is no ” in font cmr12!
  [18]
+Missing character: There is no ’ in font cmr12!
+Missing character: There is no ’ in font cmr12!
+Missing character: There is no ’ in font cmr12!
+ [19]
+Missing character: There is no “ in font cmr12!
+Missing character: There is no ” in font cmr12!
+ [20]
 Missing character: There is no “ in font cmr12!
 Missing character: There is no ” in font cmr12!
 Missing character: There is no ’ in font cmr12!
- [19]
-Missing character: There is no ’ in font cmr12!
-Missing character: There is no ’ in font cmr12!
-Missing character: There is no ’ in font cmr12!
- [20]
 Missing character: There is no ’ in font cmr12!
  [21]
 Missing character: There is no ’ in font cmr12!
- [22]
+Missing character: There is no ’ in font cmr12!
+
+[22]
+Missing character: There is no ’ in font cmr12!
 Missing character: There is no ’ in font cmr12!
  [23]
 Missing character: There is no ’ in font cmr12!
+ [24] [25]
 Missing character: There is no ’ in font cmr12!
-) [24]
-(C:\Users\Nathan\Desktop\Proposal\application.tex
+Missing character: There is no ’ in font cmr12!
+) [26] (C:\Users\Nathan\Desktop\Proposal\application.tex
 Chapter 3.
 Missing character: There is no ’ in font cmr12!
-[25
+[27
 
 
 
 ]
 Missing character: There is no ’ in font cmr12!
- [26]
+ [28]
 Missing character: There is no “ in font cmr12!
 Missing character: There is no ” in font cmr12!
 Missing character: There is no “ in font cmr12!
 Missing character: There is no ” in font cmr12!
 Missing character: There is no ’ in font cmr12!
- [27]
+ [29]
 Missing character: There is no ’ in font cmr12!
 Missing character: There is no ’ in font cmr12!
 Missing character: There is no “ in font cmr12!
 Missing character: There is no … in font cmr12!
 Missing character: There is no ” in font cmr12!
 Missing character: There is no ’ in font cmr12!
- [28] [29]
+ [30] [31]
 Missing character: There is no ’ in font cmr12!
 Missing character: There is no ’ in font cmr12!
- [30]
+ [32]
 Missing character: There is no — in font cmr12!
-) [31]
+) [33]
 (C:\Users\Nathan\Desktop\Proposal\discussion.tex
 Chapter 4.
 Missing character: There is no ’ in font cmr12!
@@ -462,15 +485,15 @@ Missing character: There is no ’ in font cmr12!
 Missing character: There is no “ in font cmr12!
 Missing character: There is no ” in font cmr12!
 Missing character: There is no ’ in font cmr12!
-[32
+[34
 
 
 
 ]
 Missing character: There is no “ in font cmr12!
- [33]) [34] (C:\Users\Nathan\Desktop\Proposal\conclusion.tex
+ [35]) [36] (C:\Users\Nathan\Desktop\Proposal\conclusion.tex
 Chapter 5.
-) [35
+) [37
 
 
 
@@ -483,7 +506,7 @@ File: omscmr.fd 1999/05/25 v2.5h Standard LaTeX font definitions
 )
 LaTeX Font Info:    Font shape `OMS/cmr/m/n' in size <12> not available
 (Font)              Font shape `OMS/cmsy/m/n' tried instead on input line 7.
- [36
+ [38
 
 
 
@@ -491,12 +514,12 @@ LaTeX Font Info:    Font shape `OMS/cmr/m/n' in size <12> not available
 Missing character: There is no ’ in font cmr12!
 Missing character: There is no ’ in font cmr12!
 Missing character: There is no ’ in font cmr12!
- [37])
-[38] (C:\Users\Nathan\Desktop\Proposal\append-b.tex) [39
+ [39])
+[40] (C:\Users\Nathan\Desktop\Proposal\append-b.tex) [41
 
 
 ]
-(C:\Users\Nathan\Desktop\Proposal\thesis_main.bbl [40
+(C:\Users\Nathan\Desktop\Proposal\thesis_main.bbl [42
 
 
 ]
@@ -512,7 +535,7 @@ Missing character: There is no ˜ in font cmr12!
 Missing character: There is no â in font cmr12!
 Missing character: There is no € in font cmr12!
 Missing character: There is no ™ in font cmr12!
- [41]) [42]
+ [43]) [44]
 (C:\Users\Nathan\Desktop\Proposal\thesis_main.aux
 (C:\Users\Nathan\Desktop\Proposal\abstract.aux)
 (C:\Users\Nathan\Desktop\Proposal\chapter1.aux)
@@ -523,13 +546,13 @@ Missing character: There is no ™ in font cmr12!
 (C:\Users\Nathan\Desktop\Proposal\append-a.aux)
 (C:\Users\Nathan\Desktop\Proposal\append-b.aux)) ) 
 Here is how much of TeX's memory you used:
- 3172 strings out of 493921
- 41457 string characters out of 3144873
- 102257 words of memory out of 3000000
- 6345 multiletter control sequences out of 15000+200000
+ 3184 strings out of 493921
+ 41626 string characters out of 3144873
+ 104261 words of memory out of 3000000
+ 6354 multiletter control sequences out of 15000+200000
  11722 words of font info for 45 fonts, out of 3000000 for 9000
  841 hyphenation exceptions out of 8191
- 34i,7n,35p,2239b,239s stack positions out of 5000i,500n,10000p,200000b,50000s
+ 34i,7n,35p,2239b,242s stack positions out of 5000i,500n,10000p,200000b,50000s
 <C:/Program Files (x86)/MiKTe
 X 2.9/fonts/type1/public/amsfonts/cm/cmbx12.pfb><C:/Program Files (x86)/MiKTeX 
 2.9/fonts/type1/public/amsfonts/cm/cmcsc10.pfb><C:/Program Files (x86)/MiKTeX 2
@@ -545,9 +568,9 @@ sfonts/cm/cmsy10.pfb><C:/Program Files (x86)/MiKTeX 2.9/fonts/type1/public/amsf
 onts/cm/cmsy6.pfb><C:/Program Files (x86)/MiKTeX 2.9/fonts/type1/public/amsfont
 s/cm/cmsy8.pfb><C:/Program Files (x86)/MiKTeX 2.9/fonts/type1/public/amsfonts/c
 m/cmti12.pfb>
-Output written on thesis_main.pdf (48 pages, 299572 bytes).
+Output written on thesis_main.pdf (50 pages, 388310 bytes).
 PDF statistics:
- 214 PDF objects out of 1000 (max. 8388607)
+ 223 PDF objects out of 1000 (max. 8388607)
  0 named destinations out of 1000 (max. 500000)
- 6 words of extra memory for PDF output out of 10000 (max. 10000000)
+ 16 words of extra memory for PDF output out of 10000 (max. 10000000)
 

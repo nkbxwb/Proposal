@@ -8,16 +8,16 @@
 \contentsline {section}{\numberline {1.4}Causal Analysis}{8}
 \contentsline {chapter}{\numberline {2}Methods}{12}
 \contentsline {section}{\numberline {2.1}Multiple Imputation}{12}
-\contentsline {section}{\numberline {2.2}Survival analysis}{18}
-\contentsline {section}{\numberline {2.3}Propensity Score Analysis}{22}
-\contentsline {chapter}{\numberline {3}Application}{25}
-\contentsline {section}{\numberline {3.1}Data Explanation}{25}
-\contentsline {section}{\numberline {3.2}Imputation}{26}
-\contentsline {section}{\numberline {3.3}Survival Analysis}{28}
-\contentsline {section}{\numberline {3.4}Causal analysis}{31}
-\contentsline {chapter}{\numberline {4}Discussion}{32}
-\contentsline {chapter}{\numberline {5}Conclusion}{35}
-\contentsline {chapter}{\numberline {A}Appendix}{36}
-\contentsline {section}{\numberline {A.1}Missing data mechanisms}{36}
-\contentsline {section}{\numberline {A.2}HER2 and Cancer Drugs}{39}
-\contentsline {chapter}{\numberline {\hfil }Bibliography}{40}
+\contentsline {section}{\numberline {2.2}Survival analysis}{19}
+\contentsline {section}{\numberline {2.3}Propensity Score Analysis}{24}
+\contentsline {chapter}{\numberline {3}Application}{27}
+\contentsline {section}{\numberline {3.1}Data Explanation}{27}
+\contentsline {section}{\numberline {3.2}Imputation}{28}
+\contentsline {section}{\numberline {3.3}Survival Analysis}{30}
+\contentsline {section}{\numberline {3.4}Causal analysis}{33}
+\contentsline {chapter}{\numberline {4}Discussion}{34}
+\contentsline {chapter}{\numberline {5}Conclusion}{37}
+\contentsline {chapter}{\numberline {A}Appendix}{38}
+\contentsline {section}{\numberline {A.1}Missing data mechanisms}{38}
+\contentsline {section}{\numberline {A.2}HER2 and Cancer Drugs}{41}
+\contentsline {chapter}{\numberline {\hfil }Bibliography}{42}
