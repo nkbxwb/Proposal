@@ -13,6 +13,11 @@ J.~Klein and M.~Moeschberger, {\em {Techniques for Censored and Truncated
   Data}}, vol.~19.
 \newblock 1984.
 
+\bibitem{Rosenbaum1983}
+P.~Rosenbaum and D.~Rubin, ``{The Central Role of the Propensity Score in
+  Observational Studies for Causal Effects},'' vol.~70, no.~1, pp.~41--55,
+  1983.
+
 \bibitem{King2015}
 G.~King and R.~Nielsen, ``{Why Propensity Scores Should Not Be Used for
   Matching},'' {\em Working paper}, 2015.
@@ -21,6 +26,18 @@ G.~King and R.~Nielsen, ``{Why Propensity Scores Should Not Be Used for
 J.~Angrist and J.~Pischke, {\em {Mostly harmless econometrics: An empiricist's
   companion}}.
 \newblock No.~March, 2008.
+
+\bibitem{Austin2014}
+P.~C. Austin, ``{The use of propensity score methods with survival or
+  time-to-event outcomes: reporting measures of effect similar to those used in
+  randomized experiments},'' {\em Statistics in Medicine}, vol.~33, no.~7,
+  pp.~1242--1258, 2014.
+
+\bibitem{Harder2011}
+V.~S. Harder, E.~A. Stuart, and {James C. Anthony}, ``{Propensity score
+  techniques and the assessment of measured covariate balance to test causal
+  associations in psychological research},'' {\em Psychological Methods},
+  vol.~15, no.~3, pp.~234--249, 2011.
 
 \bibitem{Honaker2015}
 J.~Honaker, G.~King, and M.~Blackwell, ``{AMELIA II : A Program for Missing
@@ -58,17 +75,6 @@ A.~Marshall, D.~G. Altman, R.~L. Holder, and P.~Royston, ``{Combining estimates
   of interest in prognostic modelling studies after multiple imputation:
   current practice and guidelines.},'' {\em BMC medical research methodology},
   vol.~9, p.~57, 2009.
-
-\bibitem{Rosenbaum1983}
-P.~Rosenbaum and D.~Rubin, ``{The Central Role of the Propensity Score in
-  Observational Studies for Causal Effects},'' vol.~70, no.~1, pp.~41--55,
-  1983.
-
-\bibitem{Austin2014}
-P.~C. Austin, ``{The use of propensity score methods with survival or
-  time-to-event outcomes: reporting measures of effect similar to those used in
-  randomized experiments},'' {\em Statistics in Medicine}, vol.~33, no.~7,
-  pp.~1242--1258, 2014.
 
 \bibitem{Mitra2012}
 R.~Mitra and J.~P. Reiter, ``{A comparison of two methods of estimating
