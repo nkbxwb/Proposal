@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.1415926-2.5-1.40.14 (MiKTeX 2.9) (preloaded format=pdflatex 2015.8.23)  15 OCT 2015 23:48
+This is pdfTeX, Version 3.1415926-2.5-1.40.14 (MiKTeX 2.9) (preloaded format=pdflatex 2015.8.23)  16 OCT 2015 12:01
 entering extended mode
 **thesis_main.tex
 (C:\Users\Nathan\Desktop\Proposal\thesis_main.tex
@@ -459,38 +459,39 @@ Missing character: There is no ’ in font cmr12!
 Missing character: There is no ’ in font cmr12!
  [25]
 Missing character: There is no ’ in font cmr12!
+Missing character: There is no ’ in font cmr12!
  [26]
 Missing character: There is no ’ in font cmr12!
 Missing character: There is no ’ in font cmr12!
-) [27]
+ [27]) [28]
 (C:\Users\Nathan\Desktop\Proposal\application.tex
 Chapter 3.
 Missing character: There is no ’ in font cmr12!
-[28
+[29
 
 
 
 ]
 Missing character: There is no ’ in font cmr12!
- [29]
+ [30]
 Missing character: There is no “ in font cmr12!
 Missing character: There is no ” in font cmr12!
 Missing character: There is no “ in font cmr12!
 Missing character: There is no ” in font cmr12!
 Missing character: There is no ’ in font cmr12!
- [30]
+ [31]
 Missing character: There is no ’ in font cmr12!
 Missing character: There is no ’ in font cmr12!
 Missing character: There is no “ in font cmr12!
 Missing character: There is no … in font cmr12!
 Missing character: There is no ” in font cmr12!
 Missing character: There is no ’ in font cmr12!
- [31] [32]
+ [32] [33]
 Missing character: There is no ’ in font cmr12!
 Missing character: There is no ’ in font cmr12!
- [33]
+ [34]
 Missing character: There is no — in font cmr12!
-) [34]
+) [35]
 (C:\Users\Nathan\Desktop\Proposal\discussion.tex
 Chapter 4.
 Missing character: There is no ’ in font cmr12!
@@ -498,15 +499,15 @@ Missing character: There is no ’ in font cmr12!
 Missing character: There is no “ in font cmr12!
 Missing character: There is no ” in font cmr12!
 Missing character: There is no ’ in font cmr12!
-[35
+[36
 
 
 
 ]
 Missing character: There is no “ in font cmr12!
- [36]) [37] (C:\Users\Nathan\Desktop\Proposal\conclusion.tex
+ [37]) [38] (C:\Users\Nathan\Desktop\Proposal\conclusion.tex
 Chapter 5.
-) [38
+) [39
 
 
 
@@ -519,7 +520,7 @@ File: omscmr.fd 1999/05/25 v2.5h Standard LaTeX font definitions
 )
 LaTeX Font Info:    Font shape `OMS/cmr/m/n' in size <12> not available
 (Font)              Font shape `OMS/cmsy/m/n' tried instead on input line 7.
- [39
+ [40
 
 
 
@@ -527,12 +528,12 @@ LaTeX Font Info:    Font shape `OMS/cmr/m/n' in size <12> not available
 Missing character: There is no ’ in font cmr12!
 Missing character: There is no ’ in font cmr12!
 Missing character: There is no ’ in font cmr12!
- [40])
-[41] (C:\Users\Nathan\Desktop\Proposal\append-b.tex) [42
+ [41])
+[42] (C:\Users\Nathan\Desktop\Proposal\append-b.tex) [43
 
 
 ]
-(C:\Users\Nathan\Desktop\Proposal\thesis_main.bbl [43
+(C:\Users\Nathan\Desktop\Proposal\thesis_main.bbl [44
 
 
 ]
@@ -548,7 +549,7 @@ Missing character: There is no ˜ in font cmr12!
 Missing character: There is no â in font cmr12!
 Missing character: There is no € in font cmr12!
 Missing character: There is no ™ in font cmr12!
- [44]) [45]
+ [45]) [46]
 (C:\Users\Nathan\Desktop\Proposal\thesis_main.aux
 (C:\Users\Nathan\Desktop\Proposal\abstract.aux)
 (C:\Users\Nathan\Desktop\Proposal\chapter1.aux)
@@ -561,7 +562,7 @@ Missing character: There is no ™ in font cmr12!
 Here is how much of TeX's memory you used:
  3186 strings out of 493921
  41655 string characters out of 3144873
- 102269 words of memory out of 3000000
+ 104269 words of memory out of 3000000
  6356 multiletter control sequences out of 15000+200000
  11722 words of font info for 45 fonts, out of 3000000 for 9000
  841 hyphenation exceptions out of 8191
@@ -581,9 +582,9 @@ sfonts/cm/cmsy10.pfb><C:/Program Files (x86)/MiKTeX 2.9/fonts/type1/public/amsf
 onts/cm/cmsy6.pfb><C:/Program Files (x86)/MiKTeX 2.9/fonts/type1/public/amsfont
 s/cm/cmsy8.pfb><C:/Program Files (x86)/MiKTeX 2.9/fonts/type1/public/amsfonts/c
 m/cmti12.pfb>
-Output written on thesis_main.pdf (51 pages, 391671 bytes).
+Output written on thesis_main.pdf (52 pages, 392721 bytes).
 PDF statistics:
- 226 PDF objects out of 1000 (max. 8388607)
+ 229 PDF objects out of 1000 (max. 8388607)
  0 named destinations out of 1000 (max. 500000)
  16 words of extra memory for PDF output out of 10000 (max. 10000000)
 
