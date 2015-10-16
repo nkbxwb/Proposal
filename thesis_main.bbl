@@ -93,6 +93,11 @@ R.~Mitra and J.~P. Reiter, ``{A comparison of two methods of estimating
   propensity scores after multiple imputation},'' {\em Statistical Methods in
   Medical Research}, pp.~1--17, 2012.
 
+\bibitem{Li2013}
+L.~Li and T.~Greene, ``{A Weighting Analogue to Pair Matching in Propensity
+  Score Analysis},'' {\em The International Journal of Biostatistics}, vol.~9,
+  no.~2, pp.~215--234, 2013.
+
 \bibitem{Kropko2014}
 J.~Kropko, B.~Goodrich, A.~Gelman, and J.~Hill, ``{Multiple Imputation for
   Continuous and Categorical Data: Comparing Joint Multivariate Normal and
