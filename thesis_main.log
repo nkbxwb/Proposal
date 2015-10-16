@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.1415926-2.5-1.40.14 (MiKTeX 2.9) (preloaded format=pdflatex 2015.8.23)  14 OCT 2015 16:18
+This is pdfTeX, Version 3.1415926-2.5-1.40.14 (MiKTeX 2.9) (preloaded format=pdflatex 2015.8.23)  15 OCT 2015 21:52
 entering extended mode
 **thesis_main.tex
 (C:\Users\Nathan\Desktop\Proposal\thesis_main.tex
@@ -442,11 +442,12 @@ Missing character: There is no ” in font cmr12!
 Missing character: There is no “ in font cmr12!
 Missing character: There is no ” in font cmr12!
 Missing character: There is no ’ in font cmr12!
- [20]
+ [20] [21]
+Missing character: There is no ’ in font cmr12!
 Missing character: There is no “ in font cmr12!
 Missing character: There is no ” in font cmr12!
 Missing character: There is no ’ in font cmr12!
- [21]
+Missing character: There is no ’ in font cmr12!
 Missing character: There is no ’ in font cmr12!
 
 [22]
@@ -454,12 +455,12 @@ Missing character: There is no ’ in font cmr12!
 Missing character: There is no ’ in font cmr12!
  [23]
 Missing character: There is no ’ in font cmr12!
-Missing character: There is no ’ in font cmr12!
  [24]
 Missing character: There is no ’ in font cmr12!
  [25]
 Missing character: There is no ’ in font cmr12!
  [26]
+Missing character: There is no ’ in font cmr12!
 Missing character: There is no ’ in font cmr12!
 ) [27]
 (C:\Users\Nathan\Desktop\Proposal\application.tex
@@ -560,7 +561,7 @@ Missing character: There is no ™ in font cmr12!
 Here is how much of TeX's memory you used:
  3185 strings out of 493921
  41639 string characters out of 3144873
- 104265 words of memory out of 3000000
+ 102265 words of memory out of 3000000
  6355 multiletter control sequences out of 15000+200000
  11722 words of font info for 45 fonts, out of 3000000 for 9000
  841 hyphenation exceptions out of 8191
@@ -580,7 +581,7 @@ sfonts/cm/cmsy10.pfb><C:/Program Files (x86)/MiKTeX 2.9/fonts/type1/public/amsf
 onts/cm/cmsy6.pfb><C:/Program Files (x86)/MiKTeX 2.9/fonts/type1/public/amsfont
 s/cm/cmsy8.pfb><C:/Program Files (x86)/MiKTeX 2.9/fonts/type1/public/amsfonts/c
 m/cmti12.pfb>
-Output written on thesis_main.pdf (51 pages, 390960 bytes).
+Output written on thesis_main.pdf (51 pages, 391675 bytes).
 PDF statistics:
  226 PDF objects out of 1000 (max. 8388607)
  0 named destinations out of 1000 (max. 500000)
