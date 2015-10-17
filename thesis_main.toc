@@ -13,10 +13,10 @@
 \contentsline {chapter}{\numberline {3}Application}{28}
 \contentsline {section}{\numberline {3.1}Data Explanation}{28}
 \contentsline {section}{\numberline {3.2}Imputation}{29}
-\contentsline {section}{\numberline {3.3}Survival Analysis}{31}
+\contentsline {section}{\numberline {3.3}Survival Analysis}{32}
 \contentsline {section}{\numberline {3.4}Causal analysis}{34}
-\contentsline {chapter}{\numberline {4}Discussion}{35}
-\contentsline {chapter}{\numberline {5}Conclusion}{38}
-\contentsline {chapter}{\numberline {A}Missing data mechanisms}{39}
-\contentsline {chapter}{\numberline {B}HER2 and Cancer Drugs}{41}
-\contentsline {chapter}{\numberline {\hfil }Bibliography}{42}
+\contentsline {chapter}{\numberline {4}Discussion}{36}
+\contentsline {chapter}{\numberline {5}Conclusion}{39}
+\contentsline {chapter}{\numberline {A}Missing data mechanisms}{40}
+\contentsline {chapter}{\numberline {B}HER2 and Cancer Drugs}{42}
+\contentsline {chapter}{\numberline {\hfil }Bibliography}{43}
