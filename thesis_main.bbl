@@ -98,6 +98,16 @@ L.~Li and T.~Greene, ``{A Weighting Analogue to Pair Matching in Propensity
   Score Analysis},'' {\em The International Journal of Biostatistics}, vol.~9,
   no.~2, pp.~215--234, 2013.
 
+\bibitem{Reiter2008}
+J.~P. Reiter, ``{Selecting the number of imputed datasets when using multiple
+  imputation for missing data and disclosure limitation},'' {\em Statistics
+  {\&} Probability Letters}, vol.~78, no.~1, pp.~15--20, 2008.
+
+\bibitem{White2011a}
+I.~White, P.~Royston, and A.~M. Wood, ``{Multiple imputation using chained
+  equations: Issues and guidance for practice},'' {\em Statistics in Medicine},
+  vol.~30, no.~4, pp.~377--399, 2011.
+
 \bibitem{Kropko2014}
 J.~Kropko, B.~Goodrich, A.~Gelman, and J.~Hill, ``{Multiple Imputation for
   Continuous and Categorical Data: Comparing Joint Multivariate Normal and
