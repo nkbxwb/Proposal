@@ -15,8 +15,8 @@
 \contentsline {section}{\numberline {3.2}Imputation}{29}
 \contentsline {section}{\numberline {3.3}Survival Analysis}{32}
 \contentsline {section}{\numberline {3.4}Causal analysis}{35}
-\contentsline {chapter}{\numberline {4}Discussion}{36}
-\contentsline {chapter}{\numberline {5}Conclusion}{39}
-\contentsline {chapter}{\numberline {A}Missing data mechanisms}{40}
-\contentsline {chapter}{\numberline {B}HER2 and Cancer Drugs}{42}
-\contentsline {chapter}{\numberline {\hfil }Bibliography}{43}
+\contentsline {chapter}{\numberline {4}Discussion}{37}
+\contentsline {chapter}{\numberline {5}Conclusion}{40}
+\contentsline {chapter}{\numberline {A}Missing data mechanisms}{41}
+\contentsline {chapter}{\numberline {B}HER2 and Cancer Drugs}{43}
+\contentsline {chapter}{\numberline {\hfil }Bibliography}{44}
