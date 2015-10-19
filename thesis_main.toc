@@ -17,6 +17,7 @@
 \contentsline {section}{\numberline {3.4}Causal analysis}{35}
 \contentsline {chapter}{\numberline {4}Discussion}{37}
 \contentsline {chapter}{\numberline {5}Conclusion}{41}
-\contentsline {chapter}{\numberline {A}Missing data mechanisms}{42}
-\contentsline {chapter}{\numberline {B}HER2 and Cancer Drugs}{44}
-\contentsline {chapter}{\numberline {\hfil }Bibliography}{45}
+\contentsline {chapter}{\numberline {A}Appendix}{42}
+\contentsline {section}{\numberline {A.1}Missing data mechanisms}{42}
+\contentsline {section}{\numberline {A.2}HER2 and Cancer Drugs}{45}
+\contentsline {chapter}{\numberline {\hfil }Bibliography}{47}

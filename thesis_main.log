@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.1415926-2.5-1.40.14 (MiKTeX 2.9) (preloaded format=pdflatex 2015.8.23)  18 OCT 2015 20:47
+This is pdfTeX, Version 3.1415926-2.5-1.40.14 (MiKTeX 2.9) (preloaded format=pdflatex 2015.8.23)  19 OCT 2015 11:17
 entering extended mode
 **thesis_main.tex
 (C:\Users\Nathan\Desktop\Proposal\thesis_main.tex
@@ -538,15 +538,14 @@ LaTeX Font Info:    Font shape `OMS/cmr/m/n' in size <12> not available
 ]
 Missing character: There is no ’ in font cmr12!
 Missing character: There is no ’ in font cmr12!
+ [43]
 Missing character: There is no ’ in font cmr12!
-) [43]
-(C:\Users\Nathan\Desktop\Proposal\append-b.tex
-Appendix B.
-) [44
+)
+[44] (C:\Users\Nathan\Desktop\Proposal\append-b.tex [45
 
 
-
-] (C:\Users\Nathan\Desktop\Proposal\thesis_main.bbl [45
+]) [46]
+(C:\Users\Nathan\Desktop\Proposal\thesis_main.bbl [47
 
 
 ]
@@ -562,7 +561,7 @@ Missing character: There is no ˜ in font cmr12!
 Missing character: There is no â in font cmr12!
 Missing character: There is no € in font cmr12!
 Missing character: There is no ™ in font cmr12!
- [46]) [47]
+ [48]) [49]
 (C:\Users\Nathan\Desktop\Proposal\thesis_main.aux
 (C:\Users\Nathan\Desktop\Proposal\abstract.aux)
 (C:\Users\Nathan\Desktop\Proposal\chapter1.aux)
@@ -575,7 +574,7 @@ Missing character: There is no ™ in font cmr12!
 Here is how much of TeX's memory you used:
  3284 strings out of 493921
  43076 string characters out of 3144873
- 106975 words of memory out of 3000000
+ 106979 words of memory out of 3000000
  6451 multiletter control sequences out of 15000+200000
  11722 words of font info for 45 fonts, out of 3000000 for 9000
  841 hyphenation exceptions out of 8191
@@ -595,9 +594,9 @@ sfonts/cm/cmsy10.pfb><C:/Program Files (x86)/MiKTeX 2.9/fonts/type1/public/amsf
 onts/cm/cmsy6.pfb><C:/Program Files (x86)/MiKTeX 2.9/fonts/type1/public/amsfont
 s/cm/cmsy8.pfb><C:/Program Files (x86)/MiKTeX 2.9/fonts/type1/public/amsfonts/c
 m/cmti12.pfb>
-Output written on thesis_main.pdf (53 pages, 396875 bytes).
+Output written on thesis_main.pdf (55 pages, 400751 bytes).
 PDF statistics:
- 232 PDF objects out of 1000 (max. 8388607)
+ 239 PDF objects out of 1000 (max. 8388607)
  0 named destinations out of 1000 (max. 500000)
  16 words of extra memory for PDF output out of 10000 (max. 10000000)
 
