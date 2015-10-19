@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.1415926-2.5-1.40.14 (MiKTeX 2.9) (preloaded format=pdflatex 2015.8.23)  19 OCT 2015 12:59
+This is pdfTeX, Version 3.1415926-2.5-1.40.14 (MiKTeX 2.9) (preloaded format=pdflatex 2015.8.23)  19 OCT 2015 15:08
 entering extended mode
 **thesis_main.tex
 (C:\Users\Nathan\Desktop\Proposal\thesis_main.tex
@@ -251,18 +251,18 @@ Writing index file thesis_main.idx
 (C:\Users\Nathan\Desktop\Proposal\conclusion.aux)
 (C:\Users\Nathan\Desktop\Proposal\append-a.aux)
 (C:\Users\Nathan\Desktop\Proposal\append-b.aux))
-LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 53.
-LaTeX Font Info:    ... okay on input line 53.
-LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 53.
-LaTeX Font Info:    ... okay on input line 53.
-LaTeX Font Info:    Checking defaults for OT1/cmr/m/n on input line 53.
-LaTeX Font Info:    ... okay on input line 53.
-LaTeX Font Info:    Checking defaults for OMS/cmsy/m/n on input line 53.
-LaTeX Font Info:    ... okay on input line 53.
-LaTeX Font Info:    Checking defaults for OMX/cmex/m/n on input line 53.
-LaTeX Font Info:    ... okay on input line 53.
-LaTeX Font Info:    Checking defaults for U/cmr/m/n on input line 53.
-LaTeX Font Info:    ... okay on input line 53.
+LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 52.
+LaTeX Font Info:    ... okay on input line 52.
+LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 52.
+LaTeX Font Info:    ... okay on input line 52.
+LaTeX Font Info:    Checking defaults for OT1/cmr/m/n on input line 52.
+LaTeX Font Info:    ... okay on input line 52.
+LaTeX Font Info:    Checking defaults for OMS/cmsy/m/n on input line 52.
+LaTeX Font Info:    ... okay on input line 52.
+LaTeX Font Info:    Checking defaults for OMX/cmex/m/n on input line 52.
+LaTeX Font Info:    ... okay on input line 52.
+LaTeX Font Info:    Checking defaults for U/cmr/m/n on input line 52.
+LaTeX Font Info:    ... okay on input line 52.
 
 ("C:\Program Files (x86)\MiKTeX 2.9\tex\context\base\supp-pdf.mkii"
 [Loading MPS to PDF converter (version 2006.09.02).]
@@ -594,7 +594,7 @@ sfonts/cm/cmsy10.pfb><C:/Program Files (x86)/MiKTeX 2.9/fonts/type1/public/amsf
 onts/cm/cmsy6.pfb><C:/Program Files (x86)/MiKTeX 2.9/fonts/type1/public/amsfont
 s/cm/cmsy8.pfb><C:/Program Files (x86)/MiKTeX 2.9/fonts/type1/public/amsfonts/c
 m/cmti12.pfb>
-Output written on thesis_main.pdf (55 pages, 400740 bytes).
+Output written on thesis_main.pdf (55 pages, 401019 bytes).
 PDF statistics:
  239 PDF objects out of 1000 (max. 8388607)
  0 named destinations out of 1000 (max. 500000)
