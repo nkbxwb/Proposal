@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.1415926-2.5-1.40.14 (MiKTeX 2.9) (preloaded format=pdflatex 2015.8.23)  18 OCT 2015 15:54
+This is pdfTeX, Version 3.1415926-2.5-1.40.14 (MiKTeX 2.9) (preloaded format=pdflatex 2015.8.23)  18 OCT 2015 20:47
 entering extended mode
 **thesis_main.tex
 (C:\Users\Nathan\Desktop\Proposal\thesis_main.tex
@@ -507,18 +507,18 @@ Missing character: There is no ’ in font cmr12!
 Chapter 4.
 Missing character: There is no ’ in font cmr12!
 Missing character: There is no ’ in font cmr12!
+Missing character: There is no ’ in font cmr12!
 Missing character: There is no “ in font cmr12!
 Missing character: There is no ” in font cmr12!
-Missing character: There is no ’ in font cmr12!
 [37
 
 
 
 ]
 Missing character: There is no “ in font cmr12!
- [38]) [39] (C:\Users\Nathan\Desktop\Proposal\conclusion.tex
+ [38]) [39] [40] (C:\Users\Nathan\Desktop\Proposal\conclusion.tex
 Chapter 5.
-) [40
+) [41
 
 
 
@@ -531,7 +531,7 @@ File: omscmr.fd 1999/05/25 v2.5h Standard LaTeX font definitions
 )
 LaTeX Font Info:    Font shape `OMS/cmr/m/n' in size <12> not available
 (Font)              Font shape `OMS/cmsy/m/n' tried instead on input line 7.
- [41
+ [42
 
 
 
@@ -539,14 +539,14 @@ LaTeX Font Info:    Font shape `OMS/cmr/m/n' in size <12> not available
 Missing character: There is no ’ in font cmr12!
 Missing character: There is no ’ in font cmr12!
 Missing character: There is no ’ in font cmr12!
-) [42]
+) [43]
 (C:\Users\Nathan\Desktop\Proposal\append-b.tex
 Appendix B.
-) [43
+) [44
 
 
 
-] (C:\Users\Nathan\Desktop\Proposal\thesis_main.bbl [44
+] (C:\Users\Nathan\Desktop\Proposal\thesis_main.bbl [45
 
 
 ]
@@ -562,7 +562,7 @@ Missing character: There is no ˜ in font cmr12!
 Missing character: There is no â in font cmr12!
 Missing character: There is no € in font cmr12!
 Missing character: There is no ™ in font cmr12!
- [45]) [46]
+ [46]) [47]
 (C:\Users\Nathan\Desktop\Proposal\thesis_main.aux
 (C:\Users\Nathan\Desktop\Proposal\abstract.aux)
 (C:\Users\Nathan\Desktop\Proposal\chapter1.aux)
@@ -595,9 +595,9 @@ sfonts/cm/cmsy10.pfb><C:/Program Files (x86)/MiKTeX 2.9/fonts/type1/public/amsf
 onts/cm/cmsy6.pfb><C:/Program Files (x86)/MiKTeX 2.9/fonts/type1/public/amsfont
 s/cm/cmsy8.pfb><C:/Program Files (x86)/MiKTeX 2.9/fonts/type1/public/amsfonts/c
 m/cmti12.pfb>
-Output written on thesis_main.pdf (52 pages, 395934 bytes).
+Output written on thesis_main.pdf (53 pages, 396875 bytes).
 PDF statistics:
- 229 PDF objects out of 1000 (max. 8388607)
+ 232 PDF objects out of 1000 (max. 8388607)
  0 named destinations out of 1000 (max. 500000)
  16 words of extra memory for PDF output out of 10000 (max. 10000000)
 
