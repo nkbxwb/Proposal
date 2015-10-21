@@ -9,7 +9,7 @@
 \contentsline {chapter}{\numberline {2}Methods}{13}
 \contentsline {section}{\numberline {2.1}Multiple Imputation}{13}
 \contentsline {subsection}{\numberline {2.1.1}Selecting the MI scheme}{14}
-\contentsline {section}{\numberline {2.2}Survival analysis}{22}
+\contentsline {section}{\numberline {2.2}Survival analysis}{23}
 \contentsline {section}{\numberline {2.3}Propensity Score Analysis}{27}
 \contentsline {chapter}{\numberline {3}Application}{31}
 \contentsline {section}{\numberline {3.1}Data Explanation}{31}

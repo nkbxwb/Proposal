@@ -87,15 +87,15 @@ $$B=\frac{1}{m-1}\sum_{i=1}^{m}(\hat{Q}_i-\bar{Q})$$
 The total variance for our estimand is given by 
 $$T=\bar{U}+B +\frac{B}{M}$$
 The last term is our simulation variance, and its existence is proven by Rubin in \cite{Rubin1987}.
-%start here
 
-The theory is rooted in the assumption that whatever we are trying to pool is asymptotically normally distributed with mean Q and variance U. We don’t have these population values, so we must use what we have from the sample, namely $\bar{Q}$ and $\bar{U}$. With this assumption, we know that
+The theory of inference with Rubin’s rules is rooted in the assumption that under repeated sampling, the complete data quantity of interest that we are trying to pool is asymptotically normally distributed with mean Q and variance U, where U is the variance $of (Q-\hat{Q})$ \cite{VanBuuren2012}. We don’t have the true population variance, so we must use what we have from the sample, namely $T$, the MI total variance. With this assumption, we know that
 $$\frac{Q-\bar{Q}}{\sqrt{T}}\sim t_{\nu}$$ 
-And the degrees of freedom is shown to be \cite{Barnard1999}
+And the degrees of freedom is proven to be 
 $$\nu=\frac{\nu_{old}\nu_{obs}}{\nu_{old}+\nu_{obs}}$$
 Where $\nu_{obs}=\frac{\nu_{com}+1}{\nu_{com}+3}\nu_{com}(1-\frac{B + B/m}{T})$
-And $\nu_{old}=\frac{m-1}{(\frac{B + B/m}{T})^2}$
-Rubin’s rules assume normality, so if our statistic in mind is not asymptotically normal, we need to transform it towards normality before we pool. There have been some research about how to pool non normal quantities, but current research shows poor results and power when doing so \cite{Marshall2009} . It should also be noted that we have discussed the univariate case, but this easily extends to the multivariate case. We now have a powerful framework to get valid inference from multiply imputed data, so let us actually work with it.
+and $\nu_{old}=\frac{m-1}{(\frac{B + B/m}{T})^2}$ \cite{Barnard1999}.
+
+Rubin’s rules assume normality, so if our statistic in mind is not asymptotically normal, we need to transform it towards normality before we pool. There have been some research about how to pool non normal quantities, but current research shows poor results and power when doing so \cite{Marshall2009}. It should also be noted that we have discussed the univariate case, but this easily extends the case with multivariate estimands. If we have multivariate estimands, we can still use Rubin’s rules, but will need to replace the notation above with vectors for $\hat{Q}_i$ and variance-covariance matrices wherever we have variance. We now have a powerful framework to get valid inference from data with missingness via multiple imputation multiply imputed data, so let's now see how to fit in other types of analyses in the MI paradigm
 
 \section{Survival analysis}
 \label{sec:Surv}
