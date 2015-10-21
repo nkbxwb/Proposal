@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.1415926-2.5-1.40.14 (MiKTeX 2.9) (preloaded format=pdflatex 2015.8.23)  20 OCT 2015 18:33
+This is pdfTeX, Version 3.1415926-2.5-1.40.14 (MiKTeX 2.9) (preloaded format=pdflatex 2015.8.23)  21 OCT 2015 16:00
 entering extended mode
 **thesis_main.tex
 (C:\Users\Nathan\Desktop\Proposal\thesis_main.tex
@@ -393,84 +393,87 @@ Missing character: There is no ” in font cmr10!
 
 LaTeX Warning: `!h' float specifier changed to `!ht'.
 
-[14]
-Missing character: There is no “ in font cmr12!
-Missing character: There is no ” in font cmr12!
- [15 <C:/Users/Nathan/Desktop/Proposal/jm_algo.jpg>]
+[14] [15 <C:/Users/Nathan/Desktop/Proposal/jm_algo.jpg>]
 <fcs_algo.jpg, id=84, 365.11406pt x 261.97874pt>
 File: fcs_algo.jpg Graphic file (type jpg)
  <use fcs_algo.jpg>
-Package pdftex.def Info: fcs_algo.jpg used on input line 31.
+Package pdftex.def Info: fcs_algo.jpg used on input line 36.
 (pdftex.def)             Requested size: 346.89731pt x 248.91837pt.
 Missing character: There is no ’ in font cmr10!
 Missing character: There is no “ in font cmr10!
 Missing character: There is no ” in font cmr10!
- [16 <C:/Users/Nathan/Desktop/Proposal/fcs_algo.jpg>]
+
+
+LaTeX Warning: `!h' float specifier changed to `!ht'.
+
+[16]
 Missing character: There is no ’ in font cmr12!
- [17]
+ [17 <C:/Users/Nathan/Desktop/Proposal/fcs_algo.jpg>]
 Missing character: There is no ’ in font cmr12!
  [18]
-Missing character: There is no “ in font cmr12!
-Missing character: There is no ” in font cmr12!
 Missing character: There is no ’ in font cmr12!
 Missing character: There is no “ in font cmr12!
 Missing character: There is no ” in font cmr12!
-Missing character: There is no ’ in font cmr12!
-Missing character: There is no ’ in font cmr12!
 Missing character: There is no ’ in font cmr12!
  [19]
+Missing character: There is no “ in font cmr12!
+Missing character: There is no ” in font cmr12!
 Missing character: There is no ’ in font cmr12!
-Missing character: There is no “ in font cmr12!
-Missing character: There is no ” in font cmr12!
-Missing character: There is no “ in font cmr12!
-Missing character: There is no ” in font cmr12!
+Missing character: There is no ’ in font cmr12!
+Missing character: There is no ’ in font cmr12!
 Missing character: There is no ’ in font cmr12!
  [20]
-Missing character: There is no ’ in font cmr12!
-Missing character: There is no ’ in font cmr12!
 Missing character: There is no “ in font cmr12!
 Missing character: There is no ” in font cmr12!
 Missing character: There is no “ in font cmr12!
 Missing character: There is no ” in font cmr12!
-Missing character: There is no ’ in font cmr12!
- [21] [22]
-Missing character: There is no ’ in font cmr12!
-Missing character: There is no “ in font cmr12!
-Missing character: There is no ” in font cmr12!
-Missing character: There is no ’ in font cmr12!
-Missing character: There is no ’ in font cmr12!
 Missing character: There is no ’ in font cmr12!
 
-[23]
+[21]
+Missing character: There is no ’ in font cmr12!
+Missing character: There is no ’ in font cmr12!
+Missing character: There is no “ in font cmr12!
+Missing character: There is no ” in font cmr12!
+Missing character: There is no “ in font cmr12!
+Missing character: There is no ” in font cmr12!
+Missing character: There is no ’ in font cmr12!
+ [22] [23]
+Missing character: There is no ’ in font cmr12!
+Missing character: There is no “ in font cmr12!
+Missing character: There is no ” in font cmr12!
+Missing character: There is no ’ in font cmr12!
 Missing character: There is no ’ in font cmr12!
 Missing character: There is no ’ in font cmr12!
  [24]
+Missing character: There is no ’ in font cmr12!
 Missing character: There is no ’ in font cmr12!
  [25]
 Missing character: There is no ’ in font cmr12!
  [26]
 Missing character: There is no ’ in font cmr12!
+ [27]
 Missing character: There is no ’ in font cmr12!
- [27]) [28]
+Missing character: There is no ’ in font cmr12!
+ [28]) [29]
 (C:\Users\Nathan\Desktop\Proposal\application.tex
 Chapter 3.
 Missing character: There is no ’ in font cmr12!
 Missing character: There is no ’ in font cmr12!
-[29
+[30
 
 
 
 ]
 Missing character: There is no ’ in font cmr12!
- [30]
-Missing character: There is no ’ in font cmr12!
-Missing character: There is no ’ in font cmr12!
  [31]
-Missing character: There is no “ in font cmr12!
-Missing character: There is no ” in font cmr12!
-Missing character: There is no “ in font cmr12!
-Missing character: There is no ” in font cmr12!
+Missing character: There is no ’ in font cmr12!
+Missing character: There is no ’ in font cmr12!
  [32]
+Missing character: There is no “ in font cmr12!
+Missing character: There is no ” in font cmr12!
+Missing character: There is no “ in font cmr12!
+Missing character: There is no ” in font cmr12!
+ [33]
 Missing character: There is no ’ in font cmr12!
 Missing character: There is no ’ in font cmr12!
 Missing character: There is no ’ in font cmr12!
@@ -478,16 +481,16 @@ Missing character: There is no “ in font cmr12!
 Missing character: There is no … in font cmr12!
 Missing character: There is no ” in font cmr12!
 Missing character: There is no ’ in font cmr12!
- [33] [34]
+ [34] [35]
 Missing character: There is no ’ in font cmr12!
 Missing character: There is no ’ in font cmr12!
- [35]
+ [36]
 Missing character: There is no ’ in font cmr12!
 Missing character: There is no — in font cmr12!
 Missing character: There is no ’ in font cmr12!
 Missing character: There is no … in font cmr12!
 Missing character: There is no ’ in font cmr12!
-) [36] [37]
+) [37] [38]
 (C:\Users\Nathan\Desktop\Proposal\discussion.tex
 Chapter 4.
 Missing character: There is no ’ in font cmr12!
@@ -495,15 +498,15 @@ Missing character: There is no ’ in font cmr12!
 Missing character: There is no ’ in font cmr12!
 Missing character: There is no “ in font cmr12!
 Missing character: There is no ” in font cmr12!
-[38
+[39
 
 
 
 ]
 Missing character: There is no “ in font cmr12!
- [39]) [40] [41] (C:\Users\Nathan\Desktop\Proposal\conclusion.tex
+ [40]) [41] [42] (C:\Users\Nathan\Desktop\Proposal\conclusion.tex
 Chapter 5.
-) [42
+) [43
 
 
 
@@ -516,21 +519,21 @@ File: omscmr.fd 1999/05/25 v2.5h Standard LaTeX font definitions
 )
 LaTeX Font Info:    Font shape `OMS/cmr/m/n' in size <12> not available
 (Font)              Font shape `OMS/cmsy/m/n' tried instead on input line 7.
- [43
+ [44
 
 
 
 ]
 Missing character: There is no ’ in font cmr12!
 Missing character: There is no ’ in font cmr12!
- [44]
+ [45]
 Missing character: There is no ’ in font cmr12!
 )
-[45] (C:\Users\Nathan\Desktop\Proposal\append-b.tex [46
+[46] (C:\Users\Nathan\Desktop\Proposal\append-b.tex [47
 
 
-]) [47]
-(C:\Users\Nathan\Desktop\Proposal\thesis_main.bbl [48
+]) [48]
+(C:\Users\Nathan\Desktop\Proposal\thesis_main.bbl [49
 
 
 ]
@@ -546,7 +549,7 @@ Missing character: There is no ˜ in font cmr12!
 Missing character: There is no â in font cmr12!
 Missing character: There is no € in font cmr12!
 Missing character: There is no ™ in font cmr12!
- [49] [50]) [51]
+ [50] [51]) [52]
 (C:\Users\Nathan\Desktop\Proposal\thesis_main.aux
 (C:\Users\Nathan\Desktop\Proposal\abstract.aux)
 (C:\Users\Nathan\Desktop\Proposal\chapter1.aux)
@@ -557,10 +560,10 @@ Missing character: There is no ™ in font cmr12!
 (C:\Users\Nathan\Desktop\Proposal\append-a.aux)
 (C:\Users\Nathan\Desktop\Proposal\append-b.aux)) ) 
 Here is how much of TeX's memory you used:
- 3307 strings out of 493921
- 43494 string characters out of 3144873
- 107423 words of memory out of 3000000
- 6471 multiletter control sequences out of 15000+200000
+ 3309 strings out of 493921
+ 43522 string characters out of 3144873
+ 107438 words of memory out of 3000000
+ 6473 multiletter control sequences out of 15000+200000
  11722 words of font info for 45 fonts, out of 3000000 for 9000
  841 hyphenation exceptions out of 8191
  34i,7n,35p,2159b,242s stack positions out of 5000i,500n,10000p,200000b,50000s
@@ -579,9 +582,9 @@ sfonts/cm/cmsy10.pfb><C:/Program Files (x86)/MiKTeX 2.9/fonts/type1/public/amsf
 onts/cm/cmsy6.pfb><C:/Program Files (x86)/MiKTeX 2.9/fonts/type1/public/amsfont
 s/cm/cmsy8.pfb><C:/Program Files (x86)/MiKTeX 2.9/fonts/type1/public/amsfonts/c
 m/cmti12.pfb>
-Output written on thesis_main.pdf (57 pages, 404003 bytes).
+Output written on thesis_main.pdf (58 pages, 406218 bytes).
 PDF statistics:
- 245 PDF objects out of 1000 (max. 8388607)
+ 248 PDF objects out of 1000 (max. 8388607)
  0 named destinations out of 1000 (max. 500000)
  16 words of extra memory for PDF output out of 10000 (max. 10000000)
 

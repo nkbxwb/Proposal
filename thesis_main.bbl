@@ -70,6 +70,11 @@ S.~{Van Buuren}, J.~P. Brand, C.~G. Groothuis-Oudshoorn, and D.~Rubin, ``{Fully
   Statistical Computation and Simulation}, vol.~76, no.~12, pp.~1049--1064,
   2006.
 
+\bibitem{Kropko2014}
+J.~Kropko, B.~Goodrich, A.~Gelman, and J.~Hill, ``{Multiple Imputation for
+  Continuous and Categorical Data: Comparing Joint Multivariate Normal and
+  Conditional Approaches},'' {\em Political Analysis}, pp.~497--519, 2014.
+
 \bibitem{VanBuuren2011}
 S.~{Van Buuren} and K.~Groothuis-Oudshoorn, ``{mice: Multivariate Imputation by
   Chained Equations in R},'' {\em Journal Of Statistical Software}, vol.~45,
@@ -79,6 +84,10 @@ S.~{Van Buuren} and K.~Groothuis-Oudshoorn, ``{mice: Multivariate Imputation by
 Y.-S. Su, A.~Gelman, J.~Hill, and M.~Yajima, ``{Multiple Imputation with
   Diagnostics (mi) in R: Opening Windows into the Black Box},'' {\em Journal of
   Statistical Software}, vol.~45, no.~2, pp.~1--31, 2011.
+
+\bibitem{Florian2015}
+A.~Florian and M.~F. Meinfelder, ``{BaBooN: Bayesian Bootstrap Predictive Mean
+  Matching - Multiple and Single Imputation for Discrete Data},'' 2015.
 
 \bibitem{Enders2010}
 C.~K. Enders, {\em {Applied Missing Data Analysis}}.
@@ -121,11 +130,6 @@ J.~P. Reiter, ``{Selecting the number of imputed datasets when using multiple
 I.~White, P.~Royston, and A.~M. Wood, ``{Multiple imputation using chained
   equations: Issues and guidance for practice},'' {\em Statistics in Medicine},
   vol.~30, no.~4, pp.~377--399, 2011.
-
-\bibitem{Kropko2014}
-J.~Kropko, B.~Goodrich, A.~Gelman, and J.~Hill, ``{Multiple Imputation for
-  Continuous and Categorical Data: Comparing Joint Multivariate Normal and
-  Conditional Approaches},'' {\em Political Analysis}, pp.~497--519, 2014.
 
 \bibitem{Long2012}
 Q.~Long, C.-H. Hsu, and Y.~Li, ``{Doubly robust nonparametric multiple
