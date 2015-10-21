@@ -11,14 +11,14 @@
 \contentsline {subsection}{\numberline {2.1.1}Selecting the MI scheme}{14}
 \contentsline {section}{\numberline {2.2}Survival analysis}{22}
 \contentsline {section}{\numberline {2.3}Propensity Score Analysis}{27}
-\contentsline {chapter}{\numberline {3}Application}{30}
-\contentsline {section}{\numberline {3.1}Data Explanation}{30}
-\contentsline {section}{\numberline {3.2}Imputation}{31}
-\contentsline {section}{\numberline {3.3}Survival Analysis}{34}
-\contentsline {section}{\numberline {3.4}Causal Analysis}{37}
-\contentsline {chapter}{\numberline {4}Discussion}{39}
-\contentsline {chapter}{\numberline {5}Conclusion}{43}
-\contentsline {chapter}{\numberline {A}Appendix}{44}
-\contentsline {section}{\numberline {A.1}Missing data mechanisms}{44}
-\contentsline {section}{\numberline {A.2}Cancer and Treatment Overview}{47}
-\contentsline {chapter}{\numberline {\hfil }Bibliography}{49}
+\contentsline {chapter}{\numberline {3}Application}{31}
+\contentsline {section}{\numberline {3.1}Data Explanation}{31}
+\contentsline {section}{\numberline {3.2}Imputation}{32}
+\contentsline {section}{\numberline {3.3}Survival Analysis}{35}
+\contentsline {section}{\numberline {3.4}Causal Analysis}{38}
+\contentsline {chapter}{\numberline {4}Discussion}{40}
+\contentsline {chapter}{\numberline {5}Conclusion}{44}
+\contentsline {chapter}{\numberline {A}Appendix}{45}
+\contentsline {section}{\numberline {A.1}Missing data mechanisms}{45}
+\contentsline {section}{\numberline {A.2}Cancer and Treatment Overview}{48}
+\contentsline {chapter}{\numberline {\hfil }Bibliography}{50}

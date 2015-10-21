@@ -58,28 +58,37 @@ Once we have the correct assumptions, we need to set up our full conditionals im
 
 Since FCS is an iterative process, we must choose how many iterations we will do until convergence. The older literature suggests only 5 is enough, but with modern computation, we can easily exceed this, even with large data \cite{VanBuuren2012}. A good way to assess how many iterations to run is to look at the diagnostic plots (which we will talk about later), then add 5 iterations to the number at which we assume convergence is achieved. Due to the nature of FCS, convergence is often very quick, often as soon as 5 iterations. As well, we need to decide how many datasets to impute. The early literature argued that 5 would suffice, but modern literature argues for more, since it will cut down on simulation error. Many different authors have different criteria’s, but a popular criterion is to impute as many datasets as the 100 times the percentage of cases in the analysis with missingness. With the speed of computers and availability of storage, many authors now suggest using more imputations \cite{VanBuuren2012}.
 
-Once we have determined how many iterations and imputations to run, we actually run mice. Depending on the model specifications, it should not take too long for small datasets (seconds or minutes), but may take a while (hours) for larger ones. We run the mice algorithm on our data with our predictors. FCS models often converges quickly, so after convergence, we are just taking draws from the missing covariates posterior. We can think of the first few iterations as burn in, and the rest as samples. We take the value at the last iteration as the sample from the posterior.
+Once we have determined how many iterations and imputations to run, we actually run mice. Depending on the model specifications, it should not take too long for small datasets (seconds or minutes), but may take a while (hours) for larger ones. FCS models often converges quickly, so after convergence, we are just taking draws from the missing covariates posterior. We can think of the first few iterations as burn in, and the rest as samples. We take the value at the last iteration of each chain as the sample from the posterior.
 %start here
-We need to verify that our imputations are valid once we complete them. First, we need to see if our chains have converged. Since mice is an MCMC method, we should check the chain for irreducibility, aperiodicity, and recurrence. To determine when the chain has converged, van Buuren suggests that“Convergence is diagnosed when the variance between different sequences is no larger than the variance within each individual sequence” \cite{VanBuuren2012}.  There is not much in the imputation literature about statistical tests to check for convergence, but a popular test is Gelman and Rubin’s rhat test. 
+We need to verify that our imputations are valid once we complete them. First, we need to see if our chains have converged. Since mice is an MCMC method, we should check the chain for irreducibility, aperiodicity, and recurrence. To determine when the chain has converged, van Buuren suggests that ``Convergence is diagnosed when the variance between different sequences is no larger than the variance within each individual sequence'' \cite{VanBuuren2012}.  There is some research (but not from the MI perspective) about tests to check for convergence, and a popular test is Gelman and Rubin’s $\hat{R}$ test \cite{Gelman1992}. This test is often used in conjunction with visual tests.  Assessing convergence  by looking at of all of the values over $m$ imputations and $k$ iterations would be very hard to visualize because there would be so many chains, so often times, we will choose to observe a statistic (like the mean) of the chain and assess on that. 
 
-Once we have assessed convergence, we need to actually check that the values imputed are valid and come from the correct posterior. The overarching idea that we need to pay attention to is “does the data look like it could have been real data”. We can assess this in many ways, including density plots, box and whisker plots, etc. This is a visual task, and there is no statistical method to validate this.
+Once we have assessed convergence, we need to actually check that the values imputed are valid and come from the correct posterior. This will serve as our model checking and validation. The overarching idea that we need to pay attention to is “does the data look like it could have been real data”. We can assess this in many ways, including density plots, box and whisker plots, etc. This is a visual task, and there is no statistical method to validate this.
 
 This whole process can be very time consuming, because every time we want to make a change in the methods used, we have to rerun the algorithm and reassess our results. But once we find the setup that works for us, we don’t need to repeat it again. So, while it may take a lot of time now, setting up a proper model will save us even more time in the future.
-%start here
-Once we have $m$ imputed datasets, we may run any valid analysis (regression, computing any statistic) on each imputed dataset INDIVIDUALLY, treating each of the m datasets as if it was complete. We may then use Rubin’s rules \cite{Rubin1987} to pool our estimates. This will give us a point estimate, as well as the proper variance for the quantity we have in mind.  Rubin’s rules are essential for using multiply imputed datasets, so we need to investigate them thoroughly.
 
-Rubin’s rules are a set of rules that guide us in making inference from multiply imputed data. It involves three parts. The first is getting an estimate of the population estimand Q, we do so by taking the average of the MI sample estimands ($\hat{Q}_i$) to get the MI estimate $\bar{Q}$.
-$$\bar{Q}=\frac{1}{m}\sum_{i=1}^{m}\hat{Q}_i$$,
-Where $\hat{Q}$ is the estimand evaluated from the data in the $i^{th}$ dataset.
-The estimates are not set, and there is variance associated with them. The first form of variance is the “within” variance, or the variance or each estimate. We can get an MI estimate of this quantity by doing
+
+Once we have $m$ imputed datasets, we may run any valid analysis on each imputed dataset INDIVIDUALLY, treating each of the m datasets as if it was complete. I am a strong advocate of running the model with the available cases if possible before running it on the MI data, so that we can assess the appropriateness of the model. As well, running the model with the available cases will give us a clue as to what to expect from the MI analyses (such as sign of the coefficients or level of significance). 
+
+
+On the $m$ imputed data sets, we may then apply Rubin’s rules \cite{Rubin1987} to pool our estimates. Rubin’s rules are essential for using multiply imputed datasets, so we need to investigate them thoroughly. 
+
+
+
+Rubin’s rules are a set of rules that guide us in making inference from multiply imputed data. They will give us a single point estimate, as well as the proper variance for the quantity we have in mind from the $m$ imputed datasets.  
+
+Rubin’s rules involve three parts. The first is getting an estimate of the population estimand Q. To get this, we define $\hat{Q}_i$ as the estimand evaluated from the data in the $i^{th}$ dataset.  Then, we take the average over all $m$ datasets to get a single estimate $\bar{Q}$.
+$$\bar{Q}=\frac{1}{m}\sum_{i=1}^{m}\hat{Q}_i$$
+The estimates are not set, and there is variance associated with them. The first form of variance is the ``within '' variance, or the variance or each estimate. If we define the variance of the $i^{th}$ imputed dataset as $\bar{U}_i$ , then the overall within variance is computed as
 $$\bar{U}=\frac{1}{m}\sum_{i=1}^{m}\bar{U}_i$$
-Where $\bar{U}_i$ is the $i^{th}$ datasets variance
-The other form of the variance is the “between datasets” variance. This is the variance associated with the fact that we have missing data. It is given by
+
+
+The last form of the variance is the ``between datasets'' variance. This is the variance associated with the fact that we have missing data. It is given by
 $$B=\frac{1}{m-1}\sum_{i=1}^{m}(\hat{Q}_i-\bar{Q})$$
 The total variance for our estimand is given by 
-
 $$T=\bar{U}+B +\frac{B}{M}$$
 The last term is our simulation variance, and its existence is proven by Rubin in \cite{Rubin1987}.
+%start here
+
 The theory is rooted in the assumption that whatever we are trying to pool is asymptotically normally distributed with mean Q and variance U. We don’t have these population values, so we must use what we have from the sample, namely $\bar{Q}$ and $\bar{U}$. With this assumption, we know that
 $$\frac{Q-\bar{Q}}{\sqrt{T}}\sim t_{\nu}$$ 
 And the degrees of freedom is shown to be \cite{Barnard1999}

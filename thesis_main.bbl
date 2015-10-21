@@ -97,6 +97,11 @@ C.~K. Enders, {\em {Applied Missing Data Analysis}}.
 Y.~Zhao, A.~H. Herring, H.~Zhou, M.~W. Ali, and G.~G. Koch, ``{ANALYSES OF
   TIME-TO-EVENT DATA WITH POSSIBLY},'' vol.~24, no.~2, pp.~229--253, 2014.
 
+\bibitem{Gelman1992}
+A.~Gelman and D.~B. Rubin, ``{Inference from iterative simulation using
+  multiple sequences},'' {\em Statistical Science}, vol.~7, no.~4,
+  pp.~457--511, 1992.
+
 \bibitem{Barnard1999}
 J.~Barnard and D.~B. Rubin, ``{Small-sample degrees of freedom with multiple
   imputation},'' {\em Biometrika}, vol.~86, no.~4, pp.~948--955, 1999.
