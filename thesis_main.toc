@@ -9,16 +9,22 @@
 \contentsline {chapter}{\numberline {2}Methods}{13}
 \contentsline {section}{\numberline {2.1}Multiple Imputation}{13}
 \contentsline {subsection}{\numberline {2.1.1}Selecting the MI scheme}{14}
+\contentsline {subsection}{\numberline {2.1.2}Setting and checking the model}{19}
+\contentsline {subsection}{\numberline {2.1.3}Combining the MI estimates}{21}
 \contentsline {section}{\numberline {2.2}Survival analysis}{23}
-\contentsline {section}{\numberline {2.3}Propensity Score Analysis}{27}
-\contentsline {chapter}{\numberline {3}Application}{31}
-\contentsline {section}{\numberline {3.1}Data Explanation}{31}
-\contentsline {section}{\numberline {3.2}Imputation}{32}
-\contentsline {section}{\numberline {3.3}Survival Analysis}{35}
-\contentsline {section}{\numberline {3.4}Causal Analysis}{38}
-\contentsline {chapter}{\numberline {4}Discussion}{40}
-\contentsline {chapter}{\numberline {5}Conclusion}{44}
-\contentsline {chapter}{\numberline {A}Appendix}{45}
-\contentsline {section}{\numberline {A.1}Missing data mechanisms}{45}
-\contentsline {section}{\numberline {A.2}Cancer and Treatment Overview}{48}
-\contentsline {chapter}{\numberline {\hfil }Bibliography}{50}
+\contentsline {subsection}{\numberline {2.2.1}Kaplan-Meier Survival Curve}{24}
+\contentsline {subsection}{\numberline {2.2.2}Median Survival Time}{25}
+\contentsline {subsection}{\numberline {2.2.3}Log Rank Test}{26}
+\contentsline {subsection}{\numberline {2.2.4}Cox Proportional Hazards Model}{27}
+\contentsline {section}{\numberline {2.3}Propensity Score Analysis}{28}
+\contentsline {chapter}{\numberline {3}Application}{32}
+\contentsline {section}{\numberline {3.1}Data Explanation}{32}
+\contentsline {section}{\numberline {3.2}Imputation}{33}
+\contentsline {section}{\numberline {3.3}Survival Analysis}{36}
+\contentsline {section}{\numberline {3.4}Causal Analysis}{39}
+\contentsline {chapter}{\numberline {4}Discussion}{41}
+\contentsline {chapter}{\numberline {5}Conclusion}{45}
+\contentsline {chapter}{\numberline {A}Appendix}{46}
+\contentsline {section}{\numberline {A.1}Missing data mechanisms}{46}
+\contentsline {section}{\numberline {A.2}Cancer and Treatment Overview}{49}
+\contentsline {chapter}{\numberline {\hfil }Bibliography}{51}
