@@ -10,7 +10,7 @@ D.~B. Rubin, {\em {Multiple Imputation for Nonresponse in Surveys}}.
 
 \bibitem{Klein1984}
 J.~Klein and M.~Moeschberger, {\em {Techniques for Censored and Truncated
-  Data}}, vol.~19.
+  Data}}.
 \newblock 1984.
 
 \bibitem{Kaplan1958}
@@ -140,5 +140,14 @@ I.~White, P.~Royston, and A.~M. Wood, ``{Multiple imputation using chained
 Q.~Long, C.-H. Hsu, and Y.~Li, ``{Doubly robust nonparametric multiple
   imputation for ignorable missing data},'' {\em Statistica Sinica}, vol.~22,
   no.~1, pp.~1--22, 2012.
+
+\bibitem{Cooper1992}
+G.~Cooper, {\em {Elements of Human Cancer}}.
+\newblock Boston: Jones and Bartlett Learning, 1992.
+
+\bibitem{Morris1998}
+D.~Morris, J.~Kearsley, and C.~Williams, {\em {Cancer: A Comprehensive Clinical
+  Guide}}.
+\newblock 1998.
 
 \end{thebibliography}
