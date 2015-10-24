@@ -4,25 +4,27 @@
 There are three mechanisms of missing data. It is important to understand what type of missing data we have so that we can use methods that are suited for that type. 
 Before we begin, we will need some notation. It is not constant throughout the literature, so I caution you to look at the author’s notation before reading any other literature. I will give the symbols I will be using along with words to describe them to make it easy to understand and explain.
 \begin{itemize}
-\item $Y$ is our whole dataset. It will have $i$ rows and $j$ columns
-\item $Y_j$ is a specific column of Y. $Y_j$ is actually composed as $Y_j=(Y_{obs},Y_{mis})$, where
+\item $Y$ is our whole dataset. It will have $i$ rows and $j$ columns. Some of the covariates in the dataset will be completely observed, and others will have missingness.
+\item $Y_j$ is a specific column of Y. $Y_j$ is composed as $Y_j=(Y_{obs},Y_{mis})$, where
 	\begin{itemize}
 	\item $Y_{obs}$ is the data we have observed
 	\item $Y_{mis}$ is the missing data
 \end{itemize} 
 \item R is a binary matrix the same size as $Y$ where a 1 indicates we observed the data, and 0 means it is missing
-\item $\psi$ is a vector of parameters for the missing data model, and the missing data model is given as $p(R|Y_{obs},Y_{mis},\psi)$
+\item $\psi$ is a vector of parameters for the missing data model. 
+\item The missing data model is given as $p(R|Y_{obs},Y_{mis},\psi)$
 \item $\theta$ is a vector of the parameters for the full model of $Y$
 \end{itemize}
 As well, we have a concept called ignorability, which is defined as
 $$p(Y_{mis}|Y_{obs},R)= p(Y_{mis}|Y_{obs})$$
-That is, we may ignore the R. The probability of the data being missing does not depend on how the data is missing. Equivalently, we may write this as
+That is, we may ``ignore'' the R. The probability of the data being missing does not depend on how the data is missing. Equivalently, we may write this as
 $$p(Y_{mis}|Y_{obs},R=1)= p(Y_{mis}|Y_{obs},R=0)$$
 Being ignorable makes it justified to model our missing data from our observed data, without needing to worry about how it was missing.
 The opposite of ignorable data is called non-ignorable data, in this case, 
 $$p(Y_{mis}|Y_{obs},R=1)\neq p(Y_{mis}|Y_{obs},R=0)$$
 So we must take into account the missing data structure for imputation.
 We often times see ignorable missing data in practice, although one should certainly check the sensibility of ignorability, as some instances will certainly be non-ignorable, for example censored data, or when we know that the missing data is systematically different than the observed. If we have strongly nonignorable data, we should either try one of two things. The first is to expand the data (collect something else similar to the covariate with missingness) so that it becomes ignorable and the second is to formulate two imputation models, one for the observed and one for the missing.
+
 Now, we may discuss the three main types of missing data mechanisms. I will give the technical definition, a layman’s definition, and an example.
 \begin{itemize}
 \item MCAR: Missing completely at random:  $P(R=0|Y_{obs},Y_{mis},\psi)=P(R=0|\psi)$. The missingness in the data is not at all related to any of the data that we do or don’t have. If a lab technician slips and drops 5 vials of blood, the missingness caused by this would be MCAR
