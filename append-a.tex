@@ -5,11 +5,13 @@ There are three mechanisms of missing data. It is important to understand what t
 Before we begin, we will need some notation. It is not constant throughout the literature, so I caution you to look at the author’s notation before reading any other literature. I will give the symbols I will be using along with words to describe them to make it easy to understand and explain.
 \begin{itemize}
 \item $Y$ is our whole dataset. It will have $i$ rows and $j$ columns. Some of the covariates in the dataset will be completely observed, and others will have missingness.
-\item $Y_j$ is a specific column of Y. $Y_j$ is composed as $Y_j=(Y_{obs},Y_{mis})$, where
+\item $Y_j$ is a specific column of Y. $Y_j$ is composed as $Y_j=(Y_{j,obs},Y_{j,mis})$, where
 	\begin{itemize}
-	\item $Y_{obs}$ is the data we have observed
-	\item $Y_{mis}$ is the missing data
+	\item $Y_{j,obs}$ is the data we have observed for covariate j
+	\item $Y_{j,mis}$ is the missing data covariate j
 \end{itemize} 
+\item $Y_{obs}$ is all of the data that we have observed
+\item $Y_{mis}$ is all the data that we have not observed
 \item R is a binary matrix the same size as $Y$ where a 1 indicates we observed the data, and 0 means it is missing
 \item $\psi$ is a vector of parameters for the missing data model. 
 \item The missing data model is given as $p(R|Y_{obs},Y_{mis},\psi)$
