@@ -1,11 +1,11 @@
 \begin{thebibliography}{10}
 
 \bibitem{VanBuuren2012}
-S.~{Van Buuren}, {\em {Flexible Imputation of Missing Data}}.
+S.~van Buuren, {\em {Flexible imputation of missing data}}.
 \newblock 2012.
 
 \bibitem{Rubin1987}
-D.~B. Rubin, {\em {Multiple Imputation for Nonresponse in Surveys}}.
+D.~Rubin, {\em {Multiple Imputation for Nonresponse in Surveys}}.
 \newblock No.~JOHN WILEY {\&} SONS, 1987.
 
 \bibitem{Klein1984}
@@ -53,6 +53,16 @@ V.~S. Harder, E.~A. Stuart, and {James C. Anthony}, ``{Propensity score
   associations in psychological research},'' {\em Psychological Methods},
   vol.~15, no.~3, pp.~234--249, 2011.
 
+\bibitem{Demirtas2008}
+H.~Demirtas and D.~Hedeker, ``{Imputing continuous data under some non-Gaussian
+  distributions},'' {\em Statistica Neerlandica}, vol.~62, no.~2, pp.~193--205,
+  2008.
+
+\bibitem{Kropko2014}
+J.~Kropko, B.~Goodrich, A.~Gelman, and J.~Hill, ``{Multiple Imputation for
+  Continuous and Categorical Data: Comparing Joint Multivariate Normal and
+  Conditional Approaches},'' {\em Political Analysis}, pp.~497--519, 2014.
+
 \bibitem{Honaker2015}
 J.~Honaker, G.~King, and M.~Blackwell, ``{AMELIA II : A Program for Missing
   Data},'' {\em Journal Of Statistical Software}, vol.~45, no.~7, pp.~1--54,
@@ -69,11 +79,6 @@ S.~{Van Buuren}, J.~P. Brand, C.~G. Groothuis-Oudshoorn, and D.~Rubin, ``{Fully
   conditional specification in multivariate imputation},'' {\em Journal of
   Statistical Computation and Simulation}, vol.~76, no.~12, pp.~1049--1064,
   2006.
-
-\bibitem{Kropko2014}
-J.~Kropko, B.~Goodrich, A.~Gelman, and J.~Hill, ``{Multiple Imputation for
-  Continuous and Categorical Data: Comparing Joint Multivariate Normal and
-  Conditional Approaches},'' {\em Political Analysis}, pp.~497--519, 2014.
 
 \bibitem{VanBuuren2011}
 S.~{Van Buuren} and K.~Groothuis-Oudshoorn, ``{mice: Multivariate Imputation by
@@ -98,12 +103,11 @@ Y.~Zhao, A.~H. Herring, H.~Zhou, M.~W. Ali, and G.~G. Koch, ``{ANALYSES OF
   TIME-TO-EVENT DATA WITH POSSIBLY},'' vol.~24, no.~2, pp.~229--253, 2014.
 
 \bibitem{Gelman1992}
-A.~Gelman and D.~B. Rubin, ``{Inference from iterative simulation using
-  multiple sequences},'' {\em Statistical Science}, vol.~7, no.~4,
-  pp.~457--511, 1992.
+A.~Gelman and D.~Rubin, ``{Inference from iterative simulation using multiple
+  sequences},'' {\em Statistical Science}, vol.~7, no.~4, pp.~457--511, 1992.
 
 \bibitem{Barnard1999}
-J.~Barnard and D.~B. Rubin, ``{Small-sample degrees of freedom with multiple
+J.~Barnard and D.~Rubin, ``{Small-sample degrees of freedom with multiple
   imputation},'' {\em Biometrika}, vol.~86, no.~4, pp.~948--955, 1999.
 
 \bibitem{Marshall2009}
