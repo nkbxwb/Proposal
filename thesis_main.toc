@@ -16,7 +16,7 @@
 \contentsline {subsection}{\numberline {2.2.2}Median Survival Time}{25}
 \contentsline {subsection}{\numberline {2.2.3}Log Rank Test}{26}
 \contentsline {subsection}{\numberline {2.2.4}Cox Proportional Hazards Model}{27}
-\contentsline {section}{\numberline {2.3}Propensity Score Analysis}{28}
+\contentsline {section}{\numberline {2.3}Propensity Score Analysis}{29}
 \contentsline {chapter}{\numberline {3}Application}{32}
 \contentsline {section}{\numberline {3.1}Data Explanation}{32}
 \contentsline {section}{\numberline {3.2}Imputation}{33}
