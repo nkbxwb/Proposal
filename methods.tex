@@ -85,7 +85,8 @@ $$\bar{U}=\frac{1}{m}\sum_{i=1}^{m}\bar{U}_i$$
 
 
 The last form of the variance is the ``between datasets'' variance. This is the variance associated with the fact that we have missing data. It is given by
-$$B=\frac{1}{m-1}\sum_{i=1}^{m}(\hat{Q}_i-\bar{Q})$$
+ $$B=\frac{1}{m-1}\sum_{i=1}^{m}(\hat{Q}_i - \bar{Q})(\hat{Q}_i - \bar{Q})'$$
+
 The total variance for our estimand is given by 
 $$T=\bar{U}+B +\frac{B}{m}$$
 The last term is our simulation variance, and its existence is proven by Rubin in \cite{Rubin1987}.
