@@ -19,12 +19,12 @@
 \contentsline {section}{\numberline {2.3}Propensity Score Analysis}{29}
 \contentsline {chapter}{\numberline {3}Application}{32}
 \contentsline {section}{\numberline {3.1}Data Explanation}{32}
-\contentsline {section}{\numberline {3.2}Imputation}{33}
-\contentsline {section}{\numberline {3.3}Survival Analysis}{36}
-\contentsline {section}{\numberline {3.4}Causal Analysis}{40}
-\contentsline {chapter}{\numberline {4}Discussion}{42}
-\contentsline {chapter}{\numberline {5}Conclusion}{46}
-\contentsline {chapter}{\numberline {A}Appendix}{47}
-\contentsline {section}{\numberline {A.1}Missing data mechanisms}{47}
-\contentsline {section}{\numberline {A.2}Cancer and Treatment Overview}{50}
-\contentsline {chapter}{\numberline {\hfil }Bibliography}{52}
+\contentsline {section}{\numberline {3.2}Imputation}{34}
+\contentsline {section}{\numberline {3.3}Survival Analysis}{37}
+\contentsline {section}{\numberline {3.4}Causal Analysis}{41}
+\contentsline {chapter}{\numberline {4}Discussion}{43}
+\contentsline {chapter}{\numberline {5}Conclusion}{47}
+\contentsline {chapter}{\numberline {A}Appendix}{48}
+\contentsline {section}{\numberline {A.1}Missing data mechanisms}{48}
+\contentsline {section}{\numberline {A.2}Cancer and Treatment Overview}{51}
+\contentsline {chapter}{\numberline {\hfil }Bibliography}{53}
