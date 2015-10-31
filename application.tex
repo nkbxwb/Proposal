@@ -6,7 +6,27 @@ We have now laid down the theory of what we want to do describing all of the cho
 \end{comment}
 Unfortunately, as of October 23rd, we are still waiting for final approval from the PI of the project and the IRB. I want to get the proposal out to y'all though. So, what I will do in this section is describe what I will do, and once I get approval, I will fill in the tables and plots. In the meantime, I will put in <whatever> where something that uses the data should be. The IRB protocol is RCR03-0931, but neither Dr. Hess nor myself are on the protocol, because it is out of date. We are in the process of getting it updated, and plan to have it done by the time I defend this thesis
 
-Now that the theory is in place, we can apply it to some real data. The dataset that I chose to analyze is a dataset from MD Anderson Cancer Center, with permission from Dr. Bugano, Dr. Ibrahim, Dr. Hess and <whoever else needs to be thanked>. This dataset has historical records of 1514 MD Anderson patients who have had breast cancer that has metastasized to the brain. There are lots of covariates recorded (about 90, most with some missingness), a few different treatments, as well as survival endpoints (which are all observed). The data can be broken down into a few parts; subject data (like age range and race), cancer type data (like stage, type, status), pre metastases data (like treatment types), clinical observations (like headaches or nausea) post metastases data (like treatment, type of brain metastasis), and survival (survival of different events and censoring indicators). In figure \ref{fig:missingplot} we see a plot of the missingness in the data. This data is exemplary for this task because it is large, survival amenable, has missingness and is a prime candidate for imputation, and has treatment variables that are not given in an RCT.
+Now that the theory is in place, we can apply it to some real data. The dataset that I chose to analyze is a dataset from MD Anderson Cancer Center, with permission from Dr. Bugano, Dr. Ibrahim, Dr. Hess and <whoever else needs to be thanked>. This dataset has historical records of 1514 MD Anderson patients who have had breast cancer that has metastasized to the brain. There are lots of covariates recorded (about 90, most with some missingness), a few different treatments, as well as survival endpoints (which are all observed). The data can be broken down into a few parts; subject data (like age range and race), cancer type data (like stage, type, status), pre metastases data (like treatment types), clinical observations (like headaches or nausea) post metastases data (like treatment, type of brain metastasis), and survival (survival of different events and censoring indicators).  There are many covariates to consider, but I’ve listed the ones relevant to our models in table \ref{table:importantvars}
+\begin{table}[]
+\centering
+\label{my-label}
+\begin{tabular}{|c|c|}
+\hline
+Name                  & Meaning                                                                                                                                             \\ \hline
+hrher2                & \begin{tabular}[c]{@{}c@{}}Categorical variable: The hormonal receptor and \\ HER2 receptor status of the subject\end{tabular}                      \\ \hline
+Age                   & Indicator: Age greater or less than 60 at time of brain mets                                                                                        \\ \hline
+timedx                & \begin{tabular}[c]{@{}c@{}}Indicator: Time (years) from breast cancer diagnosis to brain\\ mets diagnosis greater or less than 6 years\end{tabular} \\ \hline
+site5                 & Indicator: First metastasis was to brain                                                                                                            \\ \hline
+Race                  & Categorical: White, Black, Hispanic, other                                                                                                          \\ \hline
+priorn                & \begin{tabular}[c]{@{}c@{}}Indicator: Number of prior treatments in metastatic setting \\ before brain mets\end{tabular}                            \\ \hline
+Brain Metastases Type & Categorical: Single, multiple, Leptomeningeal disease                                                                                               \\ \hline
+Controlled            & Indicator: Extracranial progression of brain mets                                                                                                   \\ \hline
+\end{tabular}
+\caption{Table of important covariates to be used in the analysis}
+\label{table:importantvars}
+\end{table}
+
+In figure \ref{fig:missingplot} we see a plot of the missingness in the data. This data is exemplary for this task because it is large, survival amenable, has missingness and is a prime candidate for imputation, and has treatment variables that are not given in an RCT.
 \begin{figure}[h!]
   \centering
     \includegraphics[width=0.8\textwidth]{missingvalues_plot.png}
@@ -28,7 +48,34 @@ The model is set up by hand, following the advice from \cite{VanBuuren2011}. It 
 
 The first task we need to do is to assess the missing data mechanism. As we have discussed before, there is no test to determine what the mechanism is. It is very unlikely that the data is MCAR (which we typically associate with random/accidental deletion), so it is between MAR and MNAR. We have so many different covariates, and it could reasonably be assumed that the missing data we have could be explained by the type of disease, its stage, the subject's age, their standardized assessment, and their survival time, among other things which we have collected. So it would be reasonable to assume that the missing data mechanism is MAR, and thus imputation can be confidently used
 
-For each covariate with missingness, we need to decide the form of the imputation model that will be used for imputation, and what predictors will be used in it. Most of the covariates that needed imputation were either binary or categorical, so the most popular model chosen were logistic regression and predictive mean matching. The continuous variables were often selected via regression or predictive mean matching. I decided to be very forgiving, and use nearly every reasonable predictor for each missing covariate. I did this to bolster the MAR claim, and avoid variable selection. Van Buuren proposes measures called influx and outflux to determine how worthy and connected each covariate will be as a predictor \cite{VanBuuren2012}. An ideal variable to use as a predictor would be one with an influx and outflux near one. I used all predictors except those that had very poor influx and outflux. Unsurprisingly, these were the ones with extreme missingness<influx and outflux plot>
+For each covariate with missingness, we need to decide the form of the imputation model that will be used for imputation, and what predictors will be used in it. Most of the covariates that needed imputation were either binary or categorical, so the most popular model chosen were logistic regression and predictive mean matching. The continuous variables were often selected via regression or predictive mean matching. I decided to be very forgiving, and use nearly every reasonable predictor for each missing covariate. I did this to bolster the MAR claim, and avoid variable selection. Van Buuren proposes measures called influx and outflux to determine how worthy and connected each covariate will be as a predictor \cite{VanBuuren2012}. An ideal variable to use as a predictor would be one with an influx near zero and outflux near one. I used all predictors except those that had very poor influx and outflux. Unsurprisingly, these were the ones with high missingness or poor connection to the data, as can be seen in table \ref{table:flux}.
+
+\begin{table}[ht]
+\centering
+\begin{tabular}{rrrr}
+  \hline
+ & Percent Observed & influx & outflux \\ 
+  \hline
+ki67 & 0.17 & 0.83 & 0.12 \\ 
+  brca & 0.05 & 0.95 & 0.04 \\ 
+  p53 & 0.01 & 0.99 & 0.01 \\ 
+  symptoms & 0.59 & 0.37 & 0.35 \\ 
+  seizures & 0.58 & 0.38 & 0.34 \\ 
+  headaches & 0.58 & 0.38 & 0.34 \\ 
+  nausea & 0.58 & 0.38 & 0.34 \\ 
+  chocking & 0.58 & 0.38 & 0.34 \\ 
+  balance & 0.58 & 0.38 & 0.34 \\ 
+  weakness & 0.58 & 0.38 & 0.34 \\ 
+  language & 0.58 & 0.38 & 0.34 \\ 
+  cognition & 0.57 & 0.38 & 0.34 \\ 
+  ECOG & 0.35 & 0.62 & 0.16 \\ 
+  gpaecog & 0.35 & 0.62 & 0.16 \\ 
+  gpasum & 0.31 & 0.65 & 0.11 \\ 
+   \hline
+\end{tabular}
+\caption{Percent observed and influx and outflux of the worst predictors. Ki67, brca, and p53 are cancer markers, ECOG and GPA are performance scores}
+\label{table:flux}
+\end{table}
 
 Once the choices had been made, I needed to run the imputations by trial and error. This took a considerable amount of time, because after every change made, I had to rerun the imputation and reassess convergence and validity of the imputation. I did trial and error for model and predictor specification until the data seemed like it could have reasonably been observed.
 
@@ -87,4 +134,8 @@ axis(2,tick=FALSE,labels=FALSE)
 
 #traceplots
 plot(imp50x40,c("timemet","anysys","ki67"))
+
+#fluxtable
+xtable(subset(j,influx>.3&outflux<.5,select=c("pobs","influx","outflux")))
+
 \end{comment}
