@@ -4,9 +4,24 @@
 \begin{comment}
 We have now laid down the theory of what we want to do describing all of the choices we may need to make, so now we will put it in action. The data that we will apply it to is a dataset from M.D Anderson Cancer Center. The data is a collection of about 1500 patients at MD Anderson who have breast cancer that has metastasized to the brain, about 100 clinically relevant covariates, along with their survival status and time.
 \end{comment}
-Unfortunately, as of October 23rd, we are still waiting for final approval from the PI of the project and the IRB. I want to get the proposal out to y'all though. So, what I will do in this section is describe what I will do, and once I get approval, I will fill in the tables and plots. In the meantime, I will put in <whatever> where something that uses the data should be. The IRB protocol is RCR03-0931, but neither Dr. Hess nor myself are on the protocol, because it is out of date. We are in the process of getting it updated, and plan to have it done by the time I defend this thesis
+Now that the theory is in place, we can apply it to some real data. The dataset that I chose to analyze is a dataset from MD Anderson Cancer Center, with permission from Dr. Bugano, Dr. Ibrahim, Dr. Hess and <whoever else needs to be thanked>. The IRB protocol is RCR03-0931. This dataset has historical records of 1514 MD Anderson patients who have had breast cancer that has metastasized to the brain. Metastases are often shortened in speech and in paper to the word “mets”. The dataset consists of 111 covariates, with missingness ranging from 0 to 99\%. Some predictors are metadata, and rare tests, so they will not be considered. Ignoring these, the missingness ranges from 0 to 65\%. Included in these are 90 different covariates, a few different treatments, as well as survival endpoints (which are all observed). The data can be broken down into a few broad categories, as can be seen in table \ref{table:cats}.There are too many covariates to completely explain here, but I’ve listed the ones relevant to our models in table \ref{table:importantvars}
 
-Now that the theory is in place, we can apply it to some real data. The dataset that I chose to analyze is a dataset from MD Anderson Cancer Center, with permission from Dr. Bugano, Dr. Ibrahim, Dr. Hess and <whoever else needs to be thanked>. This dataset has historical records of 1514 MD Anderson patients who have had breast cancer that has metastasized to the brain. There are lots of covariates recorded (about 90, most with some missingness), a few different treatments, as well as survival endpoints (which are all observed). The data can be broken down into a few parts; subject data (like age range and race), cancer type data (like stage, type, status), pre metastases data (like treatment types), clinical observations (like headaches or nausea) post metastases data (like treatment, type of brain metastasis), and survival (survival of different events and censoring indicators).  There are many covariates to consider, but I’ve listed the ones relevant to our models in table \ref{table:importantvars}
+\begin{table}[]
+\centering
+
+\begin{tabular}{|c|c|}
+\hline
+Type                                                                            & Example                                                                       \\ \hline
+Subject data                                                                    & Age range, race, date of birth                                                \\ \hline
+Cancer data                                                                     & TNM staging, type, receptor status                                            \\ \hline
+\begin{tabular}[c]{@{}c@{}}Pre brain mets\\ data\end{tabular}                   & Treatment types                                                               \\ \hline
+\begin{tabular}[c]{@{}c@{}}Post brain mets\\ clinical observations\end{tabular} & Seizures, headache, nasuea                                                    \\ \hline
+\begin{tabular}[c]{@{}c@{}}Post brain mets\\ data\end{tabular}                  & \begin{tabular}[c]{@{}c@{}}Treatment type, \\ type of brain mets\end{tabular} \\ \hline
+Survival data                                                                   & Survival time after brain mets, censoring indicator                           \\ \hline
+\end{tabular}
+\caption{Data Categories and Examples}
+\label{table:cats}
+\end{table}
 \begin{table}[]
 \centering
 \begin{tabular}{|c|c|c|}
@@ -31,7 +46,7 @@ her2        & .10                                                        & Indic
 
 \end{table}
 
-In figure \ref{fig:missingplot} we see a plot of the missingness in the data. This data is exemplary for this task because it is large, survival amenable, has missingness and is a prime candidate for imputation, and has treatment variables that are not given in an RCT.
+To get a feel for how the data is missing, in figure \ref{fig:missingplot} we see a plot of the missingness in the data. 
 \begin{figure}[h!]
   \centering
     \includegraphics[width=0.8\textwidth]{missingvalues_plot.png}
@@ -41,6 +56,8 @@ In figure \ref{fig:missingplot} we see a plot of the missingness in the data. Th
 \small
 Along the horizontal axis is the subject, and the vertical axis is the covariates. \textcolor{green}{Green} denotes observed values whereas \textcolor{red}{red} is missing. The covariates with the highest missingness are three genetic measures, as well as some clinical assessments.
 \end{figure}
+
+This data is exemplary for demonstrating thesis ideas because it is a large retrospective study (pulled from a database), survival amenable, has missingness that is a prime candidate for imputation, and has treatment variables that are not given in an RCT.
 
 Our first step is to clearly define what we would like to find. There are many interesting questions we could ask and answer from this data because of the amount of data available, but the question I will focus on here is survival in two different settings. In the first, we will explore the treatment effect of Capecitabine (a chemotherapeutic agent) versus other chemotherapeutic agents versus no treatment. In the second, we will look at the effect of two HER2 directed drugs (Lapatinib versus Trastuzumab) versus no HER2 targeted drugs in a subset of the patients who are HER2+
 It isn't vital to understand what these drugs do, but the interested reader may want to look at appendix \ref{app:apdxb} for a very basic overview of breast cancer and the methods of how different drugs work. For a much more detailed analysis and other clinically relevant questions, see !!Hess, Bugano, Berliner!! This is the project that this research was forked off of, although it will probably not be published by the time this thesis is. 
