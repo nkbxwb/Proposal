@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.1415926-2.5-1.40.14 (MiKTeX 2.9) (preloaded format=pdflatex 2015.8.23)  31 OCT 2015 16:44
+This is pdfTeX, Version 3.1415926-2.5-1.40.14 (MiKTeX 2.9) (preloaded format=pdflatex 2015.8.23)  31 OCT 2015 20:24
 entering extended mode
 **thesis_main.tex
 (C:\Users\Nathan\Desktop\Proposal\thesis_main.tex
@@ -387,7 +387,7 @@ LaTeX Warning: No positions in optional float specifier.
                Default added (so using `tbp') on input line 10.
 
 
-Overfull \hbox (25.40883pt too wide) in paragraph at lines 13--25
+Overfull \hbox (20.86316pt too wide) in paragraph at lines 12--29
  [][] 
  []
 
@@ -399,29 +399,28 @@ Overfull \hbox (25.40883pt too wide) in paragraph at lines 13--25
 File: missingvalues_plot.png Graphic file (type png)
 
 <use missingvalues_plot.png>
-Package pdftex.def Info: missingvalues_plot.png used on input line 32.
+Package pdftex.def Info: missingvalues_plot.png used on input line 37.
 (pdftex.def)             Requested size: 346.89731pt x 236.80606pt.
+ [33 <C:/Users/Nathan/Desktop/Proposal/missingvalues_plot.png>] [34] [35] [36] 
+[37]
+Missing character: There is no “ in font cmr12!
+Missing character: There is no ” in font cmr12!
+ [38]
+<traceplots.png, id=160, 580.1675pt x 485.815pt>
+File: traceplots.png Graphic file (type png)
+ <use traceplots.png>
+Package pdftex.def Info: traceplots.png used on input line 95.
+(pdftex.def)             Requested size: 346.89731pt x 290.4831pt.
 
 
 LaTeX Warning: `!h' float specifier changed to `!ht'.
 
-[33] [34 <C:/Users/Nathan/Desktop/Proposal/missingvalues_plot.png>] [35]
-[36]
-Missing character: There is no “ in font cmr12!
-Missing character: There is no ” in font cmr12!
- [37] <traceplots.png, id=157, 580.1675pt x 485.815pt>
-File: traceplots.png Graphic file (type png)
-
-<use traceplots.png>
-Package pdftex.def Info: traceplots.png used on input line 90.
-(pdftex.def)             Requested size: 346.89731pt x 290.4831pt.
- [38 <C:/Users/Nathan/Desktop/Proposal/traceplots.png>]
 Missing character: There is no … in font cmr12!
-
-[39] [40] [41]
+[39] [40 <C:/Users/Nathan/Desktop/Proposal/traceplots.png>] [41] [42]
 Missing character: There is no — in font cmr12!
 Missing character: There is no … in font cmr12!
- [42]) [43] [44] (C:\Users\Nathan\Desktop\Proposal\discussion.tex
+ [43])
+[44] (C:\Users\Nathan\Desktop\Proposal\discussion.tex
 Chapter 4.
 Missing character: There is no ’ in font cmr12!
 Missing character: There is no ’ in font cmr12!
@@ -488,10 +487,10 @@ Missing character: There is no ™ in font cmr12!
 (C:\Users\Nathan\Desktop\Proposal\append-a.aux)
 (C:\Users\Nathan\Desktop\Proposal\append-b.aux)) ) 
 Here is how much of TeX's memory you used:
- 3330 strings out of 493921
- 43913 string characters out of 3144873
- 107520 words of memory out of 3000000
- 6492 multiletter control sequences out of 15000+200000
+ 3329 strings out of 493921
+ 43903 string characters out of 3144873
+ 106509 words of memory out of 3000000
+ 6491 multiletter control sequences out of 15000+200000
  11722 words of font info for 45 fonts, out of 3000000 for 9000
  841 hyphenation exceptions out of 8191
  34i,15n,35p,2148b,269s stack positions out of 5000i,500n,10000p,200000b,50000s
@@ -510,7 +509,7 @@ sfonts/cm/cmsy10.pfb><C:/Program Files (x86)/MiKTeX 2.9/fonts/type1/public/amsf
 onts/cm/cmsy6.pfb><C:/Program Files (x86)/MiKTeX 2.9/fonts/type1/public/amsfont
 s/cm/cmsy8.pfb><C:/Program Files (x86)/MiKTeX 2.9/fonts/type1/public/amsfonts/c
 m/cmti12.pfb>
-Output written on thesis_main.pdf (64 pages, 468398 bytes).
+Output written on thesis_main.pdf (64 pages, 468878 bytes).
 PDF statistics:
  271 PDF objects out of 1000 (max. 8388607)
  0 named destinations out of 1000 (max. 500000)

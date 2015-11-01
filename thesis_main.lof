@@ -4,8 +4,8 @@
 \contentsline {figure}{\numberline {2.1}{\ignorespaces Normal JM imputation pseudocode}}{15}
 \contentsline {figure}{\numberline {2.2}{\ignorespaces MICE FCS imputation pseudocode}}{17}
 \addvspace {\baselineskip }
-\contentsline {figure}{\numberline {3.1}{\ignorespaces Visualization of missingness in the cancer dataset}}{34}
-\contentsline {figure}{\numberline {3.2}{\ignorespaces Selected plots of imputation mean and standard deviation by iteration}}{38}
+\contentsline {figure}{\numberline {3.1}{\ignorespaces Visualization of missingness in the cancer dataset}}{33}
+\contentsline {figure}{\numberline {3.2}{\ignorespaces Selected plots of imputation mean and standard deviation by iteration}}{40}
 \addvspace {\baselineskip }
 \addvspace {\baselineskip }
 \addvspace {\baselineskip }
