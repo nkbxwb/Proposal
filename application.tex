@@ -6,9 +6,8 @@ We have now laid down the theory of what we want to do describing all of the cho
 \end{comment}
 Now that the theory is in place, we can apply it to some real data. The dataset that I chose to analyze is a dataset from MD Anderson Cancer Center, with permission from Dr. Bugano, Dr. Ibrahim, Dr. Hess and <whoever else needs to be thanked>. The IRB protocol is RCR03-0931. This dataset has historical records of 1514 MD Anderson patients who have had breast cancer that has metastasized to the brain. Metastases are often shortened in speech and in paper to the word “mets”. The dataset consists of 111 covariates, with missingness ranging from 0 to 99\%. Some predictors are metadata, and rare tests, so they will not be considered. Ignoring these, the missingness ranges from 0 to 65\%. Included in these are 90 different covariates, a few different treatments, as well as survival endpoints (which are all observed). The data can be broken down into a few broad categories, as can be seen in table \ref{table:cats}.There are too many covariates to completely explain here, but I’ve listed the ones relevant to our models in table \ref{table:importantvars}
 
-\begin{table}[]
+\begin{table}[ !ht]
 \centering
-
 \begin{tabular}{|c|c|}
 \hline
 Type                                                                            & Example                                                                       \\ \hline
@@ -22,24 +21,25 @@ Survival data                                                                   
 \caption{Data Categories and Examples}
 \label{table:cats}
 \end{table}
-\begin{table}[]
+
+\begin{table}[ !ht]
 \centering
 \begin{tabular}{|c|c|c|}
 \hline
 Name        & \begin{tabular}[c]{@{}c@{}}Percent \\ Missing\end{tabular} & Meaning                                                                                                                                             \\ \hline
-hrher2      & .05                                                        & \begin{tabular}[c]{@{}c@{}}Categorical variable: The hormonal receptor and \\ HER2 receptor status of the subject\end{tabular}                      \\ \hline
+hrher2      & 5                                                        & \begin{tabular}[c]{@{}c@{}}Categorical variable: The hormonal receptor and \\ HER2 receptor status of the subject\end{tabular}                      \\ \hline
 agebrainmet & 0                                                          & Indicator: Age greater or less than 60 at time of brain mets                                                                                        \\ \hline
-timedx      & 01                                                         & \begin{tabular}[c]{@{}c@{}}Indicator: Time (years) from breast cancer diagnosis to brain\\ mets diagnosis greater or less than 6 years\end{tabular} \\ \hline
-site5       & .01                                                        & Indicator: First metastasis was to brain                                                                                                            \\ \hline
+timedx      & 1                                                         & \begin{tabular}[c]{@{}c@{}}Indicator: Time (years) from breast cancer diagnosis to brain\\ mets diagnosis greater or less than 6 years\end{tabular} \\ \hline
+site5       & 1                                                        & Indicator: First metastasis was to brain                                                                                                            \\ \hline
 race2       & 0                                                          & Categorical: White, Black, Hispanic, other                                                                                                          \\ \hline
 priorn      & 0                                                          & \begin{tabular}[c]{@{}c@{}}Indicator: Number of prior treatments in metastatic setting \\ before brain mets\end{tabular}                            \\ \hline
-braintype   & .04                                                        & Categorical: Single, multiple, Leptomeningeal disease                                                                                               \\ \hline
-controlled  & .12                                                        & Indicator: Extracranial progression of brain mets                                                                                                   \\ \hline
-capeothno   & .18                                                        & \begin{tabular}[c]{@{}c@{}}Indicator: Capecitabine, other, or no chemotheraputic\\ treatment. Treatment variable 1\end{tabular}                     \\ \hline
-lapatrasno  & .18                                                        & \begin{tabular}[c]{@{}c@{}}Indicator: Lapatinib, Trastuzumab, or no HER2 treatment.\\ Treatment variable 2\end{tabular}                             \\ \hline
+braintype   & 4                                                        & Categorical: Single, multiple, Leptomeningeal disease                                                                                               \\ \hline
+controlled  & 12                                                        & Indicator: Extracranial progression of brain mets                                                                                                   \\ \hline
+capeothno   & 18                                                        & \begin{tabular}[c]{@{}c@{}}Indicator: Capecitabine, other, or no chemotheraputic\\ treatment. Treatment variable 1\end{tabular}                     \\ \hline
+lapatrasno  & 18                                                        & \begin{tabular}[c]{@{}c@{}}Indicator: Lapatinib, Trastuzumab, or no HER2 treatment.\\ Treatment variable 2\end{tabular}                             \\ \hline
 os          & 0                                                          & Overall survival (months)                                                                                                                           \\ \hline
 dead        & 0                                                          & Indicator: death indicator                                                                                                                          \\ \hline
-her2        & .10                                                        & Indicator: HER2 receptor status                                                                                                                     \\ \hline
+her2        & 10                                                        & Indicator: HER2 receptor status                                                                                                                     \\ \hline
 \end{tabular}
 \caption{Table of important covariates to be used in the analysis}
 \label{table:importantvars}
@@ -75,7 +75,7 @@ The first task we need to do is to assess the missing data mechanism. As we have
 
 For each covariate with missingness, we need to decide the form of the imputation model that will be used for imputation, and what predictors will be used in it. Most of the covariates that needed imputation were either binary or categorical, so the most popular model chosen were logistic regression, multinomial logit regression, or predictive mean matching. The method that was most appropriate for each situation was chosen. The continuous variables were often selected via regression or predictive mean matching. I decided to be very forgiving, and use nearly every reasonable predictor for each missing covariate. I did this to bolster the MAR claim, and avoid variable selection. Van Buuren proposes measures called influx and outflux to determine how worthy and connected each covariate will be as a predictor \cite{VanBuuren2012}. An ideal variable to use as a predictor would be one with an influx near zero and outflux near one. I used all predictors except those that had very poor influx and outflux. Unsurprisingly, the covariates with poor influx and outflux were those who had high missingness or poor relatedness to the rest of the data, as can be seen in table \ref{table:flux}.
 
-\begin{table}[ht]
+\begin{table}[ !ht]
 \centering
 \begin{tabular}{rrrr}
   \hline
@@ -109,22 +109,57 @@ For the final MI dataset, it was decided to impute $m=50$ datasets and 40 iterat
 After the final model for each covariate with missingness has been set up, we need to run it and save the results. For 50 datasets, 40 iterations, the algorithm runs in about 4 hours, and for 50 datasets with 100 iterations, it took 11.5 hours on a computer with 4 GB of ram and 4 cores. While this seems like a long time, this process only needs to be done once and requires no human interaction, so it can be run overnight and then never need to be touched again. The imputations were run for 100 iterations to see how the run time scaled, as well as to check how the chains behaved and to see how the analyses differed. The results between 50 and 100 iterations were very similar. As well, there is hardly any confidence to be gained going from 50 to 100, and having such large objects in memory can be harder to work with. This is why 50 MI datasets, iterated 40 times each were chosen.
 
 %start here, want to say look at variance for categorical variables
-We need to check our final imputations for convergence and reliability. Convergence is assessed by looking at plots of covariate mean and standard deviation by iteration, as a select few can be seen in figure \ref{fig:traceplot} There are 80 plots to check, so I cannot show all of them in this paper, I only show some interesting ones. According to van Buuren ``the different streams should be freely intermingled with each other, without showing any definite trends. Convergence is diagnosed when the variance between different sequences is no larger than the variance with each individual sequence'' \cite{VanBuuren2011}. Looking at these plots, this certainly seems to be the case. Other authors suggest using a more formal statistical tests such as $\hat{R}$, but since most of our interesting variables are categorical, this does not make much sense. Diagnostic plots are viewed to ensure that the imputed data is similar enough to the real data.< A few of the plots have been replicated here>. To see all of the plots, go to the shiny app/ R package (do this if enough time, also see about security. (Might just need to make it be “available upon request”). As we can see, not all of the imputed data follows the distribution of the observed data exactly, but for the majority of the plots, the data look like they could have been real data.
+We need to check our final imputations for convergence and reliability. Convergence is assessed by looking at plots of covariate mean and standard deviation by iteration. Diagnosing convergence for binary and categorical variables is a bit tricky, because the mean of a categorical variable is nonsensical, but we can get a good idea of convergence by looking at if the variance remains constant. And for binary variables, knowing how the groups are coded and looking at where the means are can give us an idea of healthy convergence. For example, if we had a variable coded as 1 for underweight and 2 for overweight, and we expected there to be much more overweight imputations than underweight, seeing a mean of 1.8  (indicating 80\% were imputed as overweight) would be reasonable, but 1.2 would not. According to van Buuren ``the different streams should be freely intermingled with each other, without showing any definite trends. Convergence is diagnosed when the variance between different sequences is no larger than the variance with each individual sequence'' \cite{VanBuuren2011}. There are 80 plots to check, so I cannot show all of them in this paper, I only show some interesting ones as a select few can be seen in figure \ref{fig:traceplot1} and \ref{fig:traceplot2}. Looking at these plots, convergence certainly seems to be the case.  Other authors suggest using a more formal statistical tests such as $\hat{R}$, but since most of our interesting variables are categorical, this does not make much sense. 
 
 \begin{figure}[h!]
   \centering
-    \includegraphics[width=0.8\textwidth]{traceplots.png}
-  \caption{Selected plots of imputation mean and standard deviation by iteration}
-\label{fig:traceplot}
-the highest missingness are three genetic measures, as well as some clinical assessments.
+    \includegraphics[width=0.8\textwidth]{traceplots1.png}
+  \caption{Selected plots of continuous variable imputation mean and standard deviation by iteration}
+\label{fig:traceplot1}
 \end{figure}
 
-\section{Survival Analysis}
+
+\begin{figure}[h!]
+  \centering
+    \includegraphics[width=0.8\textwidth]{traceplots2.png}
+  \caption{Selected plots of binarys variable imputation mean and standard deviation by iteration}
+\label{fig:traceplot2}
+\end{figure}
+
+Now that convergence is diagnosed, the validity of the imputations needs to be inspected.  Diagnostic plots are viewed to ensure that the imputed data is similar enough to the real data. Common plots include density plots of each MI dataset compared to the complete cases, as well as bivariate scatterplots for imputed variables. < A few of the plots have been replicated here!!! Still need to do this>. Once again, all of the plots cannot be displayed in this paper, but some important ones are recreated. As we can see, not all of the imputed data follows the distribution of the observed data exactly, but for the majority of the plots, the data look like they could have been real data had they not been missing.
+
+Now that the imputations are done, let’s have a look at the breakdown of the data. In table \ref{table:chartab} we can see how the MI data compares to the available case data, broken down by if the subject had any systemic therapy. As noted before, this was computed via the stacked method because of the percentages.
+\begin{table}[!ht]
+\centering
+
+\begin{tabular}{|r|l|l|l|l|}
+\hline
+\multicolumn{1}{|l|}{}                            & \multicolumn{1}{c|}{\begin{tabular}[c]{@{}c@{}}Sys therapy \\ available case\end{tabular}} & \multicolumn{1}{c|}{\begin{tabular}[c]{@{}c@{}}Sys therapy \\ MI\end{tabular}} & \multicolumn{1}{c|}{\begin{tabular}[c]{@{}c@{}}No Sys therapy \\ available case\end{tabular}} & \multicolumn{1}{c|}{\begin{tabular}[c]{@{}c@{}}No Sys therapy \\ MI\end{tabular}} \\ \hline
+\multicolumn{1}{|l|}{Age (mean,sd)}               & 51.4(10.8)                                                                                 & 51.2(10.9)                                                                     & 52.7(11.9)                                                                                    & 52.9(11.4)                                                                        \\ \hline
+\multicolumn{1}{|l|}{Breast Cancer subtype}       &                                                                                            &                                                                                &                                                                                               &                                                                                   \\ \hline
+HR+/HER2-                                         & 27\%                                                                                       & 31\%                                                                           & 28\%                                                                                          & 33\%                                                                              \\ \hline
+HR+/HER2+                                         & 19\%                                                                                       & 18\%                                                                           & 12\%                                                                                          & 13\%                                                                              \\ \hline
+HR-/HER2+                                         & 22\%                                                                                       & 20\%                                                                           & 15\%                                                                                          & 12\%                                                                              \\ \hline
+Triple negative                                   & 32\%                                                                                       & 32\%                                                                           & 45\%                                                                                          & 42\%                                                                              \\ \hline
+\multicolumn{1}{|l|}{Prior therapies for stage 4} & 1(0-3)                                                                                     & 2(0-4)                                                                         & 2(0-4)                                                                                        & 2(0-4)                                                                            \\ \hline
+\multicolumn{1}{|l|}{Single brain lesion}         & 25\%                                                                                       & 23\%                                                                           & 23\%                                                                                          & 20\%                                                                              \\ \hline
+\multicolumn{1}{|l|}{Controlled extra-cranial}    & 40\%                                                                                       & 40\%                                                                           & 35\%                                                                                          & 36\%                                                                              \\ \hline
+\multicolumn{1}{|l|}{ECOG 0-1}                    & 84\%                                                                                       & 70\%                                                                           & 53\%                                                                                          & 40\%                                                                              \\ \hline
+\multicolumn{1}{|l|}{Local Therapy}               &                                                                                            &                                                                                &                                                                                               &                                                                                   \\ \hline
+Resection Alone                                   & 5\%                                                                                        & 5\%                                                                            & 9\%                                                                                           & 7\%                                                                               \\ \hline
+SBRT alone                                        & 13\%                                                                                       & 12\%                                                                           & 9\%                                                                                           & 8\%                                                                               \\ \hline
+WBRT                                              & 60\%                                                                                       & 59\%                                                                           & 52\%                                                                                          & 53\%                                                                              \\ \hline
+Resection/SBRT+WBRT                               & 12\%                                                                                       & 14\%                                                                           & 10\%                                                                                          & 8\%                                                                               \\ \hline
+no local therapy                                  & 10\%                                                                                       & 10\%                                                                           & 20\%                                                                                          & 23\%                                                                              \\ \hline
+\end{tabular}
+\caption{Characteristics of available case data versus MI data}
+\label{table:chartab}
+\end{table}\section{Survival Analysis}
 
 Now that the datasets are imputed, we are ready to run our models on them.  Before we begin though, we should check the models on the available cases, to make sure that the model assumptions are met, and to get an idea of how the importance of each part of the model. The available case models were run and the assumptions were checked, and all of them passed. You can see the results, alongside the MI values throughout this section.
 
 
-It should be noted that in all of our survival analyses, we will be doing a landmark analysis. Landmark analysis means that we don't start the analysis at time 0, rather, we start it at a different time later than 0. In Dr. Hess's words, ``Since the brain metastases treatment data was necessarily determined after the diagnosis of the brain met, it is not appropriate to use this data as baseline covariates in the analyses. Only covariates known at the time of diagnosis can be used in this fashion… we can do a landmark analysis by estimating when the vast majority of patients would had their brain met treatment choices started and starting our analyses at this point ''. After speaking with subject matter experts (Dr. Bugano and Dr. Ibrahim), this landmark time was determined to be 2 months. 
+It should be noted that in all of our survival analyses, we will be doing a landmark analysis. Landmark analysis means that we don't start the analysis at time 0, rather, we start it at a different time later than 0. In Dr. Hess's words, ``Since the brain mets treatment data was necessarily determined after the diagnosis of the brain met, it is not appropriate to use this data as baseline covariates in the analyses. Only covariates known at the time of diagnosis can be used in this fashion… we can do a landmark analysis by estimating when the vast majority of patients would had their brain met treatment choices started and starting our analyses at this point ''. After speaking with cancer experts (Dr. Bugano and Dr. Ibrahim), this landmark time was determined to be 2 months. 
 
 The first result that we will check is the Kaplan-Meier curves for the imputed data. The available case analysis shows that Lapatinib and Trastuzumab are quite close to each other, while having no HER2  directed treatment being much lower. For the chemotherapeutic drugs, available case was X,Y,Z. The log rank test statistic is X, with pvalue Y, indicating Z ,and these results can be seen on <table whatever>. The pooled KM estimate was found using Rubin's rules, but under a complimentary log-log transform as suggested by \cite{Marshall2009} to get the survival curves towards normality. The results from MI look quite similar <and can be seen on the plot of AC analysis and MI analysis>. 
 
@@ -159,8 +194,8 @@ axis(1, seq(0, 1, length.out = nrow(data)), 1:nrow(data), col = "white")
 axis(2,tick=FALSE,labels=FALSE)
 
 #traceplots
-plot(imp50x40,c("timemet","anysys","ki67"))
-
+plot(imp50x40,c("timemet","timedx","ki67"),main="Traceplots, continuous")
+plot(imp50x40,c("controlled","anysys","HER2"),main="Traceplots, binary")
 #fluxtable
 xtable(subset(j,influx>.3&outflux<.5,select=c("pobs","influx","outflux")))
 

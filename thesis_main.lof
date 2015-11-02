@@ -5,7 +5,8 @@
 \contentsline {figure}{\numberline {2.2}{\ignorespaces MICE FCS imputation pseudocode}}{17}
 \addvspace {\baselineskip }
 \contentsline {figure}{\numberline {3.1}{\ignorespaces Visualization of missingness in the cancer dataset}}{35}
-\contentsline {figure}{\numberline {3.2}{\ignorespaces Selected plots of imputation mean and standard deviation by iteration}}{39}
+\contentsline {figure}{\numberline {3.2}{\ignorespaces Selected plots of continuous variable imputation mean and standard deviation by iteration}}{40}
+\contentsline {figure}{\numberline {3.3}{\ignorespaces Selected plots of binarys variable imputation mean and standard deviation by iteration}}{41}
 \addvspace {\baselineskip }
 \addvspace {\baselineskip }
 \addvspace {\baselineskip }
