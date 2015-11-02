@@ -157,17 +157,36 @@ no local therapy                                  & 10\%                        
 
 \section{Survival Analysis}
 
-Now that the datasets are imputed, we are ready to run our models on them.  Before we begin though, we should check the models on the available cases, to make sure that the model assumptions are met, and to get an idea of how the importance of each part of the model. The available case models were run and the assumptions were checked, and all of them passed. You can see the results, alongside the MI values throughout this section.
+Now that the datasets are imputed, we are ready to run our models on them.  Before we begin though, we should check the models on the available cases, to make sure that the model assumptions are met, and to get an idea of how the importance of each part of the model. The available case models (Kaplan-Meier, Cox) were run and the assumptions were checked, and all of them passed. You can see the results, alongside the MI values throughout this section.
 
 
 It should be noted that in all of our survival analyses, we will be doing a landmark analysis. Landmark analysis means that we don't start the analysis at time 0, rather, we start it at a different time later than 0. In Dr. Hess's words, ``Since the brain mets treatment data was necessarily determined after the diagnosis of the brain met, it is not appropriate to use this data as baseline covariates in the analyses. Only covariates known at the time of diagnosis can be used in this fashion… we can do a landmark analysis by estimating when the vast majority of patients would had their brain met treatment choices started and starting our analyses at this point ''. After speaking with cancer experts (Dr. Bugano and Dr. Ibrahim), this landmark time was determined to be 2 months. 
 
-%start here
-The first result that we will check is the Kaplan-Meier curves for the imputed data. The available case analysis shows that Lapatinib and Trastuzumab are quite close to each other, while having no HER2  directed treatment being much lower. For the chemotherapeutic drugs, available case was X,Y,Z. The log rank test statistic is X, with pvalue Y, indicating Z ,and these results can be seen on <table whatever>. The pooled KM estimate was found using Rubin's rules, but under a complimentary log-log transform as suggested by \cite{Marshall2009} to get the survival curves towards normality. The results from MI look quite similar <and can be seen on the plot of AC analysis and MI analysis>. 
+The first result that we will check is the Kaplan-Meier curves for the imputed data. Noninformative censoring seems to be a valid assumption. The pooled KM estimate was found using Rubin's rules, but under a complimentary log-log transform as suggested by \cite{Marshall2009} to get the survival curves towards normality. The median and confidence interval about it was computed as the median of the upper and lower confidence bands.
 
-We can also get an approximation for the log rank test on the MI data via the Wald test on the pooled Cox model fit only on the treatment <with results in table here>. Recall that we are not able to get the exact log rank test because in doing so, we would need to compute either the likelihood ratio test or score test, both of which would include calculating the risk set, which is not possible in the MI setting. It has been suggested to pool the chi square statistics via methods presented in Marshall et al 2009, but even they say that this method is poor \cite{Marshall2009}. So, our only real option is to use the Wald test (which is very easy to compute), and use that value as a proxy for the log rank test (they are asymptotically equivalent).
+The first question we would like to look at is the survival curves for chemotherapeutic drugs. This can be seen in \ref{fig:chemo_km}. The available case and MI analyses look similar, but the MI data seems to give a lower median survival time for the chemotherapeutic drugs. For not taking any chemotherapeutic drugs though, the median increased.
 
-Now that we have estimate of the survival curve, we may set up a model to observe how changes in some baseline covariates change the hazard. We will do this with the Cox Proportional Hazards model. Once we have a baseline model fit and the assumptions met, we can add our treatment variable to see how this affects the hazard.  We first need to fit a reasonable model on the available cases. Speaking with the clinicians, they determined that these X variables were clinically relevant for the baseline model. The available case model  <will be seen in the table below>.  We need to make sure that the proportional hazards assumption is met in the available case model so we can apply it to the MI data. And seems to mostly pass the straight edge test for proportional hazards.  To check, we visually inspect the Schoenfeld residuals over time, and check the test of correlation between the residuals and time. Overall, the assumption of proportional hazards over time seems reasonable, and the test statistic affirms this <AC Cox.zph plots>. Although the splines fit the points may not look straight, it certainly seems reasonable that a straight line could be fit between the 95% confidence bands.
+\begin{figure}[h!]
+  \centering
+    \includegraphics[width=0.8\textwidth]{chemo_km.png}
+  \caption{Landmarked Kaplan-Meier curves for chemotherapeutic drugs, AC and MI data}
+\label{fig:chemo_km}
+\end{figure}
+
+
+For the HER2 targeted drugs the available case analysis shows that Lapatinib and Trastuzumab are quite close to each other, while having no HER2 directed treatment being much lower. The MI analysis says about the same, but once again gives lower values for the median survival time, as can be seen in figure \ref{fig:her2_km}.
+
+\begin{figure}[h!]
+  \centering
+    \includegraphics[width=0.8\textwidth]{her2_km.png}
+  \caption{Landmarked Kaplan-Meier curves for HER2 drugs, AC and MI data}
+\label{fig:her2_km}
+\end{figure}
+
+
+Now that we have a visual of the curves, we would like to see if there is actually a difference between them. To do so, the log rank test needs to be run on them. We can also get an approximation for the log rank test on the MI data via the Wald test on the pooled Cox model fit only on the treatment. Recall that we are not able to get the exact log rank test because in doing so, we would need to compute either the likelihood ratio test or score test, both of which would include calculating the risk set, which is not possible in the MI setting. It has been suggested to pool the chi square statistics via methods presented in Marshall et al 2009, but even they say that this method is poor \cite{Marshall2009}. So, our only real option is to use the Wald test (which is very easy to compute), and use that value as a proxy for the log rank test (they are asymptotically equivalent). <with results in table here>.
+
+Now that we have estimate of the survival curve, we may set up a model to observe how changes in some baseline covariates change the hazard. We will do this with the Cox Proportional Hazards model. Once we have a baseline model fit and the assumptions met, we can add our treatment variable to see how this affects the hazard.  We first need to fit a reasonable model on the available cases. Speaking with the clinicians, they determined that the covariates listed in table \ref{table:importantvars} were clinically relevant for the baseline model. The available case model  <will be seen in the table below>.  We need to make sure that the proportional hazards assumption is met in the available case model so we can apply it to the MI data. And seems to mostly pass the straight edge test for proportional hazards.  To check, we visually inspect the Schoenfeld residuals over time, and check the test of correlation between the residuals and time. Overall, the assumption of proportional hazards over time seems reasonable, and the test statistic affirms this <AC Cox.zph plots>. Although the splines fit the points may not look straight, it certainly seems reasonable that a straight line could be fit between the 95% confidence bands.
 
 We have verified that the available case analysis seems reasonable, now we can work with the MI data. We fit that same Cox model on all of our imputed data sets, and pool our results via Rubin's rules. We need to verify that we still have proportional hazards though. This is not a straight forward task anymore, since we don't actually have a single model, rather, we have the average of multiple models. We are no longer estimating the parameters by maximizing the partial likelihood; rather we are estimating them based on the average of the coefficients from the MI datasets. There are two ways we can go about verifying the proportional hazards assumption. 
 
@@ -200,5 +219,78 @@ plot(imp50x40,c("timemet","timedx","ki67"),main="Traceplots, continuous")
 plot(imp50x40,c("controlled","anysys","HER2"),main="Traceplots, binary")
 #fluxtable
 xtable(subset(j,influx>.3&outflux<.5,select=c("pobs","influx","outflux")))
+
+#chemo km
+par(mfcol=c(2,1))
+#plot it
+#available case
+plot(survfit(Surv(os,dead)~capeothno,subset=(os>2),data=data),
+     mark.time = FALSE,col=c("red","blue","green"),
+     main="Available case OS for chemo\n 2 month landmark",
+     xlab="time (months)",ylab="Surv Prob",
+     xlim=c(0,150),ylim=c(0,1),lwd=2,xaxt='n')
+axis(1, at=c(0,20,40,60,80,100,120,140,160))
+
+legend("topright", 
+       legend = c("Cape.,med=12.3(10.3,15.1)",
+                  "other,med=14.5(12.4,16.1)",
+                  "none,med=5.4(4.5,6.6)"),
+       col=c("red","blue","green")
+       ,lwd=2,cex=.7)
+
+#mi
+
+plot(capeothno_1_mtx[,1],pooled_KM_est1,type="s",col="red",
+     main="MI OS for chemo \n 2 month landmark",
+     xlab="time (months)",ylab="Surv Prob",
+     xlim=c(0,150),ylim=c(0,1),lwd=2,xaxt='n')
+axis(1, at=c(0,20,40,60,80,100,120,140,160))
+lines(capeothno_1_mtx[,1],pooled_KM_est2, col="blue",type="s",lwd=2)
+lines(capeothno_1_mtx[,1],pooled_KM_est3, col="green",type="s",lwd=2)
+
+
+
+legend("topright", legend = c(paste0("Cape.,med=",round(median_time1,1),"(",round(lower_time1,1),",",round(upper_time1,1),")"),
+                              paste0("Other, med=,",round(median_time2,1),"(",round(lower_time2,1),",",round(upper_time2,1),")"),
+                              paste0("None,med=",round(median_time3,1),"(",round(lower_time3,1),",",round(upper_time3,1),")")),
+       col=c("red","blue","green"),lwd=2,cex=.7)
+
+#km for her2
+par(mfcol=c(2,1))
+#plot it
+
+#available case
+plot(survfit(Surv(os,dead)~lapatrasno,subset=(os>2&HER2==1),data=data),
+     mark.time=FALSE,
+     main="AC - OS for HER2 therapy \n 2 month landmark",
+     xlab="time (months)",ylab="Surv Prob",
+     xlim=c(0,150),ylim=c(0,1),xaxt='n',lwd=2,col=c("red","blue","green"))
+axis(1, at=c(0,20,40,60,80,100,120,140,160))
+
+
+legend("topright", 
+       legend = c("Lapat., med=20.7(15.4,38.8)",
+                  "Trastuz., med=20.3(17.8,26.4)",
+                  "none, med=10.0(8.7,13.6)"),
+       col=c("red","blue","green")
+       ,lwd=2,cex=.7)
+
+
+#MI
+plot(lapatrasno_1_mtx[,1],pooled_KM_est1,type="s",col="red",
+     main="MI - OS for HER2 therapy \n 2 month landmark",
+     xlab="time (months)",ylab="Surv Prob",
+     xlim=c(0,150),ylim=c(0,1),xaxt='n',lwd=2)
+axis(1, at=c(0,20,40,60,80,100,120,140,160))
+
+lines(lapatrasno_1_mtx[,1],pooled_KM_est2, col="blue",type="s",lwd=2)
+lines(lapatrasno_1_mtx[,1],pooled_KM_est3, col="green",type="s",lwd=2)
+
+
+
+legend("topright", legend = c(paste0("Lapat., med=",round(median_time1,1),"(",round(lower_time1,1),",",round(upper_time1,1),")"),
+                              paste0("Trastuz., med=",round(median_time2,1),"(",round(lower_time2,1),",",round(upper_time2,1),")"),
+                              paste0("None, med=",round(median_time3,1),"(",round(lower_time3,1),",",round(upper_time3,1),")")),
+       col=c("red","blue","green"),lwd=2,cex=.7)
 
 \end{comment}

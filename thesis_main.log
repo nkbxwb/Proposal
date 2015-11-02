@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.1415926-2.5-1.40.14 (MiKTeX 2.9) (preloaded format=pdflatex 2015.8.23)  1 NOV 2015 21:10
+This is pdfTeX, Version 3.1415926-2.5-1.40.14 (MiKTeX 2.9) (preloaded format=pdflatex 2015.8.23)  2 NOV 2015 16:39
 entering extended mode
 **thesis_main.tex
 (C:\Users\Nathan\Desktop\Proposal\thesis_main.tex
@@ -332,7 +332,7 @@ Chapter 1.
 File: mi_example_full.jpg Graphic file (type jpg)
 
 <use mi_example_full.jpg>
-Package pdftex.def Info: mi_example_full.jpg used on input line 22.
+Package pdftex.def Info: mi_example_full.jpg used on input line 24.
 (pdftex.def)             Requested size: 346.89731pt x 188.02277pt.
 
 
@@ -408,13 +408,13 @@ LaTeX Warning: `!h' float specifier changed to `!ht'.
 File: traceplots1.png Graphic file (type png)
 
 <use traceplots1.png>
-Package pdftex.def Info: traceplots1.png used on input line 116.
+Package pdftex.def Info: traceplots1.png used on input line 115.
 (pdftex.def)             Requested size: 346.89731pt x 252.13246pt.
  [39] <traceplots2.png, id=164, 606.265pt x 440.64626pt>
 File: traceplots2.png Graphic file (type png)
 
 <use traceplots2.png>
-Package pdftex.def Info: traceplots2.png used on input line 124.
+Package pdftex.def Info: traceplots2.png used on input line 123.
 (pdftex.def)             Requested size: 346.89731pt x 252.13246pt.
 
 
@@ -422,29 +422,48 @@ LaTeX Warning: `!h' float specifier changed to `!ht'.
 
 Missing character: There is no ’ in font cmr12!
 
-Overfull \hbox (48.61453pt too wide) in paragraph at lines 135--155
+Overfull \hbox (48.61453pt too wide) in paragraph at lines 134--154
  [][] 
  []
 
 [40 <C:/Users/Nathan/Desktop/Proposal/traceplots1.png>]
 Missing character: There is no … in font cmr12!
- [41 <C:/Users/Nathan/Desktop/Proposal/traceplots2.png>] [42] [43] [44]
+ [41 <C:/Users/Nathan/Desktop/Proposal/traceplots2.png>] [42]
+<chemo_km.png, id=176, 448.67625pt x 485.815pt>
+File: chemo_km.png Graphic file (type png)
+ <use chemo_km.png>
+Package pdftex.def Info: chemo_km.png used on input line 171.
+(pdftex.def)             Requested size: 346.89731pt x 375.62059pt.
+
+
+LaTeX Warning: `!h' float specifier changed to `!ht'.
+
+<her2_km.png, id=177, 448.67625pt x 485.815pt>
+File: her2_km.png Graphic file (type png)
+ <use her2_km.png>
+Package pdftex.def Info: her2_km.png used on input line 181.
+(pdftex.def)             Requested size: 346.89731pt x 375.62059pt.
+
+
+LaTeX Warning: `!h' float specifier changed to `!ht'.
+
+[43] [44 <C:/Users/Nathan/Desktop/Proposal/chemo_km.png>] [45 <C:/Users/Nathan/
+Desktop/Proposal/her2_km.png>] [46]
 Missing character: There is no — in font cmr12!
- [45]
 Missing character: There is no … in font cmr12!
-) [46]
+ [47]) [48]
 (C:\Users\Nathan\Desktop\Proposal\discussion.tex
 Chapter 4.
 Missing character: There is no ’ in font cmr12!
 Missing character: There is no ’ in font cmr12!
 Missing character: There is no ’ in font cmr12!
-[47
+[49
 
 
 
-] [48] [49]) [50] (C:\Users\Nathan\Desktop\Proposal\conclusion.tex
+] [50] [51]) [52] (C:\Users\Nathan\Desktop\Proposal\conclusion.tex
 Chapter 5.
-) [51
+) [53
 
 
 
@@ -457,23 +476,23 @@ File: omscmr.fd 1999/05/25 v2.5h Standard LaTeX font definitions
 )
 LaTeX Font Info:    Font shape `OMS/cmr/m/n' in size <12> not available
 (Font)              Font shape `OMS/cmsy/m/n' tried instead on input line 7.
- [52
+ [54
 
 
 
 ]
 Missing character: There is no ’ in font cmr12!
 Missing character: There is no ’ in font cmr12!
- [53]
+ [55]
 Missing character: There is no ’ in font cmr12!
 )
-[54] (C:\Users\Nathan\Desktop\Proposal\append-b.tex
+[56] (C:\Users\Nathan\Desktop\Proposal\append-b.tex
 Missing character: There is no ’ in font cmr12!
- [55
+ [57
 
 
-]) [56]
-(C:\Users\Nathan\Desktop\Proposal\thesis_main.bbl [57
+]) [58]
+(C:\Users\Nathan\Desktop\Proposal\thesis_main.bbl [59
 
 
 ]
@@ -489,7 +508,7 @@ Missing character: There is no ˜ in font cmr12!
 Missing character: There is no â in font cmr12!
 Missing character: There is no € in font cmr12!
 Missing character: There is no ™ in font cmr12!
- [58] [59]) [60]
+ [60] [61]) [62]
 (C:\Users\Nathan\Desktop\Proposal\thesis_main.aux
 (C:\Users\Nathan\Desktop\Proposal\abstract.aux)
 (C:\Users\Nathan\Desktop\Proposal\chapter1.aux)
@@ -500,10 +519,10 @@ Missing character: There is no ™ in font cmr12!
 (C:\Users\Nathan\Desktop\Proposal\append-a.aux)
 (C:\Users\Nathan\Desktop\Proposal\append-b.aux)) ) 
 Here is how much of TeX's memory you used:
- 3337 strings out of 493921
- 44046 string characters out of 3144873
- 108542 words of memory out of 3000000
- 6498 multiletter control sequences out of 15000+200000
+ 3349 strings out of 493921
+ 44226 string characters out of 3144873
+ 108564 words of memory out of 3000000
+ 6508 multiletter control sequences out of 15000+200000
  11722 words of font info for 45 fonts, out of 3000000 for 9000
  841 hyphenation exceptions out of 8191
  34i,15n,35p,2148b,301s stack positions out of 5000i,500n,10000p,200000b,50000s
@@ -522,9 +541,9 @@ sfonts/cm/cmsy10.pfb><C:/Program Files (x86)/MiKTeX 2.9/fonts/type1/public/amsf
 onts/cm/cmsy6.pfb><C:/Program Files (x86)/MiKTeX 2.9/fonts/type1/public/amsfont
 s/cm/cmsy8.pfb><C:/Program Files (x86)/MiKTeX 2.9/fonts/type1/public/amsfonts/c
 m/cmti12.pfb>
-Output written on thesis_main.pdf (66 pages, 508329 bytes).
+Output written on thesis_main.pdf (68 pages, 527364 bytes).
 PDF statistics:
- 279 PDF objects out of 1000 (max. 8388607)
+ 290 PDF objects out of 1000 (max. 8388607)
  0 named destinations out of 1000 (max. 500000)
- 31 words of extra memory for PDF output out of 10000 (max. 10000000)
+ 41 words of extra memory for PDF output out of 10000 (max. 10000000)
 
