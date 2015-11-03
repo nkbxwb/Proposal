@@ -184,9 +184,25 @@ For the HER2 targeted drugs the available case analysis shows that Lapatinib and
 \end{figure}
 
 
-Now that we have a visual of the curves, we would like to see if there is actually a difference between them. To do so, the log rank test needs to be run on them. We can also get an approximation for the log rank test on the MI data via the Wald test on the pooled Cox model fit only on the treatment. Recall that we are not able to get the exact log rank test because in doing so, we would need to compute either the likelihood ratio test or score test, both of which would include calculating the risk set, which is not possible in the MI setting. It has been suggested to pool the chi square statistics via methods presented in Marshall et al 2009, but even they say that this method is poor \cite{Marshall2009}. So, our only real option is to use the Wald test (which is very easy to compute), and use that value as a proxy for the log rank test (they are asymptotically equivalent). <with results in table here>.
+Now that we have a visual of the curves, we would like to see if there is actually a difference between them. To do so, the log rank test needs to be run on them. We can also get an approximation for the log rank test on the MI data via the Wald test on the pooled Cox model fit only on the treatment. Recall that we are not able to get the exact log rank test because in doing so, we would need to compute either the likelihood ratio test or score test, both of which would include calculating the risk set, which is not possible in the MI setting. It has been suggested to pool the chi square statistics via methods presented in Marshall et al 2009, but even they say that this method is poor \cite{Marshall2009}. So, our only real option is to use the Wald test (which is very easy to compute), and use that value as a proxy for the log rank test (they are asymptotically equivalent). <<FIGURE OUT WHICH COMPARISONS I WANT TO USE!!!>>> 
 
-Now that we have estimate of the survival curve, we may set up a model to observe how changes in some baseline covariates change the hazard. We will do this with the Cox Proportional Hazards model. Once we have a baseline model fit and the assumptions met, we can add our treatment variable to see how this affects the hazard.  We first need to fit a reasonable model on the available cases. Speaking with the clinicians, they determined that the covariates listed in table \ref{table:importantvars} were clinically relevant for the baseline model. The available case model  <will be seen in the table below>.  We need to make sure that the proportional hazards assumption is met in the available case model so we can apply it to the MI data. And seems to mostly pass the straight edge test for proportional hazards.  To check, we visually inspect the Schoenfeld residuals over time, and check the test of correlation between the residuals and time. Overall, the assumption of proportional hazards over time seems reasonable, and the test statistic affirms this <AC Cox.zph plots>. Although the splines fit the points may not look straight, it certainly seems reasonable that a straight line could be fit between the 95% confidence bands.
+Now that we have estimate of the survival curve, we may set up a model to observe how changes in some baseline covariates change the hazard. We will do this with the Cox Proportional Hazards model. Once we have a baseline model fit and the assumptions met, we can add our treatment variable to see how this affects the hazard.  We first need to fit a reasonable model on the available cases. Speaking with the clinicians, they determined that the covariates listed in table \ref{table:importantvars} were clinically relevant for the baseline model. The available case model will be seen in \ref{}, alongside the MI estimates. 
+
+We need to make sure that the proportional hazards assumption is met in the available case model so we can apply it to the MI data. To check, we visually inspect the Schoenfeld residuals over time. The available cases can be seen in figure \ref{fig:ac_schoenfeld} and the MI can be seen in \ref{fig:mi_schoenfeld}. In the available cases, we have one spline to look at, but for the MI case, all 50 dataset splines are superimposed over eachother. Overall, the assumption of proportional hazards over time seems reasonable, in both the AC and MI analyses. While the splines might not seem exactly straight, it certainly seems reasonable that we could fit a straight edge through the confidence bands.
+\begin{figure}[h!]
+  \centering
+    \includegraphics[width=0.8\textwidth]{ac_schoenfeld.png}
+  \caption{AC Schoenfeld residuals over time}
+\label{fig:ac_schoenfeld}
+\end{figure}
+
+\begin{figure}[h!]
+  \centering
+    \includegraphics[width=0.8\textwidth]{mi_schoenfeld.png}
+  \caption{MI  Schoenfeld residuals over time}
+\label{fig:mi_schoenfeld}
+\end{figure}
+
 
 We have verified that the available case analysis seems reasonable, now we can work with the MI data. We fit that same Cox model on all of our imputed data sets, and pool our results via Rubin's rules. We need to verify that we still have proportional hazards though. This is not a straight forward task anymore, since we don't actually have a single model, rather, we have the average of multiple models. We are no longer estimating the parameters by maximizing the partial likelihood; rather we are estimating them based on the average of the coefficients from the MI datasets. There are two ways we can go about verifying the proportional hazards assumption. 
 
