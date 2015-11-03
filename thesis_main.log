@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.1415926-2.5-1.40.14 (MiKTeX 2.9) (preloaded format=pdflatex 2015.8.23)  2 NOV 2015 19:43
+This is pdfTeX, Version 3.1415926-2.5-1.40.14 (MiKTeX 2.9) (preloaded format=pdflatex 2015.8.23)  2 NOV 2015 20:08
 entering extended mode
 **thesis_main.tex
 (C:\Users\Nathan\Desktop\Proposal\thesis_main.tex
@@ -478,22 +478,37 @@ Overfull \hbox (48.94975pt too wide) in paragraph at lines 215--233
  [][] 
  []
 
+
+LaTeX Warning: No positions in optional float specifier.
+               Default added (so using `tbp') on input line 238.
+
+
+Overfull \hbox (45.04561pt too wide) in paragraph at lines 240--260
+ [][] 
+ []
+
+
+Overfull \hbox (62.1746pt too wide) in paragraph at lines 266--284
+ [][] 
+ []
+
+[47 <C:/Users/Nathan/Desktop/Proposal/mi_schoenfeld.png>] [48] [49]
 Missing character: There is no — in font cmr12!
-[47 <C:/Users/Nathan/Desktop/Proposal/mi_schoenfeld.png>] [48]
+ [50]
 Missing character: There is no … in font cmr12!
- [49]) [50]
-(C:\Users\Nathan\Desktop\Proposal\discussion.tex
+
+[51]) [52] (C:\Users\Nathan\Desktop\Proposal\discussion.tex
 Chapter 4.
 Missing character: There is no ’ in font cmr12!
 Missing character: There is no ’ in font cmr12!
 Missing character: There is no ’ in font cmr12!
-[51
+[53
 
 
 
-] [52] [53]) [54] (C:\Users\Nathan\Desktop\Proposal\conclusion.tex
+] [54] [55]) [56] (C:\Users\Nathan\Desktop\Proposal\conclusion.tex
 Chapter 5.
-) [55
+) [57
 
 
 
@@ -506,23 +521,23 @@ File: omscmr.fd 1999/05/25 v2.5h Standard LaTeX font definitions
 )
 LaTeX Font Info:    Font shape `OMS/cmr/m/n' in size <12> not available
 (Font)              Font shape `OMS/cmsy/m/n' tried instead on input line 7.
- [56
+ [58
 
 
 
 ]
 Missing character: There is no ’ in font cmr12!
 Missing character: There is no ’ in font cmr12!
- [57]
+ [59]
 Missing character: There is no ’ in font cmr12!
 )
-[58] (C:\Users\Nathan\Desktop\Proposal\append-b.tex
+[60] (C:\Users\Nathan\Desktop\Proposal\append-b.tex
 Missing character: There is no ’ in font cmr12!
- [59
+ [61
 
 
-]) [60]
-(C:\Users\Nathan\Desktop\Proposal\thesis_main.bbl [61
+]) [62]
+(C:\Users\Nathan\Desktop\Proposal\thesis_main.bbl [63
 
 
 ]
@@ -538,7 +553,7 @@ Missing character: There is no ˜ in font cmr12!
 Missing character: There is no â in font cmr12!
 Missing character: There is no € in font cmr12!
 Missing character: There is no ™ in font cmr12!
- [62] [63]) [64]
+ [64] [65]) [66]
 (C:\Users\Nathan\Desktop\Proposal\thesis_main.aux
 (C:\Users\Nathan\Desktop\Proposal\abstract.aux)
 (C:\Users\Nathan\Desktop\Proposal\chapter1.aux)
@@ -549,10 +564,10 @@ Missing character: There is no ™ in font cmr12!
 (C:\Users\Nathan\Desktop\Proposal\append-a.aux)
 (C:\Users\Nathan\Desktop\Proposal\append-b.aux)) ) 
 Here is how much of TeX's memory you used:
- 3379 strings out of 493921
- 44782 string characters out of 3144873
- 111597 words of memory out of 3000000
- 6533 multiletter control sequences out of 15000+200000
+ 3381 strings out of 493921
+ 44811 string characters out of 3144873
+ 131619 words of memory out of 3000000
+ 6535 multiletter control sequences out of 15000+200000
  11722 words of font info for 45 fonts, out of 3000000 for 9000
  841 hyphenation exceptions out of 8191
  34i,15n,35p,2148b,301s stack positions out of 5000i,500n,10000p,200000b,50000s
@@ -571,9 +586,9 @@ sfonts/cm/cmsy10.pfb><C:/Program Files (x86)/MiKTeX 2.9/fonts/type1/public/amsf
 onts/cm/cmsy6.pfb><C:/Program Files (x86)/MiKTeX 2.9/fonts/type1/public/amsfont
 s/cm/cmsy8.pfb><C:/Program Files (x86)/MiKTeX 2.9/fonts/type1/public/amsfonts/c
 m/cmti12.pfb>
-Output written on thesis_main.pdf (70 pages, 636244 bytes).
+Output written on thesis_main.pdf (72 pages, 642505 bytes).
 PDF statistics:
- 300 PDF objects out of 1000 (max. 8388607)
+ 306 PDF objects out of 1000 (max. 8388607)
  0 named destinations out of 1000 (max. 500000)
  51 words of extra memory for PDF output out of 10000 (max. 10000000)
 
