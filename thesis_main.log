@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.1415926-2.5-1.40.14 (MiKTeX 2.9) (preloaded format=pdflatex 2015.8.23)  2 NOV 2015 18:22
+This is pdfTeX, Version 3.1415926-2.5-1.40.14 (MiKTeX 2.9) (preloaded format=pdflatex 2015.8.23)  2 NOV 2015 19:43
 entering extended mode
 **thesis_main.tex
 (C:\Users\Nathan\Desktop\Proposal\thesis_main.tex
@@ -447,44 +447,53 @@ Package pdftex.def Info: her2_km.png used on input line 181.
 
 LaTeX Warning: `!h' float specifier changed to `!ht'.
 
-[43]
-
-LaTeX Warning: Reference `' on page 44 undefined on input line 189.
-
-[44 <C:/Users/Nathan/Desktop/Proposal/chemo_km.png>]
-<ac_schoenfeld.png, id=186, 600.74437pt x 532.99126pt>
+[43] [44 <C:/Users/Nathan/Desktop/Proposal/chemo_km.png>] [45 <C:/Users/Nathan/
+Desktop/Proposal/her2_km.png>]
+<ac_schoenfeld.png, id=190, 600.74437pt x 532.99126pt>
 File: ac_schoenfeld.png Graphic file (type png)
  <use ac_schoenfeld.png>
-Package pdftex.def Info: ac_schoenfeld.png used on input line 194.
+Package pdftex.def Info: ac_schoenfeld.png used on input line 195.
 (pdftex.def)             Requested size: 346.89731pt x 307.78511pt.
 
-[45 <C:/Users/Nathan/Desktop/Proposal/her2_km.png>]
 <mi_schoenfeld.png, id=191, 536.75531pt x 389.95688pt>
 File: mi_schoenfeld.png Graphic file (type png)
  <use mi_schoenfeld.png>
-Package pdftex.def Info: mi_schoenfeld.png used on input line 201.
+Package pdftex.def Info: mi_schoenfeld.png used on input line 202.
 (pdftex.def)             Requested size: 346.89731pt x 252.02304pt.
 
+[46 <C:/Users/Nathan/Desktop/Proposal/ac_schoenfeld.png>]
 
-LaTeX Warning: `!h' float specifier changed to `!ht'.
+LaTeX Warning: No positions in optional float specifier.
+               Default added (so using `tbp') on input line 213.
 
-[46 <C:/Users/Nathan/Desktop/Proposal/ac_schoenfeld.png>] [47 <C:/Users/Nathan/
-Desktop/Proposal/mi_schoenfeld.png>]
+LaTeX Font Info:    Try loading font information for OML+cmr on input line 219.
+
+("C:\Program Files (x86)\MiKTeX 2.9\tex\latex\base\omlcmr.fd"
+File: omlcmr.fd 1999/05/25 v2.5h Standard LaTeX font definitions
+)
+LaTeX Font Info:    Font shape `OML/cmr/m/n' in size <12> not available
+(Font)              Font shape `OML/cmm/m/it' tried instead on input line 219.
+
+Overfull \hbox (48.94975pt too wide) in paragraph at lines 215--233
+ [][] 
+ []
+
 Missing character: There is no — in font cmr12!
+[47 <C:/Users/Nathan/Desktop/Proposal/mi_schoenfeld.png>] [48]
 Missing character: There is no … in font cmr12!
- [48]) [49]
+ [49]) [50]
 (C:\Users\Nathan\Desktop\Proposal\discussion.tex
 Chapter 4.
 Missing character: There is no ’ in font cmr12!
 Missing character: There is no ’ in font cmr12!
 Missing character: There is no ’ in font cmr12!
-[50
+[51
 
 
 
-] [51] [52]) [53] (C:\Users\Nathan\Desktop\Proposal\conclusion.tex
+] [52] [53]) [54] (C:\Users\Nathan\Desktop\Proposal\conclusion.tex
 Chapter 5.
-) [54
+) [55
 
 
 
@@ -497,23 +506,23 @@ File: omscmr.fd 1999/05/25 v2.5h Standard LaTeX font definitions
 )
 LaTeX Font Info:    Font shape `OMS/cmr/m/n' in size <12> not available
 (Font)              Font shape `OMS/cmsy/m/n' tried instead on input line 7.
- [55
+ [56
 
 
 
 ]
 Missing character: There is no ’ in font cmr12!
 Missing character: There is no ’ in font cmr12!
- [56]
+ [57]
 Missing character: There is no ’ in font cmr12!
 )
-[57] (C:\Users\Nathan\Desktop\Proposal\append-b.tex
+[58] (C:\Users\Nathan\Desktop\Proposal\append-b.tex
 Missing character: There is no ’ in font cmr12!
- [58
+ [59
 
 
-]) [59]
-(C:\Users\Nathan\Desktop\Proposal\thesis_main.bbl [60
+]) [60]
+(C:\Users\Nathan\Desktop\Proposal\thesis_main.bbl [61
 
 
 ]
@@ -529,7 +538,7 @@ Missing character: There is no ˜ in font cmr12!
 Missing character: There is no â in font cmr12!
 Missing character: There is no € in font cmr12!
 Missing character: There is no ™ in font cmr12!
- [61] [62]) [63]
+ [62] [63]) [64]
 (C:\Users\Nathan\Desktop\Proposal\thesis_main.aux
 (C:\Users\Nathan\Desktop\Proposal\abstract.aux)
 (C:\Users\Nathan\Desktop\Proposal\chapter1.aux)
@@ -538,36 +547,33 @@ Missing character: There is no ™ in font cmr12!
 (C:\Users\Nathan\Desktop\Proposal\discussion.aux)
 (C:\Users\Nathan\Desktop\Proposal\conclusion.aux)
 (C:\Users\Nathan\Desktop\Proposal\append-a.aux)
-(C:\Users\Nathan\Desktop\Proposal\append-b.aux))
-
-LaTeX Warning: There were undefined references.
-
- ) 
+(C:\Users\Nathan\Desktop\Proposal\append-b.aux)) ) 
 Here is how much of TeX's memory you used:
- 3362 strings out of 493921
- 44474 string characters out of 3144873
- 108586 words of memory out of 3000000
- 6519 multiletter control sequences out of 15000+200000
+ 3379 strings out of 493921
+ 44782 string characters out of 3144873
+ 111597 words of memory out of 3000000
+ 6533 multiletter control sequences out of 15000+200000
  11722 words of font info for 45 fonts, out of 3000000 for 9000
  841 hyphenation exceptions out of 8191
  34i,15n,35p,2148b,301s stack positions out of 5000i,500n,10000p,200000b,50000s
-<C:/Program Files (x86)/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmbx12.pfb>
-<C:/Program Files (x86)/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmcsc10.pfb><
-C:/Program Files (x86)/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmex10.pfb><C:
-/Program Files (x86)/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmmi12.pfb><C:/P
-rogram Files (x86)/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmmi6.pfb><C:/Prog
-ram Files (x86)/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmmi8.pfb><C:/Program
- Files (x86)/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmr10.pfb><C:/Program Fi
-les (x86)/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmr12.pfb><C:/Program Files
- (x86)/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmr6.pfb><C:/Program Files (x8
-6)/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmr8.pfb><C:/Program Files (x86)/M
-iKTeX 2.9/fonts/type1/public/amsfonts/cm/cmsy10.pfb><C:/Program Files (x86)/MiK
-TeX 2.9/fonts/type1/public/amsfonts/cm/cmsy6.pfb><C:/Program Files (x86)/MiKTeX
- 2.9/fonts/type1/public/amsfonts/cm/cmsy8.pfb><C:/Program Files (x86)/MiKTeX 2.
-9/fonts/type1/public/amsfonts/cm/cmti12.pfb>
-Output written on thesis_main.pdf (69 pages, 635195 bytes).
+<C:/Program Files (x86)/MiKTe
+X 2.9/fonts/type1/public/amsfonts/cm/cmbx12.pfb><C:/Program Files (x86)/MiKTeX 
+2.9/fonts/type1/public/amsfonts/cm/cmcsc10.pfb><C:/Program Files (x86)/MiKTeX 2
+.9/fonts/type1/public/amsfonts/cm/cmex10.pfb><C:/Program Files (x86)/MiKTeX 2.9
+/fonts/type1/public/amsfonts/cm/cmmi12.pfb><C:/Program Files (x86)/MiKTeX 2.9/f
+onts/type1/public/amsfonts/cm/cmmi6.pfb><C:/Program Files (x86)/MiKTeX 2.9/font
+s/type1/public/amsfonts/cm/cmmi8.pfb><C:/Program Files (x86)/MiKTeX 2.9/fonts/t
+ype1/public/amsfonts/cm/cmr10.pfb><C:/Program Files (x86)/MiKTeX 2.9/fonts/type
+1/public/amsfonts/cm/cmr12.pfb><C:/Program Files (x86)/MiKTeX 2.9/fonts/type1/p
+ublic/amsfonts/cm/cmr6.pfb><C:/Program Files (x86)/MiKTeX 2.9/fonts/type1/publi
+c/amsfonts/cm/cmr8.pfb><C:/Program Files (x86)/MiKTeX 2.9/fonts/type1/public/am
+sfonts/cm/cmsy10.pfb><C:/Program Files (x86)/MiKTeX 2.9/fonts/type1/public/amsf
+onts/cm/cmsy6.pfb><C:/Program Files (x86)/MiKTeX 2.9/fonts/type1/public/amsfont
+s/cm/cmsy8.pfb><C:/Program Files (x86)/MiKTeX 2.9/fonts/type1/public/amsfonts/c
+m/cmti12.pfb>
+Output written on thesis_main.pdf (70 pages, 636244 bytes).
 PDF statistics:
- 297 PDF objects out of 1000 (max. 8388607)
+ 300 PDF objects out of 1000 (max. 8388607)
  0 named destinations out of 1000 (max. 500000)
  51 words of extra memory for PDF output out of 10000 (max. 10000000)
 
