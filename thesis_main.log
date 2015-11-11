@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.1415926-2.5-1.40.14 (MiKTeX 2.9) (preloaded format=pdflatex 2015.8.23)  7 NOV 2015 11:42
+This is pdfTeX, Version 3.1415926-2.5-1.40.14 (MiKTeX 2.9) (preloaded format=pdflatex 2015.8.23)  10 NOV 2015 23:06
 entering extended mode
 **thesis_main.tex
 (C:\Users\Nathan\Desktop\Proposal\thesis_main.tex
@@ -340,7 +340,11 @@ Package pdftex.def Info: mi_example_full.jpg used on input line 24.
 Missing character: There is no – in font cmr8!
  [7]
 Missing character: There is no ‘ in font cmr12!
- [8] [9] [10]) [11] [12]
+ [8]
+Missing character: There is no ’ in font cmr12!
+ [9]
+Missing character: There is no ’ in font cmr12!
+ [10] [11]) [12]
 (C:\Users\Nathan\Desktop\Proposal\methods.tex
 Chapter 2.
 [13
@@ -424,9 +428,8 @@ Overfull \hbox (48.61453pt too wide) in paragraph at lines 137--157
  [][] 
  []
 
-[40 <C:/Users/Nathan/Desktop/Proposal/traceplots1.png>]
-Missing character: There is no … in font cmr12!
- [41 <C:/Users/Nathan/Desktop/Proposal/traceplots2.png>] [42]
+[40 <C:/Users/Nathan/Desktop/Proposal/traceplots1.png>] [41 <C:/Users/Nathan/De
+sktop/Proposal/traceplots2.png>] [42]
 <chemo_km.png, id=176, 448.67625pt x 485.815pt>
 File: chemo_km.png Graphic file (type png)
  <use chemo_km.png>
@@ -568,10 +571,10 @@ Missing character: There is no ™ in font cmr12!
 (C:\Users\Nathan\Desktop\Proposal\append-a.aux)
 (C:\Users\Nathan\Desktop\Proposal\append-b.aux)) ) 
 Here is how much of TeX's memory you used:
- 3384 strings out of 493921
- 44853 string characters out of 3144873
- 122645 words of memory out of 3000000
- 6538 multiletter control sequences out of 15000+200000
+ 3386 strings out of 493921
+ 44875 string characters out of 3144873
+ 122634 words of memory out of 3000000
+ 6540 multiletter control sequences out of 15000+200000
  11722 words of font info for 45 fonts, out of 3000000 for 9000
  841 hyphenation exceptions out of 8191
  34i,15n,35p,2148b,301s stack positions out of 5000i,500n,10000p,200000b,50000s
@@ -590,7 +593,7 @@ sfonts/cm/cmsy10.pfb><C:/Program Files (x86)/MiKTeX 2.9/fonts/type1/public/amsf
 onts/cm/cmsy6.pfb><C:/Program Files (x86)/MiKTeX 2.9/fonts/type1/public/amsfont
 s/cm/cmsy8.pfb><C:/Program Files (x86)/MiKTeX 2.9/fonts/type1/public/amsfonts/c
 m/cmti12.pfb>
-Output written on thesis_main.pdf (72 pages, 644093 bytes).
+Output written on thesis_main.pdf (72 pages, 645732 bytes).
 PDF statistics:
  306 PDF objects out of 1000 (max. 8388607)
  0 named destinations out of 1000 (max. 500000)

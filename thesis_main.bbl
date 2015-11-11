@@ -27,6 +27,9 @@ D.~Cox, ``{Regression Models and Life-Tables},'' {\em Journal of the Royal
   Statistical Society. Series B (Methodological)}, vol.~34, no.~2,
   pp.~187--220, 1972.
 
+\bibitem{RCT2011}
+T.~H. H.~S. Library, ``{Study Design 101},'' 2011.
+
 \bibitem{Guo2010}
 S.~Guo and M.~W. Fraser, ``{Propensity score analysis. Statistical methods and
   application},'' 2010.
@@ -45,17 +48,20 @@ J.~Angrist and J.~Pischke, {\em {Mostly harmless econometrics: An empiricist's
   companion}}.
 \newblock No.~March, 2008.
 
+\bibitem{Lunceford2004}
+J.~K. Lunceford and M.~Davidian, ``{Stratification and weighting via the
+  propensity score in estimation of causal treatment effects: A comparative
+  study},'' {\em Statistics in Medicine}, vol.~23, no.~19, pp.~2937--2960,
+  2004.
+
+\bibitem{Rand2015}
+D.~F. {Griffin, Beth Ann McCaffrey}, ``{TWANG Short Course}.''
+
 \bibitem{Austin2014}
 P.~C. Austin, ``{The use of propensity score methods with survival or
   time-to-event outcomes: reporting measures of effect similar to those used in
   randomized experiments},'' {\em Statistics in Medicine}, vol.~33, no.~7,
   pp.~1242--1258, 2014.
-
-\bibitem{Harder2011}
-V.~S. Harder, E.~A. Stuart, and {James C. Anthony}, ``{Propensity score
-  techniques and the assessment of measured covariate balance to test causal
-  associations in psychological research},'' {\em Psychological Methods},
-  vol.~15, no.~3, pp.~234--249, 2011.
 
 \bibitem{Demirtas2008}
 H.~Demirtas and D.~Hedeker, ``{Imputing continuous data under some non-Gaussian
