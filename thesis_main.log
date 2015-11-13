@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.1415926-2.5-1.40.14 (MiKTeX 2.9) (preloaded format=pdflatex 2015.8.23)  12 NOV 2015 10:49
+This is pdfTeX, Version 3.1415926-2.5-1.40.14 (MiKTeX 2.9) (preloaded format=pdflatex 2015.8.23)  12 NOV 2015 18:20
 entering extended mode
 **thesis_main.tex
 (C:\Users\Nathan\Desktop\Proposal\thesis_main.tex
@@ -510,22 +510,24 @@ Overfull \hbox (62.1746pt too wide) in paragraph at lines 300--318
  [][] 
  []
 
-Missing character: There is no — in font cmr12!
 [51 <C:/Users/Nathan/Desktop/Proposal/mi_schoenfeld.png>] [52]
-Missing character: There is no … in font cmr12!
- [53]) [54]
-(C:\Users\Nathan\Desktop\Proposal\discussion.tex
+Missing character: There is no “ in font cmr12!
+Missing character: There is no ” in font cmr12!
+ [53] [54]
+Missing character: There is no ’ in font cmr12!
+
+[55]) [56] (C:\Users\Nathan\Desktop\Proposal\discussion.tex
 Chapter 4.
 Missing character: There is no ’ in font cmr12!
 Missing character: There is no ’ in font cmr12!
 Missing character: There is no ’ in font cmr12!
-[55
+[57
 
 
 
-] [56] [57]) [58] (C:\Users\Nathan\Desktop\Proposal\conclusion.tex
+] [58] [59]) [60] (C:\Users\Nathan\Desktop\Proposal\conclusion.tex
 Chapter 5.
-) [59
+) [61
 
 
 
@@ -538,23 +540,23 @@ File: omscmr.fd 1999/05/25 v2.5h Standard LaTeX font definitions
 )
 LaTeX Font Info:    Font shape `OMS/cmr/m/n' in size <12> not available
 (Font)              Font shape `OMS/cmsy/m/n' tried instead on input line 7.
- [60
+ [62
 
 
 
 ]
 Missing character: There is no ’ in font cmr12!
 Missing character: There is no ’ in font cmr12!
- [61]
+ [63]
 Missing character: There is no ’ in font cmr12!
 )
-[62] (C:\Users\Nathan\Desktop\Proposal\append-b.tex
+[64] (C:\Users\Nathan\Desktop\Proposal\append-b.tex
 Missing character: There is no ’ in font cmr12!
- [63
+ [65
 
 
-]) [64]
-(C:\Users\Nathan\Desktop\Proposal\thesis_main.bbl [65
+]) [66]
+(C:\Users\Nathan\Desktop\Proposal\thesis_main.bbl [67
 
 
 ]
@@ -570,7 +572,7 @@ Missing character: There is no ˜ in font cmr12!
 Missing character: There is no â in font cmr12!
 Missing character: There is no € in font cmr12!
 Missing character: There is no ™ in font cmr12!
- [66] [67]) [68]
+ [68] [69]) [70]
 (C:\Users\Nathan\Desktop\Proposal\thesis_main.aux
 (C:\Users\Nathan\Desktop\Proposal\abstract.aux)
 (C:\Users\Nathan\Desktop\Proposal\chapter1.aux)
@@ -603,9 +605,9 @@ sfonts/cm/cmsy10.pfb><C:/Program Files (x86)/MiKTeX 2.9/fonts/type1/public/amsf
 onts/cm/cmsy6.pfb><C:/Program Files (x86)/MiKTeX 2.9/fonts/type1/public/amsfont
 s/cm/cmsy8.pfb><C:/Program Files (x86)/MiKTeX 2.9/fonts/type1/public/amsfonts/c
 m/cmti12.pfb>
-Output written on thesis_main.pdf (74 pages, 649837 bytes).
+Output written on thesis_main.pdf (76 pages, 653160 bytes).
 PDF statistics:
- 314 PDF objects out of 1000 (max. 8388607)
+ 320 PDF objects out of 1000 (max. 8388607)
  0 named destinations out of 1000 (max. 500000)
  51 words of extra memory for PDF output out of 10000 (max. 10000000)
 
