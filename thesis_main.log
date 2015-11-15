@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.1415926-2.5-1.40.14 (MiKTeX 2.9) (preloaded format=pdflatex 2015.8.23)  14 NOV 2015 10:45
+This is pdfTeX, Version 3.1415926-2.5-1.40.14 (MiKTeX 2.9) (preloaded format=pdflatex 2015.8.23)  15 NOV 2015 15:58
 entering extended mode
 **thesis_main.tex
 (C:\Users\Nathan\Desktop\Proposal\thesis_main.tex
@@ -382,8 +382,9 @@ Missing character: There is no “ in font cmr12!
 Missing character: There is no ” in font cmr12!
 Missing character: There is no “ in font cmr12!
 Missing character: There is no ” in font cmr12!
- [24] [25] [26] [27] [28] [29] [30]
+ [24] [25] [26] [27] [28] [29]
 Missing character: There is no ’ in font cmr12!
+ [30]
 Missing character: There is no ’ in font cmr12!
  [31]
 Missing character: There is no ’ in font cmr12!
@@ -424,16 +425,20 @@ File: traceplots1.png Graphic file (type png)
 <use traceplots1.png>
 Package pdftex.def Info: traceplots1.png used on input line 118.
 (pdftex.def)             Requested size: 346.89731pt x 252.13246pt.
- [41] <traceplots2.png, id=170, 606.265pt x 440.64626pt>
-File: traceplots2.png Graphic file (type png)
 
-<use traceplots2.png>
+
+LaTeX Warning: `!h' float specifier changed to `!ht'.
+
+<traceplots2.png, id=167, 606.265pt x 440.64626pt>
+File: traceplots2.png Graphic file (type png)
+ <use traceplots2.png>
 Package pdftex.def Info: traceplots2.png used on input line 126.
 (pdftex.def)             Requested size: 346.89731pt x 252.13246pt.
 
 
 LaTeX Warning: `!h' float specifier changed to `!ht'.
 
+[41]
 Missing character: There is no ’ in font cmr12!
 
 Overfull \hbox (48.61453pt too wide) in paragraph at lines 137--157
@@ -460,19 +465,20 @@ Package pdftex.def Info: her2_km.png used on input line 184.
 
 LaTeX Warning: `!h' float specifier changed to `!ht'.
 
-[45] [46 <C:/Users/Nathan/Desktop/Proposal/chemo_km.png>]
+[45]
 LaTeX Font Info:    Try loading font information for OML+cmr on input line 199.
 
-
-("C:\Program Files (x86)\MiKTeX 2.9\tex\latex\base\omlcmr.fd"
+ ("C:\Program Files (x86)\MiKTeX 2.9\tex\latex\base\omlcmr.fd"
 File: omlcmr.fd 1999/05/25 v2.5h Standard LaTeX font definitions
 )
 LaTeX Font Info:    Font shape `OML/cmr/m/n' in size <12> not available
 (Font)              Font shape `OML/cmm/m/it' tried instead on input line 199.
- [47 <C:/Users/Nathan/Desktop/Proposal/her2_km.png>]
-<ac_schoenfeld.png, id=196, 600.74437pt x 532.99126pt>
+ [46 <C:/Users/Nathan/Desktop/Proposal/chemo_km.png>] [47 <C:/Users/Nathan/Desk
+top/Proposal/her2_km.png>] <ac_schoenfeld.png, id=196, 600.74437pt x 532.99126p
+t>
 File: ac_schoenfeld.png Graphic file (type png)
- <use ac_schoenfeld.png>
+
+<use ac_schoenfeld.png>
 Package pdftex.def Info: ac_schoenfeld.png used on input line 229.
 (pdftex.def)             Requested size: 346.89731pt x 307.78511pt.
 
@@ -512,10 +518,9 @@ Overfull \hbox (62.1746pt too wide) in paragraph at lines 300--318
  [][] 
  []
 
-[51 <C:/Users/Nathan/Desktop/Proposal/mi_schoenfeld.png>] [52]
 Missing character: There is no “ in font cmr12!
 Missing character: There is no ” in font cmr12!
- [53] [54]
+[51 <C:/Users/Nathan/Desktop/Proposal/mi_schoenfeld.png>] [52] [53] [54]
 Missing character: There is no ’ in font cmr12!
 
 [55]) [56] (C:\Users\Nathan\Desktop\Proposal\discussion.tex
@@ -591,7 +596,7 @@ Here is how much of TeX's memory you used:
  6540 multiletter control sequences out of 15000+200000
  11722 words of font info for 45 fonts, out of 3000000 for 9000
  841 hyphenation exceptions out of 8191
- 34i,15n,35p,2148b,301s stack positions out of 5000i,500n,10000p,200000b,50000s
+ 34i,15n,35p,2147b,301s stack positions out of 5000i,500n,10000p,200000b,50000s
 <C:/Program Files (x86)/MiKTe
 X 2.9/fonts/type1/public/amsfonts/cm/cmbx12.pfb><C:/Program Files (x86)/MiKTeX 
 2.9/fonts/type1/public/amsfonts/cm/cmcsc10.pfb><C:/Program Files (x86)/MiKTeX 2
@@ -607,7 +612,7 @@ sfonts/cm/cmsy10.pfb><C:/Program Files (x86)/MiKTeX 2.9/fonts/type1/public/amsf
 onts/cm/cmsy6.pfb><C:/Program Files (x86)/MiKTeX 2.9/fonts/type1/public/amsfont
 s/cm/cmsy8.pfb><C:/Program Files (x86)/MiKTeX 2.9/fonts/type1/public/amsfonts/c
 m/cmti12.pfb>
-Output written on thesis_main.pdf (76 pages, 656071 bytes).
+Output written on thesis_main.pdf (76 pages, 655782 bytes).
 PDF statistics:
  320 PDF objects out of 1000 (max. 8388607)
  0 named destinations out of 1000 (max. 500000)
