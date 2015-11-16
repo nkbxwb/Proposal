@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.1415926-2.5-1.40.14 (MiKTeX 2.9) (preloaded format=pdflatex 2015.8.23)  15 NOV 2015 15:58
+This is pdfTeX, Version 3.1415926-2.5-1.40.14 (MiKTeX 2.9) (preloaded format=pdflatex 2015.8.23)  15 NOV 2015 22:57
 entering extended mode
 **thesis_main.tex
 (C:\Users\Nathan\Desktop\Proposal\thesis_main.tex
@@ -330,12 +330,12 @@ Chapter 1.
 
 ]
 Missing character: There is no ’ in font cmr12!
- [2] [3] <mi_example_full.jpg, id=35, 493.0922pt x 267.24844pt>
+ [2] [3] <mi_example_full.jpg, id=35, 535.2497pt x 274.77657pt>
 File: mi_example_full.jpg Graphic file (type jpg)
 
 <use mi_example_full.jpg>
 Package pdftex.def Info: mi_example_full.jpg used on input line 24.
-(pdftex.def)             Requested size: 346.89731pt x 188.02277pt.
+(pdftex.def)             Requested size: 346.89731pt x 178.09113pt.
  [4] [5 <C:/Users/Nathan/Desktop/Proposal/mi_example_full.jpg>] [6]
 Missing character: There is no – in font cmr8!
  [7]
@@ -612,7 +612,7 @@ sfonts/cm/cmsy10.pfb><C:/Program Files (x86)/MiKTeX 2.9/fonts/type1/public/amsf
 onts/cm/cmsy6.pfb><C:/Program Files (x86)/MiKTeX 2.9/fonts/type1/public/amsfont
 s/cm/cmsy8.pfb><C:/Program Files (x86)/MiKTeX 2.9/fonts/type1/public/amsfonts/c
 m/cmti12.pfb>
-Output written on thesis_main.pdf (76 pages, 655782 bytes).
+Output written on thesis_main.pdf (76 pages, 658812 bytes).
 PDF statistics:
  320 PDF objects out of 1000 (max. 8388607)
  0 named destinations out of 1000 (max. 500000)
