@@ -27,11 +27,11 @@ $$p(Y_{mis}|Y_{obs},R=1)\neq p(Y_{mis}|Y_{obs},R=0)$$
 So we must take into account the missing data structure for imputation.
 We often times see ignorable missing data in practice, although one should certainly check the sensibility of ignorability, as some instances will certainly be non-ignorable, for example censored data, or when we know that the missing data is systematically different than the observed. If we have strongly nonignorable data, we should either try one of two things. The first is to expand the data (collect something else similar to the covariate with missingness) so that it becomes ignorable and the second is to formulate two imputation models, one for the observed and one for the missing.
 
-Now, we may discuss the three main types of missing data mechanisms. I will give the technical definition, a layman’s definition, and an example.
+Now, we may discuss the three main types of missing data mechanisms. I will give the technical definition, a layman’s definition, and an example. For the example, suppose there is a study that takes down subject information as well as records the level of a protein in the blood.
 \begin{itemize}
-\item MCAR: Missing completely at random:  $P(R=0|Y_{obs},Y_{mis},\psi)=P(R=0|\psi)$. The missingness in the data is not at all related to any of the data that we do or don’t have. If a lab technician slips and drops 5 vials of blood, the missingness caused by this would be MCAR
-\item MAR: Missing at random: $p(R=0|Y_{obs},Y_{mis},\psi)= p(R=0|Y_{obs},\psi)$. The missingness we have is related to something in the data. If we collect the gender of the subject and we know that males tend to not give blood, we can attribute the missingness to the gender. In general, MAR models are ignorable \cite{VanBuuren2012}.
-\item MNAR: Missing not at random: $p(R=0|Y_{obs},Y_{mis},\psi)$ does not simplify, and the missingness depends on data that we have as well as have not collected. For example if a full moon causes the blood testing machine to break more often, but we don’t have the moon phase as a variable.
+\item MCAR: Missing completely at random:  $P(R=0|Y_{obs},Y_{mis},\psi)=P(R=0|\psi)$. The missingness in the data is not at all related to any of the data that we do or don’t have. For example, if a lab technician slips and drops 5 vials of blood, the missingness caused by this would be MCAR
+\item MAR: Missing at random: $p(R=0|Y_{obs},Y_{mis},\psi)= p(R=0|Y_{obs},\psi)$. The missingness we have is related to something in the data. For example, if we collect the gender of the subject and we know that males tend to not give blood, we can attribute the missingness to the gender. In general, MAR models are ignorable \cite{VanBuuren2012}.
+\item MNAR: Missing not at random: $p(R=0|Y_{obs},Y_{mis},\psi)$ does not simplify, and the missingness depends on data that we have as well as have not collected. For example if the blood testing machine breaks when the protein level is either too high or too low.
 \end{itemize}
 
 
