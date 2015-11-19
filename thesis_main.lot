@@ -3,13 +3,12 @@
 \addvspace {\baselineskip }
 \contentsline {table}{\numberline {3.1}{\ignorespaces Data Categories and Examples}}{36}
 \contentsline {table}{\numberline {3.2}{\ignorespaces Table of important covariates to be used in the analysis}}{37}
-\contentsline {table}{\numberline {3.3}{\ignorespaces Percent observed and influx and outflux of the worst predictors. Ki67, brca, and p53 are cancer markers, ECOG and GPA are performance scores}}{41}
-\contentsline {table}{\numberline {3.4}{\ignorespaces Characteristics of available case data versus MI data}}{45}
-\contentsline {table}{\numberline {3.5}{\ignorespaces Chemo log rank tests}}{49}
-\contentsline {table}{\numberline {3.6}{\ignorespaces HER2 log rank tests}}{49}
-\contentsline {table}{\numberline {3.7}{\ignorespaces AC and MI baseline Cox model}}{52}
-\contentsline {table}{\numberline {3.8}{\ignorespaces AC and MI Cox model with chemo treatment}}{53}
-\contentsline {table}{\numberline {3.9}{\ignorespaces AC and MI Cox model with HER2 directed treatment, on HER2+ subjects}}{54}
+\contentsline {table}{\numberline {3.3}{\ignorespaces Characteristics of available case data versus MI data}}{45}
+\contentsline {table}{\numberline {3.4}{\ignorespaces Chemo log rank tests}}{49}
+\contentsline {table}{\numberline {3.5}{\ignorespaces HER2 log rank tests}}{49}
+\contentsline {table}{\numberline {3.6}{\ignorespaces AC and MI baseline Cox model}}{52}
+\contentsline {table}{\numberline {3.7}{\ignorespaces AC and MI Cox model with chemo treatment}}{53}
+\contentsline {table}{\numberline {3.8}{\ignorespaces AC and MI Cox model with HER2 directed treatment, on HER2+ subjects}}{54}
 \addvspace {\baselineskip }
 \addvspace {\baselineskip }
 \addvspace {\baselineskip }

@@ -20,7 +20,7 @@
 \contentsline {chapter}{\numberline {3}Application}{35}
 \contentsline {section}{\numberline {3.1}Data Explanation}{35}
 \contentsline {section}{\numberline {3.2}Imputation}{38}
-\contentsline {section}{\numberline {3.3}Survival Analysis}{44}
+\contentsline {section}{\numberline {3.3}Survival Analysis}{43}
 \contentsline {section}{\numberline {3.4}Causal Analysis}{54}
 \contentsline {chapter}{\numberline {4}Discussion}{58}
 \contentsline {chapter}{\numberline {5}Conclusion}{62}
