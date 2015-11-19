@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.1415926-2.5-1.40.14 (MiKTeX 2.9) (preloaded format=pdflatex 2015.8.23)  19 NOV 2015 16:28
+This is pdfTeX, Version 3.1415926-2.5-1.40.14 (MiKTeX 2.9) (preloaded format=pdflatex 2015.8.23)  19 NOV 2015 17:13
 entering extended mode
 **thesis_main.tex
 (C:\Users\Nathan\Desktop\Proposal\thesis_main.tex
@@ -480,36 +480,36 @@ LaTeX Font Info:    Font shape `OML/cmr/m/n' in size <12> not available
 <ac_schoenfeld.png, id=203, 600.74437pt x 532.99126pt>
 File: ac_schoenfeld.png Graphic file (type png)
  <use ac_schoenfeld.png>
-Package pdftex.def Info: ac_schoenfeld.png used on input line 244.
+Package pdftex.def Info: ac_schoenfeld.png used on input line 243.
 (pdftex.def)             Requested size: 346.89731pt x 307.78511pt.
 
 <mi_schoenfeld.png, id=204, 536.75531pt x 389.95688pt>
 File: mi_schoenfeld.png Graphic file (type png)
  <use mi_schoenfeld.png>
-Package pdftex.def Info: mi_schoenfeld.png used on input line 251.
+Package pdftex.def Info: mi_schoenfeld.png used on input line 250.
 (pdftex.def)             Requested size: 346.89731pt x 252.02304pt.
 
 [50 <C:/Users/Nathan/Desktop/Proposal/ac_schoenfeld.png>]
 
 LaTeX Warning: No positions in optional float specifier.
-               Default added (so using `tbp') on input line 262.
+               Default added (so using `tbp') on input line 261.
 
 
-Overfull \hbox (48.94975pt too wide) in paragraph at lines 264--282
+Overfull \hbox (48.94975pt too wide) in paragraph at lines 263--281
  [][] 
  []
 
 
 LaTeX Warning: No positions in optional float specifier.
-               Default added (so using `tbp') on input line 287.
+               Default added (so using `tbp') on input line 286.
 
 
-Overfull \hbox (45.04561pt too wide) in paragraph at lines 289--309
+Overfull \hbox (45.04561pt too wide) in paragraph at lines 288--308
  [][] 
  []
 
 
-Overfull \hbox (62.1746pt too wide) in paragraph at lines 315--333
+Overfull \hbox (62.1746pt too wide) in paragraph at lines 314--332
  [][] 
  []
 
@@ -517,20 +517,20 @@ Overfull \hbox (62.1746pt too wide) in paragraph at lines 315--333
 Missing character: There is no “ in font cmr12!
 Missing character: There is no ” in font cmr12!
 
-[55]
+[55] [56]
 Missing character: There is no ’ in font cmr12!
- [56]) [57] (C:\Users\Nathan\Desktop\Proposal\discussion.tex
+ [57]) [58] (C:\Users\Nathan\Desktop\Proposal\discussion.tex
 Chapter 4.
 Missing character: There is no ’ in font cmr12!
 Missing character: There is no ’ in font cmr12!
 Missing character: There is no ’ in font cmr12!
-[58
+[59
 
 
 
-] [59] [60]) [61] (C:\Users\Nathan\Desktop\Proposal\conclusion.tex
+] [60] [61]) [62] (C:\Users\Nathan\Desktop\Proposal\conclusion.tex
 Chapter 5.
-) [62
+) [63
 
 
 
@@ -543,21 +543,21 @@ File: omscmr.fd 1999/05/25 v2.5h Standard LaTeX font definitions
 )
 LaTeX Font Info:    Font shape `OMS/cmr/m/n' in size <12> not available
 (Font)              Font shape `OMS/cmsy/m/n' tried instead on input line 7.
- [63
+ [64
 
 
 
 ]
 Missing character: There is no ’ in font cmr12!
 Missing character: There is no ’ in font cmr12!
- [64])
-[65] (C:\Users\Nathan\Desktop\Proposal\append-b.tex
+ [65])
+[66] (C:\Users\Nathan\Desktop\Proposal\append-b.tex
 Missing character: There is no ’ in font cmr12!
- [66
+ [67
 
 
-]) [67]
-(C:\Users\Nathan\Desktop\Proposal\thesis_main.bbl [68
+]) [68]
+(C:\Users\Nathan\Desktop\Proposal\thesis_main.bbl [69
 
 
 ]
@@ -573,7 +573,7 @@ Missing character: There is no ˜ in font cmr12!
 Missing character: There is no â in font cmr12!
 Missing character: There is no € in font cmr12!
 Missing character: There is no ™ in font cmr12!
- [69] [70]) [71]
+ [70] [71]) [72]
 (C:\Users\Nathan\Desktop\Proposal\thesis_main.aux
 (C:\Users\Nathan\Desktop\Proposal\abstract.aux)
 (C:\Users\Nathan\Desktop\Proposal\chapter1.aux)
@@ -606,9 +606,9 @@ sfonts/cm/cmsy10.pfb><C:/Program Files (x86)/MiKTeX 2.9/fonts/type1/public/amsf
 onts/cm/cmsy6.pfb><C:/Program Files (x86)/MiKTeX 2.9/fonts/type1/public/amsfont
 s/cm/cmsy8.pfb><C:/Program Files (x86)/MiKTeX 2.9/fonts/type1/public/amsfonts/c
 m/cmti12.pfb>
-Output written on thesis_main.pdf (77 pages, 660219 bytes).
+Output written on thesis_main.pdf (78 pages, 661623 bytes).
 PDF statistics:
- 323 PDF objects out of 1000 (max. 8388607)
+ 326 PDF objects out of 1000 (max. 8388607)
  0 named destinations out of 1000 (max. 500000)
  51 words of extra memory for PDF output out of 10000 (max. 10000000)
 

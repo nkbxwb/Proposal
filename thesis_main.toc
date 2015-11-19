@@ -21,10 +21,10 @@
 \contentsline {section}{\numberline {3.1}Data Explanation}{35}
 \contentsline {section}{\numberline {3.2}Imputation}{38}
 \contentsline {section}{\numberline {3.3}Survival Analysis}{43}
-\contentsline {section}{\numberline {3.4}Causal Analysis}{54}
-\contentsline {chapter}{\numberline {4}Discussion}{58}
-\contentsline {chapter}{\numberline {5}Conclusion}{62}
-\contentsline {chapter}{\numberline {A}Appendix}{63}
-\contentsline {section}{\numberline {A.1}Missing data mechanisms}{63}
-\contentsline {section}{\numberline {A.2}Cancer and Treatment Overview}{66}
-\contentsline {chapter}{\numberline {\hfil }Bibliography}{68}
+\contentsline {section}{\numberline {3.4}Causal Analysis}{55}
+\contentsline {chapter}{\numberline {4}Discussion}{59}
+\contentsline {chapter}{\numberline {5}Conclusion}{63}
+\contentsline {chapter}{\numberline {A}Appendix}{64}
+\contentsline {section}{\numberline {A.1}Missing data mechanisms}{64}
+\contentsline {section}{\numberline {A.2}Cancer and Treatment Overview}{67}
+\contentsline {chapter}{\numberline {\hfil }Bibliography}{69}

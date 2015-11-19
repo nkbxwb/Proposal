@@ -136,7 +136,7 @@ There are 80 plots to check, they cannot all be shown in this paper, but all of 
 \label{fig:traceplot2}
 \end{figure}
 
-%start here
+
 Once the convergence is diagnosed, the validity of the imputations needs to be inspected.  Diagnostic plots are viewed to ensure that the imputed data is similar enough to the real data. Common plots include density plots of each MI dataset compared to the complete cases, as well as bivariate scatterplots for imputed variables. < A few of the plots have been replicated here!!! Still need to do this>. Once again, all of the plots cannot be displayed in this paper, but some important ones are recreated. As we can see, not all of the imputed data follows the distribution of the observed data exactly, but for the majority of the plots, the data look like they could have been real data had they not been missing. Now that we have verified the data for convergence and validity, we may run the analyses on the $m=50$ datasets, which we will do in the coming sections.
 %%%%%%%%%%
 %%%NEED TO DO THE PLOTS
@@ -234,10 +234,9 @@ Trastuz/none       & \textless.0001          & \textless.0001          \\ \hline
 \label{table:her2_lr}
 \end{table}
 
-%start here
 Now that we have estimate of the survival curve, we may set up a model to observe how changes in some baseline covariates change the hazard. We will do this with the Cox Proportional Hazards model. Once we have a baseline model fit and the assumptions met, we can add our treatment variable to see how this affects the hazard.  We first need to fit a reasonable model on the available cases. Speaking with the clinicians, they determined that the covariates listed in table \ref{table:importantvars} were clinically relevant for the baseline model. 
 
-We need to make sure that the proportional hazards assumption is met in the available case model to determine if the use of the Cox model is justified. To check, we visually inspect the spline fit to the Schoenfeld residuals over time. The available cases can be seen in figure \ref{fig:ac_schoenfeld}. In the available cases, the assumption of proportional hazards over time seems reasonable, as it a straight line could reasaonably be fit between the 95\% confidence bands. 
+We need to make sure that the proportional hazards assumption is met in the available case model to determine if the use of the Cox model is justified. To check, we visually inspect the spline fit to the Schoenfeld residuals over time. The available cases can be seen in figure \ref{fig:ac_schoenfeld}. In the available cases, the assumption of proportional hazards over time seems reasonable, as it a straight line could reasonably be fit between the 95\% confidence bands. A chi square test of correlation also confirms this. 
 
 \begin{figure}[h!]
   \centering
@@ -283,7 +282,7 @@ Sys. Cont.                                             & Yes vs. No             
 \label{fig:acmicox}
 \end{table}
 
-We may then add in our treatment variable to see how it affects the hazard, and see how it changes other factors. Adding chemotherapy can be seen in \ref{fig:acmichemo}, and for the HER2 positive patients, the HER2 directed drugs can be seen in \ref{fig:acmiher2}. As it has been posited before, the  use of chemo and HER2 drugs seem to greatly reduce the hazard ratio of death from cancer. The effect of other covariates in the presence of these drugs seems to change though.
+We may then add in our treatment variable to see how it affects the hazard, and see how it changes other factors. Adding chemotherapy can be seen in \ref{fig:acmichemo}, and for the HER2 positive patients, the HER2 directed drugs can be seen in \ref{fig:acmiher2}. As it has been posited before, the use of chemo and HER2 drugs seem to greatly reduce the hazard ratio of death from cancer. The effect of other covariates in the presence of these drugs seems to change though.
 \begin{table}[]
 \centering
 \begin{tabular}{|c|c|c|c|c|c|c|c|c|}
@@ -333,14 +332,18 @@ HER2 therapy & \begin{tabular}[c]{@{}c@{}}Lapat vs. \\ none\end{tabular}   & 0.4
 \caption{AC and MI Cox model with HER2 directed treatment, on HER2+ subjects}
 \label{fig:acmiher2}
 \end{table}
+In both analyses, going from available case to MI interpretation, we see that the MI analyses are a little more pessimistic about the hazard ratio. However, the trend in reduction of hazard still holds. Other chemotherapeutics seem to reduce the hazard more than Capecitabine, and Trastuzumab seems to decrease the hazard more than Lapatinib in HER2+ subjects. 
 
+%start here
 \section{Causal Analysis}
 
-Lastly, we will want to draw causal inference, and see what the average treatment effect of each drug is. There are two options to choose from in what type of inference to do. There is the ATE (average treatment effect), and the ATT (average treatment effect on the treated). Since we have two treatments, the ATT is not of much interest, but the ATE would be clinically useful. 
+Lastly, we will want to draw causal inference, and see what the average treatment effect of each drug is.  We will do so by assessing the reduction in hazard via the cox model. In the previous section, we fit a cox model, but were unable to draw causal conclusions from it since the data was not obtained via an RCT. In this section, we aim to remove the factors confounding treatment and outcome so that we may treat it like an RCT. 
 
-The idea for this part of the analysis is to use propensity score weighting to create a balanced sample, and to be able to treat it as if it was an RCT. Traditional methods to obtain the propensity score (like logistic regression) cannot be optimized for balance. However, machine learning algorithms can be optimized to achieve balance. The method chosen to fit the propensity scores is generalized boosting. In this ensembling method, “The model consists of many simple regression trees iteratively combined to create an overall piecewise constant function. The iterative fitting algorithm begins with a single simple regression tree, and at each new iteration, another tree is added. The new tree is chosen to provide the best fit to the residuals of the model from the previous iteration” \cite{McCaffrey2013} . Once a sufficient number of iterations are run, the weights at each iteration are taken, and the balance of the covariates (according to standardized bias or KS statistic) is measured. The iteration that minimizes the bias while not overfitting the data is the model where our final propensity scores are taken from.
+In order to observe the results from a causal lens, we need to determine what type of treatment effect to look for. The goal of this study is to make inference about the population, not the individual, so the individual treatment effect is inappropriate. There are two options to choose from in what type of inference to do. There is the ATE (average treatment effect), and the ATT (average treatment effect on the treated). Since we have three comparisons for each group, and there is no clear cut accepted treatment for each, the ATT is not as useful as the ATE, thus we will chose to observe the ATE. 
 
-In traditional propensity score analysis, there is only one treatment and control, however in our situation, there are actually three groups in each analysis. So we can no longer use methods tailored to two classes. However, if we make treatment status an indicator (for example 1 if treatment is capecitabine, and 0 if it is other or none), then we may treat it as if it were binary. Because we have three groups though, we will need to check the balance between all groups (i.e 1 vs 2, 1 vs 3, 2 vs 3) to ensure balance is achieved.
+The idea for this part of the analysis is to use propensity score weighting to create a balanced sample, and to be able to treat it as if it was an RCT. Traditional methods to obtain the propensity score (like logistic regression) cannot be optimized for balance. However, machine learning algorithms can be. The method chosen to fit the propensity scores is generalized boosting. In this ensembling method, “The model consists of many simple regression trees iteratively combined to create an overall piecewise constant function. The iterative fitting algorithm begins with a single simple regression tree, and at each new iteration, another tree is added. The new tree is chosen to provide the best fit to the residuals of the model from the previous iteration” \cite{McCaffrey2013} . Once a sufficient number of iterations are run, the weights at each iteration are taken and applied to the data, and the balance of the covariates (according to standardized bias or KS statistic) is measured. The iteration that minimizes the bias while not overfitting the data is the model where our final propensity scores are taken from.
+
+In traditional propensity score analysis, there is only one treatment and control, however in our situation, there are actually three groups in each analysis. So we can no longer use methods tailored to two classes. However, if we make treatment status an indicator (for example 1 if treatment is Capecitabine, and 0 if it is other or none), then we may treat it as if it were binary. Because we have three groups though, we will need to check the balance between all groups (i.e 1 vs 2, 1 vs 3, 2 vs 3) to ensure balance is achieved.
 
 Once the propensity scores have been computed, we need to check that they are in fact valid. McCaffrey et Al. describe two conditions that need to be checked, and graphical checks to do so. The first check is the check of no unmeasured confounders. This is impossible to check, but should be reasonable if we include any and all factors we believe to be confounding. The next condition is to ensure that all of the propensity scores are between 0 and 1. If any propensity score is 0 or 1, then there is no chance that the subject looks like that of another group. If this is the case, then the results will be poor, because the counterfactual framework and propensity score analysis was not meant to handle cases like this \cite{McCaffrey2013}. To check for balance, we can check <<histograms of the propensity>> scores, as well as<< tables and plots>> of how the balance changes between pretreatment and propensity score weighting.
 
