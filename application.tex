@@ -137,10 +137,39 @@ There are 80 plots to check, they cannot all be shown in this paper, but all of 
 \end{figure}
 
 
-Once the convergence is diagnosed, the validity of the imputations needs to be inspected.  Diagnostic plots are viewed to ensure that the imputed data is similar enough to the real data. Common plots include density plots of each MI dataset compared to the complete cases, as well as bivariate scatterplots for imputed variables. < A few of the plots have been replicated here!!! Still need to do this>. Once again, all of the plots cannot be displayed in this paper, but some important ones are recreated. As we can see, not all of the imputed data follows the distribution of the observed data exactly, but for the majority of the plots, the data look like they could have been real data had they not been missing. Now that we have verified the data for convergence and validity, we may run the analyses on the $m=50$ datasets, which we will do in the coming sections.
+Once the convergence is diagnosed, the validity of the imputations needs to be inspected.  Diagnostic plots and tables are viewed to ensure that the imputed data are realistic. Common plots include density plots of each MI dataset compared to the complete cases, as well as bivariate scatterplots for imputed variables. For categorical variables, tables and other group checks may be used. A few of the plots have been replicated here in figures \ref{fig:contdensplot}, \ref{fig:contbwplots}, \ref{fig:clhisto}. Once again, all of the plots cannot be displayed in this paper, but some important ones are recreated. As we can see, not all of the imputed data looks like the imputed data, but for the majority of the plots, the imputed data seem reasonable and look like they could have been real data had they not been missing. 
 %%%%%%%%%%
-%%%NEED TO DO THE PLOTS
-%%%%%%%%%%
+\begin{figure}[h!]
+  \centering
+    \includegraphics[width=0.8\textwidth]{cont_densplot.png}
+  \caption{Selected density plots of continuous imputed variables}
+\label{fig:contdensplot}
+\medskip
+\small
+Blue indicates the original density, whereas the red are the imputed dataset densities
+\end{figure}
+
+
+\begin{figure}[h!]
+  \centering
+    \includegraphics[width=0.5\textwidth]{bw_timemet.png}%
+    \includegraphics[width=0.5\textwidth]{bw_timedx.png}%
+  \caption{Selected box and whisker plots of continuous imputed variables}
+\label{fig:contbwplots}
+\medskip
+\small
+Blue indicates the original box and whisker plot, whereas the red are the imputed dataset box and whisker plots
+\end{figure}
+
+\begin{figure}[h!]
+  \centering
+    \includegraphics[width=0.8\textwidth]{cape_lapat_ratio.png}
+  \caption{Selected ratio of imputed variables selected}
+\label{fig:clhisto}
+\end{figure}
+
+
+%%%%%%%%%% cape_lapat_ratio
 Before we move on to the analyses though, let’s have a look at the breakdown of the data. In table \ref{table:chartab} we can see how the MI data compares to the available case data, broken down by if the subject had any systemic therapy. This was computed via the stacked method.
 \begin{table}[!ht]
 \centering
@@ -171,7 +200,7 @@ no local therapy                                  & 10\%                        
 
 \section{Survival Analysis}
 
-Now that the datasets are imputed, we are ready to run our models on them.  Before we begin though, we should check the models on the available cases to make sure that the model assumptions are met, and to get an idea of how the importance of each part of the model. The available case models (Kaplan-Meier, Cox) were run and the assumptions were checked, and all of them passed. You can see the results, alongside the MI values throughout this section.
+Now that the $m=50$ datasets are imputed, we are ready to run our models on them.  Before we begin though, we should check the models on the available cases to make sure that the model assumptions are met, and to get an idea of how the importance of each part of the model. The available case models (Kaplan-Meier, Cox) were run and the assumptions were checked, and all of them passed. You can see the results, alongside the MI values throughout this section.
 
 
 It should be noted that in all of our survival analyses, we will be doing a landmark analysis. Landmark analysis means that we don't start the analysis at time 0, rather, we start it at a different time later than 0. In Dr. Hess's words, ``Since the brain mets treatment data was necessarily determined after the diagnosis of the brain met, it is not appropriate to use this data as baseline covariates in the analyses. Only covariates known at the time of diagnosis can be used in this fashion. We can do a landmark analysis by estimating when the vast majority of patients would have had their brain met treatment choices started, and start our analyses at this point ''. After speaking with cancer experts (Dr. Bugano and Dr. Ibrahim), this landmark time was determined to be 2 months. This allows us to be sure that the treatment was actually administered for the subjects in the analysis.

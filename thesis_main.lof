@@ -7,12 +7,15 @@
 \contentsline {figure}{\numberline {3.1}{\ignorespaces Visualization of missingness in the cancer dataset}}{38}
 \contentsline {figure}{\numberline {3.2}{\ignorespaces Selected plots of continuous variable imputation mean and standard deviation by iteration}}{43}
 \contentsline {figure}{\numberline {3.3}{\ignorespaces Selected plots of binary variable imputation mean and standard deviation by iteration}}{44}
-\contentsline {figure}{\numberline {3.4}{\ignorespaces Landmarked Kaplan-Meier curves for chemotherapeutic drugs, AC and MI data}}{47}
-\contentsline {figure}{\numberline {3.5}{\ignorespaces Landmarked Kaplan-Meier curves for HER2 drugs, AC and MI data}}{48}
-\contentsline {figure}{\numberline {3.6}{\ignorespaces AC Schoenfeld residuals over time}}{50}
-\contentsline {figure}{\numberline {3.7}{\ignorespaces MI Schoenfeld residuals over time}}{51}
-\contentsline {figure}{\numberline {3.8}{\ignorespaces Selected Propensity Score Histogram Checks}}{58}
-\contentsline {figure}{\numberline {3.9}{\ignorespaces Selected Propensity Score Balance Checks}}{59}
+\contentsline {figure}{\numberline {3.4}{\ignorespaces Selected density plots of continuous imputed variables}}{45}
+\contentsline {figure}{\numberline {3.5}{\ignorespaces Selected box and whisker plots of continuous imputed variables}}{46}
+\contentsline {figure}{\numberline {3.6}{\ignorespaces Selected ratio of imputed variables selected}}{47}
+\contentsline {figure}{\numberline {3.7}{\ignorespaces Landmarked Kaplan-Meier curves for chemotherapeutic drugs, AC and MI data}}{49}
+\contentsline {figure}{\numberline {3.8}{\ignorespaces Landmarked Kaplan-Meier curves for HER2 drugs, AC and MI data}}{50}
+\contentsline {figure}{\numberline {3.9}{\ignorespaces AC Schoenfeld residuals over time}}{52}
+\contentsline {figure}{\numberline {3.10}{\ignorespaces MI Schoenfeld residuals over time}}{53}
+\contentsline {figure}{\numberline {3.11}{\ignorespaces Selected Propensity Score Histogram Checks}}{60}
+\contentsline {figure}{\numberline {3.12}{\ignorespaces Selected Propensity Score Balance Checks}}{61}
 \addvspace {\baselineskip }
 \addvspace {\baselineskip }
 \addvspace {\baselineskip }

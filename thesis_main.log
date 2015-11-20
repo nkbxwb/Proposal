@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.1415926-2.5-1.40.14 (MiKTeX 2.9) (preloaded format=pdflatex 2015.8.23)  19 NOV 2015 22:40
+This is pdfTeX, Version 3.1415926-2.5-1.40.14 (MiKTeX 2.9) (preloaded format=pdflatex 2015.8.23)  20 NOV 2015 10:58
 entering extended mode
 **thesis_main.tex
 (C:\Users\Nathan\Desktop\Proposal\thesis_main.tex
@@ -251,8 +251,11 @@ Writing index file thesis_main.idx
 (C:\Users\Nathan\Desktop\Proposal\abstract.aux)
 (C:\Users\Nathan\Desktop\Proposal\chapter1.aux)
 (C:\Users\Nathan\Desktop\Proposal\methods.aux)
-(C:\Users\Nathan\Desktop\Proposal\application.aux)
-(C:\Users\Nathan\Desktop\Proposal\discussion.aux)
+(C:\Users\Nathan\Desktop\Proposal\application.aux
+
+LaTeX Warning: Label `fig:contdensplot' multiply defined.
+
+) (C:\Users\Nathan\Desktop\Proposal\discussion.aux)
 (C:\Users\Nathan\Desktop\Proposal\conclusion.aux)
 (C:\Users\Nathan\Desktop\Proposal\append-a.aux)
 (C:\Users\Nathan\Desktop\Proposal\append-b.aux))
@@ -441,143 +444,187 @@ Package pdftex.def Info: traceplots2.png used on input line 134.
 
 LaTeX Warning: `!h' float specifier changed to `!ht'.
 
+<cont_densplot.png, id=171, 477.785pt x 485.815pt>
+File: cont_densplot.png Graphic file (type png)
+ <use cont_densplot.png>
+Package pdftex.def Info: cont_densplot.png used on input line 144.
+(pdftex.def)             Requested size: 346.89731pt x 352.72205pt.
+
+[42]
+
+LaTeX Warning: `!h' float specifier changed to `!ht'.
+
+<bw_timemet.png, id=175, 616.3025pt x 485.815pt>
+File: bw_timemet.png Graphic file (type png)
+ <use bw_timemet.png>
+Package pdftex.def Info: bw_timemet.png used on input line 155.
+(pdftex.def)             Requested size: 216.81pt x 170.9051pt.
+
+<bw_timedx.png, id=176, 616.3025pt x 485.815pt>
+File: bw_timedx.png Graphic file (type png)
+ <use bw_timedx.png>
+Package pdftex.def Info: bw_timedx.png used on input line 156.
+(pdftex.def)             Requested size: 216.81pt x 170.9051pt.
+
+
+LaTeX Warning: `!h' float specifier changed to `!ht'.
+
+<cape_lapat_ratio.png, id=177, 541.02126pt x 485.815pt>
+File: cape_lapat_ratio.png Graphic file (type png)
+
+<use cape_lapat_ratio.png>
+Package pdftex.def Info: cape_lapat_ratio.png used on input line 166.
+(pdftex.def)             Requested size: 346.89731pt x 311.50616pt.
+
+
+LaTeX Warning: `!h' float specifier changed to `!ht'.
+
 Missing character: There is no ’ in font cmr12!
 
-Overfull \hbox (48.61453pt too wide) in paragraph at lines 148--168
+Overfull \hbox (48.61453pt too wide) in paragraph at lines 177--197
  [][] 
  []
 
-[42] [43 <C:/Users/Nathan/Desktop/Proposal/traceplots1.png>] [44 <C:/Users/Nath
-an/Desktop/Proposal/traceplots2.png>] [45]
-<chemo_km.png, id=186, 448.67625pt x 485.815pt>
+[43 <C:/Users/Nathan/Desktop/Proposal/traceplots1.png>] [44 <C:/Users/Nathan/De
+sktop/Proposal/traceplots2.png>] [45 <C:/Users/Nathan/Desktop/Proposal/cont_den
+splot.png>] <chemo_km.png, id=191, 448.67625pt x 485.815pt>
 File: chemo_km.png Graphic file (type png)
  <use chemo_km.png>
-Package pdftex.def Info: chemo_km.png used on input line 185.
+Package pdftex.def Info: chemo_km.png used on input line 214.
 (pdftex.def)             Requested size: 346.89731pt x 375.62059pt.
 
 
 LaTeX Warning: `!h' float specifier changed to `!ht'.
 
-<her2_km.png, id=187, 448.67625pt x 485.815pt>
+<her2_km.png, id=192, 448.67625pt x 485.815pt>
 File: her2_km.png Graphic file (type png)
  <use her2_km.png>
-Package pdftex.def Info: her2_km.png used on input line 195.
+Package pdftex.def Info: her2_km.png used on input line 224.
 (pdftex.def)             Requested size: 346.89731pt x 375.62059pt.
 
 
 LaTeX Warning: `!h' float specifier changed to `!ht'.
 
-[46] [47 <C:/Users/Nathan/Desktop/Proposal/chemo_km.png>]
-LaTeX Font Info:    Try loading font information for OML+cmr on input line 213.
+[46 <C:/Users/Nathan/Desktop/Proposal/bw_timemet.png> <C:/Users/Nathan/Desktop/
+Proposal/bw_timedx.png>] [47 <C:/Users/Nathan/Desktop/Proposal/cape_lapat_ratio
+.png>] [48] [49 <C:/Users/Nathan/Desktop/Proposal/chemo_km.png>]
+LaTeX Font Info:    Try loading font information for OML+cmr on input line 242.
 
 
 ("C:\Program Files (x86)\MiKTeX 2.9\tex\latex\base\omlcmr.fd"
 File: omlcmr.fd 1999/05/25 v2.5h Standard LaTeX font definitions
 )
 LaTeX Font Info:    Font shape `OML/cmr/m/n' in size <12> not available
-(Font)              Font shape `OML/cmm/m/it' tried instead on input line 213.
- [48 <C:/Users/Nathan/Desktop/Proposal/her2_km.png>] [49]
-<ac_schoenfeld.png, id=203, 600.74437pt x 532.99126pt>
+(Font)              Font shape `OML/cmm/m/it' tried instead on input line 242.
+ [50 <C:/Users/Nathan/Desktop/Proposal/her2_km.png>] [51]
+<ac_schoenfeld.png, id=217, 600.74437pt x 532.99126pt>
 File: ac_schoenfeld.png Graphic file (type png)
  <use ac_schoenfeld.png>
-Package pdftex.def Info: ac_schoenfeld.png used on input line 243.
+Package pdftex.def Info: ac_schoenfeld.png used on input line 272.
 (pdftex.def)             Requested size: 346.89731pt x 307.78511pt.
 
-<mi_schoenfeld.png, id=204, 536.75531pt x 389.95688pt>
+<mi_schoenfeld.png, id=218, 536.75531pt x 389.95688pt>
 File: mi_schoenfeld.png Graphic file (type png)
  <use mi_schoenfeld.png>
-Package pdftex.def Info: mi_schoenfeld.png used on input line 250.
+Package pdftex.def Info: mi_schoenfeld.png used on input line 279.
 (pdftex.def)             Requested size: 346.89731pt x 252.02304pt.
 
-[50 <C:/Users/Nathan/Desktop/Proposal/ac_schoenfeld.png>]
+
+LaTeX Warning: `!h' float specifier changed to `!ht'.
+
+[52 <C:/Users/Nathan/Desktop/Proposal/ac_schoenfeld.png>]
 
 LaTeX Warning: No positions in optional float specifier.
-               Default added (so using `tbp') on input line 261.
+               Default added (so using `tbp') on input line 290.
 
 
-Overfull \hbox (48.94975pt too wide) in paragraph at lines 263--281
+Overfull \hbox (48.94975pt too wide) in paragraph at lines 292--310
  [][] 
  []
 
 
 LaTeX Warning: No positions in optional float specifier.
-               Default added (so using `tbp') on input line 286.
+               Default added (so using `tbp') on input line 315.
 
 
-Overfull \hbox (45.04561pt too wide) in paragraph at lines 288--308
+Overfull \hbox (45.04561pt too wide) in paragraph at lines 317--337
  [][] 
  []
 
 
-Overfull \hbox (62.1746pt too wide) in paragraph at lines 314--332
+Overfull \hbox (62.1746pt too wide) in paragraph at lines 343--361
  [][] 
  []
 
-[51 <C:/Users/Nathan/Desktop/Proposal/mi_schoenfeld.png>] [52] [53] [54]
+[53 <C:/Users/Nathan/Desktop/Proposal/mi_schoenfeld.png>] [54] [55] [56]
 Missing character: There is no ’ in font cmr12!
 
-[55] [56] <ps_histo1.png, id=229, 441.90094pt x 274.02374pt>
+[57] [58] <ps_histo1.png, id=243, 441.90094pt x 274.02374pt>
 File: ps_histo1.png Graphic file (type png)
 
 <use ps_histo1.png>
-Package pdftex.def Info: ps_histo1.png used on input line 353.
+Package pdftex.def Info: ps_histo1.png used on input line 382.
 (pdftex.def)             Requested size: 216.81pt x 134.44423pt.
- <ps_histo2.png, id=230, 439.6425pt x 271.76532pt>
+ <ps_histo2.png, id=244, 439.6425pt x 271.76532pt>
 File: ps_histo2.png Graphic file (type png)
 
 <use ps_histo2.png>
-Package pdftex.def Info: ps_histo2.png used on input line 354.
+Package pdftex.def Info: ps_histo2.png used on input line 383.
 (pdftex.def)             Requested size: 216.81pt x 134.0204pt.
 
 
 LaTeX Warning: `!h' float specifier changed to `!ht'.
 
-[57] <ps_bal_diag.png, id=234, 383.18156pt x 326.72063pt>
+<ps_bal_diag.png, id=245, 383.18156pt x 326.72063pt>
 File: ps_bal_diag.png Graphic file (type png)
-
-<use ps_bal_diag.png>
-Package pdftex.def Info: ps_bal_diag.png used on input line 363.
+ <use ps_bal_diag.png>
+Package pdftex.def Info: ps_bal_diag.png used on input line 392.
 (pdftex.def)             Requested size: 346.89731pt x 295.80067pt.
 
+[59]
 
 LaTeX Warning: `!h' float specifier changed to `!ht'.
 
-[58 <C:/Users/Nathan/Desktop/Proposal/ps_histo1.png> <C:/Users/Nathan/Desktop/P
+
+Overfull \hbox (12.72752pt too wide) in paragraph at lines 417--418
+[][] 
+ []
+
+
+Overfull \hbox (12.72752pt too wide) in paragraph at lines 432--433
+[][] 
+ []
+
+
+Overfull \hbox (27.09518pt too wide) in paragraph at lines 447--448
+[][] 
+ []
+
+
+Overfull \hbox (31.5013pt too wide) in paragraph at lines 462--463
+[][] 
+ []
+
+[60 <C:/Users/Nathan/Desktop/Proposal/ps_histo1.png> <C:/Users/Nathan/Desktop/P
 roposal/ps_histo2.png>]
-Overfull \hbox (12.72752pt too wide) in paragraph at lines 388--389
-[][] 
- []
 
+LaTeX Warning: Text page 61 contains only floats.
 
-Overfull \hbox (12.72752pt too wide) in paragraph at lines 403--404
-[][] 
- []
-
-
-Overfull \hbox (27.09518pt too wide) in paragraph at lines 418--419
-[][] 
- []
-
-
-Overfull \hbox (31.5013pt too wide) in paragraph at lines 433--434
-[][] 
- []
-
-) [59 <C:/Users/Nathan/Desktop/Proposal/ps_bal_diag.png>] [60]
+[61 <C:/Users/Nathan/Desktop/Proposal/ps_bal_diag.png>]) [62]
 (C:\Users\Nathan\Desktop\Proposal\discussion.tex
 Chapter 4.
 Missing character: There is no ’ in font cmr12!
 Missing character: There is no ’ in font cmr12!
 Missing character: There is no ’ in font cmr12!
-[61
+[63
 
 
 
-] [62] [63]
+] [64] [65]
 Missing character: There is no ’ in font cmr12!
-) [64] [65] (C:\Users\Nathan\Desktop\Proposal\conclusion.tex
+) [66] [67] (C:\Users\Nathan\Desktop\Proposal\conclusion.tex
 Chapter 5.
-) [66
+) [68
 
 
 
@@ -590,21 +637,21 @@ File: omscmr.fd 1999/05/25 v2.5h Standard LaTeX font definitions
 )
 LaTeX Font Info:    Font shape `OMS/cmr/m/n' in size <12> not available
 (Font)              Font shape `OMS/cmsy/m/n' tried instead on input line 7.
- [67
+ [69
 
 
 
 ]
 Missing character: There is no ’ in font cmr12!
 Missing character: There is no ’ in font cmr12!
- [68])
-[69] (C:\Users\Nathan\Desktop\Proposal\append-b.tex
+ [70])
+[71] (C:\Users\Nathan\Desktop\Proposal\append-b.tex
 Missing character: There is no ’ in font cmr12!
- [70
+ [72
 
 
-]) [71]
-(C:\Users\Nathan\Desktop\Proposal\thesis_main.bbl [72
+]) [73]
+(C:\Users\Nathan\Desktop\Proposal\thesis_main.bbl [74
 
 
 ]
@@ -620,7 +667,7 @@ Missing character: There is no ˜ in font cmr12!
 Missing character: There is no â in font cmr12!
 Missing character: There is no € in font cmr12!
 Missing character: There is no ™ in font cmr12!
- [73] [74]) [75]
+ [75] [76]) [77]
 (C:\Users\Nathan\Desktop\Proposal\thesis_main.aux
 (C:\Users\Nathan\Desktop\Proposal\abstract.aux)
 (C:\Users\Nathan\Desktop\Proposal\chapter1.aux)
@@ -629,33 +676,36 @@ Missing character: There is no ™ in font cmr12!
 (C:\Users\Nathan\Desktop\Proposal\discussion.aux)
 (C:\Users\Nathan\Desktop\Proposal\conclusion.aux)
 (C:\Users\Nathan\Desktop\Proposal\append-a.aux)
-(C:\Users\Nathan\Desktop\Proposal\append-b.aux)) ) 
+(C:\Users\Nathan\Desktop\Proposal\append-b.aux))
+
+LaTeX Warning: There were multiply-defined labels.
+
+ ) 
 Here is how much of TeX's memory you used:
- 3405 strings out of 493921
- 45200 string characters out of 3144873
- 131690 words of memory out of 3000000
- 6556 multiletter control sequences out of 15000+200000
+ 3428 strings out of 493921
+ 45644 string characters out of 3144873
+ 131767 words of memory out of 3000000
+ 6575 multiletter control sequences out of 15000+200000
  11722 words of font info for 45 fonts, out of 3000000 for 9000
  841 hyphenation exceptions out of 8191
  34i,15n,35p,2324b,301s stack positions out of 5000i,500n,10000p,200000b,50000s
-<C:/Program Files (x86)/MiKTe
-X 2.9/fonts/type1/public/amsfonts/cm/cmbx12.pfb><C:/Program Files (x86)/MiKTeX 
-2.9/fonts/type1/public/amsfonts/cm/cmcsc10.pfb><C:/Program Files (x86)/MiKTeX 2
-.9/fonts/type1/public/amsfonts/cm/cmex10.pfb><C:/Program Files (x86)/MiKTeX 2.9
-/fonts/type1/public/amsfonts/cm/cmmi12.pfb><C:/Program Files (x86)/MiKTeX 2.9/f
-onts/type1/public/amsfonts/cm/cmmi6.pfb><C:/Program Files (x86)/MiKTeX 2.9/font
-s/type1/public/amsfonts/cm/cmmi8.pfb><C:/Program Files (x86)/MiKTeX 2.9/fonts/t
-ype1/public/amsfonts/cm/cmr10.pfb><C:/Program Files (x86)/MiKTeX 2.9/fonts/type
-1/public/amsfonts/cm/cmr12.pfb><C:/Program Files (x86)/MiKTeX 2.9/fonts/type1/p
-ublic/amsfonts/cm/cmr6.pfb><C:/Program Files (x86)/MiKTeX 2.9/fonts/type1/publi
-c/amsfonts/cm/cmr8.pfb><C:/Program Files (x86)/MiKTeX 2.9/fonts/type1/public/am
-sfonts/cm/cmsy10.pfb><C:/Program Files (x86)/MiKTeX 2.9/fonts/type1/public/amsf
-onts/cm/cmsy6.pfb><C:/Program Files (x86)/MiKTeX 2.9/fonts/type1/public/amsfont
-s/cm/cmsy8.pfb><C:/Program Files (x86)/MiKTeX 2.9/fonts/type1/public/amsfonts/c
-m/cmti12.pfb>
-Output written on thesis_main.pdf (81 pages, 802967 bytes).
+<C:/Program Files (x86)/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmbx12.pfb>
+<C:/Program Files (x86)/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmcsc10.pfb><
+C:/Program Files (x86)/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmex10.pfb><C:
+/Program Files (x86)/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmmi12.pfb><C:/P
+rogram Files (x86)/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmmi6.pfb><C:/Prog
+ram Files (x86)/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmmi8.pfb><C:/Program
+ Files (x86)/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmr10.pfb><C:/Program Fi
+les (x86)/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmr12.pfb><C:/Program Files
+ (x86)/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmr6.pfb><C:/Program Files (x8
+6)/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmr8.pfb><C:/Program Files (x86)/M
+iKTeX 2.9/fonts/type1/public/amsfonts/cm/cmsy10.pfb><C:/Program Files (x86)/MiK
+TeX 2.9/fonts/type1/public/amsfonts/cm/cmsy6.pfb><C:/Program Files (x86)/MiKTeX
+ 2.9/fonts/type1/public/amsfonts/cm/cmsy8.pfb><C:/Program Files (x86)/MiKTeX 2.
+9/fonts/type1/public/amsfonts/cm/cmti12.pfb>
+Output written on thesis_main.pdf (83 pages, 833341 bytes).
 PDF statistics:
- 342 PDF objects out of 1000 (max. 8388607)
+ 356 PDF objects out of 1000 (max. 8388607)
  0 named destinations out of 1000 (max. 500000)
- 66 words of extra memory for PDF output out of 10000 (max. 10000000)
+ 86 words of extra memory for PDF output out of 10000 (max. 10000000)
 
