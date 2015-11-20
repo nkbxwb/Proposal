@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.1415926-2.5-1.40.14 (MiKTeX 2.9) (preloaded format=pdflatex 2015.8.23)  19 NOV 2015 17:13
+This is pdfTeX, Version 3.1415926-2.5-1.40.14 (MiKTeX 2.9) (preloaded format=pdflatex 2015.8.23)  19 NOV 2015 20:02
 entering extended mode
 **thesis_main.tex
 (C:\Users\Nathan\Desktop\Proposal\thesis_main.tex
@@ -514,23 +514,46 @@ Overfull \hbox (62.1746pt too wide) in paragraph at lines 314--332
  []
 
 [51 <C:/Users/Nathan/Desktop/Proposal/mi_schoenfeld.png>] [52] [53] [54]
-Missing character: There is no “ in font cmr12!
-Missing character: There is no ” in font cmr12!
+[55] [56] <ps_histo1.png, id=229, 441.90094pt x 274.02374pt>
+File: ps_histo1.png Graphic file (type png)
 
-[55] [56]
+<use ps_histo1.png>
+Package pdftex.def Info: ps_histo1.png used on input line 354.
+(pdftex.def)             Requested size: 216.81pt x 134.44423pt.
+ <ps_histo2.png, id=230, 439.6425pt x 271.76532pt>
+File: ps_histo2.png Graphic file (type png)
+
+<use ps_histo2.png>
+Package pdftex.def Info: ps_histo2.png used on input line 355.
+(pdftex.def)             Requested size: 216.81pt x 134.0204pt.
+
+
+LaTeX Warning: `!h' float specifier changed to `!ht'.
+
+<ps_bal_diag.png, id=231, 383.18156pt x 326.72063pt>
+File: ps_bal_diag.png Graphic file (type png)
+ <use ps_bal_diag.png>
+Package pdftex.def Info: ps_bal_diag.png used on input line 364.
+(pdftex.def)             Requested size: 216.81pt x 184.8667pt.
+
+
+LaTeX Warning: `!h' float specifier changed to `!ht'.
+
+[57] [58 <C:/Users/Nathan/Desktop/Proposal/ps_histo1.png> <C:/Users/Nathan/Desk
+top/Proposal/ps_histo2.png> <C:/Users/Nathan/Desktop/Proposal/ps_bal_diag.png>]
 Missing character: There is no ’ in font cmr12!
- [57]) [58] (C:\Users\Nathan\Desktop\Proposal\discussion.tex
+[59]) [60] (C:\Users\Nathan\Desktop\Proposal\discussion.tex
 Chapter 4.
 Missing character: There is no ’ in font cmr12!
 Missing character: There is no ’ in font cmr12!
 Missing character: There is no ’ in font cmr12!
-[59
+[61
 
 
 
-] [60] [61]) [62] (C:\Users\Nathan\Desktop\Proposal\conclusion.tex
+] [62] [63]) [64] (C:\Users\Nathan\Desktop\Proposal\conclusion.tex
 Chapter 5.
-) [63
+) [65
 
 
 
@@ -543,21 +566,21 @@ File: omscmr.fd 1999/05/25 v2.5h Standard LaTeX font definitions
 )
 LaTeX Font Info:    Font shape `OMS/cmr/m/n' in size <12> not available
 (Font)              Font shape `OMS/cmsy/m/n' tried instead on input line 7.
- [64
+ [66
 
 
 
 ]
 Missing character: There is no ’ in font cmr12!
 Missing character: There is no ’ in font cmr12!
- [65])
-[66] (C:\Users\Nathan\Desktop\Proposal\append-b.tex
+ [67])
+[68] (C:\Users\Nathan\Desktop\Proposal\append-b.tex
 Missing character: There is no ’ in font cmr12!
- [67
+ [69
 
 
-]) [68]
-(C:\Users\Nathan\Desktop\Proposal\thesis_main.bbl [69
+]) [70]
+(C:\Users\Nathan\Desktop\Proposal\thesis_main.bbl [71
 
 
 ]
@@ -573,7 +596,7 @@ Missing character: There is no ˜ in font cmr12!
 Missing character: There is no â in font cmr12!
 Missing character: There is no € in font cmr12!
 Missing character: There is no ™ in font cmr12!
- [70] [71]) [72]
+ [72] [73]) [74]
 (C:\Users\Nathan\Desktop\Proposal\thesis_main.aux
 (C:\Users\Nathan\Desktop\Proposal\abstract.aux)
 (C:\Users\Nathan\Desktop\Proposal\chapter1.aux)
@@ -584,10 +607,10 @@ Missing character: There is no ™ in font cmr12!
 (C:\Users\Nathan\Desktop\Proposal\append-a.aux)
 (C:\Users\Nathan\Desktop\Proposal\append-b.aux)) ) 
 Here is how much of TeX's memory you used:
- 3385 strings out of 493921
- 44872 string characters out of 3144873
- 131624 words of memory out of 3000000
- 6539 multiletter control sequences out of 15000+200000
+ 3402 strings out of 493921
+ 45158 string characters out of 3144873
+ 131646 words of memory out of 3000000
+ 6553 multiletter control sequences out of 15000+200000
  11722 words of font info for 45 fonts, out of 3000000 for 9000
  841 hyphenation exceptions out of 8191
  34i,15n,35p,2324b,301s stack positions out of 5000i,500n,10000p,200000b,50000s
@@ -606,9 +629,9 @@ sfonts/cm/cmsy10.pfb><C:/Program Files (x86)/MiKTeX 2.9/fonts/type1/public/amsf
 onts/cm/cmsy6.pfb><C:/Program Files (x86)/MiKTeX 2.9/fonts/type1/public/amsfont
 s/cm/cmsy8.pfb><C:/Program Files (x86)/MiKTeX 2.9/fonts/type1/public/amsfonts/c
 m/cmti12.pfb>
-Output written on thesis_main.pdf (78 pages, 661623 bytes).
+Output written on thesis_main.pdf (80 pages, 799479 bytes).
 PDF statistics:
- 326 PDF objects out of 1000 (max. 8388607)
+ 339 PDF objects out of 1000 (max. 8388607)
  0 named destinations out of 1000 (max. 500000)
- 51 words of extra memory for PDF output out of 10000 (max. 10000000)
+ 66 words of extra memory for PDF output out of 10000 (max. 10000000)
 
