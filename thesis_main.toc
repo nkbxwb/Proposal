@@ -23,8 +23,8 @@
 \contentsline {section}{\numberline {3.3}Survival Analysis}{43}
 \contentsline {section}{\numberline {3.4}Causal Analysis}{55}
 \contentsline {chapter}{\numberline {4}Discussion}{61}
-\contentsline {chapter}{\numberline {5}Conclusion}{65}
-\contentsline {chapter}{\numberline {A}Appendix}{66}
-\contentsline {section}{\numberline {A.1}Missing data mechanisms}{66}
-\contentsline {section}{\numberline {A.2}Cancer and Treatment Overview}{69}
-\contentsline {chapter}{\numberline {\hfil }Bibliography}{71}
+\contentsline {chapter}{\numberline {5}Conclusion}{66}
+\contentsline {chapter}{\numberline {A}Appendix}{67}
+\contentsline {section}{\numberline {A.1}Missing data mechanisms}{67}
+\contentsline {section}{\numberline {A.2}Cancer and Treatment Overview}{70}
+\contentsline {chapter}{\numberline {\hfil }Bibliography}{72}

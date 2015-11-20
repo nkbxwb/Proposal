@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.1415926-2.5-1.40.14 (MiKTeX 2.9) (preloaded format=pdflatex 2015.8.23)  19 NOV 2015 21:18
+This is pdfTeX, Version 3.1415926-2.5-1.40.14 (MiKTeX 2.9) (preloaded format=pdflatex 2015.8.23)  19 NOV 2015 22:40
 entering extended mode
 **thesis_main.tex
 (C:\Users\Nathan\Desktop\Proposal\thesis_main.tex
@@ -573,9 +573,11 @@ Missing character: There is no ’ in font cmr12!
 
 
 
-] [62] [63]) [64] (C:\Users\Nathan\Desktop\Proposal\conclusion.tex
+] [62] [63]
+Missing character: There is no ’ in font cmr12!
+) [64] [65] (C:\Users\Nathan\Desktop\Proposal\conclusion.tex
 Chapter 5.
-) [65
+) [66
 
 
 
@@ -588,21 +590,21 @@ File: omscmr.fd 1999/05/25 v2.5h Standard LaTeX font definitions
 )
 LaTeX Font Info:    Font shape `OMS/cmr/m/n' in size <12> not available
 (Font)              Font shape `OMS/cmsy/m/n' tried instead on input line 7.
- [66
+ [67
 
 
 
 ]
 Missing character: There is no ’ in font cmr12!
 Missing character: There is no ’ in font cmr12!
- [67])
-[68] (C:\Users\Nathan\Desktop\Proposal\append-b.tex
+ [68])
+[69] (C:\Users\Nathan\Desktop\Proposal\append-b.tex
 Missing character: There is no ’ in font cmr12!
- [69
+ [70
 
 
-]) [70]
-(C:\Users\Nathan\Desktop\Proposal\thesis_main.bbl [71
+]) [71]
+(C:\Users\Nathan\Desktop\Proposal\thesis_main.bbl [72
 
 
 ]
@@ -618,7 +620,7 @@ Missing character: There is no ˜ in font cmr12!
 Missing character: There is no â in font cmr12!
 Missing character: There is no € in font cmr12!
 Missing character: There is no ™ in font cmr12!
- [72] [73]) [74]
+ [73] [74]) [75]
 (C:\Users\Nathan\Desktop\Proposal\thesis_main.aux
 (C:\Users\Nathan\Desktop\Proposal\abstract.aux)
 (C:\Users\Nathan\Desktop\Proposal\chapter1.aux)
@@ -651,9 +653,9 @@ sfonts/cm/cmsy10.pfb><C:/Program Files (x86)/MiKTeX 2.9/fonts/type1/public/amsf
 onts/cm/cmsy6.pfb><C:/Program Files (x86)/MiKTeX 2.9/fonts/type1/public/amsfont
 s/cm/cmsy8.pfb><C:/Program Files (x86)/MiKTeX 2.9/fonts/type1/public/amsfonts/c
 m/cmti12.pfb>
-Output written on thesis_main.pdf (80 pages, 801000 bytes).
+Output written on thesis_main.pdf (81 pages, 802967 bytes).
 PDF statistics:
- 339 PDF objects out of 1000 (max. 8388607)
+ 342 PDF objects out of 1000 (max. 8388607)
  0 named destinations out of 1000 (max. 500000)
  66 words of extra memory for PDF output out of 10000 (max. 10000000)
 
