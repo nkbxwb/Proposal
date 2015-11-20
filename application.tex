@@ -334,21 +334,20 @@ HER2 therapy & \begin{tabular}[c]{@{}c@{}}Lapat vs. \\ none\end{tabular}   & 0.4
 \end{table}
 In both analyses, going from available case to MI interpretation, we see that the MI analyses are a little more pessimistic about the hazard ratio. However, the trend in reduction of hazard still holds. Other chemotherapeutics seem to reduce the hazard more than Capecitabine, and Trastuzumab seems to decrease the hazard more than Lapatinib in HER2+ subjects. 
 
-%start here
 \section{Causal Analysis}
 
-Lastly, we will want to draw causal inference, and see what the average treatment effect of each drug is.  We will do so by assessing the reduction in hazard via the Cox model. In the previous section, we fit a cox model, but were unable to draw causal conclusions from it since the data was not obtained via an RCT. In this section, we aim to remove the factors confounding treatment and outcome so that we may treat it like an RCT. 
+Lastly, we will want to draw causal inference, and see what the average treatment effect of each drug is.  We will do so by assessing the reduction in hazard via the Cox model. In the previous section, we fit a cox model, but were unable to draw causal conclusions from it since the data was not obtained via an RCT. In this section, we aim to remove the factors confounding treatment and outcome so that we may treat it like an RCT.  Recall that since we are in the MI setting, and that the treatment variables themselves are imputed, we will be using the ``within'' method for propensity scores, as described by Mitra and Reiter \cite{Mitra2012}.
 
 %use ATE and marginal effect interchangeably?	
-In order to observe the results from a causal lens, we need to determine what type of treatment effect to look for. It should be noted that some authors use the term marginal to describe population level average effect, and conditional to describe the individual level average effect\cite{Austin2013}. The goal of this study is to make inference about the population, not the individual, so the individual treatment effect is inappropriate. There are two options to choose from in what type of inference to do. There is the ATE (average treatment effect), and the ATT (average treatment effect on the treated). Since we have three comparisons for each group, and there is no clear cut accepted treatment for each, the ATT is not as useful as the ATE, thus we will chose to observe the ATE. 
+In order to observe the results from a causal lens, we need to determine what type of treatment effect to look for. It should be noted that some authors use the term marginal to describe population level average effect, and conditional to describe the individual level average effect\cite{Austin2013}. The goal of this study is to make inference about the population, not the individual, so the individual treatment effect is inappropriate. There are two options to choose from in what type of inference to do. There is the ATE (average treatment effect), and the ATT (average treatment effect on the treated). Since we have three comparisons for each group, and there is no clear cut accepted treatment for each, the ATT is not as useful as the ATE, thus we will chose to observe the ATE.  Since the ATE will be obtained in each MI dataset by weighted Cox regression, we are able to pool the results via Rubin’s rules.
 
-The idea for this part of the analysis is to use propensity score weighting to create a balanced sample where the baseline covariates are not confounded with treatment assignment, and to be able to treat it as if it was an RCT. Traditional methods to obtain the propensity score (like logistic regression) cannot be optimized for balance. However, machine learning algorithms can be. The method chosen to fit the propensity scores is generalized boosting. In this ensemble method, ``The model consists of many simple regression trees iteratively combined to create an overall piecewise constant function. The iterative fitting algorithm begins with a single simple regression tree, and at each new iteration, another tree is added. The new tree is chosen to provide the best fit to the residuals of the model from the previous iteration'' \cite{McCaffrey2013}. Once a sufficient number of iterations are run, the weights at each iteration are taken and applied to the data, and the balance of the covariates (according to standardized bias or KS statistic) is measured. The iteration that minimizes the bias while not overfitting the data is the model where our final propensity scores are taken from. Standardized bias is more of a measure of central tendency of the groups, whereas the KS statistic is more about the distribution as the whole. Because of this, we will want to optimize on the KS statistic, although both measures should appear balanced after weighting.
+The idea for this part of the analysis is to use propensity score weighting to create a balanced sample for each MI dataset where the baseline covariates are not confounded with treatment assignment, and to be able to treat it as if it was an RCT. Traditional methods to obtain the propensity score (like logistic regression) cannot be optimized for balance, however machine learning algorithms can be. The method chosen to fit the propensity scores are called Generalized Boosting Models (GBM).  In this ensemble method, ``The model consists of many simple regression trees iteratively combined to create an overall piecewise constant function. The iterative fitting algorithm begins with a single simple regression tree, and at each new iteration, another tree is added. The new tree is chosen to provide the best fit to the residuals of the model from the previous iteration'' \cite{McCaffrey2013}. After every iteration, the weights are applied to the data, and the balance of the covariates (according to standardized bias or KS statistic) is measured. The iteration that minimizes the bias while not overfitting the data is the model where our final propensity scores are taken from for that MI dataset. Standardized bias is more of a measure of central tendency of the groups, whereas the KS statistic is more about the distribution as the whole. Because of this, we will want to optimize on the KS statistic, although both measures should appear balanced after weighting.
 
 In traditional propensity score analysis, there is only one treatment and control, however in our situation, there are actually three groups in each analysis. So we can no longer use methods tailored to two classes. We could fit a multinomial model (that gives probability for three treatment classifications), but the theory behind this is not as strong and easy to understand as with the binary case.  However, if we make treatment status an indicator (for example 1 if treatment is Capecitabine, and 0 if it is other or none), then we may treat it as if it were binary. Because we have three groups though, we will need to check the balance between all groups (i.e 1 vs 2, 1 vs 3, 2 vs 3) to ensure balance is achieved. Since we are summing three probabilities that are not from the same model, we cannot be guaranteed that the probabilities will sum to unity. This is not an issue though, because our primary interest lies in making sure the groups are balanced, not in the sums of the probabilities \cite{McCaffrey2013}. 
 
 We now have the propensity score model selected, but what pretreatment covariates should we control for. In speaking with Dr. Hess, we determined that there are many pretreatment differences in the population that should be controlled for. So even though we wanted to keep the model parsimonious, we were not able to. The covariates we deemed to be important to balance before treatment include: breast cancer stage, race, type of breast cancer, breast cancer surgery site, first metastatic site, number of prior treatments, ECOG score, localized brain mets treatment, type of brain met, age at brain mets, and control of brain mets at diagnosis.
 
-Once the propensity scores have been computed, we need to check that they are in fact valid. McCaffrey et Al. describe two conditions that need to be checked, and graphical checks to do so. The first check is the check of no unmeasured confounders. This is impossible to check, but should be reasonable if we include any and all factors we believe to be confounding. The next condition is to ensure that all of the propensity scores are between 0 and 1. If any propensity score is 0 or 1, then there is no chance that the subject looks like that of another group. If this is the case, then the results will be poor, because the counterfactual framework and propensity score analysis was not meant to handle cases like this \cite{McCaffrey2013}.  All 50 plots for the distribution of the propensity scores cannot be shown in this paper, but I show two. In these plots, figure \ref{fig:pshisto}, we see that the propensity scores are never exactly 0 or 1, and as well, the groups are differentiated, yet still have common support.
+Once the propensity scores have been computed for each MI dataset, we need to check that they are in fact valid. McCaffrey et Al. describe two conditions that need to be checked, and graphical checks to do so. The first check is the check of no unmeasured confounders. This is impossible to check, but should be reasonable if we include any and all factors we believe to be confounding. The next condition is to ensure that all of the propensity scores are between 0 and 1. If any propensity score is 0 or 1, then there is no chance that the subject looks like that of another group. If this is the case, then the results will be poor, because the counterfactual framework and propensity score analysis was not meant to handle cases like this \cite{McCaffrey2013}.  All 50 plots for the distribution of the propensity scores cannot be shown in this paper, but I show two. In these plots, figure \ref{fig:pshisto}, we see that the propensity scores are never exactly 0 or 1, and as well, the groups are differentiated, yet still have common support.
 \begin{figure}[h!]
 \centering
 \includegraphics[width=.5\textwidth]{ps_histo1}%
@@ -356,12 +355,12 @@ Once the propensity scores have been computed, we need to check that they are in
   \caption{Selected Propensity Score Histogram Checks}
 \label{fig:pshisto}
 \end{figure}
-To check for balance, we can check how the standardized bias and KS statistic change. Two are selected, as can be seen in figure \ref{fig:psbal}. This plot shows that after weighting, the standardized bias decreases for nearly every variable to an acceptable level (below about .25 is considered balanced in the literature). As well, it shows tthat the KS p-values are increasing, indicating that there is no difference between the distributions of the pretreatment covariates after weighting.
+To check for balance, we can check how the standardized bias and KS statistic change. Two plots are selected, as can be seen in figure \ref{fig:psbal}. This plot shows that after weighting, the standardized bias decreases for nearly every variable to an acceptable level (below about .2 or .25 is considered balanced in the literature). As well, it shows that the KS p-values are increasing, indicating that there is no difference between the distributions of the pretreatment covariates after weighting.
 
 
 \begin{figure}[h!]
 \centering
-\includegraphics[width=.5\textwidth]{ps_bal_diag}
+\includegraphics[width=.8\textwidth]{ps_bal_diag}
   \caption{Selected Propensity Score Balance Checks}
 \label{fig:psbal}
 \medskip
@@ -370,7 +369,75 @@ This figure shows how the balance is achieved for two MI datasets. The left hand
 \end{figure}
 
 
-Once propensity score validity is checked, the weights are put into the Cox model. We cannot be sure that our propensity scores are the truth (this is a known drawback of propensity score analysis), but we can be more confident that it is right by also including the pretreatment covariates as adjustments to the cox model (along with weighting). This is known as being doubly robust estimator \cite{Lunceford2004}.
+Once propensity score validity is checked, the weights are put into the Cox model for each MI dataset. We cannot be sure that our propensity scores are the truth (this is a known drawback of propensity score analysis), but we can be more confident that it is right by also including the pretreatment covariates as adjustments to the cox model (along with weighting). This is known as being doubly robust estimator \cite{Lunceford2004}.
+
+The results for the propensity score weighted and doubly robust methods can be seen in tables \ref{tab:chemoonly}, \ref{chemorobust}, \ref{tab:lapatonly}, and \ref{lapatfull}. As it can be seen, when only accounting for the treatment effect alone, the estimate is quite unstable, but as we add in the other pretreatment covariates (many of which were actually in the original cox model in the survival section), the results become more stable. The results are similar in trend to those obtained in the survival section. However, the interpretation is different. These results should be read as if the treatments were administered in an RCT. When removing all confounding factors, there seems to be a significant difference between Capecitabine and other chemotherapeutic drugs, but there seems to be no difference between Lapatinib and Trastuzumab in HER2+ patients. All drugs are, however, better than not taking any at all.
+
+%%%%
+ 
+\begin{table}[!ht]
+ \scalebox{0.75}{
+\centering
+\begin{tabular}{|c|c|c|c|c|c|c|c|c|c|c|c|}
+\hline
+               & \multicolumn{2}{c|}{AC Unweighted} &  & \multicolumn{2}{c|}{AC IPTW} &  & \multicolumn{2}{c|}{MI unweighted} &  & \multicolumn{2}{c|}{MI IPTW} \\ \hline
+               & HR           & 95\% CI             &  & HR        & 95\% CI          &  & HR           & 95\% CI             &  & HR         & 95\% CI         \\ \hline
+Cape. vs none  & 0.396        & (0.325,0.482)       &  & 0.655     & (0.481,0.894)    &  & 0.484        & (0.400,0.585)       &  & 0.702          & (0.543,0.906)           \\ \hline
+Other vs none  & 0.336        & (0.287,0.394)       &  & 0.567     & (0.46,0.754)     &  & 0.413        & (0.354,0.481        &  & 0.593          & (0.470,0.748)           \\ \hline
+Cape. vs other & 1.179        & (0.983,1.416)       &  & 1.156     & (0.966,1.383)    &  & 1.173        & (0.981,1.402)       &  & 1.183          & (0.998,1.404)           \\ \hline
+\end{tabular}}
+\caption{Chemotherapeutic ATE with IPTW weights, AC and MI}
+\label{tab:chemoonly}
+\end{table}
+
+\begin{table}[!ht]
+ \scalebox{0.75}{
+\centering
+\begin{tabular}{|c|c|c|c|c|c|c|c|c|c|c|c|}
+\hline
+               & \multicolumn{2}{c|}{AC Unweighted} &  & \multicolumn{2}{c|}{AC IPTW} &  & \multicolumn{2}{c|}{MI unweighted} &  & \multicolumn{2}{c|}{MI IPTW} \\ \hline
+               & HR           & 95\% CI             &  & HR        & 95\% CI          &  & HR           & 95\% CI             &  & HR        & 95\% CI          \\ \hline
+Cape. vs none  & 0.687        & (0.530,0.891)       &  & 0.603     & (0.443,0.820)    &  & 0.752        & (0.595,0.952)       &  & 0.701     & (0.536,0.917)    \\ \hline
+Other vs none  & 0.521        & (0.416,0.653)       &  & 0.452     & (0.340,0.602)    &  & 0.579        & (0.474,0.707)       &  & 0.532     & (0.416,0.681)    \\ \hline
+Cape. vs other & 1.318        & (1.078,1.612)       &  & 1.334     & (1.109,1.604)    &  & 1.300        & (1.076,1.570)       &  & 1.317     & (1.100,1.579)    \\ \hline
+\end{tabular}}
+\caption{Chemotherapeuic ATE, Doubly Robust, AC, MI}
+\label{chemorobust}
+\end{table}
+
+\begin{table}[!ht]
+ \scalebox{0.75}{
+\centering
+\begin{tabular}{|l|c|c|c|c|c|c|c|c|c|c|c|}
+\hline
+                   & \multicolumn{2}{c|}{AC Unweighted}                              & \multicolumn{1}{l|}{} & \multicolumn{2}{c|}{AC IPTW}                                    & \multicolumn{1}{l|}{} & \multicolumn{2}{c|}{MI Unweighted}                              & \multicolumn{1}{l|}{} & \multicolumn{2}{c|}{MI IPTW}                                    \\ \hline
+                   & HR                         & 95\% CI                            &                       & HR                         & 95\% CI                            &                       & HR                         & 95\% CI                           &                       & HR                         & 95\% CI                            \\ \hline
+Lapat. vs none     & 0.467                      & (0.355,0.616)                      &                       & 0.571                      & (0.381,0.855)                      &                       & 0.474                      & (0.362,0.622)                     &                       & 0.485                      & (0.304,0.775)                      \\ \hline
+Trastuz. vs none   & 0.488                      & (0.398,0.597)                      &                       & 0.566                      & (0.421,0.759)                      &                       & 0.506                      & (0.417,0.614)                     &                       & 0.480                      & (0.313,0.735)                      \\ \hline
+Lapat. vs Trastuz. & \multicolumn{1}{l|}{0.958} & \multicolumn{1}{l|}{(0.693,1.324)} & \multicolumn{1}{l|}{} & \multicolumn{1}{l|}{1.009} & \multicolumn{1}{l|}{(0.680,1.496)} & \multicolumn{1}{l|}{} & \multicolumn{1}{l|}{0.927} & \multicolumn{1}{l|}{(0.673,1.28)} & \multicolumn{1}{l|}{} & \multicolumn{1}{l|}{1.011} & \multicolumn{1}{l|}{(0.763,1.338)} \\ \hline
+\end{tabular}}
+\caption{HER2 directed ATE with IPTW weights, AC and MI}
+\label{tab:lapatonly}
+\end{table}
+
+\begin{center}
+\begin{table}[!ht]
+\scalebox{0.75}{
+\begin{tabular}{|c|c|c|c|c|c|c|c|c|c|c|c|}
+\hline
+                   & \multicolumn{2}{c|}{AC Unweighted} &  & \multicolumn{2}{c|}{AC IPTW} &  & \multicolumn{2}{c|}{MI Unweighted} &  & \multicolumn{2}{c|}{MI IPTW} \\ \hline
+                   & HR          & 95\% CI              &  & HR        & 95\% CI          &  & HR           & 95\% CI             &  & HR         & 95\% CI            \\ \hline
+Lapat. vs none     & 0.468       & (0.316,0.692)        &  & 0.514     & (0.331,0.798)    &  & 0.524        & (0.367,0.747)       &  & 0.410      & (0.257,0.652)      \\ \hline
+Trastuz. vs none   & 0.447       & (0.328,0.6089)       &  & 0.456     & (0.328,0.632)    &  & 0.511        & (0.381,0.685)       &  & 0.388      & (0.249,0.602)      \\ \hline
+Lapat. vs Trastuz. & 1.048       & (0.704,1.560)        &  & 1.128     & (0.726,1.754)    &  & 1.026        & (0.713,1.477)       &  & 1.057      & (0.788,1.417)      \\ \hline
+\end{tabular}}
+\caption{HER2 directed ATE with IPTW weights, double robust}
+\label{lapatfull}
+\end{table}
+\end{center}
+
+%%%
+\begin{comment}
 
 This is what will happen for one dataset, but since we are in the MI setting, we have 50. The within method discussed before will be our combination plan. This method is chosen since our treatment variable is itself imputed, so this method makes more sense. The idea is to calculate the weighted cox model for each dataset, and then pool. In order to do this though, we need to check the <<balance achieved on each dataset>>. However, once the balance is assessed, we may just pool the results via rubin’s rules. 
 
@@ -380,7 +447,7 @@ After verifying and running the propensity score analysis, the <<results may be 
 treatment status, with the Q variables to get our propensity score. We can look at the <standardized bias> before and after the weighting to ensure that we have controlled properly, and to see if we may go forward. Assuming that we have removed the confounding factors and now have two groups that we can treat like it was an RCT, we may now run our Cox model again, but weight by the IPTW. Once we have done this, we can <observe the results from the AC analysis>.
 
 Now we need to apply this propensity score weighting to the MI data. We discussed before the within and across method, and remarked that we were confined to use the within method since our treatment variable (lapat/cape) was itself imputed. So the plan will be to fit the Cox models with the inverse propensity score weights discussed in the AC analysis. We need to be sure that the IPTW weighting is still valid in the MI setting though, so we check <standard biased, other things>. Now we may then pool the results via Rubin's rules and analyze is through the Rubin causal model framework. <the results can be seen here>. The results that we can draw from this are X,Y,Z
-
+\end{comment}
 \begin{comment}
 #mdplot
 image(is.na(data), main = "Missing Values", xlab = "Subject",

@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.1415926-2.5-1.40.14 (MiKTeX 2.9) (preloaded format=pdflatex 2015.8.23)  19 NOV 2015 20:02
+This is pdfTeX, Version 3.1415926-2.5-1.40.14 (MiKTeX 2.9) (preloaded format=pdflatex 2015.8.23)  19 NOV 2015 21:18
 entering extended mode
 **thesis_main.tex
 (C:\Users\Nathan\Desktop\Proposal\thesis_main.tex
@@ -256,18 +256,18 @@ Writing index file thesis_main.idx
 (C:\Users\Nathan\Desktop\Proposal\conclusion.aux)
 (C:\Users\Nathan\Desktop\Proposal\append-a.aux)
 (C:\Users\Nathan\Desktop\Proposal\append-b.aux))
-LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 53.
-LaTeX Font Info:    ... okay on input line 53.
-LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 53.
-LaTeX Font Info:    ... okay on input line 53.
-LaTeX Font Info:    Checking defaults for OT1/cmr/m/n on input line 53.
-LaTeX Font Info:    ... okay on input line 53.
-LaTeX Font Info:    Checking defaults for OMS/cmsy/m/n on input line 53.
-LaTeX Font Info:    ... okay on input line 53.
-LaTeX Font Info:    Checking defaults for OMX/cmex/m/n on input line 53.
-LaTeX Font Info:    ... okay on input line 53.
-LaTeX Font Info:    Checking defaults for U/cmr/m/n on input line 53.
-LaTeX Font Info:    ... okay on input line 53.
+LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 54.
+LaTeX Font Info:    ... okay on input line 54.
+LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 54.
+LaTeX Font Info:    ... okay on input line 54.
+LaTeX Font Info:    Checking defaults for OT1/cmr/m/n on input line 54.
+LaTeX Font Info:    ... okay on input line 54.
+LaTeX Font Info:    Checking defaults for OMS/cmsy/m/n on input line 54.
+LaTeX Font Info:    ... okay on input line 54.
+LaTeX Font Info:    Checking defaults for OMX/cmex/m/n on input line 54.
+LaTeX Font Info:    ... okay on input line 54.
+LaTeX Font Info:    Checking defaults for U/cmr/m/n on input line 54.
+LaTeX Font Info:    ... okay on input line 54.
 
 ("C:\Program Files (x86)\MiKTeX 2.9\tex\context\base\supp-pdf.mkii"
 [Loading MPS to PDF converter (version 2006.09.02).]
@@ -514,35 +514,57 @@ Overfull \hbox (62.1746pt too wide) in paragraph at lines 314--332
  []
 
 [51 <C:/Users/Nathan/Desktop/Proposal/mi_schoenfeld.png>] [52] [53] [54]
+Missing character: There is no ’ in font cmr12!
+
 [55] [56] <ps_histo1.png, id=229, 441.90094pt x 274.02374pt>
 File: ps_histo1.png Graphic file (type png)
 
 <use ps_histo1.png>
-Package pdftex.def Info: ps_histo1.png used on input line 354.
+Package pdftex.def Info: ps_histo1.png used on input line 353.
 (pdftex.def)             Requested size: 216.81pt x 134.44423pt.
  <ps_histo2.png, id=230, 439.6425pt x 271.76532pt>
 File: ps_histo2.png Graphic file (type png)
 
 <use ps_histo2.png>
-Package pdftex.def Info: ps_histo2.png used on input line 355.
+Package pdftex.def Info: ps_histo2.png used on input line 354.
 (pdftex.def)             Requested size: 216.81pt x 134.0204pt.
 
 
 LaTeX Warning: `!h' float specifier changed to `!ht'.
 
-<ps_bal_diag.png, id=231, 383.18156pt x 326.72063pt>
+[57] <ps_bal_diag.png, id=234, 383.18156pt x 326.72063pt>
 File: ps_bal_diag.png Graphic file (type png)
- <use ps_bal_diag.png>
-Package pdftex.def Info: ps_bal_diag.png used on input line 364.
-(pdftex.def)             Requested size: 216.81pt x 184.8667pt.
+
+<use ps_bal_diag.png>
+Package pdftex.def Info: ps_bal_diag.png used on input line 363.
+(pdftex.def)             Requested size: 346.89731pt x 295.80067pt.
 
 
 LaTeX Warning: `!h' float specifier changed to `!ht'.
 
-[57] [58 <C:/Users/Nathan/Desktop/Proposal/ps_histo1.png> <C:/Users/Nathan/Desk
-top/Proposal/ps_histo2.png> <C:/Users/Nathan/Desktop/Proposal/ps_bal_diag.png>]
-Missing character: There is no ’ in font cmr12!
-[59]) [60] (C:\Users\Nathan\Desktop\Proposal\discussion.tex
+[58 <C:/Users/Nathan/Desktop/Proposal/ps_histo1.png> <C:/Users/Nathan/Desktop/P
+roposal/ps_histo2.png>]
+Overfull \hbox (12.72752pt too wide) in paragraph at lines 388--389
+[][] 
+ []
+
+
+Overfull \hbox (12.72752pt too wide) in paragraph at lines 403--404
+[][] 
+ []
+
+
+Overfull \hbox (27.09518pt too wide) in paragraph at lines 418--419
+[][] 
+ []
+
+
+Overfull \hbox (31.5013pt too wide) in paragraph at lines 433--434
+[][] 
+ []
+
+) [59 <C:/Users/Nathan/Desktop/Proposal/ps_bal_diag.png>] [60]
+(C:\Users\Nathan\Desktop\Proposal\discussion.tex
 Chapter 4.
 Missing character: There is no ’ in font cmr12!
 Missing character: There is no ’ in font cmr12!
@@ -607,10 +629,10 @@ Missing character: There is no ™ in font cmr12!
 (C:\Users\Nathan\Desktop\Proposal\append-a.aux)
 (C:\Users\Nathan\Desktop\Proposal\append-b.aux)) ) 
 Here is how much of TeX's memory you used:
- 3402 strings out of 493921
- 45158 string characters out of 3144873
- 131646 words of memory out of 3000000
- 6553 multiletter control sequences out of 15000+200000
+ 3405 strings out of 493921
+ 45200 string characters out of 3144873
+ 131690 words of memory out of 3000000
+ 6556 multiletter control sequences out of 15000+200000
  11722 words of font info for 45 fonts, out of 3000000 for 9000
  841 hyphenation exceptions out of 8191
  34i,15n,35p,2324b,301s stack positions out of 5000i,500n,10000p,200000b,50000s
@@ -629,7 +651,7 @@ sfonts/cm/cmsy10.pfb><C:/Program Files (x86)/MiKTeX 2.9/fonts/type1/public/amsf
 onts/cm/cmsy6.pfb><C:/Program Files (x86)/MiKTeX 2.9/fonts/type1/public/amsfont
 s/cm/cmsy8.pfb><C:/Program Files (x86)/MiKTeX 2.9/fonts/type1/public/amsfonts/c
 m/cmti12.pfb>
-Output written on thesis_main.pdf (80 pages, 799479 bytes).
+Output written on thesis_main.pdf (80 pages, 801000 bytes).
 PDF statistics:
  339 PDF objects out of 1000 (max. 8388607)
  0 named destinations out of 1000 (max. 500000)

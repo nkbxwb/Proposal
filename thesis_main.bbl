@@ -54,26 +54,10 @@ J.~K. Lunceford and M.~Davidian, ``{Stratification and weighting via the
   study},'' {\em Statistics in Medicine}, vol.~23, no.~19, pp.~2937--2960,
   2004.
 
-\bibitem{Austin2014}
-P.~C. Austin, ``{The use of propensity score methods with survival or
-  time-to-event outcomes: reporting measures of effect similar to those used in
-  randomized experiments},'' {\em Statistics in Medicine}, vol.~33, no.~7,
-  pp.~1242--1258, 2014.
-
-\bibitem{Austin2013}
-P.~C. Austin, ``{The performance of different propensity score methods for
-  estimating marginal hazard ratios.},'' {\em Statistics in medicine}, vol.~32,
-  no.~16, pp.~2837--49, 2013.
-
 \bibitem{Demirtas2008}
 H.~Demirtas and D.~Hedeker, ``{Imputing continuous data under some non-Gaussian
   distributions},'' {\em Statistica Neerlandica}, vol.~62, no.~2, pp.~193--205,
   2008.
-
-\bibitem{Kropko2014}
-J.~Kropko, B.~Goodrich, A.~Gelman, and J.~Hill, ``{Multiple Imputation for
-  Continuous and Categorical Data: Comparing Joint Multivariate Normal and
-  Conditional Approaches},'' {\em Political Analysis}, pp.~497--519, 2014.
 
 \bibitem{Honaker2015}
 J.~Honaker, G.~King, and M.~Blackwell, ``{AMELIA II : A Program for Missing
@@ -96,6 +80,11 @@ S.~{Van Buuren}, J.~P. Brand, C.~G. Groothuis-Oudshoorn, and D.~Rubin, ``{Fully
   conditional specification in multivariate imputation},'' {\em Journal of
   Statistical Computation and Simulation}, vol.~76, no.~12, pp.~1049--1064,
   2006.
+
+\bibitem{Kropko2014}
+J.~Kropko, B.~Goodrich, A.~Gelman, and J.~Hill, ``{Multiple Imputation for
+  Continuous and Categorical Data: Comparing Joint Multivariate Normal and
+  Conditional Approaches},'' {\em Political Analysis}, pp.~497--519, 2014.
 
 \bibitem{Su2011}
 Y.-S. Su, A.~Gelman, J.~Hill, and M.~Yajima, ``{Multiple Imputation with
@@ -132,6 +121,12 @@ A.~Marshall, D.~G. Altman, R.~L. Holder, and P.~Royston, ``{Combining estimates
 D.~Schoenfeld, ``{Partial Residuals for the Proportional Hazards
   Regression-Model},'' {\em Biometrika}, vol.~69, no.~1, pp.~239--241, 1982.
 
+\bibitem{Austin2014}
+P.~C. Austin, ``{The use of propensity score methods with survival or
+  time-to-event outcomes: reporting measures of effect similar to those used in
+  randomized experiments},'' {\em Statistics in Medicine}, vol.~33, no.~7,
+  pp.~1242--1258, 2014.
+
 \bibitem{Mitra2012}
 R.~Mitra and J.~P. Reiter, ``{A comparison of two methods of estimating
   propensity scores after multiple imputation},'' {\em Statistical Methods in
@@ -143,15 +138,15 @@ D.~F. McCaffrey, B.~A. Griffin, D.~Almirall, M.~E. Slaughter, R.~Ramchand, and
   treatments using generalized boosted models},'' {\em Statistics in Medicine},
   vol.~32, no.~19, pp.~3388--3414, 2013.
 
-\bibitem{Reiter2008}
-J.~P. Reiter, ``{Selecting the number of imputed datasets when using multiple
-  imputation for missing data and disclosure limitation},'' {\em Statistics
-  {\&} Probability Letters}, vol.~78, no.~1, pp.~15--20, 2008.
-
 \bibitem{White2011a}
 I.~White, P.~Royston, and A.~M. Wood, ``{Multiple imputation using chained
   equations: Issues and guidance for practice},'' {\em Statistics in Medicine},
   vol.~30, no.~4, pp.~377--399, 2011.
+
+\bibitem{Austin2013}
+P.~C. Austin, ``{The performance of different propensity score methods for
+  estimating marginal hazard ratios.},'' {\em Statistics in medicine}, vol.~32,
+  no.~16, pp.~2837--49, 2013.
 
 \bibitem{Long2012}
 Q.~Long, C.-H. Hsu, and Y.~Li, ``{Doubly robust nonparametric multiple
