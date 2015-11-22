@@ -25,9 +25,9 @@
 \contentsline {section}{\numberline {3.2}Imputation}{40}
 \contentsline {section}{\numberline {3.3}Survival Analysis}{45}
 \contentsline {section}{\numberline {3.4}Causal Analysis}{58}
-\contentsline {chapter}{\numberline {4}Discussion}{64}
-\contentsline {chapter}{\numberline {5}Conclusion}{69}
-\contentsline {chapter}{\numberline {A}Appendix}{70}
-\contentsline {section}{\numberline {A.1}Missing data mechanisms}{70}
-\contentsline {section}{\numberline {A.2}Cancer and Treatment Overview}{73}
-\contentsline {chapter}{\numberline {\hfil }Bibliography}{75}
+\contentsline {chapter}{\numberline {4}Discussion}{65}
+\contentsline {chapter}{\numberline {5}Conclusion}{70}
+\contentsline {chapter}{\numberline {A}Appendix}{71}
+\contentsline {section}{\numberline {A.1}Missing data mechanisms}{71}
+\contentsline {section}{\numberline {A.2}Cancer and Treatment Overview}{74}
+\contentsline {chapter}{\numberline {\hfil }Bibliography}{76}

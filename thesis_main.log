@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.1415926-2.5-1.40.14 (MiKTeX 2.9) (preloaded format=pdflatex 2015.8.23)  22 NOV 2015 14:38
+This is pdfTeX, Version 3.1415926-2.5-1.40.14 (MiKTeX 2.9) (preloaded format=pdflatex 2015.8.23)  22 NOV 2015 15:47
 entering extended mode
 **thesis_main.tex
 (C:\Users\Nathan\Desktop\Proposal\thesis_main.tex
@@ -382,7 +382,6 @@ Missing character: There is no – in font cmr12!
  [33] [34]) [35]
 (C:\Users\Nathan\Desktop\Proposal\application.tex
 Chapter 3.
-Missing character: There is no ’ in font cmr12!
 
 Overfull \hbox (20.86316pt too wide) in paragraph at lines 31--50
  [][] 
@@ -457,7 +456,6 @@ Package pdftex.def Info: cape_lapat_ratio.png used on input line 169.
 
 LaTeX Warning: `!h' float specifier changed to `!ht'.
 
-Missing character: There is no ’ in font cmr12!
 
 Overfull \hbox (48.61453pt too wide) in paragraph at lines 180--200
  [][] 
@@ -485,7 +483,6 @@ Package pdftex.def Info: her2_km.png used on input line 227.
 
 LaTeX Warning: `!h' float specifier changed to `!ht'.
 
-Missing character: There is no ’ in font cmr12!
 [48 <C:/Users/Nathan/Desktop/Proposal/cape_lapat_ratio.png>] [49] [50 <C:/Users
 /Nathan/Desktop/Proposal/chemo_km.png>]
 LaTeX Font Info:    Try loading font information for OML+cmr on input line 249.
@@ -534,70 +531,66 @@ Overfull \hbox (62.1746pt too wide) in paragraph at lines 350--368
  []
 
 [54 <C:/Users/Nathan/Desktop/Proposal/mi_schoenfeld.png>] [55] [56] [57]
-Missing character: There is no ’ in font cmr12!
-
-[58] [59] <ps_histo1.png, id=247, 441.90094pt x 274.02374pt>
+[58]
+Missing character: There is no … in font cmr12!
+ [59] <ps_histo1.png, id=247, 441.90094pt x 274.02374pt>
 File: ps_histo1.png Graphic file (type png)
 
 <use ps_histo1.png>
-Package pdftex.def Info: ps_histo1.png used on input line 389.
+Package pdftex.def Info: ps_histo1.png used on input line 391.
 (pdftex.def)             Requested size: 216.81pt x 134.44423pt.
  <ps_histo2.png, id=248, 439.6425pt x 271.76532pt>
 File: ps_histo2.png Graphic file (type png)
 
 <use ps_histo2.png>
-Package pdftex.def Info: ps_histo2.png used on input line 390.
+Package pdftex.def Info: ps_histo2.png used on input line 392.
 (pdftex.def)             Requested size: 216.81pt x 134.0204pt.
-
-
-LaTeX Warning: `!h' float specifier changed to `!ht'.
-
-[60] <ps_bal_diag.png, id=252, 383.18156pt x 326.72063pt>
+ [60] <ps_bal_diag.png, id=252, 383.18156pt x 326.72063pt>
 File: ps_bal_diag.png Graphic file (type png)
 
 <use ps_bal_diag.png>
-Package pdftex.def Info: ps_bal_diag.png used on input line 399.
+Package pdftex.def Info: ps_bal_diag.png used on input line 402.
 (pdftex.def)             Requested size: 346.89731pt x 295.80067pt.
 
 
 LaTeX Warning: `!h' float specifier changed to `!ht'.
 
 [61 <C:/Users/Nathan/Desktop/Proposal/ps_histo1.png> <C:/Users/Nathan/Desktop/P
-roposal/ps_histo2.png>]
-Overfull \hbox (12.72752pt too wide) in paragraph at lines 424--425
+roposal/ps_histo2.png>] [62 <C:/Users/Nathan/Desktop/Proposal/ps_bal_diag.png>]
+
+Overfull \hbox (12.72752pt too wide) in paragraph at lines 427--428
 [][] 
  []
 
 
-Overfull \hbox (12.72752pt too wide) in paragraph at lines 439--440
+Overfull \hbox (12.72752pt too wide) in paragraph at lines 442--443
 [][] 
  []
 
 
-Overfull \hbox (27.09518pt too wide) in paragraph at lines 454--455
+Overfull \hbox (27.09518pt too wide) in paragraph at lines 457--458
 [][] 
  []
 
 
-Overfull \hbox (31.5013pt too wide) in paragraph at lines 469--470
+Overfull \hbox (31.5013pt too wide) in paragraph at lines 472--473
 [][] 
  []
 
-) [62 <C:/Users/Nathan/Desktop/Proposal/ps_bal_diag.png>] [63]
-(C:\Users\Nathan\Desktop\Proposal\discussion.tex
+) [63] [64] (C:\Users\Nathan\Desktop\Proposal\discussion.tex
 Chapter 4.
 Missing character: There is no ’ in font cmr12!
 Missing character: There is no ’ in font cmr12!
 Missing character: There is no ’ in font cmr12!
-[64
+[65
 
 
 
-] [65] [66]
+] [66] [67]
 Missing character: There is no ’ in font cmr12!
-) [67] [68] (C:\Users\Nathan\Desktop\Proposal\conclusion.tex
+) [68] [69] (C:\Users\Nathan\Desktop\Proposal\conclusion.tex
 Chapter 5.
-) [69
+) [70
 
 
 
@@ -610,21 +603,21 @@ File: omscmr.fd 1999/05/25 v2.5h Standard LaTeX font definitions
 )
 LaTeX Font Info:    Font shape `OMS/cmr/m/n' in size <12> not available
 (Font)              Font shape `OMS/cmsy/m/n' tried instead on input line 7.
- [70
+ [71
 
 
 
 ]
 Missing character: There is no ’ in font cmr12!
 Missing character: There is no ’ in font cmr12!
- [71])
-[72] (C:\Users\Nathan\Desktop\Proposal\append-b.tex
+ [72])
+[73] (C:\Users\Nathan\Desktop\Proposal\append-b.tex
 Missing character: There is no ’ in font cmr12!
- [73
+ [74
 
 
-]) [74]
-(C:\Users\Nathan\Desktop\Proposal\thesis_main.bbl [75
+]) [75]
+(C:\Users\Nathan\Desktop\Proposal\thesis_main.bbl [76
 
 
 ]
@@ -640,7 +633,7 @@ Missing character: There is no ˜ in font cmr12!
 Missing character: There is no â in font cmr12!
 Missing character: There is no € in font cmr12!
 Missing character: There is no ™ in font cmr12!
- [76] [77]) [78]
+ [77] [78]) [79]
 (C:\Users\Nathan\Desktop\Proposal\thesis_main.aux
 (C:\Users\Nathan\Desktop\Proposal\abstract.aux)
 (C:\Users\Nathan\Desktop\Proposal\chapter1.aux)
@@ -674,9 +667,9 @@ nts/cm/cmsy10.pfb><C:/Program Files (x86)/MiKTeX 2.9/fonts/type1/public/amsfont
 s/cm/cmsy6.pfb><C:/Program Files (x86)/MiKTeX 2.9/fonts/type1/public/amsfonts/c
 m/cmsy8.pfb><C:/Program Files (x86)/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/c
 mti12.pfb>
-Output written on thesis_main.pdf (84 pages, 842624 bytes).
+Output written on thesis_main.pdf (85 pages, 843868 bytes).
 PDF statistics:
- 363 PDF objects out of 1000 (max. 8388607)
+ 367 PDF objects out of 1000 (max. 8388607)
  0 named destinations out of 1000 (max. 500000)
  86 words of extra memory for PDF output out of 10000 (max. 10000000)
 
