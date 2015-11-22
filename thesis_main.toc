@@ -17,14 +17,17 @@
 \contentsline {subsection}{\numberline {2.2.3}Log Rank Test}{27}
 \contentsline {subsection}{\numberline {2.2.4}Cox Proportional Hazards Model}{28}
 \contentsline {section}{\numberline {2.3}Propensity Score Analysis}{30}
-\contentsline {chapter}{\numberline {3}Application}{35}
-\contentsline {section}{\numberline {3.1}Data Explanation}{35}
-\contentsline {section}{\numberline {3.2}Imputation}{38}
-\contentsline {section}{\numberline {3.3}Survival Analysis}{43}
-\contentsline {section}{\numberline {3.4}Causal Analysis}{57}
-\contentsline {chapter}{\numberline {4}Discussion}{63}
-\contentsline {chapter}{\numberline {5}Conclusion}{68}
-\contentsline {chapter}{\numberline {A}Appendix}{69}
-\contentsline {section}{\numberline {A.1}Missing data mechanisms}{69}
-\contentsline {section}{\numberline {A.2}Cancer and Treatment Overview}{72}
-\contentsline {chapter}{\numberline {\hfil }Bibliography}{74}
+\contentsline {subsection}{\numberline {2.3.1}Selecting the method}{31}
+\contentsline {subsection}{\numberline {2.3.2}Obtaining the Propensity Score}{32}
+\contentsline {subsection}{\numberline {2.3.3}Verifying Balance}{33}
+\contentsline {chapter}{\numberline {3}Application}{36}
+\contentsline {section}{\numberline {3.1}Data Explanation}{36}
+\contentsline {section}{\numberline {3.2}Imputation}{39}
+\contentsline {section}{\numberline {3.3}Survival Analysis}{44}
+\contentsline {section}{\numberline {3.4}Causal Analysis}{58}
+\contentsline {chapter}{\numberline {4}Discussion}{64}
+\contentsline {chapter}{\numberline {5}Conclusion}{69}
+\contentsline {chapter}{\numberline {A}Appendix}{70}
+\contentsline {section}{\numberline {A.1}Missing data mechanisms}{70}
+\contentsline {section}{\numberline {A.2}Cancer and Treatment Overview}{73}
+\contentsline {chapter}{\numberline {\hfil }Bibliography}{75}
