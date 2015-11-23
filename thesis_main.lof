@@ -9,11 +9,11 @@
 \contentsline {figure}{\numberline {3.3}{\ignorespaces Selected plots of binary variable imputation mean and standard deviation by iteration}}{45}
 \contentsline {figure}{\numberline {3.4}{\ignorespaces Selected density plots of continuous imputed variables}}{46}
 \contentsline {figure}{\numberline {3.5}{\ignorespaces Selected box and whisker plots of continuous imputed variables}}{47}
-\contentsline {figure}{\numberline {3.6}{\ignorespaces Selected ratio of imputed variables selected}}{48}
+\contentsline {figure}{\numberline {3.6}{\ignorespaces Selected histograms of ratio of imputed variables selected}}{48}
 \contentsline {figure}{\numberline {3.7}{\ignorespaces Landmarked Kaplan-Meier curves for chemotherapeutic drugs, AC and MI data}}{50}
 \contentsline {figure}{\numberline {3.8}{\ignorespaces Landmarked Kaplan-Meier curves for HER2 drugs, AC and MI data}}{51}
 \contentsline {figure}{\numberline {3.9}{\ignorespaces AC Schoenfeld residuals over time}}{53}
-\contentsline {figure}{\numberline {3.10}{\ignorespaces MI Schoenfeld residuals over time}}{54}
+\contentsline {figure}{\numberline {3.10}{\ignorespaces MI Schoenfeld residuals over time}}{56}
 \contentsline {figure}{\numberline {3.11}{\ignorespaces Selected Propensity Score Histogram Checks}}{61}
 \contentsline {figure}{\numberline {3.12}{\ignorespaces Selected Propensity Score Balance Checks}}{62}
 \addvspace {\baselineskip }

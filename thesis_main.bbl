@@ -64,12 +64,6 @@ J.~Honaker, G.~King, and M.~Blackwell, ``{AMELIA II : A Program for Missing
   Data},'' {\em Journal Of Statistical Software}, vol.~45, no.~7, pp.~1--54,
   2011.
 
-\bibitem{norm2015}
-A.~A. Novo and J.~L. Schafer, ``{Package ‘ norm ’},'' {\em CRAN}, 2015.
-
-\bibitem{cat2015}
-F.~Tusell, ``{Package ‘ cat ’},'' {\em CRAN}, p.~23, 2015.
-
 \bibitem{VanBuuren2011}
 S.~{Van Buuren} and K.~Groothuis-Oudshoorn, ``{mice: Multivariate Imputation by
   Chained Equations in R},'' {\em Journal Of Statistical Software}, vol.~45,
@@ -85,15 +79,6 @@ S.~{Van Buuren}, J.~P. Brand, C.~G. Groothuis-Oudshoorn, and D.~Rubin, ``{Fully
 J.~Kropko, B.~Goodrich, A.~Gelman, and J.~Hill, ``{Multiple Imputation for
   Continuous and Categorical Data: Comparing Joint Multivariate Normal and
   Conditional Approaches},'' {\em Political Analysis}, pp.~497--519, 2014.
-
-\bibitem{Su2011}
-Y.-S. Su, A.~Gelman, J.~Hill, and M.~Yajima, ``{Multiple Imputation with
-  Diagnostics (mi) in R: Opening Windows into the Black Box},'' {\em Journal of
-  Statistical Software}, vol.~45, no.~2, pp.~1--31, 2011.
-
-\bibitem{Florian2015}
-A.~Florian and M.~F. Meinfelder, ``{BaBooN: Bayesian Bootstrap Predictive Mean
-  Matching - Multiple and Single Imputation for Discrete Data},'' 2015.
 
 \bibitem{Enders2010}
 C.~K. Enders, {\em {Applied Missing Data Analysis}}.
@@ -147,11 +132,6 @@ I.~White, P.~Royston, and A.~M. Wood, ``{Multiple imputation using chained
 P.~C. Austin, ``{The performance of different propensity score methods for
   estimating marginal hazard ratios.},'' {\em Statistics in medicine}, vol.~32,
   no.~16, pp.~2837--49, 2013.
-
-\bibitem{Long2012}
-Q.~Long, C.-H. Hsu, and Y.~Li, ``{Doubly robust nonparametric multiple
-  imputation for ignorable missing data},'' {\em Statistica Sinica}, vol.~22,
-  no.~1, pp.~1--22, 2012.
 
 \bibitem{Cooper1992}
 G.~Cooper, {\em {Elements of Human Cancer}}.

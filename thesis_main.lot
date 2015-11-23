@@ -6,13 +6,13 @@
 \contentsline {table}{\numberline {3.3}{\ignorespaces Characteristics of available case data versus MI data}}{49}
 \contentsline {table}{\numberline {3.4}{\ignorespaces Chemo log rank tests}}{52}
 \contentsline {table}{\numberline {3.5}{\ignorespaces HER2 log rank tests}}{52}
-\contentsline {table}{\numberline {3.6}{\ignorespaces AC and MI baseline Cox model}}{55}
-\contentsline {table}{\numberline {3.7}{\ignorespaces AC and MI Cox model with chemo treatment}}{56}
+\contentsline {table}{\numberline {3.6}{\ignorespaces AC and MI baseline Cox model}}{54}
+\contentsline {table}{\numberline {3.7}{\ignorespaces AC and MI Cox model with chemo treatment}}{55}
 \contentsline {table}{\numberline {3.8}{\ignorespaces AC and MI Cox model with HER2 directed treatment, on HER2+ subjects}}{57}
-\contentsline {table}{\numberline {3.9}{\ignorespaces Chemotherapeutic ATE with IPTW weights, AC and MI}}{63}
+\contentsline {table}{\numberline {3.9}{\ignorespaces Chemotherapeutic ATE with IPTW weights, AC and MI}}{62}
 \contentsline {table}{\numberline {3.10}{\ignorespaces Chemotherapeuic ATE, Doubly Robust, AC, MI}}{63}
 \contentsline {table}{\numberline {3.11}{\ignorespaces HER2 directed ATE with IPTW weights, AC and MI}}{63}
-\contentsline {table}{\numberline {3.12}{\ignorespaces HER2 directed ATE with IPTW weights, double robust}}{64}
+\contentsline {table}{\numberline {3.12}{\ignorespaces HER2 directed ATE with IPTW weights, double robust}}{63}
 \addvspace {\baselineskip }
 \addvspace {\baselineskip }
 \addvspace {\baselineskip }

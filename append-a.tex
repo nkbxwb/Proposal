@@ -31,7 +31,7 @@ Now, we may discuss the three main types of missing data mechanisms. I will give
 \begin{itemize}
 \item MCAR: Missing completely at random:  $P(R=0|Y_{obs},Y_{mis},\psi)=P(R=0|\psi)$. The missingness in the data is not at all related to any of the data that we do or don’t have. For example, if a lab technician slips and drops 5 vials of blood, the missingness caused by this would be MCAR
 \item MAR: Missing at random: $p(R=0|Y_{obs},Y_{mis},\psi)= p(R=0|Y_{obs},\psi)$. The missingness we have is related to something in the data. For example, if we collect the gender of the subject and we know that males tend to not give blood, we can attribute the missingness to the gender. In general, MAR models are ignorable \cite{VanBuuren2012}.
-\item MNAR: Missing not at random: $p(R=0|Y_{obs},Y_{mis},\psi)$ does not simplify, and the missingness depends on data that we have as well as have not collected. For example if the blood testing machine breaks when the protein level is either too high or too low.
+\item MNAR: Missing not at random: $p(R=0|Y_{obs},Y_{mis},\psi)$ does not simplify, and the missingness depends on data that we have as well as have not collected (i.e the value of the missing data causes it to be missing). For example if the blood testing machine breaks and will not give the level when the protein level is either too high or too low.
 \end{itemize}
 
 

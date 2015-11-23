@@ -24,10 +24,12 @@ Survival data                                                                   
 \label{table:cats}
 \end{table}
 
-  \begin{table}[!ht]
+
+\begin{table}[!ht]
 \centering
-%\adjustbox{max height=\dimexpr\textheight-5.5cm\relax,
- %          max width=\textwidth}{
+\adjustbox{max height=\dimexpr\textheight-5.5cm\relax,
+           max width=\textwidth}{
+
 \begin{tabular}{|c|c|c|}
 \hline
 Name        & \begin{tabular}[c]{@{}c@{}}Percent \\ Missing\end{tabular} & Meaning                                                                                                                                             \\ \hline
@@ -46,10 +48,12 @@ dead        & 0\%                                                          & Ind
 agebrainmet & 0\%                                                        & Indicator: Age greater or less than 60 at time of brain mets                                                                                        \\ \hline
 
 \end{tabular}
-%}
+}
 \caption{Table of important covariates to be used in the analysis}
 \label{table:importantvars}
 \end{table}
+
+%%%666
 
 To get a feel for how the data is missing, in figure \ref{fig:missingplot} we see a plot of the missingness in the data. There are certainly large swaths and groups of covariates that were not collected, but overall, there seems to be no real pattern in the way the data is missing.
 \begin{figure}[h!]
@@ -144,7 +148,7 @@ Once the convergence is diagnosed, the validity of the imputations needs to be i
 %%%%%%%%%%
 \begin{figure}[h!]
   \centering
-    \includegraphics[width=0.8\textwidth]{cont_densplot.png}
+    \includegraphics[width=0.6\textwidth]{cont_densplot.png}
   \caption{Selected density plots of continuous imputed variables}
 \label{fig:contdensplot}
 \medskip
@@ -176,30 +180,35 @@ Blue indicates the original box and whisker plot, whereas the red are the impute
 Before we move on to the analyses though, let's have a look at the breakdown of the data. In table \ref{table:chartab} we can see how the MI data compares to the available case data, broken down by if the subject had any systemic therapy. This was computed via the stacked method.
 \begin{table}[!ht]
 \centering
-
-\begin{tabular}{|r|l|l|l|l|}
+\adjustbox{max height=\dimexpr\textheight-5.5cm\relax,
+           max width=\textwidth}{
+\begin{tabular}{|r|c|c|c|c|}
 \hline
-\multicolumn{1}{|l|}{}                            & \multicolumn{1}{c|}{\begin{tabular}[c]{@{}c@{}}Sys therapy \\ available case\end{tabular}} & \multicolumn{1}{c|}{\begin{tabular}[c]{@{}c@{}}Sys therapy \\ MI\end{tabular}} & \multicolumn{1}{c|}{\begin{tabular}[c]{@{}c@{}}No Sys therapy \\ available case\end{tabular}} & \multicolumn{1}{c|}{\begin{tabular}[c]{@{}c@{}}No Sys therapy \\ MI\end{tabular}} \\ \hline
-\multicolumn{1}{|l|}{Age (mean,sd)}               & 51.4(10.8)                                                                                 & 51.2(10.9)                                                                     & 52.7(11.9)                                                                                    & 52.9(11.4)                                                                        \\ \hline
-\multicolumn{1}{|l|}{Breast Cancer subtype}       &                                                                                            &                                                                                &                                                                                               &                                                                                   \\ \hline
-HR+/HER2-                                         & 27\%                                                                                       & 31\%                                                                           & 28\%                                                                                          & 33\%                                                                              \\ \hline
-HR+/HER2+                                         & 19\%                                                                                       & 18\%                                                                           & 12\%                                                                                          & 13\%                                                                              \\ \hline
-HR-/HER2+                                         & 22\%                                                                                       & 20\%                                                                           & 15\%                                                                                          & 12\%                                                                              \\ \hline
-Triple negative                                   & 32\%                                                                                       & 32\%                                                                           & 45\%                                                                                          & 42\%                                                                              \\ \hline
-\multicolumn{1}{|l|}{Prior therapies for stage 4} & 1(0-3)                                                                                     & 2(0-4)                                                                         & 2(0-4)                                                                                        & 2(0-4)                                                                            \\ \hline
-\multicolumn{1}{|l|}{Single brain lesion}         & 25\%                                                                                       & 23\%                                                                           & 23\%                                                                                          & 20\%                                                                              \\ \hline
-\multicolumn{1}{|l|}{Controlled extra-cranial}    & 40\%                                                                                       & 40\%                                                                           & 35\%                                                                                          & 36\%                                                                              \\ \hline
-\multicolumn{1}{|l|}{ECOG 0-1}                    & 84\%                                                                                       & 70\%                                                                           & 53\%                                                                                          & 40\%                                                                              \\ \hline
-\multicolumn{1}{|l|}{Local Therapy}               &                                                                                            &                                                                                &                                                                                               &                                                                                   \\ \hline
-Resection Alone                                   & 5\%                                                                                        & 5\%                                                                            & 9\%                                                                                           & 7\%                                                                               \\ \hline
-SBRT alone                                        & 13\%                                                                                       & 12\%                                                                           & 9\%                                                                                           & 8\%                                                                               \\ \hline
-WBRT                                              & 60\%                                                                                       & 59\%                                                                           & 52\%                                                                                          & 53\%                                                                              \\ \hline
-Resection/SBRT+WBRT                               & 12\%                                                                                       & 14\%                                                                           & 10\%                                                                                          & 8\%                                                                               \\ \hline
-no local therapy                                  & 10\%                                                                                       & 10\%                                                                           & 20\%                                                                                          & 23\%                                                                              \\ \hline
+\multicolumn{1}{|l|}{}                            & \begin{tabular}[c]{@{}c@{}}Sys. Therapy\\ AC\end{tabular} & \begin{tabular}[c]{@{}c@{}}Sys. Therapy\\ MI\end{tabular} & \begin{tabular}[c]{@{}c@{}}No Sys. Therapy\\ AC\end{tabular} & \begin{tabular}[c]{@{}c@{}}No Sys. Therapy\\ MI\end{tabular} \\ \hline
+\multicolumn{1}{|l|}{Age (mean,sd)}               & 51.4(10.8)                                                & 51.2(10.9)                                                & 52.7(11.9)                                                   & 52.9(11.4)                                                   \\ \hline
+\multicolumn{1}{|l|}{Breast Cancer subtype}       &                                                           &                                                           &                                                              &                                                              \\ \hline
+HR+/HER2-                                         & 27\%                                                      & 31\%                                                      & 28\%                                                         & 33\%                                                         \\ \hline
+HR+/HER2+                                         & 19\%                                                      & 18\%                                                      & 12\%                                                         & 13\%                                                         \\ \hline
+HR-/HER2+                                         & 22\%                                                      & 20\%                                                      & 15\%                                                         & 12\%                                                         \\ \hline
+Triple negative                                   & 32\%                                                      & 32\%                                                      & 45\%                                                         & 42\%                                                         \\ \hline
+\multicolumn{1}{|l|}{Prior Therapies for stage 4} & 1(0-3)                                                    & 2(0-4)                                                    & 2(0-4)                                                       & 2(0-4)                                                       \\ \hline
+\multicolumn{1}{|l|}{Single Brain Lesion}         & 25\%                                                      & 23\%                                                      & 23\%                                                         & 20\%                                                         \\ \hline
+\multicolumn{1}{|l|}{Controlled extra-cranial}    & 40\%                                                      & 40\%                                                      & 35\%                                                         & 36\%                                                         \\ \hline
+\multicolumn{1}{|l|}{ECOG 0-1}                    & 84\%                                                      & 70\%                                                      & 53\%                                                         & 40\%                                                         \\ \hline
+\multicolumn{1}{|l|}{Local Therapy}               &                                                           &                                                           &                                                              &                                                              \\ \hline
+Resection Alone                                   & 5\%                                                       & 5\%                                                       & 9\%                                                          & 7\%                                                          \\ \hline
+SBRT Alone                                        & 13\%                                                      & 12\%                                                      & 9\%                                                          & 8\%                                                          \\ \hline
+WBRT                                              & 60\%                                                      & 59\%                                                      & 52\%                                                         & 53\%                                                         \\ \hline
+Resection/SBRT+WBRT                               & 12\%                                                      & 14\%                                                      & 10\%                                                         & 8\%                                                          \\ \hline
+No local                                          & 10\%                                                      & 10\%                                                      & 20\%                                                         & 23\%                                                         \\ \hline
 \end{tabular}
+
+}
 \caption{Characteristics of available case data versus MI data}
 \label{table:chartab}
 \end{table}
+
+
 
 \section{Survival Analysis}
 
@@ -296,6 +305,8 @@ Now that the proportional hazards assumption is met, we can run the Cox model to
 
 \begin{table}[]
 \centering
+\adjustbox{max height=\dimexpr\textheight-5.5cm\relax,
+           max width=\textwidth}{
 \begin{tabular}{|c|c|c|c|c|c|c|c|c|}
 \hline
                                                        &                                  &      & \begin{tabular}[c]{@{}c@{}}AC \\ n= 845\end{tabular} &                 &  &      & MI                                                 &                                                            \\ \hline
@@ -314,6 +325,7 @@ BM type                                                & Mult. Vs. Single       
                                                        & LMD vs. Single                   & 1.6  & (1.21,2.13)                                          & 0.001           &  & 1.58 & (1.25,2.00)                                        & \textless0.0001                                            \\ \hline
 Sys. Cont.                                             & Yes vs. No                       & 0.71 & (0.61,0.83)                                          & \textless0.0001 &  & 0.73 & (0.63,0.85)                                        & \textless0.0001                                            \\ \hline
 \end{tabular}
+}
 \caption{AC and MI baseline Cox model}
 \label{fig:acmicox}
 \end{table}
@@ -321,6 +333,8 @@ Sys. Cont.                                             & Yes vs. No             
 We may then add in our treatment variable to see how they affect the hazard ratio, and see how they changes other factors. Adding chemotherapy can be seen in figure \ref{fig:acmichemo}, and for the HER2 positive patients, the HER2-directed drugs can be seen in figure \ref{fig:acmiher2}. As it has been posited before, the use of chemo and HER2 drugs seem to greatly reduce the hazard ratio of death from cancer in comparison with not taking any treatment. The effect of other covariates in the presence of these drugs seems to change though.
 \begin{table}[]
 \centering
+\adjustbox{max height=\dimexpr\textheight-5.5cm\relax,
+           max width=\textwidth}{
 \begin{tabular}{|c|c|c|c|c|c|c|c|c|}
 \hline
             &                                  &      & \begin{tabular}[c]{@{}c@{}}AC\\ n=745\end{tabular} &                 &  &      & MI                                                 &                                                             \\ \hline
@@ -341,12 +355,15 @@ Sys. Cont.  & Yes vs. No                       & 0.57 & (0.48,0.68)             
 Chemo       & Cape. vs. none            & 0.69 & (0.53,0.89)                                        & 0.0046          &  & 0.75 & (0.60,0.95)                                        & 0.018                                                       \\ \hline
             & other vs. none                   & 0.52 & (0.42,0.65)                                        & \textless .0001 &  & 0.58 & (0.47,0.71)                                        & \textless .0001                                             \\ \hline
 \end{tabular}
+}
 \caption{AC and MI Cox model with chemo treatment}
 \label{fig:acmichemo}
 \end{table}
 
 \begin{table}[!ht]
 \centering
+\adjustbox{max height=\dimexpr\textheight-5.5cm\relax,
+           max width=\textwidth}{
 \begin{tabular}{|c|c|c|c|c|c|c|c|c|}
 \hline
              &                                                             &      & \begin{tabular}[c]{@{}c@{}}AC\\ n=292\end{tabular} &                &  &      & MI          &                                                             \\ \hline
@@ -365,6 +382,7 @@ Sys. Cont.   & Yes vs. No                                                  & 0.7
 HER2 therapy & \begin{tabular}[c]{@{}c@{}}Lapat vs. \\ none\end{tabular}   & 0.47 & (0.32,0.69)                                        & 0.00015        &  & 0.52 & (0.37,0.75) & 0.00036                                                     \\ \hline
              & \begin{tabular}[c]{@{}c@{}}Trastuz vs. \\ none\end{tabular} & 0.45 & (0.33,0.61)                                        & \textless.0001 &  & 0.51 & (0.38,0.68) & \textless.0001                                              \\ \hline
 \end{tabular}
+}
 \caption{AC and MI Cox model with HER2 directed treatment, on HER2+ subjects}
 \label{fig:acmiher2}
 \end{table}
