@@ -88,6 +88,11 @@ C.~K. Enders, {\em {Applied Missing Data Analysis}}.
 Y.~Zhao, A.~H. Herring, H.~Zhou, M.~W. Ali, and G.~G. Koch, ``{ANALYSES OF
   TIME-TO-EVENT DATA WITH POSSIBLY},'' vol.~24, no.~2, pp.~229--253, 2014.
 
+\bibitem{White2011a}
+I.~White, P.~Royston, and A.~M. Wood, ``{Multiple imputation using chained
+  equations: Issues and guidance for practice},'' {\em Statistics in Medicine},
+  vol.~30, no.~4, pp.~377--399, 2011.
+
 \bibitem{Gelman1992}
 A.~Gelman and D.~Rubin, ``{Inference from iterative simulation using multiple
   sequences},'' {\em Statistical Science}, vol.~7, no.~4, pp.~457--511, 1992.
@@ -122,11 +127,6 @@ D.~F. McCaffrey, B.~A. Griffin, D.~Almirall, M.~E. Slaughter, R.~Ramchand, and
   L.~F. Burgette, ``{A tutorial on propensity score estimation for multiple
   treatments using generalized boosted models},'' {\em Statistics in Medicine},
   vol.~32, no.~19, pp.~3388--3414, 2013.
-
-\bibitem{White2011a}
-I.~White, P.~Royston, and A.~M. Wood, ``{Multiple imputation using chained
-  equations: Issues and guidance for practice},'' {\em Statistics in Medicine},
-  vol.~30, no.~4, pp.~377--399, 2011.
 
 \bibitem{Austin2013}
 P.~C. Austin, ``{The performance of different propensity score methods for
