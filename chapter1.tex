@@ -126,7 +126,7 @@ This paper is interested in weighting, specifically, inverse probability of trea
 $$w_i=\frac{T_i}{\hat{e}_i(X)}+ \frac{1-T_i}{1-\hat{e}_i(X)}$$
 and thus the weighted response will be $\frac{TY}{\hat{e}(X)}$ for the treated and $\frac{(1-T)Y}{(1-\hat{e}(X))}$ for the untreated.
 
-The idea of IPTW weighting is to reweight the sample so that we get a population where there is no confounding, and the weighted averages reflect the true population averages.  Its justification is due to the fact that it can be proven that $E{\frac{TY}{\hat(e)(X)}=E[Y(1)]}$ and $E{\frac{(1-T)Y}{(1-\hat(e)(X))}=E[Y(0)]}$ \cite{Lunceford2004}. Because of this, the IPTW outcome from each of the groups can be treated as if it has been obtained from randomization, and we may treat it as such.
+The idea of IPTW weighting is to reweight the sample so that we get a population where there is no confounding, and the weighted averages reflect the true population averages.  Its justification is due to the fact that it can be proven that $E{\frac{TY}{\hat{e}(X)}=E[Y(1)]}$ and $E{\frac{(1-T)Y}{(1-\hat{e}(X))}=E[Y(0)]}$ \cite{Lunceford2004}. Because of this, the IPTW outcome from each of the groups can be treated as if it has been obtained from randomization, and we may treat it as such.
 
 
 
