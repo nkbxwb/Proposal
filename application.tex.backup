@@ -204,7 +204,7 @@ No local                                          & 10\%                        
 \end{tabular}
 
 }
-\caption{Characteristics of AC data versus MI data}
+\caption{Characteristics of available case data versus MI data}
 \label{table:chartab}
 \end{table}
 
@@ -260,7 +260,7 @@ cape/other      & 0.0321                  & 0.033                   \\ \hline
 cape/none       & 0.00039                 & .0016                   \\ \hline
 other/none      & \textless.0001          & \textless.0001          \\ \hline
 \end{tabular}
-\caption{Chemotherapeutic drugs log rank tests}
+\caption{Chemo log rank tests}
 \label{table:chemo_lr}
 \end{table}
 
@@ -275,7 +275,7 @@ Lapat/Trastuz      & .87                     & .81                     \\ \hline
 Lapta/none         & .00017                  & .00018                  \\ \hline
 Trastuz/none       & \textless.0001          & \textless.0001          \\ \hline
 \end{tabular}
-\caption{HER2-directed drugs log rank tests}
+\caption{HER2 log rank tests}
 \label{table:her2_lr}
 \end{table}
 
@@ -293,7 +293,7 @@ Now, to check if we have proportional hazards in the MI data, there are two opti
 \begin{figure}[h!]
   \centering
     \includegraphics[width=0.8\textwidth]{mi_schoenfeld.png}
-  \caption{MI Schoenfeld residuals over time}
+  \caption{MI  Schoenfeld residuals over time}
 \label{fig:mi_schoenfeld}
 \end{figure}
 
@@ -458,7 +458,7 @@ Cape. vs none  & 0.687        & (0.530,0.891)       &  & 0.603     & (0.443,0.82
 Other vs none  & 0.521        & (0.416,0.653)       &  & 0.452     & (0.340,0.602)    &  & 0.579        & (0.474,0.707)       &  & 0.532     & (0.416,0.681)    \\ \hline
 Cape. vs other & 1.318        & (1.078,1.612)       &  & 1.334     & (1.109,1.604)    &  & 1.300        & (1.076,1.570)       &  & 1.317     & (1.100,1.579)    \\ \hline
 \end{tabular}}
-\caption{Chemotherapeuic ATE, doubly Robust IPTW weights estimate, AC and MI}
+\caption{Chemotherapeuic ATE, Doubly Robust, AC, MI}
 \label{chemorobust}
 \end{table}
 
@@ -473,7 +473,7 @@ Lapat. vs none     & 0.467                      & (0.355,0.616)                 
 Trastuz. vs none   & 0.488                      & (0.398,0.597)                      &                       & 0.566                      & (0.421,0.759)                      &                       & 0.506                      & (0.417,0.614)                     &                       & 0.480                      & (0.313,0.735)                      \\ \hline
 Lapat. vs Trastuz. & \multicolumn{1}{l|}{0.958} & \multicolumn{1}{l|}{(0.693,1.324)} & \multicolumn{1}{l|}{} & \multicolumn{1}{l|}{1.009} & \multicolumn{1}{l|}{(0.680,1.496)} & \multicolumn{1}{l|}{} & \multicolumn{1}{l|}{0.927} & \multicolumn{1}{l|}{(0.673,1.28)} & \multicolumn{1}{l|}{} & \multicolumn{1}{l|}{1.011} & \multicolumn{1}{l|}{(0.763,1.338)} \\ \hline
 \end{tabular}}
-\caption{HER2-directed ATE with IPTW weights, AC and MI}
+\caption{HER2 directed ATE with IPTW weights, AC and MI}
 \label{tab:lapatonly}
 \end{table}
 
@@ -488,7 +488,7 @@ Lapat. vs none     & 0.468       & (0.316,0.692)        &  & 0.514     & (0.331,
 Trastuz. vs none   & 0.447       & (0.328,0.6089)       &  & 0.456     & (0.328,0.632)    &  & 0.511        & (0.381,0.685)       &  & 0.388      & (0.249,0.602)      \\ \hline
 Lapat. vs Trastuz. & 1.048       & (0.704,1.560)        &  & 1.128     & (0.726,1.754)    &  & 1.026        & (0.713,1.477)       &  & 1.057      & (0.788,1.417)      \\ \hline
 \end{tabular}}
-\caption{HER2-directed ATE, doubly Robust IPTW weights estimate, AC and MI}
+\caption{HER2 directed ATE with IPTW weights, double robust}
 \label{lapatfull}
 \end{table}
 \end{center}
