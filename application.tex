@@ -128,25 +128,25 @@ Diagnosing convergence for binary and categorical variables is a bit tricky, bec
 There are 80 plots to check, they cannot all be shown in this paper, but all of them have been checked. Some interesting ones may be seen in figure \ref{fig:traceplot1} and \ref{fig:traceplot2}. Looking at these plots, convergence certainly seems to be the case.  Other authors suggest using a more formal statistical tests such as $\hat{R}$ scale reduction factor, but since most of our interesting variables are categorical, this does not make much sense. 
 
 %change these plots
-\begin{figure}[h!]
+\begin{figure}[!htbp]
   \centering
     \includegraphics[width=0.8\textwidth]{traceplots1.png}
-  \caption{Selected plots of continuous variable imputation mean and standard deviation by iteration}
+  \caption{Selected convergence plots of continuous variables}
 \label{fig:traceplot1}
 \end{figure}
 
 
-\begin{figure}[h!]
+\begin{figure}[!htbp]
   \centering
     \includegraphics[width=0.8\textwidth]{traceplots2.png}
-  \caption{Selected plots of binary variable imputation mean and standard deviation by iteration}
+  \caption{Selected convergence plots of binary variables}
 \label{fig:traceplot2}
 \end{figure}
 
 
 Once the convergence is diagnosed, the validity of the imputations needs to be inspected.  Diagnostic plots and tables are viewed to ensure that the imputed data are realistic. Common plots include density plots of each MI dataset compared to the complete cases, as well as bivariate scatterplots for imputed variables. For categorical variables, tables and other group checks may be used. A few of the plots have been replicated here in figures \ref{fig:contdensplot}, \ref{fig:contbwplots}, \ref{fig:clhisto}. Once again, all of the plots cannot be displayed in this paper, but some important ones are recreated. As we can see, not all of the imputed data looks like the real data, but for the majority of the plots, the imputed data seem reasonable and look like they could have been real data had they not been missing. 
 %%%%%%%%%%
-\begin{figure}[h!]
+\begin{figure}[!htbp]
   \centering
     \includegraphics[width=0.6\textwidth]{cont_densplot.png}
   \caption{Selected density plots of continuous imputed variables}
@@ -157,7 +157,7 @@ Blue indicates the original density, whereas the red are the imputed dataset den
 \end{figure}
 
 
-\begin{figure}[h!]
+\begin{figure}[!htbp]
   \centering
     \includegraphics[width=0.5\textwidth]{bw_timemet.png}%
     \includegraphics[width=0.5\textwidth]{bw_timedx.png}%
@@ -168,16 +168,16 @@ Blue indicates the original density, whereas the red are the imputed dataset den
 Blue indicates the original box and whisker plot, whereas the red are the imputed dataset box and whisker plots
 \end{figure}
 
-\begin{figure}[h!]
+\begin{figure}[!htbp]
   \centering
     \includegraphics[width=0.7\textwidth]{cape_lapat_ratio.png}
-  \caption{Selected histograms of ratio of imputed variables selected}
+  \caption{Selected histograms of the ratio of imputed variables}
 \label{fig:clhisto}
 \end{figure}
 
 
 %%%%%%%%%% cape_lapat_ratio
-Before we move on to the analyses though, let's have a look at the breakdown of the data. In table \ref{table:chartab} we can see how the MI data compares to the available case data, broken down by if the subject had any systemic therapy for the brain mets. Systemic therapy refers to anything that is not directly targeted to the cancer such as chemotherapy or HER2-directed therapies. Systemic therapy does not include treatments such as resection or targeted radiation. This table was computed via the stacked method.
+Before we move on to the analyses though, let's have a look at the breakdown of the data. In table \ref{table:chartab} we can see how the MI data compares to the available case data, broken down by if the subject had any systemic therapy for the brain mets. Systemic therapy refers to anything that is not directly targeted to the cancer such as chemotherapy or HER2-directed therapies. Systemic therapy does not include treatments such as resection or targeted radiation. %This table was computed via the stacked method.
 \begin{table}[!ht]
 \centering
 \adjustbox{max height=\dimexpr\textheight-5.5cm\relax,
@@ -221,7 +221,7 @@ The first models that we will check in the MI setting are the Kaplan-Meier curve
 
 For the comparison of the chemotherapeutic drugs, the KM curves can be seen in figure \ref{fig:chemo_km}.  The available case and MI analyses look similar, but the MI data seems to give a lower median survival time for the chemotherapeutic drugs. For not taking any chemotherapeutic drugs though, the median increased.
 
-\begin{figure}[h!]
+\begin{figure}[!ht]
   \centering
     \includegraphics[width=0.8\textwidth]{chemo_km.png}
   \caption{Landmarked Kaplan-Meier curves for chemotherapeutic drugs, AC and MI data}
@@ -231,7 +231,7 @@ For the comparison of the chemotherapeutic drugs, the KM curves can be seen in f
 
 For the HER2-directed drugs, the KM curve can be seen in figure \ref{fig:her2_km}. The available case analysis shows that Lapatinib and Trastuzumab are quite close to each other in terms of survival, while having no HER2-directed treatment is much lower. Once again, the MI analyses give lower values for the median survival time.
 
-\begin{figure}[h!]
+\begin{figure}[!ht]
   \centering
     \includegraphics[width=0.8\textwidth]{her2_km.png}
   \caption{Landmarked Kaplan-Meier curves for HER2-directed drugs, AC and MI data}
@@ -249,7 +249,7 @@ because in doing so, we would need to compute either the likelihood ratio test o
 The results for the overall test and for each comparison can be seen in table \ref{table:chemo_lr} and \ref{table:her2_lr}. The AC and MI results are quite similar. For Capecitabine vs other chemotherapeutic drugs, we see a relatively high p-value. Depending on the acceptable rate of significance, different conclusions might be drawn between the two analyses.  In this study, the level is $\alpha=.05$, so changing conclusions is not an issue, however, since we are doing multiple comparisons, it may be prudent to use a Bonferroni correction for multiple testing. For the HER2-directed drugs, there certainly seems to be a difference between the treatments and not having any, but there is no evidence that either of the treatments is better than the other.
 
 
-\begin{table}[!ht]
+\begin{table}[!htbp]
 \centering
 \begin{tabular}{|l|c|c|}
 \hline
@@ -264,7 +264,7 @@ other/none      & \textless.0001          & \textless.0001          \\ \hline
 \label{table:chemo_lr}
 \end{table}
 
-\begin{table}[!ht]
+\begin{table}[!htbp]
 \centering
 \begin{tabular}{|l|c|c|}
 \hline
@@ -283,14 +283,14 @@ Now that we have estimate of the survival curve, we may set up a model to observ
 
 We need to make sure that the proportional hazards assumption is met in the available case model to determine if the use of the Cox model is justified. To check, we visually inspect the spline fit to the Schoenfeld residuals over time. The available cases can be seen in figure \ref{fig:ac_schoenfeld}. In the available cases, the assumption of proportional hazards over time seems reasonable, as it a straight line could reasonably be fit between the 95\% confidence bands. A chi-square test of correlation also confirms this. 
 
-\begin{figure}[h!]
+\begin{figure}[!ht]
   \centering
     \includegraphics[width=0.8\textwidth]{ac_schoenfeld.png}
   \caption{AC Schoenfeld residuals over time}
 \label{fig:ac_schoenfeld}
 \end{figure}
 Now, to check if we have proportional hazards in the MI data, there are two options. The first is to fit a Cox model on the stacked data, but this will not give us accurate confidence bands. A better option is to look at each MI datasets Schoenfeld residuals. However this may be tedius. We can get the same result if we collect the spline fits from each MI dataset, and then superimpose them onto one plot, and assess the shape. This is what is done for the MI data, as can be seen in figure \ref{fig:mi_schoenfeld}. The shapes are very similar to the available cases, so it is reasonable to assume that the proportional hazards assumption holds on the MI data.
-\begin{figure}[h!]
+\begin{figure}[!h]
   \centering
     \includegraphics[width=0.8\textwidth]{mi_schoenfeld.png}
   \caption{MI Schoenfeld residuals over time}
@@ -303,7 +303,7 @@ Now that the proportional hazards assumption is met, we can run the Cox model to
 
 
 
-\begin{table}[]
+\begin{table}[!htbp]
 \centering
 \adjustbox{max height=\dimexpr\textheight-5.5cm\relax,
            max width=\textwidth}{
@@ -331,7 +331,7 @@ Sys. Cont.                                             & Yes vs. No             
 \end{table}
 
 We may then add in our treatment variable to see how they affect the hazard ratio, and see how they changes other factors. Adding chemotherapy can be seen in figure \ref{fig:acmichemo}, and for the HER2 positive patients, the HER2-directed drugs can be seen in figure \ref{fig:acmiher2}. As it has been posited before, the use of chemotherapeutic and HER2 drugs seem to greatly reduce the hazard ratio of death from cancer in comparison with not taking any treatment. The effect of other covariates in the presence of these drugs seems to change though.
-\begin{table}[]
+\begin{table}[!ht]
 \centering
 \adjustbox{max height=\dimexpr\textheight-5.5cm\relax,
            max width=\textwidth}{
@@ -356,7 +356,7 @@ Chemo       & Cape. vs. none            & 0.69 & (0.53,0.89)                    
             & other vs. none                   & 0.52 & (0.42,0.65)                                        & \textless .0001 &  & 0.58 & (0.47,0.71)                                        & \textless .0001                                             \\ \hline
 \end{tabular}
 }
-\caption{AC and MI Cox model with chemo treatment}
+\caption{AC and MI Cox model with chemotherapeutic treatments}
 \label{fig:acmichemo}
 \end{table}
 
@@ -404,21 +404,21 @@ In traditional propensity score analysis, there is only one treatment and contro
 We now have the propensity score model selected, and a plan about how to check the balance, but what pretreatment covariates should we control for? In speaking with Dr. Hess, we determined that there are many pretreatment differences in the population that should be controlled for. So even though we wanted to keep the propensity score model parsimonious, we were not able to. The covariates we deemed to be important to balance before treatment includes: breast cancer stage at first diagnosis, race, type of breast cancer, breast cancer surgery site, first metastatic site, number of prior treatments, ECOG score, localized brain mets treatment, type of brain met, age at brain mets, and control of brain mets at diagnosis.
 
 Once the propensity scores have been computed for each MI dataset, we need to check that they are in fact valid. McCaffrey et Al. describe two conditions that need to be checked, and graphical checks to do so. The first condition is to ensure that all of the propensity scores are between 0 and 1. If any propensity score is 0 or 1, then there is no chance that the subject looks like that of another group. If this is the case, then the results will be poor, because the counterfactual framework and propensity score analysis are not meant to handle cases like this \cite{McCaffrey2013}.  All 50 plots for the distribution of the propensity scores cannot be shown in this paper, but I show the propensity scores from two of the MI datasets. In these plots (figure \ref{fig:pshisto}), we see that the propensity scores are never exactly 0 or 1, and as well, the groups are differentiated, yet still have common support.
-\begin{figure}[h!]
+\begin{figure}[!htbp]
 \centering
 \includegraphics[width=.5\textwidth]{ps_histo1}%
 \includegraphics[width=.5\textwidth]{ps_histo2}
-  \caption{Selected Propensity Score Histogram Checks}
+  \caption{Selected propensity score histogram checks}
 \label{fig:pshisto}
 \end{figure}
 
 The next check is the check of no unmeasured confounders. This is impossible to assert, but should be reasonable if we include any and all factors we believe to be confounding. It can be checked through plots and tables that assess balance. To check for balance, we can check how the KS statistic and standardized bias change after weighting. Two plots are selected, as can be seen in figure \ref{fig:psbal}. This plot shows that after weighting, the standardized bias decreases for nearly every variable to an acceptable level (below about .2 or .25 is considered balanced in the literature). As well, it shows that the KS p-values are increasing, indicating that there is no difference between the distributions of the pretreatment covariates after weighting.
 
 
-\begin{figure}[h!]
+\begin{figure}[!htbp]
 \centering
 \includegraphics[width=.8\textwidth]{ps_bal_diag}
-  \caption{Selected Propensity Score Balance Checks}
+  \caption{Selected propensity score balance checks}
 \label{fig:psbal}
 \medskip
 \small
@@ -432,7 +432,7 @@ The results for the propensity score weighted and doubly robust methods can be s
 
 %%%%
  
-\begin{table}[!ht]
+\begin{table}[!htbp]
  \scalebox{0.75}{
 \centering
 \begin{tabular}{|c|c|c|c|c|c|c|c|c|c|c|c|}
@@ -447,7 +447,7 @@ Cape. vs other & 1.179        & (0.983,1.416)       &  & 1.156     & (0.966,1.38
 \label{tab:chemoonly}
 \end{table}
 
-\begin{table}[!ht]
+\begin{table}[!htbp]
  \scalebox{0.75}{
 \centering
 \begin{tabular}{|c|c|c|c|c|c|c|c|c|c|c|c|}
@@ -462,7 +462,7 @@ Cape. vs other & 1.318        & (1.078,1.612)       &  & 1.334     & (1.109,1.60
 \label{chemorobust}
 \end{table}
 
-\begin{table}[!ht]
+\begin{table}[!htbp]
  \scalebox{0.75}{
 \centering
 \begin{tabular}{|l|c|c|c|c|c|c|c|c|c|c|c|}
@@ -478,7 +478,7 @@ Lapat. vs Trastuz. & \multicolumn{1}{l|}{0.958} & \multicolumn{1}{l|}{(0.693,1.3
 \end{table}
 
 \begin{center}
-\begin{table}[!ht]
+\begin{table}[!htbp]
 \scalebox{0.75}{
 \begin{tabular}{|c|c|c|c|c|c|c|c|c|c|c|c|}
 \hline

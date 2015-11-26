@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.1415926-2.5-1.40.14 (MiKTeX 2.9) (preloaded format=pdflatex 2015.8.23)  25 NOV 2015 22:24
+This is pdfTeX, Version 3.1415926-2.5-1.40.14 (MiKTeX 2.9) (preloaded format=pdflatex 2015.8.23)  25 NOV 2015 23:37
 entering extended mode
 **thesis_main.tex
 (C:\Users\Nathan\Desktop\Proposal\thesis_main.tex
@@ -465,95 +465,69 @@ File: traceplots1.png Graphic file (type png)
 <use traceplots1.png>
 Package pdftex.def Info: traceplots1.png used on input line 133.
 (pdftex.def)             Requested size: 346.89731pt x 252.13246pt.
-
-
-LaTeX Warning: `!h' float specifier changed to `!ht'.
-
-<traceplots2.png, id=178, 606.265pt x 440.64626pt>
+ <traceplots2.png, id=178, 606.265pt x 440.64626pt>
 File: traceplots2.png Graphic file (type png)
- <use traceplots2.png>
+
+<use traceplots2.png>
 Package pdftex.def Info: traceplots2.png used on input line 141.
 (pdftex.def)             Requested size: 346.89731pt x 252.13246pt.
-
-
-LaTeX Warning: `!h' float specifier changed to `!ht'.
-
-<cont_densplot.png, id=179, 477.785pt x 485.815pt>
+ <cont_densplot.png, id=179, 477.785pt x 485.815pt>
 File: cont_densplot.png Graphic file (type png)
- <use cont_densplot.png>
+
+<use cont_densplot.png>
 Package pdftex.def Info: cont_densplot.png used on input line 151.
 (pdftex.def)             Requested size: 260.17464pt x 264.54524pt.
-
-[44]
-
-LaTeX Warning: `!h' float specifier changed to `!ht'.
-
-<bw_timemet.png, id=183, 616.3025pt x 485.815pt>
+ [44] [45 <C:/Users/Nathan/Desktop/Proposal/traceplots1.png> <C:/Users/Nathan/D
+esktop/Proposal/traceplots2.png>]
+<bw_timemet.png, id=188, 616.3025pt x 485.815pt>
 File: bw_timemet.png Graphic file (type png)
  <use bw_timemet.png>
 Package pdftex.def Info: bw_timemet.png used on input line 162.
 (pdftex.def)             Requested size: 216.81pt x 170.9051pt.
 
-<bw_timedx.png, id=184, 616.3025pt x 485.815pt>
+<bw_timedx.png, id=189, 616.3025pt x 485.815pt>
 File: bw_timedx.png Graphic file (type png)
  <use bw_timedx.png>
 Package pdftex.def Info: bw_timedx.png used on input line 163.
 (pdftex.def)             Requested size: 216.81pt x 170.9051pt.
 
-
-LaTeX Warning: `!h' float specifier changed to `!ht'.
-
-<cape_lapat_ratio.png, id=185, 541.02126pt x 485.815pt>
+<cape_lapat_ratio.png, id=190, 541.02126pt x 485.815pt>
 File: cape_lapat_ratio.png Graphic file (type png)
 
 <use cape_lapat_ratio.png>
 Package pdftex.def Info: cape_lapat_ratio.png used on input line 173.
 (pdftex.def)             Requested size: 303.53267pt x 272.56604pt.
-
-
-LaTeX Warning: `!h' float specifier changed to `!ht'.
-
-[45 <C:/Users/Nathan/Desktop/Proposal/traceplots1.png>] [46 <C:/Users/Nathan/De
-sktop/Proposal/traceplots2.png>] [47 <C:/Users/Nathan/Desktop/Proposal/cont_den
-splot.png>] <chemo_km.png, id=198, 448.67625pt x 485.815pt>
+ [46 <C:/Users/Nathan/Desktop/Proposal/cont_densplot.png>] [47 <C:/Users/Nathan
+/Desktop/Proposal/bw_timemet.png> <C:/Users/Nathan/Desktop/Proposal/bw_timedx.p
+ng> <C:/Users/Nathan/Desktop/Proposal/cape_lapat_ratio.png>] [48] <chemo_km.png
+, id=204, 448.67625pt x 485.815pt>
 File: chemo_km.png Graphic file (type png)
- <use chemo_km.png>
+
+<use chemo_km.png>
 Package pdftex.def Info: chemo_km.png used on input line 226.
 (pdftex.def)             Requested size: 346.89731pt x 375.62059pt.
-
-
-LaTeX Warning: `!h' float specifier changed to `!ht'.
-
-<her2_km.png, id=199, 448.67625pt x 485.815pt>
+ <her2_km.png, id=205, 448.67625pt x 485.815pt>
 File: her2_km.png Graphic file (type png)
- <use her2_km.png>
+
+<use her2_km.png>
 Package pdftex.def Info: her2_km.png used on input line 236.
 (pdftex.def)             Requested size: 346.89731pt x 375.62059pt.
-
-
-LaTeX Warning: `!h' float specifier changed to `!ht'.
-
-[48 <C:/Users/Nathan/Desktop/Proposal/bw_timemet.png> <C:/Users/Nathan/Desktop/
-Proposal/bw_timedx.png>] [49 <C:/Users/Nathan/Desktop/Proposal/cape_lapat_ratio
-.png>] [50]
+ [49] [50 <C:/Users/Nathan/Desktop/Proposal/chemo_km.png>]
+[51 <C:/Users/Nathan/Desktop/Proposal/her2_km.png>]
 LaTeX Font Info:    Try loading font information for OML+cmr on input line 258.
 
- ("C:\Program Files (x86)\MiKTeX 2.9\tex\latex\base\omlcmr.fd"
+
+("C:\Program Files (x86)\MiKTeX 2.9\tex\latex\base\omlcmr.fd"
 File: omlcmr.fd 1999/05/25 v2.5h Standard LaTeX font definitions
 )
 LaTeX Font Info:    Font shape `OML/cmr/m/n' in size <12> not available
 (Font)              Font shape `OML/cmm/m/it' tried instead on input line 258.
-
-[51 <C:/Users/Nathan/Desktop/Proposal/chemo_km.png>] [52 <C:/Users/Nathan/Deskt
-op/Proposal/her2_km.png>]
+ [52]
 <ac_schoenfeld.png, id=221, 600.74437pt x 532.99126pt>
 File: ac_schoenfeld.png Graphic file (type png)
  <use ac_schoenfeld.png>
 Package pdftex.def Info: ac_schoenfeld.png used on input line 288.
 (pdftex.def)             Requested size: 346.89731pt x 307.78511pt.
-
-
-LaTeX Warning: `!h' float specifier changed to `!ht'.
 
 <mi_schoenfeld.png, id=222, 536.75531pt x 389.95688pt>
 File: mi_schoenfeld.png Graphic file (type png)
@@ -561,48 +535,33 @@ File: mi_schoenfeld.png Graphic file (type png)
 Package pdftex.def Info: mi_schoenfeld.png used on input line 295.
 (pdftex.def)             Requested size: 346.89731pt x 252.02304pt.
 
-[53]
 
 LaTeX Warning: `!h' float specifier changed to `!ht'.
 
-
-LaTeX Warning: No positions in optional float specifier.
-               Default added (so using `tbp') on input line 306.
-
-
-LaTeX Warning: No positions in optional float specifier.
-               Default added (so using `tbp') on input line 334.
-
-[54 <C:/Users/Nathan/Desktop/Proposal/ac_schoenfeld.png>] [55] [56 <C:/Users/Na
-than/Desktop/Proposal/mi_schoenfeld.png>] [57] [58]
+[53] [54 <C:/Users/Nathan/Desktop/Proposal/ac_schoenfeld.png>] [55] [56 <C:/Use
+rs/Nathan/Desktop/Proposal/mi_schoenfeld.png>] [57] [58]
 Missing character: There is no … in font cmr12!
- [59] [60]
-<ps_histo1.png, id=250, 441.90094pt x 274.02374pt>
+ [59]
+<ps_histo1.png, id=247, 441.90094pt x 274.02374pt>
 File: ps_histo1.png Graphic file (type png)
  <use ps_histo1.png>
 Package pdftex.def Info: ps_histo1.png used on input line 409.
 (pdftex.def)             Requested size: 216.81pt x 134.44423pt.
 
-<ps_histo2.png, id=251, 439.6425pt x 271.76532pt>
+<ps_histo2.png, id=248, 439.6425pt x 271.76532pt>
 File: ps_histo2.png Graphic file (type png)
  <use ps_histo2.png>
 Package pdftex.def Info: ps_histo2.png used on input line 410.
 (pdftex.def)             Requested size: 216.81pt x 134.0204pt.
-
-
-LaTeX Warning: `!h' float specifier changed to `!ht'.
-
-[61] <ps_bal_diag.png, id=256, 442.65375pt x 367.3725pt>
+ [60]
+[61 <C:/Users/Nathan/Desktop/Proposal/ps_histo1.png> <C:/Users/Nathan/Desktop/P
+roposal/ps_histo2.png>] <ps_bal_diag.png, id=258, 442.65375pt x 367.3725pt>
 File: ps_bal_diag.png Graphic file (type png)
- <use ps_bal_diag.png>
+
+<use ps_bal_diag.png>
 Package pdftex.def Info: ps_bal_diag.png used on input line 420.
 (pdftex.def)             Requested size: 346.89731pt x 287.91716pt.
-
-
-LaTeX Warning: `!h' float specifier changed to `!ht'.
-
-[62 <C:/Users/Nathan/Desktop/Proposal/ps_histo1.png> <C:/Users/Nathan/Desktop/P
-roposal/ps_histo2.png>]
+ [62 <C:/Users/Nathan/Desktop/Proposal/ps_bal_diag.png>]
 Overfull \hbox (12.72752pt too wide) in paragraph at lines 445--446
 [][] 
  []
@@ -622,11 +581,7 @@ Overfull \hbox (31.5013pt too wide) in paragraph at lines 490--491
 [][] 
  []
 
-) [63 <C:/Users/Nathan/Desktop/Proposal/ps_bal_diag.png>]
-
-LaTeX Warning: Text page 64 contains only floats.
-
-[64] (C:\Users\Nathan\Desktop\Proposal\discussion.tex
+[63]) [64] (C:\Users\Nathan\Desktop\Proposal\discussion.tex
 Chapter 4.
 Missing character: There is no ’ in font cmr12!
 Missing character: There is no ’ in font cmr12!
@@ -704,7 +659,7 @@ nts/cm/cmsy10.pfb><C:/Program Files (x86)/MiKTeX 2.9/fonts/type1/public/amsfont
 s/cm/cmsy6.pfb><C:/Program Files (x86)/MiKTeX 2.9/fonts/type1/public/amsfonts/c
 m/cmsy8.pfb><C:/Program Files (x86)/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/c
 mti12.pfb>
-Output written on thesis_main.pdf (85 pages, 846508 bytes).
+Output written on thesis_main.pdf (85 pages, 846502 bytes).
 PDF statistics:
  367 PDF objects out of 1000 (max. 8388607)
  0 named destinations out of 1000 (max. 500000)

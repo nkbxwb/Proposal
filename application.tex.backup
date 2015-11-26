@@ -4,7 +4,7 @@
 \begin{comment}
 We have now laid down the theory of what we want to do describing all of the choices we may need to make, so now we will put it in action. The data that we will apply it to is a dataset from M.D Anderson Cancer Center. The data is a collection of about 1500 patients at MD Anderson who have breast cancer that has metastasized to the brain, about 100 clinically relevant covariates, along with their survival status and time.
 \end{comment}
-Now that the theory is in place, we can apply it to real data. The dataset that I chose to analyze is a dataset from MD Anderson Cancer Center, with permission from Dr. Bugano, Dr. Ibrahim, and Dr. Hess. The IRB protocol is RCR03-0931. This dataset has historical records of 1514 MD Anderson patients who have had breast cancer that has metastasized to the brain from October 2009 to December 2012. The data is not from an RCT, rather it is from a retrospective observational study where oncologists chose what treatments to give. The word metastases is often shortened in speech and in paper to the word ``mets'' because it is easier to say.
+Now that the theory is in place, we can apply it to real data. The dataset that I chose to analyze is a dataset from MD Anderson Cancer Center, with permission from Dr. Bugano, Dr. Ibrahim, and Dr. Hess. The IRB protocol is RCR03-0931. This dataset has historical records of 1514 MD Anderson patients who have had breast cancer that has metastasized to the brain from October 2009 to December 2012. The data is not from an RCT, rather it is from a retrospective observational study of patient records, where oncologists chose what treatments to give. The word metastases is often shortened in speech and in paper to the word ``mets'' because it is easier to say.
 
 The dataset consists of 111 covariates, with missingness ranging from 0 to 99\%. Some predictors are metadata, and rare tests, so they will not be considered. Ignoring these, so the missingness in the useful data ranges from 0 to 65\%. Included in these are 90 different covariates, a few different treatments, as well as survival endpoints (which are all observed). The data can be broken down into a few broad categories, as can be seen in table \ref{table:cats}. There are too many covariates to completely explain here, but I've listed the ones relevant to our models in table \ref{table:importantvars}.
 
@@ -34,18 +34,18 @@ Survival data                                                                   
 \hline
 Name        & \begin{tabular}[c]{@{}c@{}}Percent \\ Missing\end{tabular} & Meaning                                                                                                                                             \\ \hline
 capeothno   & 18\%                                                        & \begin{tabular}[c]{@{}c@{}}Indicator: Capecitabine, other, or no chemotherapeutic\\ treatment. Treatment variable 1\end{tabular}                     \\ \hline
-lapatrasno  & 18\%                                                        & \begin{tabular}[c]{@{}c@{}}Indicator: Lapatinib, Trastuzumab, or no HER2 treatment.\\ Treatment variable 2\end{tabular}                             \\ \hline
+lapatrasno  & 18\%                                                        & \begin{tabular}[c]{@{}c@{}}Indicator: Lapatinib, Trastuzumab, or no HER2-directed treatment.\\ Treatment variable 2\end{tabular}                             \\ \hline
 controlled  & 12\%                                                        & Indicator: Extracranial progression of brain mets                                                                                                   \\ \hline
 %her2        & 10\%                                                        & Indicator: HER2 receptor status                                                                                                                     \\ \hline
-hrher2      & 5\%   													& \begin{tabular}[c]{@{}c@{}}Categorical variable: The hormonal receptor and \\ HER2 receptor status of the subject\end{tabular}  						\\ \hline
+hrher2      & 5\%   													& \begin{tabular}[c]{@{}c@{}}Categorical: The hormonal receptor (er,pr) and \\ HER2 receptor status of the subject\end{tabular}  						\\ \hline
 braintype   & 4\%                                                        & Categorical: Single, multiple, Leptomeningeal disease                                                                                               \\ \hline                                                                       
-timedx      & 1\%                                                        & \begin{tabular}[c]{@{}c@{}}Indicator: Time (years) from breast cancer diagnosis to brain\\ mets diagnosis greater or less than 6 years\end{tabular} \\ \hline
+timedx      & 1\%                                                        & \begin{tabular}[c]{@{}c@{}}Time (years) from breast cancer diagnosis to brain mets\\ \end{tabular} \\ \hline
 site5       & 1\%                                                     & Indicator: First metastasis was to brain                                                                                                            \\ \hline
-race2       & 0\%                                                          & Categorical: White, Black, Hispanic, other                                                                                                          \\ \hline
-priorn      & 0\%                                                          & \begin{tabular}[c]{@{}c@{}}Indicator: Number of prior treatments in metastatic setting \\ before brain mets\end{tabular}                            \\ \hline
+race2       & 0\%                                                          & Categorical: White, Black, Hispanic, Other                                                                                                          \\ \hline
+priorn      & 0\%                                                          & \begin{tabular}[c]{@{}c@{}}Number of prior treatments in metastatic setting \\ before brain mets\end{tabular}                            \\ \hline
 os          & 0\%                                                          & Overall survival (months)                                                                                                                           \\ \hline
-dead        & 0\%                                                          & Indicator: death indicator                                                                                                                          \\ \hline
-agebrainmet & 0\%                                                        & Indicator: Age greater or less than 60 at time of brain mets                                                                                        \\ \hline
+dead        & 0\%                                                          & Indicator: Censoring indicator                                                                                                                          \\ \hline
+agebrainmet & 0\%                                                        & Age at time of brain mets                                                                                        \\ \hline
 
 \end{tabular}
 }
@@ -68,15 +68,15 @@ Along the horizontal axis are the subjects, and the vertical axis are the covari
 
 This data is exemplary for demonstrating thesis ideas because it is a large retrospective study (pulled from a database), survival amenable, has missingness that is a prime candidate for imputation, and has treatment variables that are not given in an RCT.
 
-Our first step is to clearly define what questions we would like answered. We will consider two separate questions in this analysis. In the first, we will explore the treatment effect of Capecitabine (a chemotherapeutic agent) versus other chemotherapeutic agents versus no treatment. In the second, we will look at the effect of two HER2-directed drugs (Lapatinib versus Trastuzumab) versus no HER2-directed drugs in a subset of the patients who are HER2 positive (HER2+).
+Our first step is to clearly define what questions we would like answered. We will consider two separate questions in this analysis. In the first, we will explore the treatment effect (in terms of survival) of Capecitabine (a chemotherapeutic agent) versus other chemotherapeutic agents versus no treatment. In the second, we will look at the effect of two HER2-directed drugs (Lapatinib versus Trastuzumab) versus no HER2-directed drugs in a subset of the patients who are HER2 positive (HER2+).
 
-It isn't vital to understand the entirety of cancer and its treatments for understanding this analysis, but the interested reader may want to look at appendix \ref{app:apdxb} for a very basic overview of breast cancer and the methods of how different drugs work. For a much more detailed analysis and other clinically relevant questions, see the upcoming paper by Bugano, Hess, and Berliner. This is the project that this thesis was forked off of.
+It isn't vital to understand the entirety of cancer and its treatments for understanding this analysis, but the interested reader may want to look at appendix \ref{app:apdxb} for a very basic overview of breast cancer and how different cancer drugs work. For a much more detailed analysis and other clinically relevant questions, see the upcoming paper by Bugano, Hess, and Berliner. This is the project that this thesis was forked off of.
 
 \section{Imputation}
 
-We first need to impute the missing data. This is a challenging task, because of the attention and care that needs to be given to imputing about 90 covariates with missing data. Although we will not be using all 90 covariates, it is important that we impute them, and do so properly. We need all of the values imputed because: they have the potential to be useful as predictors for other covariates, they might be something we are actually analyzing (now or later), we have spent the money to collect the data, and it strengthens the MAR assumption. As well, it is my opinion (and probably a consensus among applied statisticians) that is better to have too many covariates than not enough. After all, variable selection can be performed if there are too many covariates. 
+Our first step in analyzing the data is to impute the missing data. This is a challenging task, because of the attention and care that needs to be given to imputing about 90 covariates with missing data. Although we will not be using all 90 covariates, it is important that we impute them, and do so properly. We need all of the values imputed because: they have the potential to be useful as predictors for other covariates, they might be something we are actually analyzing (now or later), we have spent the money to collect the data, and it strengthens the MAR assumption. As well, it is my opinion (and probably a consensus among applied statisticians) that is better to have too many covariates than not enough. After all, variable selection can be performed if there are too many covariates. 
 
-Our data is quite high dimensional, and there are a many binary variables as well as a handful of strictly positive covariates, thus JM imputation seems inappropriate. Instead, FCS models seem better suited. We will be using the R package mice \cite{VanBuuren2011} because it is easy to use yet powerful.  There are other software implementations in different languages (such as PROC MI in SAS, ICE in Stata, and package mi in R), but I found mice to be the most flexible while also being powerful and easy to use.
+Our data is quite high dimensional, and there are a many binary and categorical variables as well as a handful of strictly positive covariates, thus JM imputation seems inappropriate. Instead, FCS models seem better suited. We will be using the R package mice \cite{VanBuuren2011} because it is easy to use yet powerful.  There are other software implementations in different languages (such as PROC MI in SAS, ICE in Stata, and package mi in R), but I found mice to be the most flexible while also being powerful and easy to use.
 
 
 The first task we need to do is to assess the missing data mechanism. As we have discussed before, there is no formal statistical test to determine what the mechanism is. It is very unlikely that the data is MCAR (which we typically associate with random/accidental deletion), so it is between MAR and MNAR. We have so many different covariates, and it could reasonably be assumed that the missing data we have could be explained by the type of disease, its stage, the subject's age, their standardized assessment, and their survival time, among other things which we have collected. So it would be reasonable to assume that the missing data mechanism is MAR, and thus imputation can be confidently used.
@@ -112,23 +112,23 @@ ki67 & 0.17 & 0.83 & 0.12 \\
 \end{table}
 \end{comment}
 
-Once the model and predictor choices were made, the imputations were run and tuned, and checked by trial and error. This took a considerable amount of time, because after every change made, the algorithm needed to be rerun and the convergence and imputations needed to be assessed. As well, changes in model specification were rarely localized to that variable, and often affected others. 
+Once the model and predictor choices were made, the imputations were run and tuned, and checked by trial and error. This took a considerable amount of time, because after every change made, the algorithm needed to be rerun and the convergence and imputations needed to be assessed. As well, changes in model specification were rarely localized to that variable, as they often affected others. 
 
 It took about three weeks to set up and check the models. This was because the number of covariates was large, and checking the imputations after a change was time consuming. It would not take this long for a smaller dataset. Creating valid imputations is a skill that lies somewhere between an art and a science, so it takes the theory to know what to do, and trial and error to see if you've done it correctly.
 
 
-For the final MI dataset, it was decided to impute $m=50$ datasets and 40 iterations for each. Research by White et. al  says that the number of imputed datasets $m$ should be about 100 times the percentage of incomplete cases (for the analysis at hand) \cite{White2011a}. The data used in our analyses had about 30\% missingness, so imputing 50 datasets was the chosen number. Mice generally converges quickly (within 5 or 10 iterations), but by setting the number of iterations so high (40), we are guaranteeing that we are drawing from the correct distribution
+For the final MI dataset, it was decided to impute $m=50$ datasets and 40 iterations for each. Research by White et. al  says that the number of imputed datasets $m$ should be at least 100 times the percentage of incomplete cases (for the analysis at hand) \cite{White2011a}. The data used in our analyses had about 30\% missingness, so imputing 50 datasets was the chosen number. Mice generally converges quickly (within 5 or 10 iterations), but by setting the number of iterations so high (40), we are guaranteeing that we are drawing from the correct distribution
 
-After the final imputation model for each covariate with missingness has been set up, we need to run it and save the results. For 50 datasets, 40 iterations, the algorithm runs in about 4 hours, and for 50 datasets with 100 iterations, it took 11.5 hours on a computer with 4 GB of ram and 4 cores. While this seems like a long time, this process only needs to be done once and requires no human interaction, so it can be run overnight and then never need to be touched again. The imputations were run for 100 iterations to see how the run time scaled, as well as to check how the chains behaved and to see how the analyses differed. The results between 50 and 100 iterations were very similar. As well, there is hardly any confidence to be gained going from 50 to 100, and having such large objects in memory can be harder to work with. This is why 50 MI datasets, iterated 40 times each were chosen.
+After the final imputation model for each covariate with missingness has been set up, we need to run it and save the results. For 50 datasets, 40 iterations, the algorithm runs in about 4 hours, and for 50 datasets with 100 iterations, it took 11.5 hours on a computer with 4 GB of RAM and 4 cores. While this seems like a long time, this process only needs to be done once and requires no human interaction while running, so it can be run overnight and then never need to be touched again. The imputations were run for 100 iterations to see how the run time scaled, as well as to check how the chains behaved and to see how the analyses differed. The results between 50 and 100 iterations were very similar. As well, there is hardly any confidence to be gained going from 50 to 100, and having such large objects in memory can be harder to work with. This is why 50 MI datasets, with 40 iterations for each was chosen.
 
-We need to check our final imputations for convergence, reliability, and validity. Convergence is assessed by looking at the trace plots of the imputed value by iteration. According to van Buuren ``the different streams should be freely intermingled with each other, without showing any definite trends. Convergence is diagnosed when the variance between different sequences is no larger than the variance with each individual sequence'' \cite{VanBuuren2011}. This may be hard to visualize all at one time because for each variable, there will be 50 times the number of missing data values for that covariate, so many authors suggest checking the plots of the chain mean and standard deviation by iteration instead. For continues variables, the chains are checked to see how the variance between and within changes at each iteration, as well as to ensure the chains show no pattern.
+We need to check our final imputations for convergence, reliability, and validity. Convergence is assessed by looking at the trace plots of the imputed value by iteration for each covariate we imputed. According to van Buuren ``the different streams should be freely intermingled with each other, without showing any definite trends. Convergence is diagnosed when the variance between different sequences is no larger than the variance with each individual sequence'' \cite{VanBuuren2011}. This may be hard to visualize all at one time because for each variable, there will be 50 times the number of missing data values for that covariate, so many authors suggest checking the plots of the chain mean and standard deviation by iteration instead. For continues variables, the chains are checked to see how the variance between and within changes at each iteration, as well as to ensure the chains show no pattern.
 
 Diagnosing convergence for binary and categorical variables is a bit tricky, because the mean of a categorical variable is nonsensical, but we can get a good idea of convergence by looking at if the variance remains constant. And for binary variables, knowing how the groups are coded and looking at where the means of the chains are can give us an idea of healthy convergence. For example, in the cancer dataset, the variable HER2 is coded as 1 for being HER2 negative and 2 for positive. In the available cases, the split between being HER2 negative and positive is about 60 to 40. Thus, is we were to look at the average of the chains groups, we would expect it to be around 1.4. Seeing something radically different than this (perhaps a mean of 1.9) might suggest the imputation was done wrong, because the group percentages are not near what they should be. We can assess the convergence of the binary variable also by checking how its variance changes by iteration. Large changes from groups by iteration will be noted as large changes in the variance plots, whereas staying constant indicates that the draws are remaining relatively stable.
 
 There are 80 plots to check, they cannot all be shown in this paper, but all of them have been checked. Some interesting ones may be seen in figure \ref{fig:traceplot1} and \ref{fig:traceplot2}. Looking at these plots, convergence certainly seems to be the case.  Other authors suggest using a more formal statistical tests such as $\hat{R}$ scale reduction factor, but since most of our interesting variables are categorical, this does not make much sense. 
 
 %change these plots
-\begin{figure}[h!]
+\begin{figure}[!htbp]
   \centering
     \includegraphics[width=0.8\textwidth]{traceplots1.png}
   \caption{Selected plots of continuous variable imputation mean and standard deviation by iteration}
@@ -136,7 +136,7 @@ There are 80 plots to check, they cannot all be shown in this paper, but all of 
 \end{figure}
 
 
-\begin{figure}[h!]
+\begin{figure}[!htbp]
   \centering
     \includegraphics[width=0.8\textwidth]{traceplots2.png}
   \caption{Selected plots of binary variable imputation mean and standard deviation by iteration}
@@ -146,7 +146,7 @@ There are 80 plots to check, they cannot all be shown in this paper, but all of 
 
 Once the convergence is diagnosed, the validity of the imputations needs to be inspected.  Diagnostic plots and tables are viewed to ensure that the imputed data are realistic. Common plots include density plots of each MI dataset compared to the complete cases, as well as bivariate scatterplots for imputed variables. For categorical variables, tables and other group checks may be used. A few of the plots have been replicated here in figures \ref{fig:contdensplot}, \ref{fig:contbwplots}, \ref{fig:clhisto}. Once again, all of the plots cannot be displayed in this paper, but some important ones are recreated. As we can see, not all of the imputed data looks like the real data, but for the majority of the plots, the imputed data seem reasonable and look like they could have been real data had they not been missing. 
 %%%%%%%%%%
-\begin{figure}[h!]
+\begin{figure}[!htbp]
   \centering
     \includegraphics[width=0.6\textwidth]{cont_densplot.png}
   \caption{Selected density plots of continuous imputed variables}
@@ -157,7 +157,7 @@ Blue indicates the original density, whereas the red are the imputed dataset den
 \end{figure}
 
 
-\begin{figure}[h!]
+\begin{figure}[!htbp]
   \centering
     \includegraphics[width=0.5\textwidth]{bw_timemet.png}%
     \includegraphics[width=0.5\textwidth]{bw_timedx.png}%
@@ -168,7 +168,7 @@ Blue indicates the original density, whereas the red are the imputed dataset den
 Blue indicates the original box and whisker plot, whereas the red are the imputed dataset box and whisker plots
 \end{figure}
 
-\begin{figure}[h!]
+\begin{figure}[!htbp]
   \centering
     \includegraphics[width=0.7\textwidth]{cape_lapat_ratio.png}
   \caption{Selected histograms of ratio of imputed variables selected}
@@ -177,7 +177,7 @@ Blue indicates the original box and whisker plot, whereas the red are the impute
 
 
 %%%%%%%%%% cape_lapat_ratio
-Before we move on to the analyses though, let's have a look at the breakdown of the data. In table \ref{table:chartab} we can see how the MI data compares to the available case data, broken down by if the subject had any systemic therapy. This was computed via the stacked method.
+Before we move on to the analyses though, let's have a look at the breakdown of the data. In table \ref{table:chartab} we can see how the MI data compares to the available case data, broken down by if the subject had any systemic therapy for the brain mets. Systemic therapy refers to anything that is not directly targeted to the cancer such as chemotherapy or HER2-directed therapies. Systemic therapy does not include treatments such as resection or targeted radiation. %This table was computed via the stacked method.
 \begin{table}[!ht]
 \centering
 \adjustbox{max height=\dimexpr\textheight-5.5cm\relax,
@@ -204,7 +204,7 @@ No local                                          & 10\%                        
 \end{tabular}
 
 }
-\caption{Characteristics of available case data versus MI data}
+\caption{Characteristics of AC data versus MI data}
 \label{table:chartab}
 \end{table}
 
@@ -212,16 +212,16 @@ No local                                          & 10\%                        
 
 \section{Survival Analysis}
 
-Now that the $m=50$ datasets are imputed, we are ready to run our models on them.  Before we begin though, we should check the models on the available cases to make sure that the model assumptions are met, and to get an idea of how the importance of each part of the model. The available case models (Kaplan-Meier, Cox) were run and the assumptions were checked, and all of them passed. You can see the results, alongside the MI values throughout this section.
+Now that the $m=50$ datasets are imputed, we are ready to run our models on them.  Before we begin though, we should check all of the models we will run on the available cases to make sure that the model assumptions are met, and to get an idea of how the importance of each part of the model. The available case models (Kaplan-Meier, Cox) were run and the assumptions were checked, and all of them passed. You can see the results, alongside the MI values throughout this section.
 
 
-It should be noted that in all of our survival analyses, we will be doing a landmark analysis. Landmark analysis means that we don't start the analysis at time 0, rather, we start it at a different time later than 0. In Dr. Hess's words, ``Since the brain mets treatment data was necessarily determined after the diagnosis of the brain met, it is not appropriate to use this data as baseline covariates in the analyses. Only covariates known at the time of diagnosis can be used in this fashion. We can do a landmark analysis by estimating when the vast majority of patients would have had their brain met treatment choices started, and start our analyses at this point ''. After speaking with cancer experts (Dr. Bugano and Dr. Ibrahim), this landmark time was determined to be 2 months. This allows us to be sure that the treatment was actually administered for the subjects in the analysis.
+It should be noted that in all of our survival analyses, we will be doing a landmark analysis. Landmark analysis means that we don't start the analysis at time 0, rather, we start it at a different time later than 0. In Dr. Hess's words, ``Since the brain mets treatment data was necessarily determined after the diagnosis of the brain met, it is not appropriate to use this [all of the] data as baseline covariates in the analyses. Only covariates known at the time of diagnosis can be used in this fashion. We can do a landmark analysis by estimating when the vast majority of patients would have had their brain met treatment choices started, and start our analyses at this point ''. After speaking with cancer experts (Dr. Bugano and Dr. Ibrahim), this landmark time was determined to be 2 months. This allows us to be sure that the treatment was actually administered for the subjects in the analysis.
 
-The first result that we will check is the Kaplan-Meier curves for the imputed data. Non-informative censoring seems to be a valid assumption, as knowing the censoring status seems to provide no information about the censoring time. The pooled KM estimate was found using Rubin's rules, but under a complimentary log-log transform to get the survival curves towards normality \cite{Marshall2009}. The median and confidence interval about it was computed as the median of the upper and lower confidence bands.
+The first models that we will check in the MI setting are the Kaplan-Meier curves. Non-informative censoring seems to be a valid assumption, as knowing the censoring status seems to provide no information about the censoring time. The pooled KM estimate was found using Rubin's rules, but under a complimentary log-log transform to get the survival curves towards normality \cite{Marshall2009}. The median and confidence interval about it was computed as the median of the upper and lower confidence bands.
 
-For the comparison of the chemotherapeutic drugs, the KM curves can be seen in This can be seen in figure \ref{fig:chemo_km}.  The available case and MI analyses look similar, but the MI data seems to give a lower median survival time for the chemotherapeutic drugs. For not taking any chemotherapeutic drugs though, the median increased. 
+For the comparison of the chemotherapeutic drugs, the KM curves can be seen in figure \ref{fig:chemo_km}.  The available case and MI analyses look similar, but the MI data seems to give a lower median survival time for the chemotherapeutic drugs. For not taking any chemotherapeutic drugs though, the median increased.
 
-\begin{figure}[h!]
+\begin{figure}[!ht]
   \centering
     \includegraphics[width=0.8\textwidth]{chemo_km.png}
   \caption{Landmarked Kaplan-Meier curves for chemotherapeutic drugs, AC and MI data}
@@ -229,16 +229,16 @@ For the comparison of the chemotherapeutic drugs, the KM curves can be seen in T
 \end{figure}
 
 
-For the HER2-directed drugs, the KM curve can be seen in figure \ref{fig:her2_km}. The available case analysis shows that Lapatinib and Trastuzumab are quite close to each other, while having no HER2-directed treatment being much lower. The MI analysis says about the same, but once again gives lower values for the median survival time.
+For the HER2-directed drugs, the KM curve can be seen in figure \ref{fig:her2_km}. The available case analysis shows that Lapatinib and Trastuzumab are quite close to each other in terms of survival, while having no HER2-directed treatment is much lower. Once again, the MI analyses give lower values for the median survival time.
 
-\begin{figure}[h!]
+\begin{figure}[!ht]
   \centering
     \includegraphics[width=0.8\textwidth]{her2_km.png}
   \caption{Landmarked Kaplan-Meier curves for HER2-directed drugs, AC and MI data}
 \label{fig:her2_km}
 \end{figure}
 
-The Kaplan-Meier curves for both questions seem to show the same thing. As compared to the available case analysis, the estimates of survival are a little pessimistic for the treatments, and a little more optimistic for the no treatment group. This is likely due to the fact that a larger proportion of the missing treatments were assigned to no treatment (which echoes the data), causing their survival to go up. 
+The Kaplan-Meier curves for both questions seem to show the same thing. As compared to the available case analysis, the estimates of survival are a little pessimistic for the treatments, and a little more optimistic for the no treatment group. This is likely due to the fact that a larger proportion of the missing treatments were assigned to no treatment (which echoes the data), causing their survival to go up. As well, the missingness in treatment for those who took chemotherapy and HER2-directed drugs was much higher at early overall survival times than for later times. 
 
 
 Now that we have a visual of the curves, we would like to see if there is actually a difference between them. Although visually, we can see that in both cases, no treatment seems to be much worse for survival than treatment, we need to formalize it. To do so, the log rank test needs to be run on them. Recall that we are not able to get the exact log rank test because the quantities needed to calculate them don't exist in the MI setting.  As discussed in the methods section, our best option it to get an approximation to the log rank test by using the Wald test on the Cox regression on treatment membership, and use that value as a proxy for the log rank test since they are asymptotically equivalent.  
@@ -246,10 +246,10 @@ Now that we have a visual of the curves, we would like to see if there is actual
 because in doing so, we would need to compute either the likelihood ratio test or score test, both of which would include calculating the risk set, which is not possible in the MI setting. It has been suggested to pool the chi square statistics via methods presented in Marshall et al 2009, but even they say that this method is poor \cite{Marshall2009}.
 \end{comment}
 
-The results for the overall test and for each comparison can be seen in table \ref{table:chemo_lr} and \ref{table:her2_lr}. The AC and MI results are quite similar. For Capecitabine vs other chemo drugs, we see a relatively high p-value. Depending on the acceptable rate of significance, different conclusions might be drawn between the two analyses.  In this study, the level is $\alpha=.05$, so changing conclusions is not an issue, however, since we are doing multiple comparisons, it may be prudent to use a Bonferroni correction for multiple testing. For the HER2-directed drugs, there certainly seems to be a difference between the treatments and not having any, but there is no evidence that either of the treatments is better than the other.
+The results for the overall test and for each comparison can be seen in table \ref{table:chemo_lr} and \ref{table:her2_lr}. The AC and MI results are quite similar. For Capecitabine vs other chemotherapeutic drugs, we see a relatively high p-value. Depending on the acceptable rate of significance, different conclusions might be drawn between the two analyses.  In this study, the level is $\alpha=.05$, so changing conclusions is not an issue, however, since we are doing multiple comparisons, it may be prudent to use a Bonferroni correction for multiple testing. For the HER2-directed drugs, there certainly seems to be a difference between the treatments and not having any, but there is no evidence that either of the treatments is better than the other.
 
 
-\begin{table}[!ht]
+\begin{table}[!htbp]
 \centering
 \begin{tabular}{|l|c|c|}
 \hline
@@ -260,11 +260,11 @@ cape/other      & 0.0321                  & 0.033                   \\ \hline
 cape/none       & 0.00039                 & .0016                   \\ \hline
 other/none      & \textless.0001          & \textless.0001          \\ \hline
 \end{tabular}
-\caption{Chemo log rank tests}
+\caption{Chemotherapeutic drugs log rank tests}
 \label{table:chemo_lr}
 \end{table}
 
-\begin{table}[!ht]
+\begin{table}[!htbp]
 \centering
 \begin{tabular}{|l|c|c|}
 \hline
@@ -275,25 +275,25 @@ Lapat/Trastuz      & .87                     & .81                     \\ \hline
 Lapta/none         & .00017                  & .00018                  \\ \hline
 Trastuz/none       & \textless.0001          & \textless.0001          \\ \hline
 \end{tabular}
-\caption{HER2 log rank tests}
+\caption{HER2-directed drugs log rank tests}
 \label{table:her2_lr}
 \end{table}
 
-Now that we have estimate of the survival curve, we may set up a model to observe how changes in some baseline covariates change the hazard. We will do this with the Cox Proportional Hazards model. Once we have a baseline model fit and the assumptions met, we can add our treatment variable to see how this affects the hazard.  We first need to fit a reasonable model on the available cases. Speaking with the clinicians, they determined that the covariates listed in table \ref{table:importantvars} were clinically relevant for the baseline model. 
+Now that we have estimate of the survival curve, we may set up a model to observe how changes in some baseline covariates and the treatments change the hazard. We will do this with the Cox Proportional Hazards model. Once we have a baseline model fit and the assumptions met, we can add our treatment variable to see how this affects the hazard. Speaking with the clinicians, they determined that the covariates listed in table \ref{table:importantvars} were clinically relevant for the baseline model. 
 
 We need to make sure that the proportional hazards assumption is met in the available case model to determine if the use of the Cox model is justified. To check, we visually inspect the spline fit to the Schoenfeld residuals over time. The available cases can be seen in figure \ref{fig:ac_schoenfeld}. In the available cases, the assumption of proportional hazards over time seems reasonable, as it a straight line could reasonably be fit between the 95\% confidence bands. A chi-square test of correlation also confirms this. 
 
-\begin{figure}[h!]
+\begin{figure}[!ht]
   \centering
     \includegraphics[width=0.8\textwidth]{ac_schoenfeld.png}
   \caption{AC Schoenfeld residuals over time}
 \label{fig:ac_schoenfeld}
 \end{figure}
 Now, to check if we have proportional hazards in the MI data, there are two options. The first is to fit a Cox model on the stacked data, but this will not give us accurate confidence bands. A better option is to look at each MI datasets Schoenfeld residuals. However this may be tedius. We can get the same result if we collect the spline fits from each MI dataset, and then superimpose them onto one plot, and assess the shape. This is what is done for the MI data, as can be seen in figure \ref{fig:mi_schoenfeld}. The shapes are very similar to the available cases, so it is reasonable to assume that the proportional hazards assumption holds on the MI data.
-\begin{figure}[h!]
+\begin{figure}[!h]
   \centering
     \includegraphics[width=0.8\textwidth]{mi_schoenfeld.png}
-  \caption{MI  Schoenfeld residuals over time}
+  \caption{MI Schoenfeld residuals over time}
 \label{fig:mi_schoenfeld}
 \end{figure}
 
@@ -303,7 +303,7 @@ Now that the proportional hazards assumption is met, we can run the Cox model to
 
 
 
-\begin{table}[]
+\begin{table}[!htbp]
 \centering
 \adjustbox{max height=\dimexpr\textheight-5.5cm\relax,
            max width=\textwidth}{
@@ -330,8 +330,8 @@ Sys. Cont.                                             & Yes vs. No             
 \label{fig:acmicox}
 \end{table}
 
-We may then add in our treatment variable to see how they affect the hazard ratio, and see how they changes other factors. Adding chemotherapy can be seen in figure \ref{fig:acmichemo}, and for the HER2 positive patients, the HER2-directed drugs can be seen in figure \ref{fig:acmiher2}. As it has been posited before, the use of chemo and HER2 drugs seem to greatly reduce the hazard ratio of death from cancer in comparison with not taking any treatment. The effect of other covariates in the presence of these drugs seems to change though.
-\begin{table}[]
+We may then add in our treatment variable to see how they affect the hazard ratio, and see how they changes other factors. Adding chemotherapy can be seen in figure \ref{fig:acmichemo}, and for the HER2 positive patients, the HER2-directed drugs can be seen in figure \ref{fig:acmiher2}. As it has been posited before, the use of chemotherapeutic and HER2 drugs seem to greatly reduce the hazard ratio of death from cancer in comparison with not taking any treatment. The effect of other covariates in the presence of these drugs seems to change though.
+\begin{table}[!ht]
 \centering
 \adjustbox{max height=\dimexpr\textheight-5.5cm\relax,
            max width=\textwidth}{
@@ -366,7 +366,7 @@ Chemo       & Cape. vs. none            & 0.69 & (0.53,0.89)                    
            max width=\textwidth}{
 \begin{tabular}{|c|c|c|c|c|c|c|c|c|}
 \hline
-             &                                                             &      & \begin{tabular}[c]{@{}c@{}}AC\\ n=292\end{tabular} &                &  &      & MI          &                                                             \\ \hline
+             &                                                             &      & \begin{tabular}[c]{@{}c@{}}AC\\ n=292\end{tabular} &                &  &      & \begin{tabular}[c]{@{}c@{}}MI\\ n=between 391 and 415\end{tabular}           &                                                             \\ \hline
 Variable     & Contrast                                                    & HR   & 95\% CI                                            & p-value        &  & HR   & 95\% CI     & \begin{tabular}[c]{@{}c@{}}p-value\\  (t test)\end{tabular} \\ \hline
 HR/HER2      & +/+ vs. -/+                                                 & 0.65 & (0.49,0.87)                                        & 0.0036         &  & 0.66 & (0.51,0.85) & 0.0015                                                      \\ \hline
 Age          & \textgreater 60 vs. \textless 60                            & 1.38 & (0.95,2.01)                                        & 0.092          &  & 1.58 & (1.15,2.18) & 0.0054                                                      \\ \hline
@@ -391,20 +391,20 @@ In both analyses, going from available case to MI interpretation, we see that th
 
 \section{Causal Analysis}
 
-Lastly, we will want to draw causal inference, and see what the average treatment effect of each drug is.  We will do so by assessing the reduction in hazard via the Cox model. In the previous section, we fit a Cox model, but were unable to draw causal conclusions from it since the data was not obtained via an RCT. In this section, we aim to remove the factors confounding treatment and outcome so that we may treat it like an RCT.  Recall that since we are in the MI setting, and that the treatment variables themselves are imputed, we will be using the ``within'' method for propensity scores, as described by Mitra and Reiter \cite{Mitra2012}. For each MI dataset, we will weight each observation by its IPTW weight, and then run a Cox regression to observe the ATE for that dataset.
+Lastly, we will want to draw causal inference, and see what the average treatment effect of each drug is.  We will do so by assessing the reduction in hazard via the Cox model. In the previous section, we fit a Cox model, but were unable to draw causal conclusions from it since the data was not obtained via an RCT. In this section, we aim to remove the effects of confounding so that we may treat it like an RCT.  Recall that since we are in the MI setting, and that the treatment variables themselves are imputed, we will be using the ``within'' method for propensity scores, as described by Mitra and Reiter \cite{Mitra2012}. For each MI dataset, we will weight each observation by its IPTW weight, and then run a Cox regression to observe the treatment effects. 
 
 Before we even begin, we should ensure that the assumptions for Rubin's causal model are met. For SUTVA, it is unlikely that a subject's potential outcome will be affected by what treatment another subject receives. As for the no unmeasured confounders assumption, we aim to satisfy this by including many known confounders in the propensity score model.
 
-In order to observe the results from a causal lens, we need to determine what type of treatment effect to look for. It should be noted that some authors use the term marginal to describe population level average effect, and conditional to describe the individual level average effect\cite{Austin2013}. The goal of this study is to make inference about the population, not the individual, so the individual treatment effect is inappropriate. There are two options to choose from in what type of inference to do. There is the ATE (average treatment effect), and the ATT (average treatment effect on the treated). Since we have three comparisons for each group, and there is no clear cut accepted treatment for each, the ATT is not as useful as the ATE, thus we will chose to observe the ATE.  Since the ATE will be obtained in each MI dataset by IPTW weighted Cox regression, we are able to pool the results via Rubin's rules to get the ATE as well as the uncertainty associated with it.
+In order to observe the results from a causal lens, we need to determine what type of treatment effect to look for. It should be noted that some authors use the term marginal to describe population level average effect, and conditional to describe the individual level average effect \cite{Austin2013}. The goal of this study is to make inference about the population, not the individual, so the individual treatment effect is inappropriate. There are two options to choose from in what type of inference to do. There is the ATE, and the ATT. Since we have three comparisons for each comparison, and there is no clear cut accepted treatment for each, the ATT is not as useful as the ATE, thus we will chose to observe the ATE.  Since the ATE will be obtained in each MI dataset by IPTW weighted Cox regression, we are able to pool the results via Rubin's rules to get the ATE as well as the uncertainty associated with it.
 
-The idea for this part of the analysis is to use propensity score weighting to create a balanced sample for each MI dataset where the baseline covariates are not confounded with treatment assignment, and then treat it as if it was an RCT. Traditional methods to obtain the propensity score (like logistic regression) cannot be optimized for balance, however machine learning algorithms can be. The method chosen to fit the propensity scores are called Generalized Boosting Models (GBM).  In this ensemble method, ``…the model consists of many simple regression trees iteratively combined to create an overall piecewise constant function. The iterative fitting algorithm begins with a single simple regression tree, and at each new iteration, another tree is added. The new tree is chosen to provide the best fit to the residuals of the model from the previous iteration'' \cite{McCaffrey2013}. After each iteration in the GBM algorithm, the weights are applied to the data, and the balance of the covariates (according to the KS statistic) is measured. Standardized bias is more of a measure of central tendency of the groups, whereas the KS statistic is more about the distribution as the whole. Because of this, we will want to optimize on the KS statistic, although both measures should appear balanced after weighting. Once the GBM algorithm is run, the iteration that minimizes the difference between the ECDF's for each variable while not overfitting the data is selected. We then take the propensity scores at that iteration as the propensity scores for that specific MI dataset.
+The idea for this part of the analysis is to use propensity score weighting to create a balanced sample for each MI dataset where the baseline covariates are not confounded with treatment assignment, and then treat it as if it was an RCT. Traditional methods to obtain the propensity score (like logistic regression) cannot be optimized for balance, however machine learning algorithms can be. The method chosen to fit the propensity scores are called Generalized Boosting Models (GBM).  In this ensemble method, ``…the model consists of many simple regression trees iteratively combined to create an overall piecewise constant function. The iterative fitting algorithm begins with a single simple regression tree, and at each new iteration, another tree is added. The new tree is chosen to provide the best fit to the residuals of the model from the previous iteration'' \cite{McCaffrey2013}. After each iteration in the GBM algorithm, the IPTW weights are applied to the data, and the balance of the covariates (according to the KS statistic) is measured. Standardized bias is more of a measure of central tendency of the groups, whereas the KS statistic is more about the distribution as the whole. Because of this, we will want to optimize on the KS statistic, although both measures should appear balanced after weighting. Once the GBM algorithm is run, the iteration that minimizes the KS statistic and maximizes its p-value for each variable while not overfitting the data is selected. We then take the propensity scores at that iteration as the propensity scores for that specific MI dataset.
 
-In traditional propensity score analysis, there is only one treatment and control, however in our situation, there are actually three groups in each analysis. So we can no longer use methods tailored to two classes. We could fit a multinomial model (that gives probability for three treatment classifications), but the theory behind this is not as strong and easy to understand as with the binary case.  However, if we make treatment status an indicator (for example 1 if treatment is Capecitabine, and 0 if it is other or none), then we may treat it as if it were binary. Because we have three groups though, we will need to check the balance between all groups (i.e groups 1 vs 2, 1 vs 3, 2 vs 3) to ensure balance is achieved. Since we are summing three probabilities that are not from the same model, we cannot be guaranteed that the probabilities will sum to unity. This is not an issue though, because our primary interest lies in making sure the groups are balanced, not in the sums of the probabilities \cite{McCaffrey2013}. 
+In traditional propensity score analysis, there is only one treatment and control. However in our situation, there are actually three groups in each analysis. So we can no longer use methods tailored to two classes. We could fit a multinomial model (that gives probability for three treatment classifications), but the theory behind this is not as strong and easy to understand as with the binary case.  However, if we make treatment status an indicator (for example 1 if treatment is Capecitabine, and 0 if it is other or none), then we may treat it as if it were binary. Because we have three groups though, we will need to check the balance between all groups (i.e groups Capecitabine vs other, Capecitabine vs none, other vs none) to ensure balance is achieved. Since we are summing three probabilities that are not from the same model, we cannot be guaranteed that the probabilities will sum to unity. This is not an issue though, because our primary interest lies in making sure the groups are balanced, not in the sums of the probabilities \cite{McCaffrey2013}. 
 
-We now have the propensity score model selected, but what pretreatment covariates should we control for? In speaking with Dr. Hess, we determined that there are many pretreatment differences in the population that should be controlled for. So even though we wanted to keep the model parsimonious, we were not able to. The covariates we deemed to be important to balance before treatment includes: breast cancer stage at first diagnosis, race, type of breast cancer, breast cancer surgery site, first metastatic site, number of prior treatments, ECOG score, localized brain mets treatment, type of brain met, age at brain mets, and control of brain mets at diagnosis.
+We now have the propensity score model selected, and a plan about how to check the balance, but what pretreatment covariates should we control for? In speaking with Dr. Hess, we determined that there are many pretreatment differences in the population that should be controlled for. So even though we wanted to keep the propensity score model parsimonious, we were not able to. The covariates we deemed to be important to balance before treatment includes: breast cancer stage at first diagnosis, race, type of breast cancer, breast cancer surgery site, first metastatic site, number of prior treatments, ECOG score, localized brain mets treatment, type of brain met, age at brain mets, and control of brain mets at diagnosis.
 
-Once the propensity scores have been computed for each MI dataset, we need to check that they are in fact valid. McCaffrey et Al. describe two conditions that need to be checked, and graphical checks to do so. The first check is the check of no unmeasured confounders. This is impossible to assert, but should be reasonable if we include any and all factors we believe to be confounding. The next condition is to ensure that all of the propensity scores are between 0 and 1. If any propensity score is 0 or 1, then there is no chance that the subject looks like that of another group. If this is the case, then the results will be poor, because the counterfactual framework and propensity score analysis was not meant to handle cases like this \cite{McCaffrey2013}.  All 50 plots for the distribution of the propensity scores cannot be shown in this paper, but I show two. In these plots, figure \ref{fig:pshisto}, we see that the propensity scores are never exactly 0 or 1, and as well, the groups are differentiated, yet still have common support.
-\begin{figure}[h!]
+Once the propensity scores have been computed for each MI dataset, we need to check that they are in fact valid. McCaffrey et Al. describe two conditions that need to be checked, and graphical checks to do so. The first condition is to ensure that all of the propensity scores are between 0 and 1. If any propensity score is 0 or 1, then there is no chance that the subject looks like that of another group. If this is the case, then the results will be poor, because the counterfactual framework and propensity score analysis are not meant to handle cases like this \cite{McCaffrey2013}.  All 50 plots for the distribution of the propensity scores cannot be shown in this paper, but I show the propensity scores from two of the MI datasets. In these plots (figure \ref{fig:pshisto}), we see that the propensity scores are never exactly 0 or 1, and as well, the groups are differentiated, yet still have common support.
+\begin{figure}[!htbp]
 \centering
 \includegraphics[width=.5\textwidth]{ps_histo1}%
 \includegraphics[width=.5\textwidth]{ps_histo2}
@@ -412,10 +412,10 @@ Once the propensity scores have been computed for each MI dataset, we need to ch
 \label{fig:pshisto}
 \end{figure}
 
-To check for balance, we can check how the KS statistic and standardized bias change after weighting. Two plots are selected, as can be seen in figure \ref{fig:psbal}. This plot shows that after weighting, the standardized bias decreases for nearly every variable to an acceptable level (below about .2 or .25 is considered balanced in the literature). As well, it shows that the KS p-values are increasing, indicating that there is no difference between the distributions of the pretreatment covariates after weighting.
+The next check is the check of no unmeasured confounders. This is impossible to assert, but should be reasonable if we include any and all factors we believe to be confounding. It can be checked through plots and tables that assess balance. To check for balance, we can check how the KS statistic and standardized bias change after weighting. Two plots are selected, as can be seen in figure \ref{fig:psbal}. This plot shows that after weighting, the standardized bias decreases for nearly every variable to an acceptable level (below about .2 or .25 is considered balanced in the literature). As well, it shows that the KS p-values are increasing, indicating that there is no difference between the distributions of the pretreatment covariates after weighting.
 
 
-\begin{figure}[h!]
+\begin{figure}[!htbp]
 \centering
 \includegraphics[width=.8\textwidth]{ps_bal_diag}
   \caption{Selected Propensity Score Balance Checks}
@@ -426,13 +426,13 @@ This figure shows how the balance is achieved for two MI datasets. The left hand
 \end{figure}
 
 
-Once propensity score validity is checked, the weights are put into the Cox model for each MI dataset. We cannot be sure that our propensity scores are the truth (this is a known drawback of propensity score analysis), but we can be more confident that it is right by also including the pretreatment covariates as adjustments to the cox model (along with weighting). This is known as being doubly robust estimator \cite{Lunceford2004}.
+Once propensity score validity is checked, the weights are put into the Cox model for each MI dataset. We cannot be sure that our propensity scores are the truth (this is a known drawback of propensity score analysis), but we can be more confident that it is right by also including the pretreatment covariates as adjustments to the Cox model (along with weighting). This is known as being doubly robust estimator \cite{Lunceford2004}.
 
-The results for the propensity score weighted and doubly robust methods can be seen in tables \ref{tab:chemoonly}, \ref{chemorobust}, \ref{tab:lapatonly}, and \ref{lapatfull}. As it can be seen, when only accounting for the treatment effect alone, the estimate is quite unstable, but as we add in the other pretreatment covariates (many of which were actually in the original cox model in the survival section), the results become more stable. The results are similar in trend to those obtained in the survival section. However, the interpretation is different. These results should be read as if the treatments were administered in an RCT. When removing all confounding factors, there seems to be a significant difference between Capecitabine and other chemotherapeutic drugs, but there seems to be no difference between Lapatinib and Trastuzumab in HER2+ patients. All drugs are, however, better than not taking any at all.
+The results for the propensity score weighted and doubly robust methods can be seen in tables \ref{tab:chemoonly}, \ref{chemorobust}, \ref{tab:lapatonly}, and \ref{lapatfull}. As it can be seen, when only accounting for the treatment effect alone, the estimate is quite unstable, but as we add in the other pretreatment covariates (many of which were actually in the original Cox model in the survival section), the results become more stable. The results are similar in trend to those obtained in the survival section. However, the interpretation is different. These results should be read as if the treatments were administered in an RCT. When removing all confounding factors, there seems to be a significant difference between Capecitabine and other chemotherapeutic drugs, but there seems to be no difference between Lapatinib and Trastuzumab in HER2+ patients. All drugs are, however, better than not taking any at all.
 
 %%%%
  
-\begin{table}[!ht]
+\begin{table}[!htbp]
  \scalebox{0.75}{
 \centering
 \begin{tabular}{|c|c|c|c|c|c|c|c|c|c|c|c|}
@@ -447,7 +447,7 @@ Cape. vs other & 1.179        & (0.983,1.416)       &  & 1.156     & (0.966,1.38
 \label{tab:chemoonly}
 \end{table}
 
-\begin{table}[!ht]
+\begin{table}[!htbp]
  \scalebox{0.75}{
 \centering
 \begin{tabular}{|c|c|c|c|c|c|c|c|c|c|c|c|}
@@ -458,11 +458,11 @@ Cape. vs none  & 0.687        & (0.530,0.891)       &  & 0.603     & (0.443,0.82
 Other vs none  & 0.521        & (0.416,0.653)       &  & 0.452     & (0.340,0.602)    &  & 0.579        & (0.474,0.707)       &  & 0.532     & (0.416,0.681)    \\ \hline
 Cape. vs other & 1.318        & (1.078,1.612)       &  & 1.334     & (1.109,1.604)    &  & 1.300        & (1.076,1.570)       &  & 1.317     & (1.100,1.579)    \\ \hline
 \end{tabular}}
-\caption{Chemotherapeuic ATE, Doubly Robust, AC, MI}
+\caption{Chemotherapeuic ATE, doubly Robust IPTW weights estimate, AC and MI}
 \label{chemorobust}
 \end{table}
 
-\begin{table}[!ht]
+\begin{table}[!htbp]
  \scalebox{0.75}{
 \centering
 \begin{tabular}{|l|c|c|c|c|c|c|c|c|c|c|c|}
@@ -473,12 +473,12 @@ Lapat. vs none     & 0.467                      & (0.355,0.616)                 
 Trastuz. vs none   & 0.488                      & (0.398,0.597)                      &                       & 0.566                      & (0.421,0.759)                      &                       & 0.506                      & (0.417,0.614)                     &                       & 0.480                      & (0.313,0.735)                      \\ \hline
 Lapat. vs Trastuz. & \multicolumn{1}{l|}{0.958} & \multicolumn{1}{l|}{(0.693,1.324)} & \multicolumn{1}{l|}{} & \multicolumn{1}{l|}{1.009} & \multicolumn{1}{l|}{(0.680,1.496)} & \multicolumn{1}{l|}{} & \multicolumn{1}{l|}{0.927} & \multicolumn{1}{l|}{(0.673,1.28)} & \multicolumn{1}{l|}{} & \multicolumn{1}{l|}{1.011} & \multicolumn{1}{l|}{(0.763,1.338)} \\ \hline
 \end{tabular}}
-\caption{HER2 directed ATE with IPTW weights, AC and MI}
+\caption{HER2-directed ATE with IPTW weights, AC and MI}
 \label{tab:lapatonly}
 \end{table}
 
 \begin{center}
-\begin{table}[!ht]
+\begin{table}[!htbp]
 \scalebox{0.75}{
 \begin{tabular}{|c|c|c|c|c|c|c|c|c|c|c|c|}
 \hline
@@ -488,7 +488,7 @@ Lapat. vs none     & 0.468       & (0.316,0.692)        &  & 0.514     & (0.331,
 Trastuz. vs none   & 0.447       & (0.328,0.6089)       &  & 0.456     & (0.328,0.632)    &  & 0.511        & (0.381,0.685)       &  & 0.388      & (0.249,0.602)      \\ \hline
 Lapat. vs Trastuz. & 1.048       & (0.704,1.560)        &  & 1.128     & (0.726,1.754)    &  & 1.026        & (0.713,1.477)       &  & 1.057      & (0.788,1.417)      \\ \hline
 \end{tabular}}
-\caption{HER2 directed ATE with IPTW weights, double robust}
+\caption{HER2-directed ATE, doubly Robust IPTW weights estimate, AC and MI}
 \label{lapatfull}
 \end{table}
 \end{center}
