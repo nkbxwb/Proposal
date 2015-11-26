@@ -6,7 +6,7 @@ We have now laid down the theory of what we want to do describing all of the cho
 \end{comment}
 Now that the theory is in place, we can apply it to real data. The dataset that I chose to analyze is a dataset from MD Anderson Cancer Center, with permission from Dr. Bugano, Dr. Ibrahim, and Dr. Hess. The IRB protocol is RCR03-0931. This dataset has historical records of 1514 MD Anderson patients who have had breast cancer that has metastasized to the brain from October 2009 to December 2012. The data is not from an RCT, rather it is from a retrospective observational study of patient records, where oncologists chose what treatments to give. The word metastases is often shortened in speech and in paper to the word ``mets'' because it is easier to say.
 
-The dataset consists of 111 covariates, with missingness ranging from 0 to 99\%. Some predictors are metadata, and rare tests, so they will not be considered. Ignoring these, so the missingness in the useful data ranges from 0 to 65\%. Included in these are 90 different covariates, a few different treatments, as well as survival endpoints (which are all observed). The data can be broken down into a few broad categories, as can be seen in table \ref{table:cats}. There are too many covariates to completely explain here, but I've listed the ones relevant to our models in table \ref{table:importantvars}.
+The dataset consists of 111 covariates, with missingness ranging from 0 to 99\%. Some predictors are metadata, and rare tests, so they will not be considered. Ignoring these, the missingness in the useful data ranges from 0 to 65\%. Included in these are 90 different covariates, a few different treatments, as well as survival endpoints (which are all observed). The data can be broken down into a few broad categories, as can be seen in table \ref{table:cats}. There are too many covariates to completely explain here, but I've listed the ones relevant to our models in table \ref{table:importantvars}.
 
 \begin{table}[ !ht]
 \centering
@@ -17,7 +17,7 @@ Subject data                                                                    
 Breast Cancer data                                                                     & TNM staging, type, receptor status                                            \\ \hline
 \begin{tabular}[c]{@{}c@{}}Pre brain mets\\ data\end{tabular}                   & Treatment types                                                               \\ \hline
 \begin{tabular}[c]{@{}c@{}}Post brain mets\\ clinical observations\end{tabular} & Seizures, headache, nasuea                                                    \\ \hline
-\begin{tabular}[c]{@{}c@{}}Post brain mets\\ data\end{tabular}                  & \begin{tabular}[c]{@{}c@{}}Treatment type, \\ type of brain mets\end{tabular} \\ \hline
+\begin{tabular}[c]{@{}c@{}}Post brain mets\\ data\end{tabular}                  & Treatment type, type of brain mets						 \\ \hline
 Survival data                                                                   & Survival time after brain mets, censoring indicator                           \\ \hline
 \end{tabular}
 \caption{Data categories and examples}
@@ -125,7 +125,7 @@ We need to check our final imputations for convergence, reliability, and validit
 
 Diagnosing convergence for binary and categorical variables is a bit tricky, because the mean of a categorical variable is nonsensical, but we can get a good idea of convergence by looking at if the variance remains constant. And for binary variables, knowing how the groups are coded and looking at where the means of the chains are can give us an idea of healthy convergence. For example, in the cancer dataset, the variable HER2 is coded as 1 for being HER2 negative and 2 for positive. In the available cases, the split between being HER2 negative and positive is about 60 to 40. Thus, is we were to look at the average of the chains groups, we would expect it to be around 1.4. Seeing something radically different than this (perhaps a mean of 1.9) might suggest the imputation was done wrong, because the group percentages are not near what they should be. We can assess the convergence of the binary variable also by checking how its variance changes by iteration. Large changes from groups by iteration will be noted as large changes in the variance plots, whereas staying constant indicates that the draws are remaining relatively stable.
 
-There are 80 plots to check, they cannot all be shown in this paper, but all of them have been checked. Some interesting ones may be seen in figure \ref{fig:traceplot1} and \ref{fig:traceplot2}. Looking at these plots, convergence certainly seems to be the case.  Other authors suggest using a more formal statistical tests such as $\hat{R}$ scale reduction factor, but since most of our interesting variables are categorical, this does not make much sense. 
+Since there are 90 plots to check, they cannot all be shown in this paper. However, each of them have been checked. Some interesting ones may be seen in figure \ref{fig:traceplot1} and \ref{fig:traceplot2}. Looking at these plots, convergence certainly seems to be the case.  Other authors suggest using a more formal statistical tests such as $\hat{R}$ scale reduction factor, but since most of our interesting variables are categorical, this does not make much sense. 
 
 %change these plots
 \begin{figure}[!htbp]
@@ -177,7 +177,7 @@ Blue indicates the original box and whisker plot, whereas the red are the impute
 
 
 %%%%%%%%%% cape_lapat_ratio
-Before we move on to the analyses though, let's have a look at the breakdown of the data. In table \ref{table:chartab} we can see how the MI data compares to the available case data, broken down by if the subject had any systemic therapy for the brain mets. Systemic therapy refers to anything that is not directly targeted to the cancer such as chemotherapy or HER2-directed therapies. Systemic therapy does not include treatments such as resection or targeted radiation. %This table was computed via the stacked method.
+Before we move on to the analyses, let's have a look at the breakdown of the MI data. In table \ref{table:chartab} we can see how the MI data compares to the available case data, broken down by if the subject had any systemic therapy for the brain mets. Systemic therapy refers to anything that is not directly targeted to the cancer such as chemotherapy or HER2-directed therapies. Systemic therapy does not include treatments such as resection or targeted radiation. %This table was computed via the stacked method.
 \begin{table}[!ht]
 \centering
 \adjustbox{max height=\dimexpr\textheight-5.5cm\relax,
@@ -281,7 +281,7 @@ Trastuz/none       & \textless.0001          & \textless.0001          \\ \hline
 
 Now that we have estimate of the survival curve, we may set up a model to observe how changes in some baseline covariates and the treatments change the hazard. We will do this with the Cox Proportional Hazards model. Once we have a baseline model fit and the assumptions met, we can add our treatment variable to see how this affects the hazard. Speaking with the clinicians, they determined that the covariates listed in table \ref{table:importantvars} were clinically relevant for the baseline model. 
 
-We need to make sure that the proportional hazards assumption is met in the available case model to determine if the use of the Cox model is justified. To check, we visually inspect the spline fit to the Schoenfeld residuals over time. The available cases can be seen in figure \ref{fig:ac_schoenfeld}. In the available cases, the assumption of proportional hazards over time seems reasonable, as it a straight line could reasonably be fit between the 95\% confidence bands. A chi-square test of correlation also confirms this. 
+We need to make sure that the proportional hazards assumption is met in the available case model to determine if the use of the Cox model is justified. To check, we visually inspect the spline fit to the Schoenfeld residuals over time (figure \ref{fig:ac_schoenfeld}). In the available cases, the assumption of proportional hazards over time seems reasonable, as it a straight line could reasonably be fit between the 95\% confidence bands. A chi-square test of correlation also confirms this. 
 
 \begin{figure}[!ht]
   \centering
@@ -289,7 +289,7 @@ We need to make sure that the proportional hazards assumption is met in the avai
   \caption{AC Schoenfeld residuals over time}
 \label{fig:ac_schoenfeld}
 \end{figure}
-Now, to check if we have proportional hazards in the MI data, there are two options. The first is to fit a Cox model on the stacked data, but this will not give us accurate confidence bands. A better option is to look at each MI datasets Schoenfeld residuals. However this may be tedius. We can get the same result if we collect the spline fits from each MI dataset, and then superimpose them onto one plot, and assess the shape. This is what is done for the MI data, as can be seen in figure \ref{fig:mi_schoenfeld}. The shapes are very similar to the available cases, so it is reasonable to assume that the proportional hazards assumption holds on the MI data.
+Now, to check if we have proportional hazards in the MI data, there are two options. The first is to fit a Cox model on the stacked data, but this will not give us accurate confidence bands. A better option is to look at the Schoenfeld residuals plot for each MI dataset individually. However this may be tedius. We can get the same result if we collect the spline fits from each MI dataset, and then superimpose them onto one plot, and assess the shape. This is what is done for the MI data, as can be seen in figure \ref{fig:mi_schoenfeld}. The shapes are very similar to the available cases, so it is reasonable to assume that the proportional hazards assumption holds on the MI data.
 \begin{figure}[!h]
   \centering
     \includegraphics[width=0.8\textwidth]{mi_schoenfeld.png}
@@ -330,7 +330,7 @@ Sys. Cont.                                             & Yes vs. No             
 \label{fig:acmicox}
 \end{table}
 
-We may then add in our treatment variable to see how they affect the hazard ratio, and see how they changes other factors. Adding chemotherapy can be seen in figure \ref{fig:acmichemo}, and for the HER2 positive patients, the HER2-directed drugs can be seen in figure \ref{fig:acmiher2}. As it has been posited before, the use of chemotherapeutic and HER2 drugs seem to greatly reduce the hazard ratio of death from cancer in comparison with not taking any treatment. The effect of other covariates in the presence of these drugs seems to change though.
+We may then add in our treatment variable to see how they affect the hazard ratio, and see how they changes other factors. Adding chemotherapy can be seen in figure \ref{fig:acmichemo}, and for the HER2 positive patients, the HER2-directed drugs can be seen in figure \ref{fig:acmiher2}. As it has been posited before, the use of chemotherapeutic and HER2-directed drugs seem to greatly reduce the hazard ratio of death from cancer in comparison with not taking any treatment. The effect of other covariates in the presence of these drugs seems to change though.
 \begin{table}[!ht]
 \centering
 \adjustbox{max height=\dimexpr\textheight-5.5cm\relax,
@@ -383,7 +383,7 @@ HER2 therapy & \begin{tabular}[c]{@{}c@{}}Lapat vs. \\ none\end{tabular}   & 0.4
              & \begin{tabular}[c]{@{}c@{}}Trastuz vs. \\ none\end{tabular} & 0.45 & (0.33,0.61)                                        & \textless.0001 &  & 0.51 & (0.38,0.68) & \textless.0001                                              \\ \hline
 \end{tabular}
 }
-\caption{AC and MI Cox model with HER2 directed treatment, on HER2+ subjects}
+\caption{AC and MI Cox model with HER2-directed treatment, on HER2+ subjects}
 \label{fig:acmiher2}
 \end{table}
 In both analyses, going from available case to MI interpretation, we see that the MI analyses are a little more pessimistic about the hazard ratio (i.e. the hazard ratios move closer to 1). However, the trend in reduction of hazard still holds. Other chemotherapeutics seem to reduce the hazard more than Capecitabine, and in HER2+ patients, Trastuzumab seems to decrease the hazard ever so slightly more than Lapatinib does.
@@ -397,11 +397,11 @@ Before we even begin, we should ensure that the assumptions for Rubin's causal m
 
 In order to observe the results from a causal lens, we need to determine what type of treatment effect to look for. It should be noted that some authors use the term marginal to describe population level average effect, and conditional to describe the individual level average effect \cite{Austin2013}. The goal of this study is to make inference about the population, not the individual, so the individual treatment effect is inappropriate. There are two options to choose from in what type of inference to do. There is the ATE, and the ATT. Since we have three comparisons for each comparison, and there is no clear cut accepted treatment for each, the ATT is not as useful as the ATE, thus we will chose to observe the ATE.  Since the ATE will be obtained in each MI dataset by IPTW weighted Cox regression, we are able to pool the results via Rubin's rules to get the ATE as well as the uncertainty associated with it. In the end, we will get an estimate of the true causal relative change in hazard.
 
-The idea for this part of the analysis is to use propensity score weighting to create a balanced sample for each MI dataset where the baseline covariates are not confounded with treatment assignment or result, and then treat it as if it was an RCT. Traditional methods to obtain the propensity score (like logistic regression) cannot be optimized for balance, however machine learning algorithms can be. The method chosen to fit the propensity scores are called Generalized Boosting Models (GBM).  In this ensemble method, ``…the model consists of many simple regression trees iteratively combined to create an overall piecewise constant function. The iterative fitting algorithm begins with a single simple regression tree, and at each new iteration, another tree is added. The new tree is chosen to provide the best fit to the residuals of the model from the previous iteration'' \cite{McCaffrey2013}. After each iteration in the GBM algorithm, the IPTW’s are applied to the data, and the balance of the covariates (according to the KS statistic) is measured. Standardized bias is more of a measure of central tendency of the groups, whereas the KS statistic is more about the distribution as the whole. Because of this, we will want to optimize on the KS statistic, although both measures should appear balanced after weighting. Once the GBM algorithm is run, the iteration that minimizes the KS statistic and maximizes its p-value for each variable while not overfitting the data is selected. We then take the propensity scores at that iteration as the propensity scores for that specific MI dataset.
+The idea for this part of the analysis is to use propensity score weighting to create a balanced sample for each MI dataset where the baseline covariates are not confounded with treatment assignment or result, and then treat it as if it was an RCT. Traditional methods to obtain the propensity score (like logistic regression) cannot be optimized for balance, however machine learning algorithms can be. The method chosen to fit the propensity scores are called Generalized Boosting Models (GBM).  In this ensemble method, ``…the model consists of many simple regression trees iteratively combined to create an overall piecewise constant function. The iterative fitting algorithm begins with a single simple regression tree, and at each new iteration, another tree is added. The new tree is chosen to provide the best fit to the residuals of the model from the previous iteration'' \cite{McCaffrey2013}. After each iteration in the GBM algorithm, the IPTW's are applied to the data, and the balance of the covariates (according to the KS statistic) is measured. Standardized bias is more of a measure of central tendency of the groups, whereas the KS statistic is more about the distribution as the whole. Because of this, we will want to optimize on the KS statistic, although both measures should appear balanced after weighting. Once the GBM algorithm is run, the iteration that minimizes the KS statistic and maximizes its p-value for each variable while not overfitting the data is selected. We then take the propensity scores at that iteration as the propensity scores for that specific MI dataset.
 
 In traditional propensity score analysis, there is only one treatment and control. However in our situation, there are actually three groups in each analysis. So we can no longer use methods tailored to two classes. We could fit a multinomial model (that gives probability for three treatment classifications), but the theory behind this is not as strong and easy to understand as with the binary case.  However, if we make treatment status an indicator (for example 1 if treatment is Capecitabine, and 0 if it is other or none), then we may treat it as if it were binary. Because we have three groups though, we will need to check the balance between all groups (i.e groups Capecitabine vs other, Capecitabine vs none, other vs none) to ensure balance is achieved. Since we are summing three probabilities that are not from the same model, we cannot be guaranteed that the probabilities will sum to unity. This is not an issue though, because our primary interest lies in making sure the groups are balanced, not in the sums of the probabilities \cite{McCaffrey2013}. 
 
-We now have the propensity score model selected, and a plan about how to check the balance, but now we need to ask what pretreatment covariates should we control for. In speaking with Dr. Hess, we determined that there are many pretreatment differences in the population that should be controlled for. So even though we wanted to keep the propensity score model parsimonious, we were not able to. The covariates we deemed to be important to balance before treatment includes: breast cancer stage at first diagnosis, race, type of breast cancer, breast cancer surgery site, first metastatic site, number of prior treatments, ECOG score, localized brain mets treatment, type of brain met, age at brain mets, and control of brain mets at diagnosis.
+We now have the propensity score model selected, and a plan about how to check the balance, but now we need to ask what pretreatment covariates should we control for. In speaking with Dr. Hess, we determined that there are many pretreatment differences in the population that should be controlled for. So even though we wanted to keep the propensity score model parsimonious, we were not able to. The covariates we deemed to be important to balance before treatment include: breast cancer stage at first diagnosis, race, type of breast cancer, breast cancer surgery type, first metastatic site, number of prior treatments, ECOG score, localized brain mets treatment, type of brain met, age at brain mets, and control of brain mets at diagnosis.
 
 Once the propensity scores have been computed for each MI dataset, we need to check that they are in fact valid. McCaffrey et Al. describe two conditions that need to be checked, and graphical checks to do so. The first condition is to ensure that all of the propensity scores are between 0 and 1. If any propensity score is 0 or 1, then there is no chance that the subject looks like that of another group. If this is the case, then the results will be poor, because the counterfactual framework and propensity score analysis are not meant to handle cases like this \cite{McCaffrey2013}.  All 50 plots for the distribution of the propensity scores cannot be shown in this paper, but I show the propensity scores from two of the MI datasets. In these plots (figure \ref{fig:pshisto}), we see that the propensity scores are never exactly 0 or 1, and as well, the groups are differentiated, yet still have common support.
 \begin{figure}[!htbp]
@@ -443,7 +443,7 @@ Cape. vs none  & 0.396        & (0.325,0.482)       &  & 0.655     & (0.481,0.89
 Other vs none  & 0.336        & (0.287,0.394)       &  & 0.567     & (0.46,0.754)     &  & 0.413        & (0.354,0.481        &  & 0.593          & (0.470,0.748)           \\ \hline
 Cape. vs other & 1.179        & (0.983,1.416)       &  & 1.156     & (0.966,1.383)    &  & 1.173        & (0.981,1.402)       &  & 1.183          & (0.998,1.404)           \\ \hline
 \end{tabular}}
-\caption{Chemotherapeutic ATE with IPTW weights, AC and MI}
+\caption{Chemotherapeutic ATE with IPTW, AC and MI}
 \label{tab:chemoonly}
 \end{table}
 
@@ -458,7 +458,7 @@ Cape. vs none  & 0.687        & (0.530,0.891)       &  & 0.603     & (0.443,0.82
 Other vs none  & 0.521        & (0.416,0.653)       &  & 0.452     & (0.340,0.602)    &  & 0.579        & (0.474,0.707)       &  & 0.532     & (0.416,0.681)    \\ \hline
 Cape. vs other & 1.318        & (1.078,1.612)       &  & 1.334     & (1.109,1.604)    &  & 1.300        & (1.076,1.570)       &  & 1.317     & (1.100,1.579)    \\ \hline
 \end{tabular}}
-\caption{Chemotherapeuic ATE, doubly Robust IPTW weights estimate, AC and MI}
+\caption{Chemotherapeuic ATE, doubly robust IPTW estimate, AC and MI}
 \label{chemorobust}
 \end{table}
 
@@ -473,7 +473,7 @@ Lapat. vs none     & 0.467                      & (0.355,0.616)                 
 Trastuz. vs none   & 0.488                      & (0.398,0.597)                      &                       & 0.566                      & (0.421,0.759)                      &                       & 0.506                      & (0.417,0.614)                     &                       & 0.480                      & (0.313,0.735)                      \\ \hline
 Lapat. vs Trastuz. & \multicolumn{1}{l|}{0.958} & \multicolumn{1}{l|}{(0.693,1.324)} & \multicolumn{1}{l|}{} & \multicolumn{1}{l|}{1.009} & \multicolumn{1}{l|}{(0.680,1.496)} & \multicolumn{1}{l|}{} & \multicolumn{1}{l|}{0.927} & \multicolumn{1}{l|}{(0.673,1.28)} & \multicolumn{1}{l|}{} & \multicolumn{1}{l|}{1.011} & \multicolumn{1}{l|}{(0.763,1.338)} \\ \hline
 \end{tabular}}
-\caption{HER2-directed ATE with IPTW weights, AC and MI}
+\caption{HER2-directed ATE with IPTW, AC and MI}
 \label{tab:lapatonly}
 \end{table}
 
@@ -488,7 +488,7 @@ Lapat. vs none     & 0.468       & (0.316,0.692)        &  & 0.514     & (0.331,
 Trastuz. vs none   & 0.447       & (0.328,0.6089)       &  & 0.456     & (0.328,0.632)    &  & 0.511        & (0.381,0.685)       &  & 0.388      & (0.249,0.602)      \\ \hline
 Lapat. vs Trastuz. & 1.048       & (0.704,1.560)        &  & 1.128     & (0.726,1.754)    &  & 1.026        & (0.713,1.477)       &  & 1.057      & (0.788,1.417)      \\ \hline
 \end{tabular}}
-\caption{HER2-directed ATE, doubly Robust IPTW weights estimate, AC and MI}
+\caption{HER2-directed ATE, doubly robust IPTW estimate, AC and MI}
 \label{lapatfull}
 \end{table}
 \end{center}

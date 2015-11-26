@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.1415926-2.5-1.40.14 (MiKTeX 2.9) (preloaded format=pdflatex 2015.8.23)  26 NOV 2015 13:40
+This is pdfTeX, Version 3.1415926-2.5-1.40.14 (MiKTeX 2.9) (preloaded format=pdflatex 2015.8.23)  26 NOV 2015 17:16
 entering extended mode
 **thesis_main.tex
 (C:\Users\Nathan\Desktop\Proposal\thesis_main.tex
@@ -385,8 +385,6 @@ Package pdftex.def Info: mi_example_full.jpg used on input line 30.
  [4] [5 <C:/Users/Nathan/Desktop/Proposal/mi_example_full.jpg>] [6]
 Missing character: There is no – in font cmr8!
  [7]
-Missing character: There is no ’ in font cmr12!
-
 Overfull \hbox (1.95634pt too wide) in paragraph at lines 87--90
 []\OT1/cmr/m/n/12 Our in-fer-ence of in-ter-est is on the haz-ard ra-tio, given
  by $[] = []([][] \OML/cmm/m/it/12 []\OT1/cmr/m/n/12 (\OML/cmm/m/it/12 Z[] \OM
@@ -541,7 +539,6 @@ LaTeX Warning: `!h' float specifier changed to `!ht'.
 [53] [54 <C:/Users/Nathan/Desktop/Proposal/ac_schoenfeld.png>] [55] [56 <C:/Use
 rs/Nathan/Desktop/Proposal/mi_schoenfeld.png>] [57] [58]
 Missing character: There is no … in font cmr12!
-Missing character: There is no ’ in font cmr12!
  [59] [60]
 <ps_histo1.png, id=250, 441.90094pt x 274.02374pt>
 File: ps_histo1.png Graphic file (type png)
@@ -590,9 +587,7 @@ Missing character: There is no ’ in font cmr12!
 
 
 
-] [66] [67]
-Missing character: There is no ’ in font cmr12!
-) [68] [69] (C:\Users\Nathan\Desktop\Proposal\conclusion.tex
+] [66] [67] [68]) [69] (C:\Users\Nathan\Desktop\Proposal\conclusion.tex
 Chapter 5.
 ) [70
 
@@ -659,7 +654,7 @@ nts/cm/cmsy10.pfb><C:/Program Files (x86)/MiKTeX 2.9/fonts/type1/public/amsfont
 s/cm/cmsy6.pfb><C:/Program Files (x86)/MiKTeX 2.9/fonts/type1/public/amsfonts/c
 m/cmsy8.pfb><C:/Program Files (x86)/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/c
 mti12.pfb>
-Output written on thesis_main.pdf (85 pages, 846895 bytes).
+Output written on thesis_main.pdf (85 pages, 846768 bytes).
 PDF statistics:
  367 PDF objects out of 1000 (max. 8388607)
  0 named destinations out of 1000 (max. 500000)
