@@ -19,6 +19,7 @@
 %%%
 \usepackage{adjustbox}
 %%%
+\usepackage{pdfpages}
 
 %\usepackage[table,xcdraw]{xcolor}
 
@@ -58,11 +59,12 @@ And Propensity Score Analysis In Cancer Data With Missingness}
 \address{Houston, Texas}
 \donemonth{December} \doneyear{2015} \makeindex
 \begin{document}
+\includepdf[pages={1}]{signed_front.pdf}
 
   \begin{frontmatter}
    \pagenumbering{roman}
    %\makecover
-   \maketitle
+  % \maketitle
    \include{abstract}
    %figure out the ack later
    %\include{Acknowledgements}

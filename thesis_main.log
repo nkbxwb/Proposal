@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.1415926-2.5-1.40.14 (MiKTeX 2.9) (preloaded format=pdflatex 2015.8.23)  27 NOV 2015 14:05
+This is pdfTeX, Version 3.1415926-2.5-1.40.14 (MiKTeX 2.9) (preloaded format=pdflatex 2015.8.23)  30 NOV 2015 13:52
 entering extended mode
 **thesis_main.tex
 (C:\Users\Nathan\Desktop\Proposal\thesis_main.tex
@@ -282,16 +282,64 @@ Package: varwidth 2009/03/30 ver 0.92;  Variable-width minipages
 \@vwid@loff=\dimen132
 \@vwid@roff=\dimen133
 ))
-\c@proposition=\count113
+("C:\Program Files (x86)\MiKTeX 2.9\tex\latex\pdfpages\pdfpages.sty"
+Package: pdfpages 2015/08/16 v0.5c Insert pages of external PDF documents (AM)
+
+("C:\Program Files (x86)\MiKTeX 2.9\tex\latex\tools\calc.sty"
+Package: calc 2007/08/22 v4.3 Infix arithmetic (KKT,FJ)
+\calc@Acount=\count113
+\calc@Bcount=\count114
+\calc@Adimen=\dimen134
+\calc@Bdimen=\dimen135
+\calc@Askip=\skip54
+\calc@Bskip=\skip55
+LaTeX Info: Redefining \setlength on input line 76.
+LaTeX Info: Redefining \addtolength on input line 77.
+\calc@Ccount=\count115
+\calc@Cskip=\skip56
+)
+("C:\Program Files (x86)\MiKTeX 2.9\tex\latex\eso-pic\eso-pic.sty"
+Package: eso-pic 2015/07/21 v2.0g eso-pic (RN)
+
+("C:\Program Files (x86)\MiKTeX 2.9\tex\generic\oberdiek\atbegshi.sty"
+Package: atbegshi 2011/10/05 v1.16 At begin shipout hook (HO)
+
+("C:\Program Files (x86)\MiKTeX 2.9\tex\generic\oberdiek\ifpdf.sty"
+Package: ifpdf 2011/01/30 v2.3 Provides the ifpdf switch (HO)
+Package ifpdf Info: pdfTeX in PDF mode is detected.
+)))
+\AM@pagewidth=\dimen136
+\AM@pageheight=\dimen137
+
+("C:\Program Files (x86)\MiKTeX 2.9\tex\latex\pdfpages\pppdftex.def"
+File: pppdftex.def 2015/08/16 v0.5c Pdfpages driver for pdfTeX (AM)
+)
+("C:\Program Files (x86)\MiKTeX 2.9\tex\latex\oberdiek\pdflscape.sty"
+Package: pdflscape 2008/08/11 v0.10 Display of landscape pages in PDF (HO)
+
+("C:\Program Files (x86)\MiKTeX 2.9\tex\latex\graphics\lscape.sty"
+Package: lscape 2000/10/22 v3.01 Landscape Pages (DPC)
+)
+Package pdflscape Info: Auto-detected driver: pdftex on input line 80.
+
+("C:\Program Files (x86)\MiKTeX 2.9\tex\generic\ifxetex\ifxetex.sty"
+Package: ifxetex 2010/09/12 v0.6 Provides ifxetex conditional
+))
+\AM@pagebox=\box33
+\AM@toc@title=\toks30
+\c@AM@survey=\count116
+\AM@templatesizebox=\box34
+)
+\c@proposition=\count117
 
 ("C:\Program Files (x86)\MiKTeX 2.9\tex\latex\tools\thb.sty"
 File: thb.sty 1995/11/23 v2.2c Theorem extension package (FMi)
 )
-\c@Fact=\count114
-\c@Lem=\count115
-\c@Thm=\count116
-\c@Prf=\count117
-\c@Def=\count118
+\c@Fact=\count118
+\c@Lem=\count119
+\c@Thm=\count120
+\c@Prf=\count121
+\c@Def=\count122
 \@indexfile=\write3
 
 Writing index file thesis_main.idx
@@ -304,41 +352,76 @@ Writing index file thesis_main.idx
 (C:\Users\Nathan\Desktop\Proposal\conclusion.aux)
 (C:\Users\Nathan\Desktop\Proposal\append-a.aux)
 (C:\Users\Nathan\Desktop\Proposal\append-b.aux))
-LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 60.
-LaTeX Font Info:    ... okay on input line 60.
-LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 60.
-LaTeX Font Info:    ... okay on input line 60.
-LaTeX Font Info:    Checking defaults for OT1/cmr/m/n on input line 60.
-LaTeX Font Info:    ... okay on input line 60.
-LaTeX Font Info:    Checking defaults for OMS/cmsy/m/n on input line 60.
-LaTeX Font Info:    ... okay on input line 60.
-LaTeX Font Info:    Checking defaults for OMX/cmex/m/n on input line 60.
-LaTeX Font Info:    ... okay on input line 60.
-LaTeX Font Info:    Checking defaults for U/cmr/m/n on input line 60.
-LaTeX Font Info:    ... okay on input line 60.
+LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 61.
+LaTeX Font Info:    ... okay on input line 61.
+LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 61.
+LaTeX Font Info:    ... okay on input line 61.
+LaTeX Font Info:    Checking defaults for OT1/cmr/m/n on input line 61.
+LaTeX Font Info:    ... okay on input line 61.
+LaTeX Font Info:    Checking defaults for OMS/cmsy/m/n on input line 61.
+LaTeX Font Info:    ... okay on input line 61.
+LaTeX Font Info:    Checking defaults for OMX/cmex/m/n on input line 61.
+LaTeX Font Info:    ... okay on input line 61.
+LaTeX Font Info:    Checking defaults for U/cmr/m/n on input line 61.
+LaTeX Font Info:    ... okay on input line 61.
 
 ("C:\Program Files (x86)\MiKTeX 2.9\tex\context\base\supp-pdf.mkii"
 [Loading MPS to PDF converter (version 2006.09.02).]
-\scratchcounter=\count119
-\scratchdimen=\dimen134
-\scratchbox=\box33
-\nofMPsegments=\count120
-\nofMParguments=\count121
-\everyMPshowfont=\toks30
-\MPscratchCnt=\count122
-\MPscratchDim=\dimen135
-\MPnumerator=\count123
-\makeMPintoPDFobject=\count124
-\everyMPtoPDFconversion=\toks31
-) [1
+\scratchcounter=\count123
+\scratchdimen=\dimen138
+\scratchbox=\box35
+\nofMPsegments=\count124
+\nofMParguments=\count125
+\everyMPshowfont=\toks31
+\MPscratchCnt=\count126
+\MPscratchDim=\dimen139
+\MPnumerator=\count127
+\makeMPintoPDFobject=\count128
+\everyMPtoPDFconversion=\toks32
+)
+\AtBeginShipoutBox=\box36
+ <signed_front.pdf, id=1, 614.295pt x 794.97pt>
+File: signed_front.pdf Graphic file (type pdf)
+ <use signed_front.pdf>
+Package pdftex.def Info: signed_front.pdf used on input line 62.
+(pdftex.def)             Requested size: 614.29349pt x 794.96806pt.
+File: signed_front.pdf Graphic file (type pdf)
+
+<use signed_front.pdf>
+Package pdftex.def Info: signed_front.pdf used on input line 62.
+(pdftex.def)             Requested size: 614.29349pt x 794.96806pt.
+ <signed_front.pdf, id=4, page=1, 614.295pt x 794.97pt>
+File: signed_front.pdf Graphic file (type pdf)
+
+<use signed_front.pdf, page 1>
+Package pdftex.def Info: signed_front.pdf, page1 used on input line 62.
+(pdftex.def)             Requested size: 614.29349pt x 794.96806pt.
+File: signed_front.pdf Graphic file (type pdf)
+ <use signed_front.pdf, page 1>
+Package pdftex.def Info: signed_front.pdf, page1 used on input line 62.
+(pdftex.def)             Requested size: 614.58406pt x 795.3441pt.
+File: signed_front.pdf Graphic file (type pdf)
+
+<use signed_front.pdf, page 1>
+Package pdftex.def Info: signed_front.pdf, page1 used on input line 62.
+(pdftex.def)             Requested size: 614.58406pt x 795.3441pt.
+File: signed_front.pdf Graphic file (type pdf)
+ <use signed_front.pdf, page 1>
+Package pdftex.def Info: signed_front.pdf, page1 used on input line 62.
+(pdftex.def)             Requested size: 614.58406pt x 795.3441pt.
+File: signed_front.pdf Graphic file (type pdf)
+
+<use signed_front.pdf, page 1>
+Package pdftex.def Info: signed_front.pdf, page1 used on input line 62.
+(pdftex.def)             Requested size: 614.58406pt x 795.3441pt.
+ [1
+
+
+ <C:/Users/Nathan/Desktop/Proposal/signed_front.pdf>] (C:\Users\Nathan\Desktop\
+Proposal\abstract.tex) [1
 
 
 {C:/ProgramData/MiKTeX/2.9/pdftex/config/pdftex.map}]
-(C:\Users\Nathan\Desktop\Proposal\abstract.tex) [2
-
-
-
-]
 (C:\Users\Nathan\Desktop\Proposal\thesis_main.toc
 LaTeX Font Info:    Try loading font information for U+msa on input line 5.
 
@@ -354,20 +437,20 @@ LaTeX Font Info:    Try loading font information for U+lasy on input line 5.
 
 ("C:\Program Files (x86)\MiKTeX 2.9\tex\latex\base\ulasy.fd"
 File: ulasy.fd 1998/08/17 v2.2e LaTeX symbol font definitions
-) [3
+) [2
 
 
 ])
 \tf@toc=\write4
- [4]
+ [3]
 (C:\Users\Nathan\Desktop\Proposal\thesis_main.lof)
 \tf@lof=\write5
- [5
+ [4
 
 ]
 (C:\Users\Nathan\Desktop\Proposal\thesis_main.lot)
 \tf@lot=\write6
- [6
+ [5
 
 ]
 (C:\Users\Nathan\Desktop\Proposal\chapter1.tex
@@ -376,7 +459,7 @@ Chapter 1.
 
 
 
-] [2] [3] <mi_example_full.jpg, id=36, 520.19344pt x 259.7203pt>
+] [2] [3] <mi_example_full.jpg, id=50, 520.19344pt x 259.7203pt>
 File: mi_example_full.jpg Graphic file (type jpg)
 
 <use mi_example_full.jpg>
@@ -399,7 +482,7 @@ Chapter 2.
 
 
 
-] <jm_algo.jpg, id=83, 362.85562pt x 364.36125pt>
+] <jm_algo.jpg, id=97, 362.85562pt x 364.36125pt>
 File: jm_algo.jpg Graphic file (type jpg)
  <use jm_algo.jpg>
 Package pdftex.def Info: jm_algo.jpg used on input line 15.
@@ -416,7 +499,7 @@ Overfull \hbox (24.69052pt too wide) in paragraph at lines 34--36
 e case on the columns/covariates
  []
 
-[18] <fcs_algo.jpg, id=93, 365.11406pt x 261.97874pt>
+[18] <fcs_algo.jpg, id=107, 365.11406pt x 261.97874pt>
 File: fcs_algo.jpg Graphic file (type jpg)
  <use fcs_algo.jpg>
 Package pdftex.def Info: fcs_algo.jpg used on input line 43.
@@ -442,7 +525,7 @@ Missing character: There is no – in font cmr12!
  [34] [35]) [36]
 (C:\Users\Nathan\Desktop\Proposal\application.tex
 Chapter 3.
-<missingvalues_plot.png, id=152, 455.7025pt x 485.815pt>
+<missingvalues_plot.png, id=166, 455.7025pt x 485.815pt>
 File: missingvalues_plot.png Graphic file (type png)
 
 <use missingvalues_plot.png>
@@ -457,19 +540,19 @@ Package pdftex.def Info: missingvalues_plot.png used on input line 61.
 LaTeX Warning: `!h' float specifier changed to `!ht'.
 
 [38] [39] [40 <C:/Users/Nathan/Desktop/Proposal/missingvalues_plot.png>]
-[41] [42] [43] <traceplots1.png, id=177, 606.265pt x 440.64626pt>
+[41] [42] [43] <traceplots1.png, id=191, 606.265pt x 440.64626pt>
 File: traceplots1.png Graphic file (type png)
 
 <use traceplots1.png>
 Package pdftex.def Info: traceplots1.png used on input line 133.
 (pdftex.def)             Requested size: 346.89731pt x 252.13246pt.
- <traceplots2.png, id=178, 606.265pt x 440.64626pt>
+ <traceplots2.png, id=192, 606.265pt x 440.64626pt>
 File: traceplots2.png Graphic file (type png)
 
 <use traceplots2.png>
 Package pdftex.def Info: traceplots2.png used on input line 141.
 (pdftex.def)             Requested size: 346.89731pt x 252.13246pt.
- <cont_densplot.png, id=179, 477.785pt x 485.815pt>
+ <cont_densplot.png, id=193, 477.785pt x 485.815pt>
 File: cont_densplot.png Graphic file (type png)
 
 <use cont_densplot.png>
@@ -477,19 +560,19 @@ Package pdftex.def Info: cont_densplot.png used on input line 151.
 (pdftex.def)             Requested size: 260.17464pt x 264.54524pt.
  [44] [45 <C:/Users/Nathan/Desktop/Proposal/traceplots1.png> <C:/Users/Nathan/D
 esktop/Proposal/traceplots2.png>]
-<bw_timemet.png, id=188, 616.3025pt x 485.815pt>
+<bw_timemet.png, id=202, 616.3025pt x 485.815pt>
 File: bw_timemet.png Graphic file (type png)
  <use bw_timemet.png>
 Package pdftex.def Info: bw_timemet.png used on input line 162.
 (pdftex.def)             Requested size: 216.81pt x 170.9051pt.
 
-<bw_timedx.png, id=189, 616.3025pt x 485.815pt>
+<bw_timedx.png, id=203, 616.3025pt x 485.815pt>
 File: bw_timedx.png Graphic file (type png)
  <use bw_timedx.png>
 Package pdftex.def Info: bw_timedx.png used on input line 163.
 (pdftex.def)             Requested size: 216.81pt x 170.9051pt.
 
-<cape_lapat_ratio.png, id=190, 541.02126pt x 485.815pt>
+<cape_lapat_ratio.png, id=204, 541.02126pt x 485.815pt>
 File: cape_lapat_ratio.png Graphic file (type png)
 
 <use cape_lapat_ratio.png>
@@ -498,13 +581,13 @@ Package pdftex.def Info: cape_lapat_ratio.png used on input line 173.
  [46 <C:/Users/Nathan/Desktop/Proposal/cont_densplot.png>] [47 <C:/Users/Nathan
 /Desktop/Proposal/bw_timemet.png> <C:/Users/Nathan/Desktop/Proposal/bw_timedx.p
 ng> <C:/Users/Nathan/Desktop/Proposal/cape_lapat_ratio.png>] [48] <chemo_km.png
-, id=204, 448.67625pt x 485.815pt>
+, id=218, 448.67625pt x 485.815pt>
 File: chemo_km.png Graphic file (type png)
 
 <use chemo_km.png>
 Package pdftex.def Info: chemo_km.png used on input line 226.
 (pdftex.def)             Requested size: 346.89731pt x 375.62059pt.
- <her2_km.png, id=205, 448.67625pt x 485.815pt>
+ <her2_km.png, id=219, 448.67625pt x 485.815pt>
 File: her2_km.png Graphic file (type png)
 
 <use her2_km.png>
@@ -521,13 +604,13 @@ File: omlcmr.fd 1999/05/25 v2.5h Standard LaTeX font definitions
 LaTeX Font Info:    Font shape `OML/cmr/m/n' in size <12> not available
 (Font)              Font shape `OML/cmm/m/it' tried instead on input line 258.
  [52]
-<ac_schoenfeld.png, id=221, 600.74437pt x 532.99126pt>
+<ac_schoenfeld.png, id=235, 600.74437pt x 532.99126pt>
 File: ac_schoenfeld.png Graphic file (type png)
  <use ac_schoenfeld.png>
 Package pdftex.def Info: ac_schoenfeld.png used on input line 288.
 (pdftex.def)             Requested size: 346.89731pt x 307.78511pt.
 
-<mi_schoenfeld.png, id=222, 536.75531pt x 389.95688pt>
+<mi_schoenfeld.png, id=236, 536.75531pt x 389.95688pt>
 File: mi_schoenfeld.png Graphic file (type png)
  <use mi_schoenfeld.png>
 Package pdftex.def Info: mi_schoenfeld.png used on input line 295.
@@ -540,19 +623,19 @@ LaTeX Warning: `!h' float specifier changed to `!ht'.
 rs/Nathan/Desktop/Proposal/mi_schoenfeld.png>] [57] [58]
 Missing character: There is no … in font cmr12!
  [59] [60]
-<ps_histo1.png, id=250, 441.90094pt x 274.02374pt>
+<ps_histo1.png, id=264, 441.90094pt x 274.02374pt>
 File: ps_histo1.png Graphic file (type png)
  <use ps_histo1.png>
 Package pdftex.def Info: ps_histo1.png used on input line 409.
 (pdftex.def)             Requested size: 216.81pt x 134.44423pt.
 
-<ps_histo2.png, id=251, 439.6425pt x 271.76532pt>
+<ps_histo2.png, id=265, 439.6425pt x 271.76532pt>
 File: ps_histo2.png Graphic file (type png)
  <use ps_histo2.png>
 Package pdftex.def Info: ps_histo2.png used on input line 410.
 (pdftex.def)             Requested size: 216.81pt x 134.0204pt.
  [61 <C:/Users/Nathan/Desktop/Proposal/ps_histo1.png> <C:/Users/Nathan/Desktop/
-Proposal/ps_histo2.png>] <ps_bal_diag.png, id=258, 442.65375pt x 367.3725pt>
+Proposal/ps_histo2.png>] <ps_bal_diag.png, id=272, 442.65375pt x 367.3725pt>
 File: ps_bal_diag.png Graphic file (type png)
 
 <use ps_bal_diag.png>
@@ -631,32 +714,31 @@ Missing character: There is no ’ in font cmr12!
 (C:\Users\Nathan\Desktop\Proposal\append-a.aux)
 (C:\Users\Nathan\Desktop\Proposal\append-b.aux)) ) 
 Here is how much of TeX's memory you used:
- 4151 strings out of 493921
- 57409 string characters out of 3144873
- 160569 words of memory out of 3000000
- 7264 multiletter control sequences out of 15000+200000
- 12343 words of font info for 47 fonts, out of 3000000 for 9000
+ 4944 strings out of 493921
+ 70667 string characters out of 3144873
+ 176332 words of memory out of 3000000
+ 8024 multiletter control sequences out of 15000+200000
+ 11741 words of font info for 45 fonts, out of 3000000 for 9000
  841 hyphenation exceptions out of 8191
- 34i,15n,35p,2176b,299s stack positions out of 5000i,500n,10000p,200000b,50000s
+ 36i,18n,48p,2176b,519s stack positions out of 5000i,500n,10000p,200000b,50000s
 <C:/Program Files (x86)/MiKTe
 X 2.9/fonts/type1/public/amsfonts/cm/cmbx12.pfb><C:/Program Files (x86)/MiKTeX 
 2.9/fonts/type1/public/amsfonts/cm/cmbx8.pfb><C:/Program Files (x86)/MiKTeX 2.9
-/fonts/type1/public/amsfonts/cm/cmcsc10.pfb><C:/Program Files (x86)/MiKTeX 2.9/
-fonts/type1/public/amsfonts/cm/cmex10.pfb><C:/Program Files (x86)/MiKTeX 2.9/fo
-nts/type1/public/amsfonts/cm/cmmi12.pfb><C:/Program Files (x86)/MiKTeX 2.9/font
-s/type1/public/amsfonts/cm/cmmi6.pfb><C:/Program Files (x86)/MiKTeX 2.9/fonts/t
-ype1/public/amsfonts/cm/cmmi8.pfb><C:/Program Files (x86)/MiKTeX 2.9/fonts/type
-1/public/amsfonts/cm/cmr10.pfb><C:/Program Files (x86)/MiKTeX 2.9/fonts/type1/p
-ublic/amsfonts/cm/cmr12.pfb><C:/Program Files (x86)/MiKTeX 2.9/fonts/type1/publ
-ic/amsfonts/cm/cmr6.pfb><C:/Program Files (x86)/MiKTeX 2.9/fonts/type1/public/a
-msfonts/cm/cmr8.pfb><C:/Program Files (x86)/MiKTeX 2.9/fonts/type1/public/amsfo
-nts/cm/cmsy10.pfb><C:/Program Files (x86)/MiKTeX 2.9/fonts/type1/public/amsfont
-s/cm/cmsy6.pfb><C:/Program Files (x86)/MiKTeX 2.9/fonts/type1/public/amsfonts/c
-m/cmsy8.pfb><C:/Program Files (x86)/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/c
-mti12.pfb>
-Output written on thesis_main.pdf (85 pages, 846767 bytes).
+/fonts/type1/public/amsfonts/cm/cmex10.pfb><C:/Program Files (x86)/MiKTeX 2.9/f
+onts/type1/public/amsfonts/cm/cmmi12.pfb><C:/Program Files (x86)/MiKTeX 2.9/fon
+ts/type1/public/amsfonts/cm/cmmi6.pfb><C:/Program Files (x86)/MiKTeX 2.9/fonts/
+type1/public/amsfonts/cm/cmmi8.pfb><C:/Program Files (x86)/MiKTeX 2.9/fonts/typ
+e1/public/amsfonts/cm/cmr10.pfb><C:/Program Files (x86)/MiKTeX 2.9/fonts/type1/
+public/amsfonts/cm/cmr12.pfb><C:/Program Files (x86)/MiKTeX 2.9/fonts/type1/pub
+lic/amsfonts/cm/cmr6.pfb><C:/Program Files (x86)/MiKTeX 2.9/fonts/type1/public/
+amsfonts/cm/cmr8.pfb><C:/Program Files (x86)/MiKTeX 2.9/fonts/type1/public/amsf
+onts/cm/cmsy10.pfb><C:/Program Files (x86)/MiKTeX 2.9/fonts/type1/public/amsfon
+ts/cm/cmsy6.pfb><C:/Program Files (x86)/MiKTeX 2.9/fonts/type1/public/amsfonts/
+cm/cmsy8.pfb><C:/Program Files (x86)/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/
+cmti12.pfb>
+Output written on thesis_main.pdf (85 pages, 863370 bytes).
 PDF statistics:
- 367 PDF objects out of 1000 (max. 8388607)
+ 378 PDF objects out of 1000 (max. 8388607)
  0 named destinations out of 1000 (max. 500000)
- 86 words of extra memory for PDF output out of 10000 (max. 10000000)
+ 106 words of extra memory for PDF output out of 10000 (max. 10000000)
 
