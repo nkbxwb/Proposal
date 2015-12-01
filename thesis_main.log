@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.1415926-2.5-1.40.14 (MiKTeX 2.9) (preloaded format=pdflatex 2015.8.23)  1 DEC 2015 10:19
+This is pdfTeX, Version 3.1415926-2.5-1.40.14 (MiKTeX 2.9) (preloaded format=pdflatex 2015.8.23)  1 DEC 2015 11:19
 entering extended mode
 **thesis_main.tex
 (C:\Users\Nathan\Desktop\Proposal\thesis_main.tex
@@ -517,9 +517,9 @@ Missing character: There is no “ in font cmr12!
 Missing character: There is no ” in font cmr12!
 Missing character: There is no “ in font cmr12!
 Missing character: There is no ” in font cmr12!
- [25] [26] [27] [28] [29] [30] [31] [32] [33]
+ [25] [26] [27] [28] [29] [30] [31] [32] [33] [34]
 Missing character: There is no – in font cmr12!
- [34] [35]) [36]
+ [35]) [36]
 (C:\Users\Nathan\Desktop\Proposal\application.tex
 Chapter 3.
 <missingvalues_plot.png, id=166, 455.7025pt x 485.815pt>
@@ -707,7 +707,7 @@ Here is how much of TeX's memory you used:
  8024 multiletter control sequences out of 15000+200000
  11741 words of font info for 45 fonts, out of 3000000 for 9000
  841 hyphenation exceptions out of 8191
- 36i,18n,48p,2176b,519s stack positions out of 5000i,500n,10000p,200000b,50000s
+ 36i,18n,48p,2142b,519s stack positions out of 5000i,500n,10000p,200000b,50000s
 <C:/Program Files (x86)/MiKTe
 X 2.9/fonts/type1/public/amsfonts/cm/cmbx12.pfb><C:/Program Files (x86)/MiKTeX 
 2.9/fonts/type1/public/amsfonts/cm/cmbx8.pfb><C:/Program Files (x86)/MiKTeX 2.9
@@ -723,7 +723,7 @@ onts/cm/cmsy10.pfb><C:/Program Files (x86)/MiKTeX 2.9/fonts/type1/public/amsfon
 ts/cm/cmsy6.pfb><C:/Program Files (x86)/MiKTeX 2.9/fonts/type1/public/amsfonts/
 cm/cmsy8.pfb><C:/Program Files (x86)/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/
 cmti12.pfb>
-Output written on thesis_main.pdf (85 pages, 863463 bytes).
+Output written on thesis_main.pdf (85 pages, 863450 bytes).
 PDF statistics:
  378 PDF objects out of 1000 (max. 8388607)
  0 named destinations out of 1000 (max. 500000)
