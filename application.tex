@@ -439,9 +439,9 @@ This figure shows how the balance is achieved for two different MI datasets. The
 \end{figure}
 
 
-Once propensity score validity is checked, the weights are put into the Cox model for each MI dataset. We cannot be sure that our propensity scores are the truth (this is a known drawback of propensity score analysis), but we can be more confident that it is right by also including the pretreatment covariates as adjustments to the Cox model (along with weighting). This is known as being doubly robust estimator \cite{Lunceford2004}.
+Once propensity score validity is checked, the weights are put into the Cox model for each MI dataset. We cannot be sure that our propensity scores are the truth (this is a known drawback of propensity score analysis), but we can be more confident that it is right by also including the pretreatment covariates as adjustments to the Cox model (along with weighting). This is known as being doubly robust estimator \cite{Lunceford2004}, or adjusting for the confounders.
 
-The results for the propensity score weighted and doubly robust methods can be seen in tables \ref{tab:chemoonly}, \ref{chemorobust}, \ref{tab:lapatonly}, and \ref{lapatfull}. As it can be seen, when only accounting for the treatment effect alone, the estimate is quite unstable, but as we add in the other pretreatment covariates (many of which were actually in the original Cox model in the survival section), the results become more stable. The results are similar in trend to those obtained in the survival section. However, the interpretation is different. These results should be read as if the treatments were administered in a setting where the groups were similar at baseline (i.e. like an RCT). When removing all confounding factors, there seems to be a significant difference between Capecitabine and other chemotherapeutic drugs, but there seems to be no difference between Lapatinib and Trastuzumab in HER2+ patients. All drugs are, however, better than not taking any at all.
+The results for the unadjusted propensity score weighted and doubly robust adjusted methods can be seen in tables \ref{tab:chemoonly}, \ref{chemorobust}, \ref{tab:lapatonly}, and \ref{lapatfull}. As it can be seen, when only accounting for the treatment effect alone, the estimate is quite unstable, but as we add in the other pretreatment covariates (many of which were actually in the original Cox model in the survival section), the results become more stable. The results are similar in trend to those obtained in the survival section. However, the interpretation is different. These results should be read as if the treatments were administered in a setting where the groups were similar at baseline (i.e. like an RCT). When removing all confounding factors, there seems to be a significant difference between Capecitabine and other chemotherapeutic drugs, but there seems to be no difference between Lapatinib and Trastuzumab in HER2+ patients. All drugs are, however, better than not taking any at all.
 
 %%%%
  
@@ -456,7 +456,7 @@ Cape. vs none  & 0.396        & (0.325,0.482)       &  & 0.655     & (0.481,0.89
 Other vs none  & 0.336        & (0.287,0.394)       &  & 0.567     & (0.46,0.754)     &  & 0.413        & (0.354,0.481        &  & 0.593          & (0.470,0.748)           \\ \hline
 Cape. vs other & 1.179        & (0.983,1.416)       &  & 1.156     & (0.966,1.383)    &  & 1.173        & (0.981,1.402)       &  & 1.183          & (0.998,1.404)           \\ \hline
 \end{tabular}}
-\caption{Chemotherapeutic ATE with IPTW, AC and MI}
+\caption{Unadjusted Chemotherapeutic ATE with IPTW, AC and MI}
 \label{tab:chemoonly}
 \end{table}
 
@@ -471,7 +471,7 @@ Cape. vs none  & 0.687        & (0.530,0.891)       &  & 0.603     & (0.443,0.82
 Other vs none  & 0.521        & (0.416,0.653)       &  & 0.452     & (0.340,0.602)    &  & 0.579        & (0.474,0.707)       &  & 0.532     & (0.416,0.681)    \\ \hline
 Cape. vs other & 1.318        & (1.078,1.612)       &  & 1.334     & (1.109,1.604)    &  & 1.300        & (1.076,1.570)       &  & 1.317     & (1.100,1.579)    \\ \hline
 \end{tabular}}
-\caption{Chemotherapeuic ATE, doubly robust IPTW estimate, AC and MI}
+\caption{Chemotherapeutic ATE, doubly robust adjusted IPTW estimate, AC and MI}
 \label{chemorobust}
 \end{table}
 
@@ -486,7 +486,7 @@ Lapat. vs none     & 0.467                      & (0.355,0.616)                 
 Trastuz. vs none   & 0.488                      & (0.398,0.597)                      &                       & 0.566                      & (0.421,0.759)                      &                       & 0.506                      & (0.417,0.614)                     &                       & 0.480                      & (0.313,0.735)                      \\ \hline
 Lapat. vs Trastuz. & \multicolumn{1}{l|}{0.958} & \multicolumn{1}{l|}{(0.693,1.324)} & \multicolumn{1}{l|}{} & \multicolumn{1}{l|}{1.009} & \multicolumn{1}{l|}{(0.680,1.496)} & \multicolumn{1}{l|}{} & \multicolumn{1}{l|}{0.927} & \multicolumn{1}{l|}{(0.673,1.28)} & \multicolumn{1}{l|}{} & \multicolumn{1}{l|}{1.011} & \multicolumn{1}{l|}{(0.763,1.338)} \\ \hline
 \end{tabular}}
-\caption{HER2-directed ATE with IPTW, AC and MI}
+\caption{Unadjusted HER2-directed ATE with IPTW, AC and MI}
 \label{tab:lapatonly}
 \end{table}
 
@@ -501,7 +501,7 @@ Lapat. vs none     & 0.468       & (0.316,0.692)        &  & 0.514     & (0.331,
 Trastuz. vs none   & 0.447       & (0.328,0.6089)       &  & 0.456     & (0.328,0.632)    &  & 0.511        & (0.381,0.685)       &  & 0.388      & (0.249,0.602)      \\ \hline
 Lapat. vs Trastuz. & 1.048       & (0.704,1.560)        &  & 1.128     & (0.726,1.754)    &  & 1.026        & (0.713,1.477)       &  & 1.057      & (0.788,1.417)      \\ \hline
 \end{tabular}}
-\caption{HER2-directed ATE, doubly robust IPTW estimate, AC and MI}
+\caption{HER2-directed ATE, doubly robust adjusted IPTW estimate, AC and MI}
 \label{lapatfull}
 \end{table}
 \end{center}

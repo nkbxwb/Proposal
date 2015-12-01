@@ -9,10 +9,10 @@
 \contentsline {table}{\numberline {3.6}{\ignorespaces AC and MI baseline Cox model}}{55}
 \contentsline {table}{\numberline {3.7}{\ignorespaces AC and MI Cox model with chemotherapeutic treatments}}{57}
 \contentsline {table}{\numberline {3.8}{\ignorespaces AC and MI Cox model with HER2-directed treatment, on HER2+ subjects}}{58}
-\contentsline {table}{\numberline {3.9}{\ignorespaces Chemotherapeutic ATE with IPTW, AC and MI}}{63}
-\contentsline {table}{\numberline {3.10}{\ignorespaces Chemotherapeuic ATE, doubly robust IPTW estimate, AC and MI}}{64}
-\contentsline {table}{\numberline {3.11}{\ignorespaces HER2-directed ATE with IPTW, AC and MI}}{64}
-\contentsline {table}{\numberline {3.12}{\ignorespaces HER2-directed ATE, doubly robust IPTW estimate, AC and MI}}{64}
+\contentsline {table}{\numberline {3.9}{\ignorespaces Unadjusted Chemotherapeutic ATE with IPTW, AC and MI}}{63}
+\contentsline {table}{\numberline {3.10}{\ignorespaces Chemotherapeutic ATE, doubly robust adjusted IPTW estimate, AC and MI}}{64}
+\contentsline {table}{\numberline {3.11}{\ignorespaces Unadjusted HER2-directed ATE with IPTW, AC and MI}}{64}
+\contentsline {table}{\numberline {3.12}{\ignorespaces HER2-directed ATE, doubly robust adjusted IPTW estimate, AC and MI}}{64}
 \addvspace {\baselineskip }
 \addvspace {\baselineskip }
 \addvspace {\baselineskip }

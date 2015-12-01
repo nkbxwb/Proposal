@@ -24,7 +24,7 @@ The next wave of statisticians in the early $20^{th}$ century wanted to improve 
 Multiple imputation (MI) began in the 1970's, but it wasn't until 1987 when Donald Rubin formalized multiple imputation methodology in his seminal book \emph{Multiple Imputation for Nonresponse in Surveys} did it start to gain acceptance \cite{Rubin1987}. The central idea is to frame the problem in a Bayesian framework, and produce $m\geq 2$ values to substitute in for each missing value, drawing these values from the missing covariates posterior distribution. Using these $m$ substitute values, we can think of the data now as being $m$ datasets, each dataset containing the observed data, and one value for each piece of missing data. 
 
 
-An example will make the MI process clear. Suppose that we had a dataset of age, weight, and height. We want to regress age on weight but we have missingness in weight and height. First, we will impute our data (figure \ref{fig:miexample}, the first two columns). Once we have a sufficient number of datasets (we will talk about how to pick the number later), we can run the regression analysis on each of the MI datasets, treating the dataset as if it was complete (horizontal lines and third column). After running the model on the $m$ datasets, we can pool the results to get one single estimate with its associated variance (last column).  We will speak of the exact details of the MI process in detail in the second chapter.
+An example will make the MI process clear. Suppose that we had a dataset of age, weight, and height. We want to do a linear regression of weight on age but we have missingness in weight and height. First, we will impute our data (figure \ref{fig:miexample}, the first two columns). Once we have a sufficient number of datasets (we will talk about how to pick the number later), we can run the regression analysis on each of the MI datasets, treating the dataset as if it was complete (horizontal lines and third column). After running the model on the $m$ datasets, we can pool the results to get one single estimate with its associated variance (last column).  We will speak of the exact details of the MI process in detail in the second chapter.
 \begin{figure}[!ht]
   \centering
     \includegraphics[width=0.85\textwidth]{mi_example_full.jpg}
@@ -32,7 +32,7 @@ An example will make the MI process clear. Suppose that we had a dataset of age,
 \label{fig:miexample}
 \medskip
 \small
-In the original data, missingness is displayed by \textcolor{red}{?'s} and the imputed data is shown in the multiply imputed data as \textcolor{green}{\#'s}. We then regress age on weight, get the results from the individual datasets, and then pool them together.
+In the original data, missingness is displayed by \textcolor{red}{?'s} and the imputed data is shown in the multiply imputed data as \textcolor{green}{\#'s}. We then regress weight on age in each MI dataset, get the results from each, and then pool them together.
 \end{figure}
 
 

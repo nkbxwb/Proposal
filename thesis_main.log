@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.1415926-2.5-1.40.14 (MiKTeX 2.9) (preloaded format=pdflatex 2015.8.23)  1 DEC 2015 13:17
+This is pdfTeX, Version 3.1415926-2.5-1.40.14 (MiKTeX 2.9) (preloaded format=pdflatex 2015.8.23)  1 DEC 2015 13:58
 entering extended mode
 **thesis_main.tex
 (C:\Users\Nathan\Desktop\Proposal\thesis_main.tex
@@ -459,12 +459,12 @@ Chapter 1.
 
 
 
-] [2] [3] <mi_example_full.jpg, id=50, 520.19344pt x 259.7203pt>
+] [2] [3] <mi_example_full.jpg, id=50, 524.71031pt x 295.85532pt>
 File: mi_example_full.jpg Graphic file (type jpg)
 
 <use mi_example_full.jpg>
 Package pdftex.def Info: mi_example_full.jpg used on input line 30.
-(pdftex.def)             Requested size: 368.57964pt x 184.02225pt.
+(pdftex.def)             Requested size: 368.57964pt x 207.82863pt.
  [4] [5 <C:/Users/Nathan/Desktop/Proposal/mi_example_full.jpg>] [6]
 Missing character: There is no – in font cmr8!
  [7]
@@ -664,7 +664,7 @@ Chapter 4.
 
 
 
-] [66] [67] [68]) [69] (C:\Users\Nathan\Desktop\Proposal\conclusion.tex
+] [66] [67]) [68] [69] (C:\Users\Nathan\Desktop\Proposal\conclusion.tex
 Chapter 5.
 ) [70
 
@@ -682,15 +682,25 @@ LaTeX Font Info:    Font shape `OMS/cmr/m/n' in size <12> not available
 
 
 
-] [72])
-[73] (C:\Users\Nathan\Desktop\Proposal\append-b.tex [74
+] [72]
+<md_mechanism.png, id=308, 757.83125pt x 456.70625pt>
+File: md_mechanism.png Graphic file (type png)
+ <use md_mechanism.png>
+Package pdftex.def Info: md_mechanism.png used on input line 42.
+(pdftex.def)             Requested size: 411.93767pt x 248.25536pt.
 
 
-]) [75]
-(C:\Users\Nathan\Desktop\Proposal\thesis_main.bbl [76
+LaTeX Warning: `!h' float specifier changed to `!ht'.
+
+) [73] [74 <C:/Users/Nathan/Desktop/Proposal/md_mechanism.png>]
+(C:\Users\Nathan\Desktop\Proposal\append-b.tex [75
 
 
-] [77] [78]) [79]
+]) [76]
+(C:\Users\Nathan\Desktop\Proposal\thesis_main.bbl [77
+
+
+] [78] [79]) [80]
 (C:\Users\Nathan\Desktop\Proposal\thesis_main.aux
 (C:\Users\Nathan\Desktop\Proposal\abstract.aux)
 (C:\Users\Nathan\Desktop\Proposal\chapter1.aux)
@@ -701,10 +711,10 @@ LaTeX Font Info:    Font shape `OMS/cmr/m/n' in size <12> not available
 (C:\Users\Nathan\Desktop\Proposal\append-a.aux)
 (C:\Users\Nathan\Desktop\Proposal\append-b.aux)) ) 
 Here is how much of TeX's memory you used:
- 4945 strings out of 493921
- 70683 string characters out of 3144873
- 173336 words of memory out of 3000000
- 8025 multiletter control sequences out of 15000+200000
+ 4951 strings out of 493921
+ 70793 string characters out of 3144873
+ 173347 words of memory out of 3000000
+ 8030 multiletter control sequences out of 15000+200000
  11741 words of font info for 45 fonts, out of 3000000 for 9000
  841 hyphenation exceptions out of 8191
  36i,18n,48p,2142b,519s stack positions out of 5000i,500n,10000p,200000b,50000s
@@ -723,9 +733,9 @@ onts/cm/cmsy10.pfb><C:/Program Files (x86)/MiKTeX 2.9/fonts/type1/public/amsfon
 ts/cm/cmsy6.pfb><C:/Program Files (x86)/MiKTeX 2.9/fonts/type1/public/amsfonts/
 cm/cmsy8.pfb><C:/Program Files (x86)/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/
 cmti12.pfb>
-Output written on thesis_main.pdf (85 pages, 917156 bytes).
+Output written on thesis_main.pdf (86 pages, 924933 bytes).
 PDF statistics:
- 378 PDF objects out of 1000 (max. 8388607)
+ 383 PDF objects out of 1000 (max. 8388607)
  0 named destinations out of 1000 (max. 500000)
- 106 words of extra memory for PDF output out of 10000 (max. 10000000)
+ 111 words of extra memory for PDF output out of 10000 (max. 10000000)
 

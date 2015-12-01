@@ -34,4 +34,16 @@ Now, we may discuss the three main types of missing data mechanisms. I will give
 \item MNAR: Missing not at random: $p(R=0|Y_{obs},Y_{mis},\psi)$ does not simplify, and the missingness depends on data that we have as well as have not collected (i.e the value of the missing data causes it to be missing). For example if the blood testing machine breaks and will not give the level when the protein level is either too high or too low.
 \end{itemize}
 
+A visualization of the missing data mechanisms may help in understanding the missing data mechanisms. In figure \ref{fig:miviz}, an example of each type of missing data mechanism is shown
+
+
+\begin{figure}[h!]
+  \centering
+    \includegraphics[width=0.95\textwidth]{md_mechanism}
+  \caption{Visualization of Missing Data Mechanisms}
+\medskip
+Red dots indicate missing values, and black dots denote observed values. In each plot, the X axis is a covariate with missingness, and the Y axis is a fully observed covariate.
+\label{fig:miviz}
+\end{figure}
+
 
