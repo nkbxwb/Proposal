@@ -2,15 +2,15 @@
 \addvspace {\baselineskip }
 \addvspace {\baselineskip }
 \contentsline {table}{\numberline {3.1}{\ignorespaces Data categories and examples}}{38}
-\contentsline {table}{\numberline {3.2}{\ignorespaces Table of important covariates to be used in the analysis}}{39}
+\contentsline {table}{\numberline {3.2}{\ignorespaces Table of important covariates to be used in the analysis}}{38}
 \contentsline {table}{\numberline {3.3}{\ignorespaces Characteristics of AC data versus MI data}}{48}
 \contentsline {table}{\numberline {3.4}{\ignorespaces Chemotherapeutic drugs log rank tests}}{52}
 \contentsline {table}{\numberline {3.5}{\ignorespaces HER2-directed drugs log rank tests}}{52}
 \contentsline {table}{\numberline {3.6}{\ignorespaces AC and MI baseline Cox model}}{55}
-\contentsline {table}{\numberline {3.7}{\ignorespaces AC and MI Cox model with chemotherapeutic treatments}}{57}
-\contentsline {table}{\numberline {3.8}{\ignorespaces AC and MI Cox model with HER2-directed treatment, on HER2+ subjects}}{58}
+\contentsline {table}{\numberline {3.7}{\ignorespaces AC and MI Cox model with chemotherapeutic treatments}}{56}
+\contentsline {table}{\numberline {3.8}{\ignorespaces AC and MI Cox model with HER2-directed treatment, on HER2+ subjects}}{57}
 \contentsline {table}{\numberline {3.9}{\ignorespaces Unadjusted Chemotherapeutic ATE with IPTW, AC and MI}}{63}
-\contentsline {table}{\numberline {3.10}{\ignorespaces Chemotherapeutic ATE, doubly robust adjusted IPTW estimate, AC and MI}}{64}
+\contentsline {table}{\numberline {3.10}{\ignorespaces Chemotherapeutic ATE, doubly robust adjusted IPTW estimate, AC and MI}}{63}
 \contentsline {table}{\numberline {3.11}{\ignorespaces Unadjusted HER2-directed ATE with IPTW, AC and MI}}{64}
 \contentsline {table}{\numberline {3.12}{\ignorespaces HER2-directed ATE, doubly robust adjusted IPTW estimate, AC and MI}}{64}
 \addvspace {\baselineskip }

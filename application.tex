@@ -8,18 +8,21 @@ Now that the theory is in place, we can apply it to real data. The dataset that 
 
 The dataset consists of 111 covariates, with missingness ranging from 0 to 99\%. Some predictors are metadata, and rare tests, so they will not be considered. Ignoring these, the missingness in the useful data ranges from 0 to 65\%. Included in these are 90 different covariates, a few different treatments, as well as survival endpoints (which are all observed). The data can be broken down into a few broad categories, as can be seen in table \ref{table:cats}. There are too many covariates to completely explain here, but I've listed the ones relevant to our models in table \ref{table:importantvars}.
 
-\begin{table}[ !ht]
+\begin{table}[!ht]
 \centering
+\adjustbox{max height=\dimexpr\textheight-5.5cm\relax,
+           max width=\textwidth}{
 \begin{tabular}{|c|c|}
 \hline
-Type                                                                            & Example                                                                       \\ \hline
-Subject data                                                                    & Age range, race, date of birth                                                \\ \hline
-Breast Cancer data                                                                     & TNM staging, histology, receptor status                                            \\ \hline
-\begin{tabular}[c]{@{}c@{}}Pre brain mets\\ data\end{tabular}                   & Treatment types                                                               \\ \hline
-\begin{tabular}[c]{@{}c@{}}Post brain mets\\ clinical observations\end{tabular} & Seizures, headache, nausea                                                    \\ \hline
-\begin{tabular}[c]{@{}c@{}}Post brain mets\\ data\end{tabular}                  & Treatment type, type of brain mets						 \\ \hline
+Type of Data                                                                           & Examples                                                                       \\ \hline
+Subject                                                                    & Age range, race, date of birth                                                \\ \hline
+Breast Cancer                                                                     & TNM staging, histology, receptor status                                            \\ \hline
+Pre brain mets                   & Treatment types                                                               \\ \hline
+Post brain mets clinical & Seizures, headache, nausea                                                    \\ \hline
+Post brain mets                  & Treatment type, type of brain mets						 \\ \hline
 Survival data                                                                   & Survival time after brain mets, censoring indicator                           \\ \hline
 \end{tabular}
+}
 \caption{Data categories and examples}
 \label{table:cats}
 \end{table}
@@ -146,7 +149,7 @@ Since there are 90 plots to check, they cannot all be shown in this paper. Howev
 
 Once the convergence is diagnosed, the validity of the imputations needs to be inspected.  Diagnostic plots and tables are viewed to ensure that the imputed data are realistic. Common plots include density plots of each covariate compared to the complete cases, as well as bivariate scatterplots for imputed variables. For categorical variables, tables and other group checks may be used. A few of the plots have been replicated here in figures \ref{fig:contdensplot}, \ref{fig:contbwplots}, \ref{fig:clhisto}. Once again, all of the plots cannot be displayed in this paper, but some important ones are recreated. As we can see, not all of the imputed data looks like the real data, but for the majority of the plots, the imputed data seem reasonable and look like they could have been real data had they not been missing. 
 %%%%%%%%%%
-\begin{figure}[!htbp]
+\begin{figure}[!ht]
   \centering
     \includegraphics[width=0.6\textwidth]{cont_densplot.png}
   \caption{Selected density plots of continuous imputed variables}
@@ -298,7 +301,7 @@ We need to make sure that the proportional hazards assumption is met in the avai
   \caption{AC Schoenfeld residuals over time}
 \label{fig:ac_schoenfeld}
 \end{figure}
-Now, to check if we have proportional hazards in the MI data, there are two options. The first is to fit a Cox model on the stacked data, but this will not give us accurate confidence bands. A better option is to look at the Schoenfeld residuals plot for each MI dataset individually. However this may be tedius. We can get the same result if we collect the spline fits from each MI dataset, and then superimpose them onto one plot, and assess the shape. This is what is done for the MI data, as can be seen in figure \ref{fig:mi_schoenfeld}. The shapes are very similar to the available cases, so it is reasonable to assume that the proportional hazards assumption holds on the MI data.
+Now, to check if we have proportional hazards in the MI data, there are two options. The first is to fit a Cox model on the stacked data, but this will not give us accurate confidence bands. A better option is to look at the Schoenfeld residuals plot for each MI dataset individually. However this may be tedious. We can get the same result if we collect the spline fits from each MI dataset, and then superimpose them onto one plot, and assess the shape. This is what is done for the MI data, as can be seen in figure \ref{fig:mi_schoenfeld}. The shapes are very similar to the available cases, so it is reasonable to assume that the proportional hazards assumption holds on the MI data.
 \begin{figure}[!h]
   \centering
     \includegraphics[width=0.8\textwidth]{mi_schoenfeld.png}
@@ -312,7 +315,7 @@ Now that the proportional hazards assumption is met, we can run the Cox model to
 
 
 
-\begin{table}[!htbp]
+\begin{table}[!ht]
 \centering
 \adjustbox{max height=\dimexpr\textheight-5.5cm\relax,
            max width=\textwidth}{
@@ -341,7 +344,7 @@ Sys. Cont.                                             & Yes vs. No             
 
 We may then add in our treatment variable to see how they affect the hazard ratio, and see how they change other factors. Adding chemotherapy can be seen in figure \ref{fig:acmichemo}, and for the HER2 positive patients, the HER2-directed drugs can be seen in figure \ref{fig:acmiher2}.
 
-The analysis for the chemotherapeutic in the MI setting is easy, since it applies to all subjects, but the model for the HER2-directed drugs is more difficult, since it is only for patients who are HER2 positive. Both HER2 status and the treatment were imputed. Because of this, special care needed to be taken when the data was subsetted in each MI dataset. There was some variation between the sample size in  each analysis (ranging from 391 to 415), but this was to be expected.
+The analysis for the chemotherapeutic in the MI setting is easy, since it applies to all subjects, but the model for the HER2-directed drugs is more difficult, since it is only for patients who are HER2 positive. Both HER2 status and the treatment were imputed. Because of this, special care needed to be taken when the data was subsetted in each MI dataset. There was some variation between the sample size in each analysis (ranging from 391 to 415), but this was to be expected.
 
 As it has been posited before, the use of chemotherapeutic and HER2-directed drugs seem to greatly reduce the hazard ratio of death in comparison with not taking any treatment. The effect of other covariates in the presence of these drugs seems to change though.
 \begin{table}[!ht]
@@ -412,7 +415,7 @@ In order to observe the results from a causal lens, we need to determine what ty
 
 The idea for this part of the analysis is to use propensity score weighting to create a balanced sample for each MI dataset where the baseline covariates are not confounded with treatment assignment or result, and then treat it as if it was an RCT. Traditional methods to obtain the propensity score (like logistic regression) cannot be optimized for balance, however machine learning algorithms can be. The method chosen to fit the propensity scores are called Generalized Boosting Models (GBM).  In this ensemble method, ``…the model consists of many simple regression trees iteratively combined to create an overall piecewise constant function. The iterative fitting algorithm begins with a single simple regression tree, and at each new iteration, another tree is added. The new tree is chosen to provide the best fit to the residuals of the model from the previous iteration'' \cite{McCaffrey2013}. After each iteration in the GBM algorithm, the IPTW's are applied to the data, and the balance of the covariates (according to the KS statistic) is measured. Standardized bias is more of a measure of central tendency of the groups, whereas the KS statistic is more about the distribution as the whole. Because of this, we will want to optimize on the KS statistic, although both measures should appear balanced after weighting. Once the GBM algorithm is run, the iteration that minimizes the KS statistic and maximizes its p-value for each variable while not overfitting the data is selected. We then take the propensity scores at that iteration as the propensity scores for that specific MI dataset.
 
-In traditional propensity score analysis, there is only one treatment and control. However in our situation, there are actually three groups in each analysis. So we can no longer use methods tailored to two classes. We could fit a multinomial model (that gives probability for three treatment classifications), but the theory behind this is not as strong and easy to understand as with the binary case.  However, if we make treatment status an indicator (for example 1 if treatment is Capecitabine, and 0 if it is other or none), then we may treat it as if it were binary. Because we have three groups though, we will need to check the balance between all groups (i.e groups Capecitabine vs other, Capecitabine vs none, other vs none) to ensure balance is achieved. Since we are summing three probabilities that are not from the same model, we cannot be guaranteed that the probabilities will sum to unity. This is not an issue though, because our primary interest lies in making sure the groups are balanced, not in the sums of the probabilities \cite{McCaffrey2013}. 
+In traditional propensity score analysis, there is only one treatment and control. However in our situation, there are actually three groups in each analysis. So we can no longer use methods tailored to two classes. We could fit a multinomial model (that gives probability for three treatment classifications), but the theory behind this is not as strong and easy to understand as with the binary case.  However, if we make treatment status an indicator (for example 1 if treatment is Capecitabine, and 0 if it is other or none), then we may treat it as if it were binary. Because we have three groups though, we will need to check the balance between all groups (i.e. groups Capecitabine vs other, Capecitabine vs none, other vs none) to ensure balance is achieved. Since we are summing three probabilities that are not from the same model, we cannot be guaranteed that the probabilities will sum to unity. This is not an issue though, because our primary interest lies in making sure the groups are balanced, not in the sums of the probabilities \cite{McCaffrey2013}. 
 
 We now have the propensity score model selected, and a plan about how to check the balance, but now we need to ask what pretreatment covariates should we control for. In speaking with Dr. Hess, we determined that there are many pretreatment differences in the population that should be controlled for. So even though we wanted to keep the propensity score model parsimonious, we were not able to. The covariates we deemed to be important to balance before treatment include: breast cancer stage at first diagnosis, race, type of breast cancer, breast cancer surgery type, first metastatic site, number of prior treatments, ECOG score, localized brain mets treatment, type of brain met, age at brain mets, and control of brain mets at diagnosis.
 
@@ -428,7 +431,7 @@ Once the propensity scores have been computed for each MI dataset, we need to ch
 The next check is the check of no unmeasured confounders. This is impossible to assert, but should be reasonable if we include any and all factors we believe to be confounding. It can be checked through plots and tables that assess balance. To check for balance, we can check how the KS statistic and standardized bias change after weighting. Two plots are selected, as can be seen in figure \ref{fig:psbal}. This plot shows that after weighting, the standardized bias decreases for nearly every variable to an acceptable level (below about .2 or .25 is considered balanced in the literature). As well, it shows that the KS p-values are increasing, indicating that there is no difference between the distributions of the pretreatment covariates after weighting.
 
 
-\begin{figure}[!htbp]
+\begin{figure}[!ht]
 \centering
 \includegraphics[width=.8\textwidth]{ps_bal_diag}
   \caption{Selected propensity score balance checks}

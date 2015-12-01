@@ -4,7 +4,7 @@
 \contentsline {figure}{\numberline {2.1}{\ignorespaces Normal JM imputation pseudocode}}{17}
 \contentsline {figure}{\numberline {2.2}{\ignorespaces MICE FCS imputation pseudocode}}{20}
 \addvspace {\baselineskip }
-\contentsline {figure}{\numberline {3.1}{\ignorespaces Visualization of missingness in the cancer dataset}}{40}
+\contentsline {figure}{\numberline {3.1}{\ignorespaces Visualization of missingness in the cancer dataset}}{39}
 \contentsline {figure}{\numberline {3.2}{\ignorespaces Selected convergence plots of continuous variables}}{45}
 \contentsline {figure}{\numberline {3.3}{\ignorespaces Selected convergence plots of binary variables}}{45}
 \contentsline {figure}{\numberline {3.4}{\ignorespaces Selected density plots of continuous imputed variables}}{46}

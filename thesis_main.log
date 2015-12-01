@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.1415926-2.5-1.40.14 (MiKTeX 2.9) (preloaded format=pdflatex 2015.8.23)  1 DEC 2015 13:58
+This is pdfTeX, Version 3.1415926-2.5-1.40.14 (MiKTeX 2.9) (preloaded format=pdflatex 2015.8.23)  1 DEC 2015 14:28
 entering extended mode
 **thesis_main.tex
 (C:\Users\Nathan\Desktop\Proposal\thesis_main.tex
@@ -526,7 +526,7 @@ Chapter 3.
 File: missingvalues_plot.png Graphic file (type png)
 
 <use missingvalues_plot.png>
-Package pdftex.def Info: missingvalues_plot.png used on input line 61.
+Package pdftex.def Info: missingvalues_plot.png used on input line 64.
 (pdftex.def)             Requested size: 346.89731pt x 369.8311pt.
  [37
 
@@ -534,55 +534,54 @@ Package pdftex.def Info: missingvalues_plot.png used on input line 61.
 
 ]
 
-LaTeX Warning: `!h' float specifier changed to `!ht'.
+LaTeX Warning: Text page 38 contains only floats.
 
-[38] [39] [40 <C:/Users/Nathan/Desktop/Proposal/missingvalues_plot.png>]
+[38] [39 <C:/Users/Nathan/Desktop/Proposal/missingvalues_plot.png>] [40]
 [41] [42] [43] <traceplots1.png, id=191, 606.265pt x 440.64626pt>
 File: traceplots1.png Graphic file (type png)
 
 <use traceplots1.png>
-Package pdftex.def Info: traceplots1.png used on input line 133.
+Package pdftex.def Info: traceplots1.png used on input line 136.
 (pdftex.def)             Requested size: 346.89731pt x 252.13246pt.
  <traceplots2.png, id=192, 606.265pt x 440.64626pt>
 File: traceplots2.png Graphic file (type png)
 
 <use traceplots2.png>
-Package pdftex.def Info: traceplots2.png used on input line 141.
+Package pdftex.def Info: traceplots2.png used on input line 144.
 (pdftex.def)             Requested size: 346.89731pt x 252.13246pt.
  <cont_densplot.png, id=193, 477.785pt x 485.815pt>
 File: cont_densplot.png Graphic file (type png)
 
 <use cont_densplot.png>
-Package pdftex.def Info: cont_densplot.png used on input line 151.
+Package pdftex.def Info: cont_densplot.png used on input line 154.
 (pdftex.def)             Requested size: 260.17464pt x 264.54524pt.
- [44] [45 <C:/Users/Nathan/Desktop/Proposal/traceplots1.png> <C:/Users/Nathan/D
-esktop/Proposal/traceplots2.png>]
-<bw_timemet.png, id=202, 616.3025pt x 485.815pt>
+ <bw_timemet.png, id=194, 616.3025pt x 485.815pt>
 File: bw_timemet.png Graphic file (type png)
- <use bw_timemet.png>
-Package pdftex.def Info: bw_timemet.png used on input line 162.
-(pdftex.def)             Requested size: 216.81pt x 170.9051pt.
 
-<bw_timedx.png, id=203, 616.3025pt x 485.815pt>
+<use bw_timemet.png>
+Package pdftex.def Info: bw_timemet.png used on input line 165.
+(pdftex.def)             Requested size: 216.81pt x 170.9051pt.
+ <bw_timedx.png, id=195, 616.3025pt x 485.815pt>
 File: bw_timedx.png Graphic file (type png)
- <use bw_timedx.png>
-Package pdftex.def Info: bw_timedx.png used on input line 163.
-(pdftex.def)             Requested size: 216.81pt x 170.9051pt.
 
-<cape_lapat_ratio.png, id=204, 541.02126pt x 485.815pt>
+<use bw_timedx.png>
+Package pdftex.def Info: bw_timedx.png used on input line 166.
+(pdftex.def)             Requested size: 216.81pt x 170.9051pt.
+ <cape_lapat_ratio.png, id=196, 541.02126pt x 485.815pt>
 File: cape_lapat_ratio.png Graphic file (type png)
 
 <use cape_lapat_ratio.png>
-Package pdftex.def Info: cape_lapat_ratio.png used on input line 173.
+Package pdftex.def Info: cape_lapat_ratio.png used on input line 176.
 (pdftex.def)             Requested size: 303.53267pt x 272.56604pt.
- [46 <C:/Users/Nathan/Desktop/Proposal/cont_densplot.png>] [47 <C:/Users/Nathan
-/Desktop/Proposal/bw_timemet.png> <C:/Users/Nathan/Desktop/Proposal/bw_timedx.p
-ng> <C:/Users/Nathan/Desktop/Proposal/cape_lapat_ratio.png>] [48] <cape_km2.png
-, id=218, 499.8675pt x 333.49594pt>
+ [44] [45 <C:/Users/Nathan/Desktop/Proposal/traceplots1.png> <C:/Users/Nathan/D
+esktop/Proposal/traceplots2.png>] [46 <C:/Users/Nathan/Desktop/Proposal/cont_de
+nsplot.png>] [47 <C:/Users/Nathan/Desktop/Proposal/bw_timemet.png> <C:/Users/Na
+than/Desktop/Proposal/bw_timedx.png> <C:/Users/Nathan/Desktop/Proposal/cape_lap
+at_ratio.png>] [48]
+<cape_km2.png, id=218, 499.8675pt x 333.49594pt>
 File: cape_km2.png Graphic file (type png)
-
-<use cape_km2.png>
-Package pdftex.def Info: cape_km2.png used on input line 235.
+ <use cape_km2.png>
+Package pdftex.def Info: cape_km2.png used on input line 238.
 (pdftex.def)             Requested size: 346.89731pt x 231.44568pt.
 
 
@@ -591,70 +590,70 @@ LaTeX Warning: `!h' float specifier changed to `!ht'.
 [49] <lapat_km.png, id=224, 676.5275pt x 485.815pt>
 File: lapat_km.png Graphic file (type png)
  <use lapat_km.png>
-Package pdftex.def Info: lapat_km.png used on input line 245.
+Package pdftex.def Info: lapat_km.png used on input line 248.
 (pdftex.def)             Requested size: 346.89731pt x 249.11153pt.
  [50 <C:/Users/Nathan/Desktop/Proposal/cape_km2.png>] [51 <C:/Users/Nathan/Desk
 top/Proposal/lapat_km.png>]
-LaTeX Font Info:    Try loading font information for OML+cmr on input line 267.
+LaTeX Font Info:    Try loading font information for OML+cmr on input line 270.
 
  ("C:\Program Files (x86)\MiKTeX 2.9\tex\latex\base\omlcmr.fd"
 File: omlcmr.fd 1999/05/25 v2.5h Standard LaTeX font definitions
 )
 LaTeX Font Info:    Font shape `OML/cmr/m/n' in size <12> not available
-(Font)              Font shape `OML/cmm/m/it' tried instead on input line 267.
+(Font)              Font shape `OML/cmm/m/it' tried instead on input line 270.
  [52] <ac_schoenfeld.png, id=236, 600.74437pt x 532.99126pt>
 File: ac_schoenfeld.png Graphic file (type png)
 
 <use ac_schoenfeld.png>
-Package pdftex.def Info: ac_schoenfeld.png used on input line 297.
+Package pdftex.def Info: ac_schoenfeld.png used on input line 300.
 (pdftex.def)             Requested size: 346.89731pt x 307.78511pt.
  <mi_schoenfeld.png, id=237, 536.75531pt x 389.95688pt>
 File: mi_schoenfeld.png Graphic file (type png)
 
 <use mi_schoenfeld.png>
-Package pdftex.def Info: mi_schoenfeld.png used on input line 304.
+Package pdftex.def Info: mi_schoenfeld.png used on input line 307.
 (pdftex.def)             Requested size: 346.89731pt x 252.02304pt.
  [53 <C:/Users/Nathan/Desktop/Proposal/ac_schoenfeld.png>] [54 <C:/Users/Nathan
 /Desktop/Proposal/mi_schoenfeld.png>] [55] [56] [57]
 [58]
 Missing character: There is no … in font cmr12!
- [59] [60] <ps_histo1.png, id=264, 441.90094pt x 274.02374pt>
+ [59] <ps_histo1.png, id=261, 441.90094pt x 274.02374pt>
 File: ps_histo1.png Graphic file (type png)
 
 <use ps_histo1.png>
-Package pdftex.def Info: ps_histo1.png used on input line 422.
+Package pdftex.def Info: ps_histo1.png used on input line 425.
 (pdftex.def)             Requested size: 216.81pt x 134.44423pt.
- <ps_histo2.png, id=265, 439.6425pt x 271.76532pt>
+ <ps_histo2.png, id=262, 439.6425pt x 271.76532pt>
 File: ps_histo2.png Graphic file (type png)
 
 <use ps_histo2.png>
-Package pdftex.def Info: ps_histo2.png used on input line 423.
+Package pdftex.def Info: ps_histo2.png used on input line 426.
 (pdftex.def)             Requested size: 216.81pt x 134.0204pt.
- [61 <C:/Users/Nathan/Desktop/Proposal/ps_histo1.png> <C:/Users/Nathan/Desktop/
-Proposal/ps_histo2.png>]
-<ps_bal_diag.png, id=272, 442.65375pt x 367.3725pt>
+ [60] <ps_bal_diag.png, id=266, 442.65375pt x 367.3725pt>
 File: ps_bal_diag.png Graphic file (type png)
- <use ps_bal_diag.png>
-Package pdftex.def Info: ps_bal_diag.png used on input line 433.
+
+<use ps_bal_diag.png>
+Package pdftex.def Info: ps_bal_diag.png used on input line 436.
 (pdftex.def)             Requested size: 346.89731pt x 287.91716pt.
-
-[62 <C:/Users/Nathan/Desktop/Proposal/ps_bal_diag.png>]
-Overfull \hbox (12.72752pt too wide) in paragraph at lines 458--459
+ [61 <C:/Users/Nathan/Desktop/Proposal/ps_histo1.png> <C:/Users/Nathan/Desktop/
+Proposal/ps_histo2.png>] [62 <C:/Users/Nathan/Desktop/Proposal/ps_bal_diag.png>
+]
+Overfull \hbox (12.72752pt too wide) in paragraph at lines 461--462
 [][] 
  []
 
 
-Overfull \hbox (12.72752pt too wide) in paragraph at lines 473--474
+Overfull \hbox (12.72752pt too wide) in paragraph at lines 476--477
 [][] 
  []
 
 
-Overfull \hbox (27.09518pt too wide) in paragraph at lines 488--489
+Overfull \hbox (27.09518pt too wide) in paragraph at lines 491--492
 [][] 
  []
 
 
-Overfull \hbox (31.5013pt too wide) in paragraph at lines 503--504
+Overfull \hbox (31.5013pt too wide) in paragraph at lines 506--507
 [][] 
  []
 
@@ -688,11 +687,8 @@ File: md_mechanism.png Graphic file (type png)
  <use md_mechanism.png>
 Package pdftex.def Info: md_mechanism.png used on input line 42.
 (pdftex.def)             Requested size: 411.93767pt x 248.25536pt.
-
-
-LaTeX Warning: `!h' float specifier changed to `!ht'.
-
-) [73] [74 <C:/Users/Nathan/Desktop/Proposal/md_mechanism.png>]
+)
+[73] [74 <C:/Users/Nathan/Desktop/Proposal/md_mechanism.png>]
 (C:\Users\Nathan\Desktop\Proposal\append-b.tex [75
 
 
@@ -733,7 +729,7 @@ onts/cm/cmsy10.pfb><C:/Program Files (x86)/MiKTeX 2.9/fonts/type1/public/amsfon
 ts/cm/cmsy6.pfb><C:/Program Files (x86)/MiKTeX 2.9/fonts/type1/public/amsfonts/
 cm/cmsy8.pfb><C:/Program Files (x86)/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/
 cmti12.pfb>
-Output written on thesis_main.pdf (86 pages, 924933 bytes).
+Output written on thesis_main.pdf (86 pages, 924586 bytes).
 PDF statistics:
  383 PDF objects out of 1000 (max. 8388607)
  0 named destinations out of 1000 (max. 500000)
