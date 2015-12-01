@@ -12,9 +12,9 @@
 \contentsline {figure}{\numberline {3.6}{\ignorespaces Selected histograms of the ratio of imputed variables}}{47}
 \contentsline {figure}{\numberline {3.7}{\ignorespaces Landmarked Kaplan-Meier curves for chemotherapeutic drugs, AC and MI data}}{50}
 \contentsline {figure}{\numberline {3.8}{\ignorespaces Landmarked Kaplan-Meier curves for HER2-directed drugs, AC and MI data}}{51}
-\contentsline {figure}{\numberline {3.9}{\ignorespaces AC Schoenfeld residuals over time}}{54}
-\contentsline {figure}{\numberline {3.10}{\ignorespaces MI Schoenfeld residuals over time}}{56}
-\contentsline {figure}{\numberline {3.11}{\ignorespaces Selected propensity score histogram checks}}{61}
+\contentsline {figure}{\numberline {3.9}{\ignorespaces AC Schoenfeld residuals over time}}{53}
+\contentsline {figure}{\numberline {3.10}{\ignorespaces MI Schoenfeld residuals over time}}{54}
+\contentsline {figure}{\numberline {3.11}{\ignorespaces Selected propensity score distribution checks}}{61}
 \contentsline {figure}{\numberline {3.12}{\ignorespaces Selected propensity score balance checks}}{62}
 \addvspace {\baselineskip }
 \addvspace {\baselineskip }

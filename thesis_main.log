@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.1415926-2.5-1.40.14 (MiKTeX 2.9) (preloaded format=pdflatex 2015.8.23)  1 DEC 2015 11:19
+This is pdfTeX, Version 3.1415926-2.5-1.40.14 (MiKTeX 2.9) (preloaded format=pdflatex 2015.8.23)  1 DEC 2015 13:17
 entering extended mode
 **thesis_main.tex
 (C:\Users\Nathan\Desktop\Proposal\thesis_main.tex
@@ -577,84 +577,84 @@ Package pdftex.def Info: cape_lapat_ratio.png used on input line 173.
 (pdftex.def)             Requested size: 303.53267pt x 272.56604pt.
  [46 <C:/Users/Nathan/Desktop/Proposal/cont_densplot.png>] [47 <C:/Users/Nathan
 /Desktop/Proposal/bw_timemet.png> <C:/Users/Nathan/Desktop/Proposal/bw_timedx.p
-ng> <C:/Users/Nathan/Desktop/Proposal/cape_lapat_ratio.png>] [48] <chemo_km.png
-, id=218, 448.67625pt x 485.815pt>
-File: chemo_km.png Graphic file (type png)
+ng> <C:/Users/Nathan/Desktop/Proposal/cape_lapat_ratio.png>] [48] <cape_km2.png
+, id=218, 499.8675pt x 333.49594pt>
+File: cape_km2.png Graphic file (type png)
 
-<use chemo_km.png>
-Package pdftex.def Info: chemo_km.png used on input line 226.
-(pdftex.def)             Requested size: 346.89731pt x 375.62059pt.
- <her2_km.png, id=219, 448.67625pt x 485.815pt>
-File: her2_km.png Graphic file (type png)
-
-<use her2_km.png>
-Package pdftex.def Info: her2_km.png used on input line 236.
-(pdftex.def)             Requested size: 346.89731pt x 375.62059pt.
- [49] [50 <C:/Users/Nathan/Desktop/Proposal/chemo_km.png>]
-[51 <C:/Users/Nathan/Desktop/Proposal/her2_km.png>]
-LaTeX Font Info:    Try loading font information for OML+cmr on input line 258.
-
-
-("C:\Program Files (x86)\MiKTeX 2.9\tex\latex\base\omlcmr.fd"
-File: omlcmr.fd 1999/05/25 v2.5h Standard LaTeX font definitions
-)
-LaTeX Font Info:    Font shape `OML/cmr/m/n' in size <12> not available
-(Font)              Font shape `OML/cmm/m/it' tried instead on input line 258.
- [52]
-<ac_schoenfeld.png, id=235, 600.74437pt x 532.99126pt>
-File: ac_schoenfeld.png Graphic file (type png)
- <use ac_schoenfeld.png>
-Package pdftex.def Info: ac_schoenfeld.png used on input line 288.
-(pdftex.def)             Requested size: 346.89731pt x 307.78511pt.
-
-<mi_schoenfeld.png, id=236, 536.75531pt x 389.95688pt>
-File: mi_schoenfeld.png Graphic file (type png)
- <use mi_schoenfeld.png>
-Package pdftex.def Info: mi_schoenfeld.png used on input line 295.
-(pdftex.def)             Requested size: 346.89731pt x 252.02304pt.
+<use cape_km2.png>
+Package pdftex.def Info: cape_km2.png used on input line 235.
+(pdftex.def)             Requested size: 346.89731pt x 231.44568pt.
 
 
 LaTeX Warning: `!h' float specifier changed to `!ht'.
 
-[53] [54 <C:/Users/Nathan/Desktop/Proposal/ac_schoenfeld.png>] [55] [56 <C:/Use
-rs/Nathan/Desktop/Proposal/mi_schoenfeld.png>] [57] [58]
-Missing character: There is no … in font cmr12!
- [59] [60]
-<ps_histo1.png, id=264, 441.90094pt x 274.02374pt>
-File: ps_histo1.png Graphic file (type png)
- <use ps_histo1.png>
-Package pdftex.def Info: ps_histo1.png used on input line 409.
-(pdftex.def)             Requested size: 216.81pt x 134.44423pt.
+[49] <lapat_km.png, id=224, 676.5275pt x 485.815pt>
+File: lapat_km.png Graphic file (type png)
+ <use lapat_km.png>
+Package pdftex.def Info: lapat_km.png used on input line 245.
+(pdftex.def)             Requested size: 346.89731pt x 249.11153pt.
+ [50 <C:/Users/Nathan/Desktop/Proposal/cape_km2.png>] [51 <C:/Users/Nathan/Desk
+top/Proposal/lapat_km.png>]
+LaTeX Font Info:    Try loading font information for OML+cmr on input line 267.
 
-<ps_histo2.png, id=265, 439.6425pt x 271.76532pt>
+ ("C:\Program Files (x86)\MiKTeX 2.9\tex\latex\base\omlcmr.fd"
+File: omlcmr.fd 1999/05/25 v2.5h Standard LaTeX font definitions
+)
+LaTeX Font Info:    Font shape `OML/cmr/m/n' in size <12> not available
+(Font)              Font shape `OML/cmm/m/it' tried instead on input line 267.
+ [52] <ac_schoenfeld.png, id=236, 600.74437pt x 532.99126pt>
+File: ac_schoenfeld.png Graphic file (type png)
+
+<use ac_schoenfeld.png>
+Package pdftex.def Info: ac_schoenfeld.png used on input line 297.
+(pdftex.def)             Requested size: 346.89731pt x 307.78511pt.
+ <mi_schoenfeld.png, id=237, 536.75531pt x 389.95688pt>
+File: mi_schoenfeld.png Graphic file (type png)
+
+<use mi_schoenfeld.png>
+Package pdftex.def Info: mi_schoenfeld.png used on input line 304.
+(pdftex.def)             Requested size: 346.89731pt x 252.02304pt.
+ [53 <C:/Users/Nathan/Desktop/Proposal/ac_schoenfeld.png>] [54 <C:/Users/Nathan
+/Desktop/Proposal/mi_schoenfeld.png>] [55] [56] [57]
+[58]
+Missing character: There is no … in font cmr12!
+ [59] [60] <ps_histo1.png, id=264, 441.90094pt x 274.02374pt>
+File: ps_histo1.png Graphic file (type png)
+
+<use ps_histo1.png>
+Package pdftex.def Info: ps_histo1.png used on input line 422.
+(pdftex.def)             Requested size: 216.81pt x 134.44423pt.
+ <ps_histo2.png, id=265, 439.6425pt x 271.76532pt>
 File: ps_histo2.png Graphic file (type png)
- <use ps_histo2.png>
-Package pdftex.def Info: ps_histo2.png used on input line 410.
+
+<use ps_histo2.png>
+Package pdftex.def Info: ps_histo2.png used on input line 423.
 (pdftex.def)             Requested size: 216.81pt x 134.0204pt.
  [61 <C:/Users/Nathan/Desktop/Proposal/ps_histo1.png> <C:/Users/Nathan/Desktop/
-Proposal/ps_histo2.png>] <ps_bal_diag.png, id=272, 442.65375pt x 367.3725pt>
+Proposal/ps_histo2.png>]
+<ps_bal_diag.png, id=272, 442.65375pt x 367.3725pt>
 File: ps_bal_diag.png Graphic file (type png)
-
-<use ps_bal_diag.png>
-Package pdftex.def Info: ps_bal_diag.png used on input line 420.
+ <use ps_bal_diag.png>
+Package pdftex.def Info: ps_bal_diag.png used on input line 433.
 (pdftex.def)             Requested size: 346.89731pt x 287.91716pt.
- [62 <C:/Users/Nathan/Desktop/Proposal/ps_bal_diag.png>]
-Overfull \hbox (12.72752pt too wide) in paragraph at lines 445--446
+
+[62 <C:/Users/Nathan/Desktop/Proposal/ps_bal_diag.png>]
+Overfull \hbox (12.72752pt too wide) in paragraph at lines 458--459
 [][] 
  []
 
 
-Overfull \hbox (12.72752pt too wide) in paragraph at lines 460--461
+Overfull \hbox (12.72752pt too wide) in paragraph at lines 473--474
 [][] 
  []
 
 
-Overfull \hbox (27.09518pt too wide) in paragraph at lines 475--476
+Overfull \hbox (27.09518pt too wide) in paragraph at lines 488--489
 [][] 
  []
 
 
-Overfull \hbox (31.5013pt too wide) in paragraph at lines 490--491
+Overfull \hbox (31.5013pt too wide) in paragraph at lines 503--504
 [][] 
  []
 
@@ -701,10 +701,10 @@ LaTeX Font Info:    Font shape `OMS/cmr/m/n' in size <12> not available
 (C:\Users\Nathan\Desktop\Proposal\append-a.aux)
 (C:\Users\Nathan\Desktop\Proposal\append-b.aux)) ) 
 Here is how much of TeX's memory you used:
- 4944 strings out of 493921
- 70667 string characters out of 3144873
- 176332 words of memory out of 3000000
- 8024 multiletter control sequences out of 15000+200000
+ 4945 strings out of 493921
+ 70683 string characters out of 3144873
+ 173336 words of memory out of 3000000
+ 8025 multiletter control sequences out of 15000+200000
  11741 words of font info for 45 fonts, out of 3000000 for 9000
  841 hyphenation exceptions out of 8191
  36i,18n,48p,2142b,519s stack positions out of 5000i,500n,10000p,200000b,50000s
@@ -723,7 +723,7 @@ onts/cm/cmsy10.pfb><C:/Program Files (x86)/MiKTeX 2.9/fonts/type1/public/amsfon
 ts/cm/cmsy6.pfb><C:/Program Files (x86)/MiKTeX 2.9/fonts/type1/public/amsfonts/
 cm/cmsy8.pfb><C:/Program Files (x86)/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/
 cmti12.pfb>
-Output written on thesis_main.pdf (85 pages, 863450 bytes).
+Output written on thesis_main.pdf (85 pages, 917156 bytes).
 PDF statistics:
  378 PDF objects out of 1000 (max. 8388607)
  0 named destinations out of 1000 (max. 500000)
